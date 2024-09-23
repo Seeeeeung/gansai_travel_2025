@@ -26,21 +26,20 @@ $(function(){
 	const my_ip = ip;
 	$('.detail-list .toggle-count').on('click', function() {
 		
-		let count = 0;
+		var count = 0;
 		// let countReset = 0;
 		// console.log(localStorage.getItem(my_ip))
 		// console.log(ip)
 		// console.log($(this).parents('li').find('.name').text())
 		if (!$(this).hasClass('check') && localStorage.getItem(my_ip) == null) {
 			console.log(my_ip)
-			$(this).addClass('check').text(count + 1).attr({
-				title: '추천됨'
-			});
-			count = $(this).text();
+			$(this).addClass('check').text(count + 1).attr('title','추천됨');
+			count = $(this).children('.count').text();
 			localStorage.setItem(my_ip,$(this).parents('li').find('.name').text());
 		} else {
 			// console.log(count)
-			$(this).removeClass('check').text(count)
+			$(this).removeClass('check').children('.count').text(count);
+			localStorage.removeItem(my_ip);
 		}
 
 
@@ -57,6 +56,16 @@ $(function(){
 		console.log(aKeyName)
 			if (ip == aKeyName) {
 				alert('dlTdma')
+
+				$('.toggle-count').each(function(index) {
+					if ($(this).parents('li').find('.name').eq(index).text() == localStorage.getItem(my_ip)) {
+						$(this).addClass('check').attr('title','추천됨').children('.count').text(localStorage.length)
+					}
+
+				})
+				// $(this).addClass('check').text(count + 1).attr({
+				// 	title: '추천됨'
+				// });
 			}
 	}
 	// for (var i = 0; i<aKeyName.length; i++) {
