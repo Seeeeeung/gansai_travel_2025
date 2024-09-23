@@ -26,6 +26,7 @@ $(function(){
 	const my_ip = ip;
 	$('.detail-list .toggle-count').on('click', function() {
 		
+		localStorage.clear();
 		var count = 0;
 		// let countReset = 0;
 		// console.log(localStorage.getItem(my_ip))
