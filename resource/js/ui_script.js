@@ -1,6 +1,106 @@
 
 
+
 $(function(){
+	var ip = "";
+	var hostname = "";
+	var city = "";
+	var region = "";
+	var country = "";
+	var loc = "";
+	var org = "";
+
+	$.getJSON("http://ipinfo.io", function(data) {
+			ip = data.ip // 접속자 ip
+			hostname = data.hostname // 접속자 hostname
+			city = data.city // 접속자 도시
+			region = data.region // 접속자 지역
+			country = data.country // 접속자 국가
+			loc = data.loc // 접속 위도, 경도
+			org = data.org // ISP (인터넷 서비스 제공사업자)
+
+
+			// console.log(ip)
+
+	// toggle count
+	const my_ip = ip;
+	$('.detail-list .toggle-count').on('click', function() {
+		
+		let count = 0;
+		// let countReset = 0;
+		// console.log(localStorage.getItem(my_ip))
+		// console.log(ip)
+		// console.log($(this).parents('li').find('.name').text())
+		if (!$(this).hasClass('check') && localStorage.getItem(my_ip) == null) {
+			console.log(my_ip)
+			$(this).addClass('check').text(count + 1).attr({
+				title: '추천됨'
+			});
+			count = $(this).text();
+			localStorage.setItem(my_ip,$(this).parents('li').find('.name').text());
+		} else {
+			// console.log(count)
+			$(this).removeClass('check').text(count)
+		}
+
+
+
+		
+	})
+
+	
+	// var index=0;
+	// var aKeyName = localStorage.getItem(my_ip);
+	for (var i = 0; i < localStorage.length; i++) {
+		console.log(localStorage.getItem(localStorage.key(i)));
+		var aKeyName = localStorage.key(i);
+		console.log(aKeyName)
+			if (ip == aKeyName) {
+				alert('dlTdma')
+			}
+	}
+	// for (var i = 0; i<aKeyName.length; i++) {
+	// 	console.log(aKeyName.length)
+	// 	console.log(ip)
+		
+	// }
+
+	
+	// localStorage.clear();
+
+			// if(country == "KR"){
+			// 		console.log(data);
+			// 		$("#kr").show();
+			// }else if(country == "US"){
+			// 		console.log(data);
+			// 		$("#us").show();
+			// }else if(country == "CN"){
+			// 		console.log(data);
+			// 		$("#cn").show();
+			// }else if(country == "JP"){
+			// 		console.log(data);
+			// 		$("#jp").show();
+			// }
+	});
+
+// // HTML의 <script> 요소를 생성한다
+// const se = document.createElement('script');
+// // <script> 요소의 src 속성을 설정한다
+// se.src = 'https://ipinfo.io?callback=callback';
+// // <body> 요소의 하위 끝에 붙인다
+// // 그리고 콜백 함수를 호출한다
+// document.body.appendChild(se);
+// // 앞서 생성한 <script> 요소를 제거한다
+// document.body.removeChild(se);
+
+// // 콜백 함수가 호출된다
+// function callback(data) {
+// 	console.log(data.ip)
+// }
+// callback()
+
+	// console.log(data.ip)
+
 	// 공지사항 swiper
 	const alertListSwiper = new Swiper('.notice-visual', {
 		direction: 'vertical',
@@ -146,22 +246,6 @@ $(function(){
 	})
 
 
-	// toggle count
-	$(document).on('click', '.detail-list .toggle-count', function() {
-		let count = 0;
-		// let countReset = 0;
-		if (!$(this).hasClass('check')) {
-			$(this).addClass('check').text(count + 1).attr('title','추천됨')
-			return console.log(count = $(this).text());
-		} else {
-			$(this).removeClass('check').text(count)
-		}
-		console.log(count)
-	})
-
-
-
-
-
+	
 
 });
