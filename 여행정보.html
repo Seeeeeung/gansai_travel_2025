@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>여행정보 | 2025 간사이 여행</title>
+
+<link rel="stylesheet" type="text/css" href="./resource/css/import.css">
+<link rel="icon" href="./resource/image/common/favicon.png">
+<!-- 비행기 아이콘 제작자: Good Ware - Flaticon -->
+<!-- 움직임 아이콘 제작자: Google - Flaticon -->
+
+<script src="./resource/js/jquery-3.7.1.js"></script>
+<script src="./resource/js/jquery.easing.1.4.1.js"></script>
+<script src="./resource/js/swiper-bundle.js"></script>
+<script src="./resource/js/ui_script.js" defer></script>
+</head>
+<body>
+
+	<!-- header -->
+	<header>
+		<!-- 최종 수정 후 넣기 -->
+	</header>
+	<!-- // header -->
+	
+	<!-- notice visual -->
+	<div class="notice-visual">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="notice">
+					<p class="tit">공지사항 제목</p>
+					<p class="txt">공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용</p>
+				</div>
+			</div>
+
+			<div class="swiper-slide">
+				<div class="notice">
+					<p class="tit">공지사항 제목</p>
+					<p class="txt">공지사항 내용</p>
+				</div>
+			</div>
+
+			<div class="swiper-slide">
+				<div class="notice">
+					<p class="tit">공지사항 제목</p>
+					<p class="txt">공지사항 내용</p>
+				</div>
+			</div>
+
+			<div class="swiper-slide">
+				<div class="notice">
+					<p class="tit">공지사항 제목</p>
+					<p class="txt">공지사항 내용</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- // notice visual -->
+
+
+	<!-- container -->
+	<div class="container">
+		<div class="lnb-wrap">
+			<h2 class="page-title">여행 정보</h2>
+
+			<div class="lnb accordion">
+				<ul>
+					<li>
+						<!-- 작업예정 -->
+						<a href="./여행정보_여행동선.html" class="link"><span>여행 동선</span></a>
+					</li>
+					<li>
+						<button type="button" class="btn-toggle"><span>항공편 정보</span></button>
+						
+						<ul class="acc-cont">
+							<li><a href="./여행정보_항공편정보_예매정보.html" class="depth-3">예매 정보</a></li>
+							<li><a href="./여행정보_항공편정보_안내사항.html" class="depth-3">안내사항</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<button type="button" class="btn-toggle"><span>숙소 정보</span></button>
+						
+						<ul class="acc-cont">
+							<li><a href="./여행정보_숙소정보_추천목록.html" class="depth-3">추천 목록</a></li>
+							<li><a href="./여행정보_숙소정보_예매정보.html" class="depth-3">예매 정보</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<button type="button" class="btn-toggle"><span>예매 정보</span></button>
+						
+						<ul class="acc-cont">
+							<li><a href="./여행정보_예매정보_교통패스예매.html" class="depth-3">교통패스 예매정보</a></li>
+							<li><a href="./여행정보_예매정보_관광지티켓예매.html" class="depth-3">관광지 티켓 예매정보</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="./여행정보_여행꿀팁.html" class="link"><span>여행 꿀팁</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- section -->
+		<div class="depth-1">
+			<div class="infomation-wrap">
+				<p class="title">
+					안녕하세요 <em>여행자</em>님,<br>
+					예매 내역을 확인해주세요.
+				</p>
+
+				<div class="travel reserved">
+					<!-- 해당 정보로 이동 -->
+					<a href="./여행정보_항공편정보_예매정보.html" class="btn-link fly">
+						<p class="tit">항공권 예매</p>
+						<p class="desc"><em>2</em>건</p>
+					</a>
+					<a href="./여행정보_숙소정보_예매정보.html" class="btn-link sleep">
+						<p class="tit">숙소 예매</p>
+						<p class="desc"><em>0</em>건</p>
+					</a>
+					<a href="./여행정보_예매정보_교통패스예매.html" class="btn-link pass">
+						<p class="tit">교통패스</p>
+						<p class="desc"><em>0</em>건</p>
+					</a>
+					<a href="./여행정보_예매정보_관광지티켓예매.html" class="btn-link">
+						<p class="tit">관광지 티켓</p>
+						<p class="desc"><em>0</em>건</p>
+					</a>
+				</div>
+
+			</div>
+
+			<div class="depth-2">
+				<p class="title-3">항공편 정보</p>
+				
+				<!-- accordion -->
+				<div class="accordion fly">
+					<ul>
+						<li>
+							<button type="button" class="btn-toggle"><span>일본 여행가는날 항공편</span></button>
+							
+							<ul class="acc-cont ticket-info">
+								<li>
+									<p class="tit">예약 항공사</p>
+									<p class="txt">이스타 항공 (EASTAR JEP)</p>
+								</li>
+								<li>
+									<p class="tit">온라인체크인</p>
+									<p class="txt">가능</p>
+								</li>
+								<li>
+									<p class="tit">예약자</p>
+									<p class="txt">태민이와이프, 쌍둥이언니, 쌍둥이동생(2인)</p>
+								</li>
+								<li>
+									<p class="tit">예약메일 수신자</p>
+									<p class="txt">예약자 각각 수신</p>
+								</li>
+								<li>
+									<p class="tit">출발일</p>
+									<p class="txt">2025-03-22 토요일</p>
+								</li>
+								<li>
+									<p class="tit">출발 공항</p>
+									<a href="https://naver.me/FXKfaFww" target="_blank" title="새창으로 네이버지도 열기" class="btn-txt txt">서울 인천국제공항 제 1터미널</a>
+								</li>
+								<li>
+									<p class="tit">도착 공항</p>
+									<a href="https://maps.app.goo.gl/mBC9HqKeKGv8sYrz9" target="_blank" title="새창으로 구글맵 열기" class="btn-txt txt">오사카 간사이 국제공항 제 1터미널</a>
+								</li>
+								<li>
+									<p class="tit">출발시간</p>
+									<p class="txt">오전 09시 05분 (1시간 50분 소요)</p>
+								</li>
+								<li>
+									<p class="tit">도착시간</p>
+									<p class="txt">오전 10시 55분</p>
+								</li>
+								<li>
+									<p class="tit">좌석 (미지정)</p>
+									<p class="txt">-</p>
+								</li>
+								<li>
+									<p class="tit">결제금액</p>
+									<p class="txt">총 781,600원 / 인당 195,400원</p>
+								</li>
+								<li>
+									<p class="tit">취소수수료</p>
+									<p class="txt">출발 91일 전 없음 / 예매당일 ~ 61일전 30,000원 / 31일전 50,000원 / 7일전 70,000원 / 1시간전 90,000원</p>
+								</li>
+								<li>
+									<p class="tit">기내 반입 수화물</p>
+									<p class="txt">가로, 세로, 높이 합이 20+55+40 = 115cm 이하, 10kg 이하인 수화물 1개</p>
+								</li>
+								<li>
+									<p class="tit">위탁 수화물</p>
+									<p class="txt">15kg 이내</p>
+								</li>
+							</ul>
+						</li>
+						
+						<li>
+							<button type="button" class="btn-toggle"><span>한국 돌아가는날 항공편</span></button>
+							
+							<ul class="acc-cont ticket-info">
+								<li>
+									<p class="tit">예약 항공사</p>
+									<p class="txt">피치항공 (peach)</p>
+								</li>
+								<li>
+									<p class="tit">온라인체크인</p>
+									<p class="txt">불가능</p>
+								</li>
+								<li>
+									<p class="tit">예약자</p>
+									<p class="txt">태민이와이프</p>
+								</li>
+								<li>
+									<p class="tit">예약메일 수신자</p>
+									<p class="txt">쌍둥이언니(2인), 동생, 태민이와이프</p>
+								</li>
+								<li>
+									<p class="tit">출발일</p>
+									<p class="txt">2025-03-25 화요일</p>
+								</li>
+								<li>
+									<p class="tit">출발 공항</p>
+									<a href="https://maps.app.goo.gl/2gU1mi7YDNZJgpCG7" target="_blank" title="새창으로 구글맵 열기 열기" class="btn-txt txt">오사카 간사이 국제공항 제 2터미널</a>
+								</li>
+								<li>
+									<p class="tit">도착 공항</p>
+									<a href="https://naver.me/FXKfaFww" target="_blank" title="새창으로 네이버지도 열기" class="btn-txt txt">서울 인천국제공항 제 1터미널</a>
+								</li>
+								<li>
+									<p class="tit">출발시간</p>
+									<p class="txt">오후 7시 55분 (2시간 소요)</p>
+								</li>
+								<li>
+									<p class="tit">도착시간</p>
+									<p class="txt">오후 9시 55분</p>
+								</li>
+								<li>
+									<p class="tit">좌석 (지정석)</p>
+									<p class="txt">2E, 2F, 3E, 3F</p>
+								</li>
+								<li>
+									<p class="tit">취소수수료</p>
+									<p class="txt">탑승일 30일 전 15,000원 / 탑승일 29일 전 30,000원 / 그 이후 41,000원</p>
+								</li>
+								<li>
+									<p class="tit">결제금액</p>
+									<p class="txt">총 572,838원 / 인당 143,209원</p>
+								</li>
+								<li>
+									<p class="tit">기내 반입 수화물</p>
+									<p class="txt">7kg 이내</p>
+								</li>
+								<li>
+									<p class="tit">위탁 수화물</p>
+									<p class="txt">20kg 이내</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- // accordion -->
+
+			</div>
+
+			<div class="depth-2">
+				<div class="title-wrap">
+					<p class="title-3">숙소 정보</p>
+					<a href="./여행정보_숙소정보_추천목록.html" class="info btn-txt"><span class="ico-glasses"></span>더 많은 추천숙소 한눈에 확인하기</a>
+				</div>
+
+				<!-- detail-list -->
+				<div class="detail-list info-travel">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide">
+							
+							<div class="detail-visual">
+								<p class="number">1</p>
+
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="visual">
+											<img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270232802.jpg?k=bc62c76b2c4ac93e7f19be5b80cec7d105998f4b876e3f950126eb3f8e3cfd7b&o=&hp=1" alt="">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="visual">
+											<img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270232802.jpg?k=bc62c76b2c4ac93e7f19be5b80cec7d105998f4b876e3f950126eb3f8e3cfd7b&o=&hp=1" alt="">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="visual">
+											<img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270232802.jpg?k=bc62c76b2c4ac93e7f19be5b80cec7d105998f4b876e3f950126eb3f8e3cfd7b&o=&hp=1" alt="">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="visual">
+											<img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270232802.jpg?k=bc62c76b2c4ac93e7f19be5b80cec7d105998f4b876e3f950126eb3f8e3cfd7b&o=&hp=1" alt="">
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="txt-wrap">
+								<p class="name">오사카 히노데 호텔 닛폰바시 (최저가 120,352원 * 2)</p>
+								
+								<p class="loaction">오사카 난바 / 이마미야에비스 역에서 도보 4분</p>
+								<p class="desc">체크인 : 오후 3시 / 체크아웃 : 오전 11시</p>
+								<p class="txt">- 온천 및 22시까지 무제한 라면, 술, 음료 제공</p>
+								<p class="txt">- 옥상에 야외공원이 있어 야경감상 가능</p>
+							</div>
+
+							<div class="btn-wrap">
+								<p class="star">평점 4.3</p>
+								<a href="https://maps.app.goo.gl/cWFRjVWxrkYrL6ad8" target="_blank" title="새창으로 열기" class="map btn-txt">구글맵</a>
+								<button type="button" class="toggle-count"><span class="count">0</span></button>
+							</div>
+						</li>
+
+						<li class="swiper-slide">
+							<div class="detail-visual">
+								<p class="number">2</p>
+
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="visual">
+											<img src="https://storage.489ban.net/storage/img/120/0/334903.webp?1681697211" alt="">
+										</div>
+									</div>
+		
+								</div>
+							</div>
+
+							<div class="txt-wrap">
+								<p class="name">후시오 카쿠 온센 (최저가 40,200엔)</p>
+								
+								<p class="loaction">오사카 이케다 후시오쵸 (셔틀버스 운행)</p>
+								<p class="desc">체크인 : 오후 3시 / 체크아웃 : 오전 10시</p>
+								<p class="txt">- 온천 료칸</p>
+							</div>
+
+							<div class="btn-wrap">
+								<p class="star">평점 3.9</p>
+								<a href="https://maps.app.goo.gl/SRSuKfBpT6j5MbnWA" target="_blank" title="새창으로 열기" class="map btn-txt">구글맵</a>
+								<button type="button" class="toggle-count"><span class="count">0</span></button>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- // detail-list -->
+
+				<div class="travel sleep info-travel">
+					<!-- 지도로 연결시켜버릴까 -->
+					<!-- 숙소 확정되면 노출 -->
+					<a href="" class="btn-link">
+						<p class="tit">첫째날 숙소</p>
+						<p class="desc">숙박날짜 : 2025-03-22 (토)</p>
+						<p class="name">아직 예정된 예약일정이 없습니다.</p>
+						<!-- <p class="desc">숙박비 : 총 / 인당</p>
+						<p class="desc">체크인 : 00시 / 체크아웃 : 00시</p> -->
+					</a>
+
+					<a href="" class="btn-link">
+						<p class="tit">둘째날 숙소</p>
+						<p class="desc">숙박날짜 : 2025-03-23 (일)</p>
+						<p class="name">아직 예정된 예약일정이 없습니다.</p>
+						<!-- <p class="desc">숙박비 : 총 / 인당</p>
+						<p class="desc">체크인 : 00시 / 체크아웃 : 00시</p> -->
+					</a>
+
+					<a href="" class="btn-link">
+						<p class="tit">셋째날 숙소</p>
+						<p class="desc">숙박날짜 : 2025-03-24 (월)</p>
+						<p class="name">아직 예정된 예약일정이 없습니다.</p>
+						<!-- <p class="desc">숙박비 : 총 / 인당</p>
+						<p class="desc">체크인 : 00시 / 체크아웃 : 00시</p> -->
+					</a>
+				</div>
+			</div>
+
+			<div class="depth-2">
+				<p class="title-3">예매 정보</p>
+				
+				<div class="travel reserved info-travel">
+					<!-- 패스 정보로 이동 -->
+					<a href="" class="btn-link pass">
+						<p class="tit">오사카 기본 교통카드</p>
+					</a>
+					<a href="" class="btn-link pass">
+						<p class="tit">오사카 e-Pass</p>
+					</a>
+					<a href="" class="btn-link pass">
+						<p class="tit">한큐패스</p>
+					</a>
+					<a href="" class="btn-link pass">
+						<p class="tit">오사카 e-Pass</p>
+					</a>
+					<a href="" class="btn-link pass">
+						<p class="tit">간사이 스루 패스 (Kansai Thru Pass)</p>
+					</a>
+					<a href="" class="btn-link pass">
+						<p class="tit">JR 간사이 미니 패스</p>
+					</a>
+					<a href="" class="btn-link pass">
+						<p class="tit">JR 간사이 와이드 패스</p>
+					</a>
+					<a href="" class="btn-link pass">
+						<p class="tit">한신 패스</p>
+					</a>
+					<a href="" class="btn-link pass">
+						<p class="tit">게이한 패스</p>
+					</a>
+					<a href="" class="btn-link">
+						<p class="tit">유니버셜 스튜디오 오사카</p>
+					</a>
+				</div>
+			</div>
+
+
+			<div class="depth-2">
+				<div class="title-wrap">
+					<p class="title-3">여행 꿀팁</p>
+					<a href="./여행정보_여행꿀팁.html" class="info btn-txt"><span class="ico-glasses"></span>더 많은 여행꿀팁 한눈에 확인하기</a>
+				</div>
+
+
+				<div class="box-window">
+					<!-- info-travel -->
+					<div class="travel tip info-travel">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="https://www.skyscanner.co.kr/transport/flights/sela/kix?adultsv2=1&cabinclass=economy&childrenv2=&inboundaltsenabled=false&iym=&outboundaltsenabled=false&oym=2410&preferdirects=false&rtn=0&selectedoday=01" target="_blank" title="새창으로 열림" class="btn-link">
+									<p class="tit">스카이 스캐너 항공권 가격 한눈에 확인하기</p>
+								</a>
+							</div>
+	
+							<div class="swiper-slide">
+								<a href="https://support.google.com/maps/answer/6291838?hl=ko&co=GENIE.Platform%3DAndroid" target="_blank" title="새창으로 열림" class="btn-link">
+									<p class="tit">구글 지도 오프라인 저장</p>
+								</a>
+							</div>
+	
+							<div class="swiper-slide">
+								<a href="https://blog.naver.com/trouble_every/223305254967" target="_blank" title="새창으로 열림" class="btn-link">
+									<p class="tit">트레블 월렛 카드 해외 결제수수료 무료</p>
+								</a>
+							</div>
+	
+							<div class="swiper-slide">
+								<a href="https://blog.naver.com/bintorynim/222967739227" target="_blank" title="새창으로 열림" class="btn-link">
+									<p class="tit">일본 편의점보다 마트가 저렴한 경우</p>
+									<p class="desc">마감세일 (저녁 8시 이후) 20~50% 할인</p>
+									<p class="desc">스시, 사시미 구입시 간장, 와사비, 생강을 반드시 챙길것</p>
+									<p class="desc">젓가락을 따로 챙겨야하는 곳, 점원이 계산하면서 몇개 필요한지 물어보는곳이 있습니다. (젓가락 = 오하시 / 하시오하시 / 하시)</p>
+								</a>
+							</div>
+	
+							<div class="swiper-slide">
+								<a href="./여행정보_여행꿀팁.html" class="btn-link">
+									<p class="tit">일본 편의점 주의사항</p>
+									<p class="desc">결제시 바닥 라인따라 줄서서 결제</p>
+								</a>
+							</div>
+	
+							<div class="swiper-slide">
+								<a href="https://m.youtube.com/shorts/J-yZFYNezfQ" target="_blank" title="새창으로 열림" class="btn-link">
+									<p class="tit">일본 편의점 오뎅 구매법</p>
+								</a>
+							</div>
+	
+							<div class="swiper-slide">
+								<a href="./여행정보_여행꿀팁.html" class="btn-link">
+									<p class="tit">주의해야할 발음 / 단어</p>
+									<p class="desc">헬스 (헤르스) : 성매매업소 / 헬스장은 '지무' 라고 합니다</p>
+								</a>
+							</div>
+	
+							<div class="swiper-slide">
+								<a href="https://mememedia.co.kr/overseas/article/48906/" target="_blank" title="새창으로 열기" class="btn-link">
+									<p class="tit">Infomation Center 주의 (무료안내소)</p>
+									<p class="desc">무료 안내소는 성매매알선업소입니다.</p>
+									<p class="desc">관광객들은 관광 안내소를 찾아가야합니다.</p>
+								</a>
+							</div>
+	
+							<div class="swiper-slide">
+								<a href="./여행정보_여행꿀팁.html" class="btn-link">
+									<p class="tit">비짓재팬웹 등록 (입국심사)</p>
+									<p class="desc">이점 : 입국심사 간소화 / 신속한 통과</p>
+									<p class="desc">필요한 서류 : 항공권, 여권, 이메일 주소, 일본 내 체류 주소</p>
+								</a>
+							</div>
+	
+							<div class="swiper-slide">
+								<a href="./여행정보_여행꿀팁.html" class="btn-link">
+									<p class="tit">돈키호테 / TAX FREE 구매시 주의사항</p>
+									<p class="desc">한국 입국전까지 구매시 밀봉되어 포장하는 TAX FREE 또는 많은 물품 구매시 고의적 이중결제를 하는 일본인이 있을 수 있습니다.</p>
+									<p class="desc">구매 목록 / 금액(총금액) 은 꼭 계산 전 적어두고 계산후 받은 영수증을 그 자리에서 확인해주세요.</p>
+									<p class="desc">TAX FREE로 구입한 상품들은 일본 국내에서 사용할 수 없습니다. (밀봉)</p>
+								</a>
+							</div>
+	
+							<div class="swiper-slide">
+								<a href="./여행정보_여행꿀팁.html" class="btn-link">
+									<p class="tit">호텔 내 온천이나 사우나 주의사항</p>
+								</a>
+							</div>
+	
+							<div class="swiper-slide">
+								<a href="./여행정보_여행꿀팁.html" class="btn-link">
+									<p class="tit">택시 탑승시 주의사항</p>
+									<p class="desc">택시 번호판 : 영업용 번호판은 초록색 / 허가받지 않은 택시 흰색</p>
+									<p class="desc">금액 : 굉장히 비싸기때문에 택시 이용은 지양한다.</p>
+									<p class="desc">뒷문 자동개폐 : 승하차 시 기사가 문을 조작해줄때까지 대기 / 조수석은 직접 열고 닫아야한다.</p>
+								</a>
+							</div>
+	
+							<div class="swiper-slide">
+								<a href="./여행정보_여행꿀팁.html" class="btn-link">
+									<p class="tit">식당/이자카야 이용 시 주의사항</p>
+								</a>
+							</div>
+	
+						</div>
+					</div>
+					<!-- // info-travel -->
+				</div>
+				
+
+
+
+			</div>
+
+		</div>
+		<!-- //section -->
+	</div>
+	<!-- // container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="copy">&copy; 2024 KIM SEUNGYEON. all rights reserved.</p>
+	</footer>
+	<!-- // footer -->
+
+
+</body>
+</html>
