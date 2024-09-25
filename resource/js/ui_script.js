@@ -1,115 +1,93 @@
 
 
 
+
+
+
+
+
+
+
+
 $(function(){
-	var ip = "";
-	var hostname = "";
-	var city = "";
-	var region = "";
-	var country = "";
-	var loc = "";
-	var org = "";
 
-	$.getJSON("http://ipinfo.io", function(data) {
-			ip = data.ip // 접속자 ip
-			hostname = data.hostname // 접속자 hostname
-			city = data.city // 접속자 도시
-			region = data.region // 접속자 지역
-			country = data.country // 접속자 국가
-			loc = data.loc // 접속 위도, 경도
-			org = data.org // ISP (인터넷 서비스 제공사업자)
-
-
-			// console.log(ip)
-
-	// toggle count
-	const my_ip = ip;
-	$('.detail-list .toggle-count').on('click', function() {
-		
-		// localStorage.clear();
-		var count = 0;
-		// let countReset = 0;
-		// console.log(localStorage.getItem(my_ip))
-		// console.log(ip)
-		// console.log($(this).parents('li').find('.name').text())
-		if (!$(this).hasClass('check') && localStorage.getItem(my_ip) == null) {
-			console.log(my_ip)
-			$(this).addClass('check').text(count + 1).attr('title','추천됨');
-			count = $(this).children('.count').text();
-			localStorage.setItem(my_ip,$(this).parents('li').find('.name').text());
-		} else {
-			// console.log(count)
-			$(this).removeClass('check').children('.count').text(count);
-			localStorage.removeItem(my_ip);
-		}
-
-
-
-		
-	})
-
-	
-	// var index=0;
-	// var aKeyName = localStorage.getItem(my_ip);
-	for (var i = 0; i < localStorage.length; i++) {
-		console.log(localStorage.getItem(localStorage.key(i)));
-		var aKeyName = localStorage.key(i);
-		console.log(aKeyName)
-			if (ip == aKeyName) {
-				alert('dlTdma')
-
-				$('.toggle-count').each(function(index) {
-					if ($(this).parents('li').find('.name').eq(index).text() == localStorage.getItem(my_ip)) {
-						$(this).addClass('check').attr('title','추천됨').children('.count').text(localStorage.length)
-					}
-
-				})
-				// $(this).addClass('check').text(count + 1).attr({
-				// 	title: '추천됨'
-				// });
-			}
+	// 총 건수 설정
+	if ($('.list-control').length) {
+		$('.list-control').each(function() {
+			const list = $(this).siblings('.detail-list').children('ul').children('li');
+			$(this).find('.num').text(list.length);
+		});
 	}
-	// for (var i = 0; i<aKeyName.length; i++) {
-	// 	console.log(aKeyName.length)
-	// 	console.log(ip)
-		
-	// }
 
 	
-	// localStorage.clear();
+	// 목록 (기본순 / 추천순)정렬 스크립트
+	// 제어하려는 목록
+	function appendList (myList, item) {
+		$.each(item, function(i, li){
+			myList.append(li);
+		});
+	}
 
-			// if(country == "KR"){
-			// 		console.log(data);
-			// 		$("#kr").show();
-			// }else if(country == "US"){
-			// 		console.log(data);
-			// 		$("#us").show();
-			// }else if(country == "CN"){
-			// 		console.log(data);
-			// 		$("#cn").show();
-			// }else if(country == "JP"){
-			// 		console.log(data);
-			// 		$("#jp").show();
-			// }
+	// 추천순
+	function setDetailListSortUp (myList) {
+		var detailListItem = myList.children('li').get();
+		detailListItem.sort(function(a,b){ 
+			var keyA = Number($(a).find('.count').text()); // 작은숫자
+			var keyB = Number($(b).find('.count').text()); // 큰숫자
+			// console.log(keyB < keyA) // true
+			// a가 아래 b 가 위
+			if (keyB > keyA) return 1;
+			if (keyB < keyA) return -1;
+			return 0;
+		});
+
+		appendList(myList, detailListItem);
+	}
+	
+	// 기본순
+	function setDetailListSortDown (myList) {
+		var detailListItem = myList.children('li').get();
+		detailListItem.sort(function(a,b){ 
+			var keyA = Number($(a).find('.count').text());
+			var keyB = Number($(b).find('.count').text());
+			if (keyB > keyA) return -1;
+			if (keyB < keyA) return 1;
+			return 0;
+		});
+
+		appendList(myList, detailListItem);
+	}
+
+	
+		
+	// 목록 정렬 버튼
+	$(document).on('click', '.list-control .btn-layer', function() {
+		const setUl = $(this).parents('.list-control').siblings('.detail-list').children('ul');
+		// 버튼 효과
+		$(this).addClass('active').attr('title','선택됨').siblings('.btn-layer').removeClass('active').removeAttr('title');
+		
+		// 추천순 : 기본순
+		$(this).hasClass('layer-best') ? setDetailListSortUp(setUl) : setDetailListSortDown(setUl);
+		
 	});
 
-// // HTML의 <script> 요소를 생성한다
-// const se = document.createElement('script');
-// // <script> 요소의 src 속성을 설정한다
-// se.src = 'https://ipinfo.io?callback=callback';
-// // <body> 요소의 하위 끝에 붙인다
-// // 그리고 콜백 함수를 호출한다
-// document.body.appendChild(se);
-// // 앞서 생성한 <script> 요소를 제거한다
-// document.body.removeChild(se);
-
-// // 콜백 함수가 호출된다
-// function callback(data) {
-// 	console.log(data.ip)
-// }
-// callback()
-
-	// console.log(data.ip)
+	// 여행정보 메인화면 숙소정보 목록정렬
+	if ($('.detail-list').hasClass('info-travel')) {
+		const setUl = $('.detail-list.info-travel > ul');
+		setDetailListSortUp(setUl);
+	}
+	
+	
+	
+	// $('.detail-list .toggle-count').on('click', function() {
+	// 	var count = 0;
+	// 	if (!$(this).hasClass('check')) {
+	// 		$(this).addClass('check').children('.count').text(count + 1).attr('title','추천됨');
+	// 		count = $(this).children('.count').text();
+	// 	} else {
+	// 		$(this).removeClass('check').children('.count').text(count);
+	// 	}
+	// })
 
 	// 공지사항 swiper
 	const alertListSwiper = new Swiper('.notice-visual', {
@@ -224,17 +202,18 @@ $(function(){
 	});
 	
 	// 아코디언 - lnb
-	$(window).on('resize', function() {
-		if ($(window).width() < 921 && $('.lnb.accordion').length) {
+	if ($('.lnb.accordion').length) {
+		
+		$(window).on('resize', function() {
+			if ($(window).width() < 921) {
+				$('.lnb .acc-cont').css('display', 'none').parent('li').removeClass('on');
+			} else {
+				$('.lnb.accordion > ul > li').find('.active').parent('li').addClass('on').find('.acc-cont').slideDown(150).parent('li').siblings().removeClass('on').find('.acc-cont').slideUp(150);
+			}
+		});
+		if ($(window).width() < 921) {
 			$('.lnb .acc-cont').css('display', 'none').parent('li').removeClass('on');
-		} else {
-			$('.lnb.accordion > ul > li').find('.active').parent('li').addClass('on').find('.acc-cont').slideDown(150).parent('li').siblings().removeClass('on').find('.acc-cont').slideUp(150);
-		}
-	});
-	if ($(window).width() < 921 && $('.lnb.accordion').length) {
-		$('.lnb .acc-cont').css('display', 'none').parent('li').removeClass('on');
-	} else {
-		// $('.lnb.accordion > li').find('.active').parent('li').addClass('on').find('.acc-cont').slideDown(150);
+		} 
 	}
 
 	// 아코디언 동시오픈 가능
@@ -255,7 +234,5 @@ $(function(){
 		$tabCont.attr('tabindex','0').removeAttr('hidden').siblings('.tab-cont').attr({tabindex: '-1', hidden: 'hidden'});
 	})
 
-
-	
 
 });

@@ -15,7 +15,6 @@
 <script src="./resource/js/jquery-3.7.1.js"></script>
 <script src="./resource/js/jquery.easing.1.4.1.js"></script>
 <script src="./resource/js/swiper-bundle.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="./resource/js/ui_script.js" defer></script>
 </head>
 <body>
@@ -71,7 +70,7 @@
 		</div>
 		
 		<!-- section -->
-		<section class="depth-1">
+		<div class="depth-1">
 			<div class="infomation-wrap">
 				<p class="title">
 					안녕하세요 <em>여행자</em>님,<br>
@@ -111,8 +110,8 @@
 					<p class="count">총 <em class="num">0</em>건</p>
 					
 					<div class="btn-wrap">
-						<button type="button" class="btn-layer active">기본순</button>
-						<button type="button" class="btn-layer">추천순</button>
+						<button type="button" class="btn-layer layer-default active" title="선택됨">기본순</button>
+						<button type="button" class="btn-layer layer-best">추천순</button>
 					</div>
 				</div>
 
@@ -244,14 +243,14 @@
 							<div class="btn-wrap">
 								<p class="star">평점 3.9</p>
 								<a href="https://maps.app.goo.gl/SRSuKfBpT6j5MbnWA" target="_blank" title="새창으로 열기" class="map btn-txt">구글맵</a>
-								<button type="button" class="toggle-count"><span class="count">0</span></button>
+								<button type="button" class="toggle-count"><span class="count">1</span></button>
 							</div>
 						</li>
 					</ul>
 				</div>
 
 			</div>
-		</section>
+		</div>
 		<!-- //section -->
 	</div>
 	<!-- // container -->

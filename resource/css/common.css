@@ -132,7 +132,7 @@ header .allmenu .btn-allmenu-close {position:absolute; right:20px; top:24px;widt
 }
 
 /* 서브페이지 레이아웃 */
-.lnb-wrap {width:250px;}
+.lnb-wrap {width:100%; max-width:190px;}
 .lnb-wrap .page-title {font-size:21px; color:#1d1d1d;}
 .lnb-wrap .lnb li .btn-toggle,
 .lnb-wrap .lnb li.on .btn-toggle {padding:8px 50px 8px 20px; color:#1d1d1d; font-weight:700; border:1px solid #ccc; background-color:#fff; background-image:url('../image/common/plus.png');}
@@ -213,10 +213,9 @@ a.title-3:hover:after {transform:rotate(90deg);}
 .list-control .count .num {font-weight:700; color:#2e6fe9;}
 .list-control .btn-wrap {flex-shrink:0; display:inline-flex; margin-left:16px;}
 .list-control .btn-wrap .btn-layer {margin:0 4px 0 0; padding:4px; border-radius:4px; border:1px solid #ccc; background-color:#fff; transition:background .4s;}
+.list-control .btn-wrap .btn-layer:last-child {margin:0;}
 .list-control .btn-wrap .btn-layer.active {color:#fff; border-color:#2e6fe9; background-color:#2e6fe9;}
 .list-control .btn-wrap .btn-layer:hover {border-color:#2e6fe9;}
-
-
 
 /* box-alert */
 .box-alert {margin-bottom:16px;}
@@ -586,9 +585,14 @@ a.title-3 + .travel .btn-link {background-image:none;}
 .detail-list li .btn-wrap .star {padding-left:18px; font-size:15px; background:url('../image/common/star.png') no-repeat center left; background-size:14px auto;}
 .detail-list li .btn-wrap .map {display:inline-block; margin-bottom:auto; padding-left:18px; font-size:15px; color:#1d1d1d; font-weight:700; background-image:url('../image/common/location.png'); background-repeat:no-repeat; background-position:center left 2px; background-size:10px auto;}
 .detail-list li .btn-wrap .star + .map {margin-top:12px;}
-.detail-list li .btn-wrap .toggle-count {margin-top:8px; padding:4px 8px 4px 30px; font-size:15px; border-radius:8px; border:1px solid #fff; background:#ffc3d2 url('../image/common/like.png') no-repeat center left 8px; background-size:16px auto; transition:.3s;}
+
+/* 좋아요기능 구현 못함 */
+.detail-list li .btn-wrap .toggle-count {margin-top:8px; padding:0 0 0 18px; font-size:15px; background:#fff url('../image/common/like-fill.png') no-repeat center left; background-size:16px auto; transition:.3s; cursor:default;}
+.detail-list li .btn-wrap .toggle-count .count {display:inline-block; width:18px; vertical-align:middle;}
+/* .detail-list li .btn-wrap .toggle-count.check {background:#fff url('../image/common/like-fill.png') no-repeat center left; background-size:16px auto;} */
+/* .detail-list li .btn-wrap .toggle-count {margin-top:8px; padding:4px 8px 4px 30px; font-size:15px; border-radius:8px; border:1px solid #fff; background:#ffc3d2 url('../image/common/like.png') no-repeat center left 8px; background-size:16px auto; transition:.3s;}
 .detail-list li .btn-wrap .toggle-count.check {background:#ffc3d2 url('../image/common/like-fill.png') no-repeat center left 8px; background-size:16px auto;}
-.detail-list li .btn-wrap .toggle-count:hover {border-color:#ff1b54;}
+.detail-list li .btn-wrap .toggle-count:hover {border-color:#ff1b54;} */
 
 .detail-visual {overflow:hidden; flex-shrink:0; position:relative; width:300px; height:200px; padding:0; border-radius:8px;}
 .detail-visual .number {position:absolute; left:10px; top:15px; z-index:2; width:25px; height:25px; margin:0; color:#fff; font-size:15px; font-weight:700; text-align:center; border-radius:100%; border:1px solid #fff; background-color:#2e6fe9;}
@@ -597,7 +601,7 @@ a.title-3 + .travel .btn-link {background-image:none;}
 
 @media (max-width:1200px) {
 	.detail-list ul li {flex-wrap:wrap; position:relative;}
-	.detail-list li .btn-wrap {position:absolute; right:0; top:16px; height:200px;}
+	.detail-list li .btn-wrap {position:absolute; right:0; top:24px; height:200px;}
 	.detail-visual {width:calc(100% - 100px); border-radius:0;}
 	.detail-visual .swiper-slide {width:300px;}
 	.detail-visual .visual {width:300px; height:100%; border-radius:8px;}
@@ -612,7 +616,8 @@ a.title-3 + .travel .btn-link {background-image:none;}
 	.detail-list li .btn-wrap {order:1; flex-direction:row; align-items:center; position:static; width:100%; height:auto;}
 	.detail-list li .btn-wrap .star {order:2; margin-left:auto; margin-right:8px;}
 	.detail-list li .btn-wrap .map {order:3; margin:0 !important;}
-	.detail-list li .btn-wrap .toggle-count {order:0; margin:0; font-size:15px;padding:4px 4px 4px 30px; background-position:left 4px center;}
+	.detail-list li .btn-wrap .toggle-count {order:0; margin:0;}
+	/* .detail-list li .btn-wrap .toggle-count {order:0; margin:0; font-size:15px;padding:4px 4px 4px 30px; background-position:left 4px center;} */
 }
 
 /* .detail-visual .visual */
@@ -704,7 +709,6 @@ a.title-3 + .travel .btn-link {background-image:none;}
 
 
 /* 여행지별 관광지 */
-.tab-cont .detail-list > ul > li:first-child {padding-top:0; border-top:none;}
 .tour-detail ul > li .btn-toggle + .acc-cont {border-bottom:none;}
 .tour-detail ul > li .acc-cont .btn-txt {margin-right:8px;}
 .tour-detail ul > li .acc-cont .btn-txt:last-child {margin-right:0;}
