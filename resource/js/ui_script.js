@@ -295,9 +295,6 @@ $(function(){
 		breakpoints: {
         
 			700: {
-				autoplay: {
-					enabled: false
-				},
 				slidesPerView: 2,
 			},
 			920: {
