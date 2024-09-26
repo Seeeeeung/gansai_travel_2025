@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>안내사항 | 항공편 정보 | 여행정보 | 2025 간사이 여행</title>
+<title>2025 간사이 여행</title>
 
 <link rel="stylesheet" type="text/css" href="./resource/css/import.css">
 <link rel="icon" href="./resource/image/common/favicon.png">
@@ -15,6 +15,7 @@
 <script src="./resource/js/jquery.easing.1.4.1.js"></script>
 <script src="./resource/js/swiper-bundle.js"></script>
 <script src="./resource/js/ui_script.js" defer></script>
+<script src="./resource/js/ui_tree.js" defer></script>
 </head>
 <body>
 
@@ -64,15 +65,12 @@
 	<!-- container -->
 	<div class="container">
 		<div class="lnb-wrap">
-			<h2 class="page-title">여행 정보</h2>
-
-			<div class="lnb accordion">
-			</div>
+			<h2 class="page-title"><a href="">여행 정보</a></h2>
 		</div>
 
-		<!-- section -->
-		 <section class="depth-1 boarding-info">
-			<h2 class="title">안내사항</h2>
+		<!-- inner-wrap -->
+		 <div class="inner-wrap boarding-info">
+			<h2 class="title" id="page-title">안내사항</h2>
 
 			
 			<div class="box-alert right">
@@ -80,8 +78,8 @@
 			</div>
 			
 
-			<div class="depth-2">
-				<p class="title-3">주의 및 안내</p>
+			<section class="contents">
+				<h3 class="title-3">주의 및 안내</h3>
 				
 				<p class="title-4">이스타 항공</p>
 				<ul class="list-alert">
@@ -96,12 +94,12 @@
 					<li>탑승 수속시에는 체크인 코드 혹은 예약 번호가 필요합니다. 반드시 인쇄한 것이나, 휴대 전화의 여정표 화면을 준비 해 주십시오. (체크인 코드 부분이 접히거나, 비 등 물에 젖으면 올바르게 인식할 수 없는 경우가 있으므로 주의해 주십시오)</li>
 					<li>체크인 카운터나 도착 게이트는, 기존의 항공 회사와 다른 경우가 있으므로, 반드시 사전에 확인하신 후, 시간에 여유를 갖고 와 주시기 바랍니다. 또한, 정시 출발을 위해 지정된 시간 내에 탑승 수속 및 수하물을 위탁해 주시길 바랍니다.</li>
 				</ul>
-			</div>
+			</section>
 			
 
-			<div class="depth-2">
+			<section class="contents">
 				<div class="title-wrap">
-					<p class="title-3">기내반입 안내</p>
+					<h3 class="title-3">기내반입 안내</h3>
 					<a href="https://www.avsec365.or.kr/" target="_blank" title="새창으로 열기" class="btn-txt info"><span class="ico-window"></span>서울 항공보안 365</a>
 				</div>
 				
@@ -150,10 +148,10 @@
 					</li>
 				</ul>
 
-			</div>
+			</section>
 
-			<div class="depth-2">
-				<p class="title-3">위탁수화문 안내</p>
+			<section class="contents">
+				<h3 class="title-3">위탁수화문 안내</h3>
 				
 				<p class="title-4">이스타 항공</p>
 				<ul class="list-fly">
@@ -183,10 +181,10 @@
 					</li>
 				</ul>
 
-			</div>
+			</section>
 
-			<div class="depth-2">
-				<p class="title-3">수화물 파손 안내</p>
+			<section class="contents">
+				<h3 class="title-3">수화물 파손 안내</h3>
 				
 				<p class="title-4">이스타 항공</p>
 				<ul class="list-fly">
@@ -213,10 +211,10 @@
 					</li>
 				</ul>
 
-			</div>
+			</section>
 
-		 </section>
-		<!-- //section -->
+		 </div>
+		<!-- // inner-wrap -->
 
 
 

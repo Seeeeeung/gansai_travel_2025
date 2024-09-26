@@ -1,15 +1,93 @@
-
-
-
-
-
-
-
-
-
-
-
 $(function(){
+
+	// page url 체크 후 lnb action 제어
+	const pageUrl = (decodeURIComponent(window.location.href));
+	const pageTitle = pageUrl.split('/').reverse()[0];	
+	
+	// 페이지 타이틀 메인
+	const pageHeadTitle = $('html head title');
+	pageHeadTitle.text('2025 간사이 여행');
+	
+	// gnb 연동
+	$('header').append(gnb);
+	const gnb_list = $('header .inner-wrap > .gnb > ul');
+	$.each(gnb_tree, function() {
+		gnb_list.append(`<li><a href="${$(this)[1]}">${$(this)[0]}</a></li>`);
+		
+	})
+
+
+	// lnb 추가
+	if ($('.lnb-wrap').length) {
+		const lnb_wrap = $('.lnb-wrap');
+		const lnb_tit = lnb_wrap.children('.page-title');
+		
+		// lnb link href 설정
+		function setLnbMenu (lnb_idx) {
+			const lnb_menu = lnb_wrap.children('.lnb').find('a');
+
+			$.each(gnb_tree[lnb_idx][2], function() {
+				lnb_menu.each(function(index, e) {
+					$(this).attr('href' , gnb_tree[lnb_idx][2][index]);
+
+					// lnb 활성화
+					if (`./${pageTitle}` == $(this).attr('href')){
+						$(this).parent('li').addClass('on');
+						$(this).hasClass('link') ? $(this).addClass('active').attr('title','현재 페이지').parents('li').addClass('on') : $(this).parents('li').addClass('on').children().addClass('active').attr('title','현재 페이지');
+					}
+
+					// 콘텐츠 타이틀 연동
+					const contTit = $('#page-title');
+					if ($(this).hasClass('active')) contTit.text($(this).text());
+
+				});
+			});
+		}
+
+
+		// lnb 추가 / 제어
+		$.each(gnb_tree, function(index, e) {
+			if (lnb_tit.text() == gnb_tree[index][0]) {
+				// header gnb 현재페이지 표시
+				if (gnb_tree[index][1] == $('header .gnb a').eq(index).attr('href')) $('header .gnb a').eq(index).attr('title','현재페이지').parent('li').addClass('on');
+
+				// page-title href 설정
+				lnb_tit.find('a').attr('href', gnb_tree[index][1]);
+
+				// lnb 추가
+				lnb_wrap.append(lnb[index]);
+				// lnb link href 설정
+				setLnbMenu(index);
+			}
+		});
+		
+		// 헤드 페이지 타이틀 설정
+		const depth_1 = lnb_tit.text();
+		const depth_2 = $('.lnb > ul > li > .active').eq(0).text();
+		const depth_3_chk = $('.lnb .acc-cont .on');
+		const depth_3 = depth_3_chk.text();
+		if ($(lnb_wrap).find('.on').length) {
+			// 2depth
+			pageHeadTitle.text(`${depth_2} | ${lnb_tit.text()} | 2025 간사이 여행`);
+			// 3depth
+			if (depth_3_chk.length) pageHeadTitle.text(`${depth_3} | ${depth_2} | ${lnb_tit.text()} | 2025 간사이 여행`);
+		} else {
+			// 1depth
+			pageHeadTitle.text(`${depth_1} | 2025 간사이 여행`);
+		}
+
+	}
+
+	// 여행 예매정보 링크이동
+	if ($('.infomation-wrap').length) {
+		const pageInfo = $('.infomation-wrap .reserved .btn-link');
+		$.each(reserved_info, function(index, e) {
+			pageInfo.each(function() {
+				const _this = $(this);
+				if (_this.hasClass(reserved_info[index])) _this.attr('href' , reserved_link[index])
+			})
+		});
+	}
 
 	// 총 건수 설정
 	if ($('.list-control').length) {
@@ -101,7 +179,7 @@ $(function(){
 		},
 	});
 	// 꼭 가야할 맛집 swiper
-	const foodListSwiper = new Swiper('.food-visual', {
+	const foodListSwiper = new Swiper('.main .food-visual', {
 		loop: true,
 		speed : 600,
 		simulateTouch : true,
@@ -111,7 +189,7 @@ $(function(){
 		},
 	});
 	// 숙소정보 swiper
-	const sleepListSwiper = new Swiper('.detail-visual', {
+	const sleepListSwiper = new Swiper('.detail-list:not(.info-travel) .detail-visual', {
 		// loop: true,
 		// loopedSlides: 1,
 		speed : 600,
@@ -162,6 +240,20 @@ $(function(){
 		},
 	});
 
+	// 관광지 메인 비주얼 swiper
+	const tourVisualSwiper = new Swiper('.tourist-wrap', {
+		loop: true,
+		effect: 'fade',
+		loopedSlides: 1,
+		speed : 500,
+		simulateTouch : true,
+		// spaceBetween:'20px',
+		autoplay: {
+			delay: 3000,
+			pauseOnMouseEnter : true,
+			disableOnInteraction: false,
+		},
+	});
 	// 관광지 swiper
 	const tourListSwiper = new Swiper('.box-human .left-travel', {
 		direction: 'vertical',
@@ -181,7 +273,67 @@ $(function(){
 		},
 	});
 
+	// 맛집추천 swiper
+	const foodBestSwiper = new Swiper('.food.info-travel', {
+		// loop: true,
+		speed : 600,
+		slidesPerView: 1,
+		centeredSlides: false,
+		spaceBetween:'24px',
+		simulateTouch : true,
+		observer: true,
+		observeParents: true,
+		autoplay: {
+			enabled:true,
+			delay: 3000,
+			pauseOnMouseEnter : true,
+		},
+		navigation : {
+			nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+			prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+		},
+		breakpoints: {
+        
+			700: {
+				autoplay: {
+					enabled: false
+				},
+				slidesPerView: 2,
+			},
+			920: {
+				slidesPerView: 1,
+			},
+			1000: {
+				slidesPerView: 2,
+			},
+		},
+	});
 
+
+	// $(window).on('resize', function() {
+	// 	if ($(window.width()) > 699) foodBestSwiper.autoplay.stop()
+	// })
+
+
+
+
+
+
+
+	// 관광지 한눈에보기 animation
+	if ($('.tourist-wrap').length) {
+		let slider_index = 0;
+		function accentSlideSet(){
+			const _target = $('.tourist-wrap .swiper-slide-active .list-img li');
+			_target.removeClass('on');
+			_target.eq(slider_index).addClass('on');
+			slider_index++;
+
+			if(slider_index >= _target.length) slider_index= 0;
+		}
+		
+		setInterval(accentSlideSet, 500);
+	}
 	
 	// 아코디언
 	$(document).on('click', '.accordion:not(.open) .btn-toggle', function(e) {

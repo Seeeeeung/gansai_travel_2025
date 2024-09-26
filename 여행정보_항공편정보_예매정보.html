@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>예매정보 | 항공편 정보 | 여행정보 | 2025 간사이 여행</title>
+<title>2025 간사이 여행</title>
 
 <link rel="stylesheet" type="text/css" href="./resource/css/import.css">
 <link rel="icon" href="./resource/image/common/favicon.png">
@@ -15,6 +15,7 @@
 <script src="./resource/js/jquery.easing.1.4.1.js"></script>
 <script src="./resource/js/swiper-bundle.js"></script>
 <script src="./resource/js/ui_script.js" defer></script>
+<script src="./resource/js/ui_tree.js" defer></script>
 </head>
 <body>
 
@@ -64,14 +65,11 @@
 	<!-- container -->
 	<div class="container">
 		<div class="lnb-wrap">
-			<h2 class="page-title">여행 정보</h2>
-
-			<div class="lnb accordion">
-			</div>
+			<h2 class="page-title"><a href="">여행 정보</a></h2>
 		</div>
 
-		<!-- section -->
-		<div class="depth-1">
+		<!-- inner-wrap -->
+		<div class="inner-wrap">
 			<div class="infomation-wrap">
 				<p class="title">
 					안녕하세요 <em>여행자</em>님,<br>
@@ -80,20 +78,19 @@
 
 
 				<div class="travel reserved">
-					<!-- 해당 정보로 이동 -->
-					<a href="./여행정보_항공편정보_예매정보.html" class="btn-link fly">
+					<a href="" class="btn-link fly">
 						<p class="tit">항공권 예매</p>
 						<p class="desc"><em>2</em>건</p>
 					</a>
-					<a href="./여행정보_숙소정보_예매정보.html" class="btn-link sleep">
+					<a href="" class="btn-link sleep">
 						<p class="tit">숙소 예매</p>
 						<p class="desc"><em>0</em>건</p>
 					</a>
-					<a href="./여행정보_예매정보_교통패스예매.html" class="btn-link pass">
+					<a href="" class="btn-link pass">
 						<p class="tit">교통패스</p>
 						<p class="desc"><em>0</em>건</p>
 					</a>
-					<a href="./여행정보_예매정보_관광지티켓예매.html" class="btn-link">
+					<a href="" class="btn-link ticket">
 						<p class="tit">관광지 티켓</p>
 						<p class="desc"><em>0</em>건</p>
 					</a>
@@ -105,9 +102,9 @@
 				<p class="info"><span class="ico-alert"></span>해당 항공편은 변경될 수 있습니다.</p>
 			</div>
 
-			<div class="depth-2">
+			<section class="contents">
 				<div class="title-wrap">
-					<p class="title-3">일본 여행가는날 항공편</p>
+					<h3 class="title-3">일본 여행가는날 항공편</h3>
 					<a href="https://www.eastarjet.com/newstar/PGWHB00003" target="_blank" title="새창으로 열기" class="info btn-txt"><span class="ico-window"></span>이스타항공 예약확인/변경 사이트 가기</a>
 				</div>
 				
@@ -180,11 +177,11 @@
 				</div>
 				<!-- // accordion -->
 
-			</div>
+			</section>
 
-			<div class="depth-2">
+			<section class="contents">
 				<div class="title-wrap">
-					<p class="title-3">한국 돌아가는날 항공편</p>
+					<h3 class="title-3">한국 돌아가는날 항공편</h3>
 					<a href="https://manage.flypeach.com/kr/manage/retrieve-booking?_gl=1*1uh5cix*_gcl_au*MjExMTg5MTQ5Ny4xNzI2MTQ0MjMy" target="_blank" title="새창으로 열기" class="info btn-txt"><span class="ico-window"></span>피치항공 예약확인/변경 사이트 가기</a>
 				</div>
 				
@@ -257,10 +254,10 @@
 				</div>
 				<!-- // accordion -->
 
-			</div>
+			</se>
 
 		</div>
-		<!-- //section -->
+		<!-- //inner-wrap -->
 
 
 

@@ -15,85 +15,12 @@
 <script src="./resource/js/jquery.easing.1.4.1.js"></script>
 <script src="./resource/js/swiper-bundle.js"></script>
 <script src="./resource/js/ui_script.js" defer></script>
+<script src="./resource/js/ui_tree.js" defer></script>
 </head>
 <body class="main">
 
 	<!-- header -->
 	<header>
-		<div class="wrap">
-			<h1 class="logo"><a href=""><span class="sr-only">2025 간사이 여행</span></a></h1>
-	
-			<nav class="gnb">
-				<ul>
-					<li><a href="">여행 정보</a></li>
-					<li><a href="">관광지</a></li>
-					<li><a href="">식당</a></li>
-					<li><a href="">카페 &amp; 디저트</a></li>
-					<li><a href="">이것 어떠세요옹</a></li>
-				</ul>
-			</nav>
-	
-			<button type="button" class="btn-allmenu"><span class="sr-only">전체메뉴 열기</span></button>
-			<div class="allmenu">
-				<div class="allmenu-list">
-					<p class="tit">전체메뉴</p>
-					<ul>
-						<li>
-							<a href="">여행 정보</a>
-							<ul class="depth-2">
-								<li><a href="">항공편 정보</a></li>
-								<li><a href="">숙소 정보</a></li>
-								<li><a href="">교통 정보</a></li>
-								<li><a href="">여행 꿀팁</a></li>
-							</ul>
-						</li>
-		
-						<li>
-							<a href="">여행지</a>
-							<ul class="depth-2">
-								<li><a href="">오사카</a></li>
-								<li><a href="">나라</a></li>
-								<li><a href="">교토</a></li>
-								<li><a href="">이와지마</a></li>
-								<li><a href="">고베</a></li>
-								<li><a href="">한혐 식당 정보</a></li>
-							</ul>
-						</li>
-		
-						<li>
-							<a href="">식당</a>
-							<ul class="depth-2">
-								<li><a href="">여행지별 식당</a></li>
-								<li><a href="">카테고리별 식당</a></li>
-							</ul>
-						</li>
-		
-						<li>
-							<a href="">카페 &amp; 디저트</a>
-							<ul class="depth-2">
-								<li><a href="">여행지별 카페</a></li>
-							</ul>
-						</li>
-		
-						<li>
-							<a href="">이것 어떠세요옹</a>
-							<ul class="depth-2">
-								<li><a href="">약 &amp; 생활용품</a></li>
-								<li><a href="">간식류</a></li>
-								<li><a href="">아이스크림</a></li>
-								<li><a href="">푸딩</a></li>
-								<li><a href="">컵라면</a></li>
-								<li><a href="">음료수</a></li>
-								<li><a href="">술</a></li>
-								<li><a href="">소스</a></li>
-							</ul>
-						</li>
-					</ul>
-	
-					<button type="button" class="btn-allmenu-close"><span class="sr-only">전체메뉴 닫기</span></button>
-				</div>
-			</div>
-		</div>
 	</header>
 	<!-- // header -->
 	
@@ -137,8 +64,8 @@
 	<div class="container">
 
 
-		<!-- section -->
-		<section class="depth-1">
+		<!-- inner-wrap-->
+		<section class="inner-wrap">
 			<h2 class="title">두근두근 우리의 첫 일본여행 in 간사이</h2>
 			
 			<div class="box-alert right">
@@ -146,7 +73,7 @@
 			</div>
 
 			<div class="flex-wrap info">
-				<div class="depth-2">
+				<div class="contents">
 					<!-- 항공편 정보 페이지로 이동 -->
 					<a href="./info_fly.html" class="title-3">항공편 정보를 확인해보세요</a>
 					
@@ -174,7 +101,7 @@
 					</div>
 				</div>
 
-				<div class="depth-2">
+				<div class="contents">
 					<!-- <p class="title-3">우리가 묵을 숙소는 어디일까요</p> -->
 
 					<!-- 미확정시 노출 / 숙소정보 페이지로 이동 -->
@@ -218,7 +145,7 @@
 					</div>
 				</div>
 				
-				<div class="depth-2">
+				<div class="contents">
 					<p class="title-3">예매정보 확인하기</p>
 					
 					<div class="travel reserved">
@@ -246,7 +173,7 @@
 					</div>
 				</div>
 
-				<div class="depth-2">
+				<div class="contents">
 					<!-- 여행꿀팁 화면으로이동 -->
 					<a href="./여행정보_여행꿀팁.html" class="title-3">여행 꿀팁</a>
 					
@@ -269,11 +196,11 @@
 				</div>
 			</div>
 		</section>
-		<!-- //section -->
+		<!-- // inner-wrap-->
 
 
-		<!-- section -->
-		<section class="depth-1">
+		<!-- inner-wrap-->
+		<section class="inner-wrap">
 			<h2 class="title">제일 맛집인 곳은 어디일까요?</h2><!-- 식당 -->
 			
 			<div class="box-alert right">
@@ -281,7 +208,7 @@
 			</div>
 
 			<div class="flex-wrap food">
-				<div class="depth-2">
+				<div class="wrap">
 					<p class="tit">대게회 (회)</p><!-- 종류 -->
 					
 					<!-- food-visual -->
@@ -310,7 +237,7 @@
 							</div>
 
 							<div class="swiper-slide">
-								<a href="" class="food center">
+								<a href="" class="food">
 									<img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/8b4d4f9b-74c3-4d31-a712-bd89f7f06e3c.jpeg" alt="와카사야 난카이 (카이센동)">
 									<div class="text-wrap">
 										<p class="name">와카사야 난카이</p>
@@ -368,7 +295,7 @@
 					<!-- // food-visual -->
 				</div>
 
-				<div class="depth-2">
+				<div class="wrap">
 					<p class="tit">몬자야끼 / 오코노미야끼</p><!-- 종류 -->
 					
 					<!-- food-visual -->
@@ -387,7 +314,7 @@
 							</div>
 
 							<div class="swiper-slide">
-								<a href="" class="food top">
+								<a href="" class="food">
 									<img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/fb96579e-2fa3-4e42-b20d-f9627669624c.jpeg" alt="후쿠타로 철판야끼">
 									<div class="text-wrap">
 										<p class="name">후쿠타로</p>
@@ -397,7 +324,7 @@
 							</div>
 
 							<div class="swiper-slide">
-								<a href="" class="food top">
+								<a href="" class="food">
 									<img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/02475b8e-565a-4727-9f67-b35d126ad63c.jpeg" alt="오카루">
 									<div class="text-wrap">
 										<p class="name">오코노미야키 오카루</p>
@@ -419,7 +346,7 @@
 							</div>
 
 							<div class="swiper-slide">
-								<a href="" class="food top">
+								<a href="" class="food">
 									<img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/2f58e634-acdb-4a1f-a7ef-ea1a4cab9458.jpeg" alt="유카리">
 									<div class="text-wrap">
 										<p class="name">유카리</p>
@@ -467,7 +394,7 @@
 					<!-- // food-visual -->
 				</div>
 
-				<div class="depth-2">
+				<div class="wrap">
 					<p class="tit">야끼니꾸(우설)</p><!-- 종류 -->
 					
 					<!-- food-visual -->
@@ -575,7 +502,7 @@
 					<!-- // food-visual -->
 				</div>
 
-				<div class="depth-2">
+				<div class="wrap">
 					<p class="tit">이자카야</p>
 					
 					<!-- food-visual -->
@@ -597,7 +524,7 @@
 					<!-- // food-visual -->
 				</div>
 
-				<div class="depth-2">
+				<div class="wrap">
 					<p class="tit">라멘</p>
 					
 					<!-- food-visual -->
@@ -729,7 +656,7 @@
 					<!-- // food-visual -->
 				</div>
 
-				<div class="depth-2">
+				<div class="wrap">
 					<p class="tit">덮밥 / 스테이크</p>
 					
 					<!-- food-visual -->
@@ -806,7 +733,7 @@
 					<!-- // food-visual -->
 				</div>
 
-				<div class="depth-2">
+				<div class="wrap">
 					<p class="tit">타코야키</p>
 					
 					<!-- food-visual -->
@@ -838,7 +765,7 @@
 					<!-- // food-visual -->
 				</div>
 
-				<div class="depth-2">
+				<div class="wrap">
 					<p class="tit">카츠 / 카레</p>
 					
 					<!-- food-visual -->
@@ -955,7 +882,7 @@
 			<!-- // accordion -->
 
 		</section>
-		<!-- //section -->
+		<!-- // inner-wrap-->
 	</div>
 	<!-- // container -->
 	

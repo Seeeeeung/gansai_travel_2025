@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>예매 정보 | 숙소 정보 | 여행 정보 | 2025 간사이 여행</title>
+<title>2025 간사이 여행</title>
 
 <link rel="stylesheet" type="text/css" href="./resource/css/import.css">
 <link rel="icon" href="./resource/image/common/favicon.png">
@@ -15,6 +15,7 @@
 <script src="./resource/js/jquery.easing.1.4.1.js"></script>
 <script src="./resource/js/swiper-bundle.js"></script>
 <script src="./resource/js/ui_script.js" defer></script>
+<script src="./resource/js/ui_tree.js" defer></script>
 </head>
 <body>
 
@@ -62,14 +63,11 @@
 	<!-- container -->
 	<div class="container">
 		<div class="lnb-wrap">
-			<h2 class="page-title">여행 정보</h2>
-
-			<div class="lnb accordion">
-			</div>
+			<h2 class="page-title"><a href="">여행 정보</a></h2>
 		</div>
 		
-		<!-- section -->
-		<div class="depth-1">
+		<!-- inner-wrap-->
+		<div class="inner-wrap">
 			<div class="infomation-wrap">
 				<p class="title">
 					안녕하세요 <em>여행자</em>님,<br>
@@ -77,20 +75,19 @@
 				</p>
 
 				<div class="travel reserved">
-					<!-- 해당 정보로 이동 -->
-					<a href="./여행정보_항공편정보_예매정보.html" class="btn-link fly">
+					<a href="" class="btn-link fly">
 						<p class="tit">항공권 예매</p>
 						<p class="desc"><em>2</em>건</p>
 					</a>
-					<a href="./여행정보_숙소정보_예매정보.html" class="btn-link sleep">
+					<a href="" class="btn-link sleep">
 						<p class="tit">숙소 예매</p>
 						<p class="desc"><em>0</em>건</p>
 					</a>
-					<a href="./여행정보_예매정보_교통패스예매.html" class="btn-link pass">
+					<a href="" class="btn-link pass">
 						<p class="tit">교통패스</p>
 						<p class="desc"><em>0</em>건</p>
 					</a>
-					<a href="./여행정보_예매정보_관광지티켓예매.html" class="btn-link">
+					<a href="" class="btn-link ticket">
 						<p class="tit">관광지 티켓</p>
 						<p class="desc"><em>0</em>건</p>
 					</a>
@@ -98,9 +95,9 @@
 
 
 			</div>
-
-			<div class="depth-2">
-				<h3 class="title-3">예매 정보</h3>
+			
+			<section class="contents">
+				<h3 class="title-3" id="page-title">예매 정보</h3>
 				<!-- 예매정보 없는 경우 -->
 				 <div class="no-data">
 					아직 예매된 숙소정보가 없습니다.
@@ -184,9 +181,9 @@
 					 </ul>
 				</div> -->
 
-			</div>
+			</section>
 		</div>
-		<!-- //section -->
+		<!-- // inner-wrap-->
 	</div>
 	<!-- // container -->
 	

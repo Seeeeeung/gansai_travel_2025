@@ -15,6 +15,7 @@
 <script src="./resource/js/jquery.easing.1.4.1.js"></script>
 <script src="./resource/js/swiper-bundle.js"></script>
 <script src="./resource/js/ui_script.js" defer></script>
+<script src="./resource/js/ui_tree.js" defer></script>
 </head>
 <body>
 
@@ -63,50 +64,11 @@
 	<!-- container -->
 	<div class="container">
 		<div class="lnb-wrap">
-			<h2 class="page-title">여행 정보</h2>
-
-			<div class="lnb accordion">
-				<ul>
-					<li>
-						<!-- 작업예정 -->
-						<a href="./여행정보_여행동선.html" class="link"><span>여행 동선</span></a>
-					</li>
-					<li>
-						<button type="button" class="btn-toggle"><span>항공편 정보</span></button>
-						
-						<ul class="acc-cont">
-							<li><a href="./여행정보_항공편정보_예매정보.html" class="depth-3">예매 정보</a></li>
-							<li><a href="./여행정보_항공편정보_안내사항.html" class="depth-3">안내사항</a></li>
-						</ul>
-					</li>
-
-					<li>
-						<button type="button" class="btn-toggle"><span>숙소 정보</span></button>
-						
-						<ul class="acc-cont">
-							<li><a href="./여행정보_숙소정보_추천목록.html" class="depth-3">추천 목록</a></li>
-							<li><a href="./여행정보_숙소정보_예매정보.html" class="depth-3">예매 정보</a></li>
-						</ul>
-					</li>
-
-					<li>
-						<button type="button" class="btn-toggle"><span>예매 정보</span></button>
-						
-						<ul class="acc-cont">
-							<li><a href="./여행정보_예매정보_교통패스예매.html" class="depth-3">교통패스 예매정보</a></li>
-							<li><a href="./여행정보_예매정보_관광지티켓예매.html" class="depth-3">관광지 티켓 예매정보</a></li>
-						</ul>
-					</li>
-
-					<li>
-						<a href="./여행정보_여행꿀팁.html" class="link"><span>여행 꿀팁</span></a>
-					</li>
-				</ul>
-			</div>
+			<h2 class="page-title"><a href="">여행 정보</a></h2>
 		</div>
 		
-		<!-- section -->
-		<div class="depth-1">
+		<!-- inner-wrap-->
+		<div class="inner-wrap">
 			<div class="infomation-wrap">
 				<p class="title">
 					안녕하세요 <em>여행자</em>님,<br>
@@ -114,20 +76,19 @@
 				</p>
 
 				<div class="travel reserved">
-					<!-- 해당 정보로 이동 -->
-					<a href="./여행정보_항공편정보_예매정보.html" class="btn-link fly">
+					<a href="" class="btn-link fly">
 						<p class="tit">항공권 예매</p>
 						<p class="desc"><em>2</em>건</p>
 					</a>
-					<a href="./여행정보_숙소정보_예매정보.html" class="btn-link sleep">
+					<a href="" class="btn-link sleep">
 						<p class="tit">숙소 예매</p>
 						<p class="desc"><em>0</em>건</p>
 					</a>
-					<a href="./여행정보_예매정보_교통패스예매.html" class="btn-link pass">
+					<a href="" class="btn-link pass">
 						<p class="tit">교통패스</p>
 						<p class="desc"><em>0</em>건</p>
 					</a>
-					<a href="./여행정보_예매정보_관광지티켓예매.html" class="btn-link">
+					<a href="" class="btn-link ticket">
 						<p class="tit">관광지 티켓</p>
 						<p class="desc"><em>0</em>건</p>
 					</a>
@@ -135,8 +96,8 @@
 
 			</div>
 
-			<div class="depth-2">
-				<p class="title-3">항공편 정보</p>
+			<section class="contents">
+				<h3 class="title-3">항공편 정보</h3>
 				
 				<!-- accordion -->
 				<div class="accordion fly">
@@ -270,11 +231,11 @@
 				</div>
 				<!-- // accordion -->
 
-			</div>
+			</section>
 
-			<div class="depth-2">
+			<section class="contents">
 				<div class="title-wrap">
-					<p class="title-3">숙소 정보</p>
+					<h3 class="title-3">숙소 정보</h3>
 					<a href="./여행정보_숙소정보_추천목록.html" class="info btn-txt"><span class="ico-glasses"></span>더 많은 추천숙소 한눈에 확인하기</a>
 				</div>
 
@@ -284,31 +245,9 @@
 						<li class="swiper-slide">
 							
 							<div class="detail-visual">
-								<p class="number">1</p>
-
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="visual">
-											<img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270232802.jpg?k=bc62c76b2c4ac93e7f19be5b80cec7d105998f4b876e3f950126eb3f8e3cfd7b&o=&hp=1" alt="">
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="visual">
-											<img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270232802.jpg?k=bc62c76b2c4ac93e7f19be5b80cec7d105998f4b876e3f950126eb3f8e3cfd7b&o=&hp=1" alt="">
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="visual">
-											<img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270232802.jpg?k=bc62c76b2c4ac93e7f19be5b80cec7d105998f4b876e3f950126eb3f8e3cfd7b&o=&hp=1" alt="">
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="visual">
-											<img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270232802.jpg?k=bc62c76b2c4ac93e7f19be5b80cec7d105998f4b876e3f950126eb3f8e3cfd7b&o=&hp=1" alt="">
-										</div>
-									</div>
+								<div class="visual">
+									<img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/270232802.jpg?k=bc62c76b2c4ac93e7f19be5b80cec7d105998f4b876e3f950126eb3f8e3cfd7b&o=&hp=1" alt="">
 								</div>
-
 							</div>
 
 							<div class="txt-wrap">
@@ -329,7 +268,7 @@
 
 						<li class="swiper-slide">
 							<div class="detail-visual">
-								<p class="number">2</p>
+								<!-- <p class="number">2</p> -->
 
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
@@ -352,7 +291,7 @@
 							<div class="btn-wrap">
 								<p class="star">평점 3.9</p>
 								<a href="https://maps.app.goo.gl/SRSuKfBpT6j5MbnWA" target="_blank" title="새창으로 열기" class="map btn-txt">구글맵</a>
-								<button type="button" class="toggle-count"><span class="count">0</span></button>
+								<button type="button" class="toggle-count"><span class="count">1</span></button>
 							</div>
 						</li>
 					</ul>
@@ -386,10 +325,10 @@
 						<p class="desc">체크인 : 00시 / 체크아웃 : 00시</p> -->
 					</a>
 				</div>
-			</div>
+			</section>
 
-			<div class="depth-2">
-				<p class="title-3">예매 정보</p>
+			<section class="contents">
+				<h3 class="title-3">예매 정보</h3>
 				
 				<div class="travel reserved info-travel">
 					<!-- 패스 정보로 이동 -->
@@ -424,12 +363,12 @@
 						<p class="tit">유니버셜 스튜디오 오사카</p>
 					</a>
 				</div>
-			</div>
+			</section>
 
 
-			<div class="depth-2">
+			<section class="contents">
 				<div class="title-wrap">
-					<p class="title-3">여행 꿀팁</p>
+					<h3 class="title-3">여행 꿀팁</h3>
 					<a href="./여행정보_여행꿀팁.html" class="info btn-txt"><span class="ico-glasses"></span>더 많은 여행꿀팁 한눈에 확인하기</a>
 				</div>
 
@@ -539,10 +478,10 @@
 
 
 
-			</div>
+			</section>
 
 		</div>
-		<!-- //section -->
+		<!-- // inner-wrap-->
 	</div>
 	<!-- // container -->
 	

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>지역별 관광지 | 관광지 정보 | 관광지 | 2025 간사이 여행</title>
+<title>2025 간사이 여행</title>
 
 <link rel="stylesheet" type="text/css" href="./resource/css/import.css">
 <link rel="icon" href="./resource/image/common/favicon.png">
@@ -15,6 +15,7 @@
 <script src="./resource/js/jquery.easing.1.4.1.js"></script>
 <script src="./resource/js/swiper-bundle.js"></script>
 <script src="./resource/js/ui_script.js" defer></script>
+<script src="./resource/js/ui_tree.js" defer></script>
 </head>
 <body>
 
@@ -63,14 +64,11 @@
 	<!-- container -->
 	<div class="container">
 		<div class="lnb-wrap">
-			<h2 class="page-title">관광지</h2>
-
-			<div class="lnb accordion">
-			</div>
+			<h2 class="page-title"><a href="">관광지</a></h2>
 		</div>
 		
-		<!-- section -->
-		<div class="depth-1">
+		<!-- inner-wrap -->
+		<div class="inner-wrap">
 			<!-- infomation-wrap -->
 			 <!-- 스와이퍼 넣을예정 / 인기많은 컨텐츠 순위 스와이퍼 -->
 			<div class="best-tour">
@@ -83,13 +81,13 @@
 			</div>
 			<!-- // infomation-wrap -->
 
-			<div class="depth-2">
-				<p class="title-3">지역별 관광지</p>
-								
+			<section class="contents">
+				<h3 class="title-3" id="page-title">지역별 관광지</h3>
+				
 				<div class="box-alert right">
 					<p class="info"><span class="ico-alert"></span>확정된 관광지가 아니며 확정시 상세 동선이 업로드 될 예정입니다.</p>
 				</div>
-				
+
 				<!-- tab-area -->
 				<div class="tab-area full">
 					<ul class="tab-list" role="tablist">
@@ -134,19 +132,19 @@
 												<div class="swiper-wrapper">
 													<div class="swiper-slide">
 														<div class="visual">
-															<img src="https://lh3.googleusercontent.com/p/AF1QipNdkrliQCyHs3uXIL6rN_GPrYC8nTQGifkMYdDm=s680-w680-h510" alt="">
+															<img src="https://lh3.googleusercontent.com/p/AF1QipNdkrliQCyHs3uXIL6rN_GPrYC8nTQGifkMYdDm=s680-w680-h510" alt="린쿠타운 외관">
 														</div>
 													</div>
 
 													<div class="swiper-slide">
 														<div class="visual">
-															<img src="https://lh3.googleusercontent.com/p/AF1QipNmo6b7WHBgaL-G3qwFVQAS0voMNzM34KrBVIfK=s680-w680-h510" alt="">
+															<img src="https://lh3.googleusercontent.com/p/AF1QipNmo6b7WHBgaL-G3qwFVQAS0voMNzM34KrBVIfK=s680-w680-h510" alt="린쿠타운 내관 전경">
 														</div>
 													</div>
 
 													<div class="swiper-slide">
 														<div class="visual">
-															<img src="https://lh3.googleusercontent.com/p/AF1QipNznck2bsDSFiFLU_gcjP7tedNWOxn-dz0-gOFe=s680-w680-h510" alt="">
+															<img src="https://lh3.googleusercontent.com/p/AF1QipNznck2bsDSFiFLU_gcjP7tedNWOxn-dz0-gOFe=s680-w680-h510" alt="린쿠타운 전경">
 														</div>
 													</div>
 
@@ -720,9 +718,9 @@
 											</div>
 
 											<div class="txt-wrap">
-												<p class="name">오사카 우메다 나니와노유 온천</p>
+												<p class="name">나니와노유 온천</p>
 												
-												<p class="loaction">다니마치, 사카이스지 선 덴진바시스지 로쿠초메 역 5번출구에서 도보 8분</p>
+												<p class="loaction">오사카 우메다 다니마치, 사카이스지 선 덴진바시스지 로쿠초메 역 5번출구에서 도보 8분</p>
 					
 												<div class="accordion tour-detail">
 													<ul>
@@ -3303,10 +3301,10 @@
 				<!-- //tab-area --> 
 
 
-			</div>
+			</section>
 
 		</div>
-		<!-- //section -->
+		<!-- //inner-wrap -->
 	</div>
 	<!-- // container -->
 	
