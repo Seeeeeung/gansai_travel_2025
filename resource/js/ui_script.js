@@ -56,6 +56,7 @@ $(function(){
 
 				// lnb 추가
 				lnb_wrap.append(lnb[index]);
+
 				// lnb link href 설정
 				setLnbMenu(index);
 			}
@@ -161,7 +162,7 @@ $(function(){
 		const bestTour = $('.best-tour');
 		const _target = $('.best-tour .swiper-wrapper');
 		const tourList = bestTour.siblings('.contents').find('.detail-list > ul > li');
-		const tourList_length = bestTour.siblings('.contents').find('.detail-list > ul > li').length;
+		const tourList_length = bestTour.siblings('.contents').find('.detail-list > ul > li').length - 3;
 		_target.append(tourList.eq(Math.floor(Math.random()*tourList_length)).addClass('swiper-slide'));
 	}
 	
@@ -273,15 +274,12 @@ $(function(){
 		effect: 'fade',
 		speed : 600,
 		simulateTouch : true,
-		slidesPerView: 2.2,
+		slidesPerView: 1,
 		spaceBetween:'20px',
 		autoplay: {
 			delay: 1000,
 			pauseOnMouseEnter : true,
 			disableOnInteraction: false,
-		},
-		mousewheel: {
-			sensitivity: .4,
 		},
 	});
 	// 금주 인기장소 이미지 swiper
@@ -289,6 +287,8 @@ $(function(){
 		// direction: 'vertical',
 		loop: true,
 		loopedSlides: 1,
+		observer: true,
+		observeParents: true,
 		// effect: 'fade',
 		speed : 600,
 		simulateTouch : true,
@@ -297,7 +297,23 @@ $(function(){
 		autoplay: {
 			delay: 1000,
 			pauseOnMouseEnter : true,
-			disableOnInteraction: false,
+		},
+	});
+	// 꼭먹어야할 메뉴 swiper
+	const noticeMenuSwiper = new Swiper('.menu-swiper', {
+		direction: 'vertical',
+		loop: true,
+		loopedSlides: 1,
+		observer: true,
+		observeParents: true,
+		// effect: 'fade',
+		speed : 600,
+		simulateTouch : true,
+		slidesPerView: 1,
+		spaceBetween:'20px',
+		autoplay: {
+			delay: 1000,
+			pauseOnMouseEnter : true,
 		},
 	});
 

@@ -232,6 +232,52 @@ const lnb = [
 			</li>
 		</ul>
 	</div>
+
+	
+	<!-- notice visual -->
+	<div class="notice-menu">
+		<p class="tit">꼭 먹어야할 메뉴</p>
+
+		<div class="menu-swiper">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide">
+					<p class="number">1</p>
+					<p class="txt">대게회</p>
+				</li>
+
+				<li class="swiper-slide">
+					<p class="number">2</p>
+					<p class="txt">우설</p>
+				</li>
+
+				<li class="swiper-slide">
+					<p class="number">3</p>
+					<p class="txt">몬자야끼</p>
+				</li>
+
+				<li class="swiper-slide">
+					<p class="number">4</p>
+					<p class="txt">당고</p>
+				</li>
+
+				<li class="swiper-slide">
+					<p class="number">5</p>
+					<p class="txt">고베규</p>
+				</li>
+
+				<li class="swiper-slide">
+					<p class="number">6</p>
+					<p class="txt">라멘</p>
+				</li>
+
+				<li class="swiper-slide">
+					<p class="number">7</p>
+					<p class="txt">타코야끼</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- // notice visual -->
 `
 ,
 
