@@ -154,8 +154,19 @@ $(function(){
 		const setUl = $('.detail-list.info-travel > ul');
 		setDetailListSortUp(setUl);
 	}
+
+
+	// 관광지 금주의 인기장소
+	if ($('.best-tour').length) {
+		const bestTour = $('.best-tour');
+		const _target = $('.best-tour .swiper-wrapper');
+		const tourList = bestTour.siblings('.contents').find('.detail-list > ul > li');
+		const tourList_length = bestTour.siblings('.contents').find('.detail-list > ul > li').length;
+		_target.append(tourList.eq(Math.floor(Math.random()*tourList_length)).addClass('swiper-slide'));
+	}
 	
 	
+
 	
 	// $('.detail-list .toggle-count').on('click', function() {
 	// 	var count = 0;
@@ -254,11 +265,12 @@ $(function(){
 			disableOnInteraction: false,
 		},
 	});
-	// 관광지 swiper
-	const tourListSwiper = new Swiper('.box-human .left-travel', {
-		direction: 'vertical',
+	// 금주 인기장소 swiper
+	const bestTourListSwiper = new Swiper('.best-tour', {
+		// direction: 'vertical',
 		// loop: true,
-		loopedSlides: 1,
+		// loopedSlides: 1,
+		effect: 'fade',
 		speed : 600,
 		simulateTouch : true,
 		slidesPerView: 2.2,
@@ -270,6 +282,22 @@ $(function(){
 		},
 		mousewheel: {
 			sensitivity: .4,
+		},
+	});
+	// 금주 인기장소 이미지 swiper
+	const bestTourImgtSwiper = new Swiper('.best-tour .detail-visual', {
+		// direction: 'vertical',
+		loop: true,
+		loopedSlides: 1,
+		// effect: 'fade',
+		speed : 600,
+		simulateTouch : true,
+		slidesPerView: 1,
+		spaceBetween:'20px',
+		autoplay: {
+			delay: 1000,
+			pauseOnMouseEnter : true,
+			disableOnInteraction: false,
 		},
 	});
 

@@ -351,11 +351,11 @@ a.title-3:hover:after {transform:rotate(90deg);}
 
 
 /* 스와이퍼 */
-.btn-arrow {width:35px; height:35px; background-color:rgba(255,255,255,0.8); border-radius:35px; transition:.3s;;}
-.btn-arrow:hover {background-color:rgba(255,255,255,1);}
-.btn-arrow:after {position:absolute; left:0; top:0; content:''; width:35px; height:35px; background:url('../image/common/btn-arrow.png') no-repeat center;}
+.btn-arrow {top:calc(50% - 17.5px); width:35px; height:35px; margin-top:0; background-color:#fff; border-radius:35px; transition:.3s;;}
+.btn-arrow:hover {box-shadow:0 0 5px #9a9a9a;}
+.btn-arrow:after {position:absolute; left:0; top:0; content:''; width:35px; height:35px; background:url('../image/common/arrow_line.png') no-repeat center; background-size:35px auto;}
 .swiper-button-prev:after {transform:scale(-1);}
-/* .swiper-button-next */
+
 
 
 /* tab */
@@ -603,7 +603,6 @@ a.title-3 + .travel .btn-link {background-image:none;}
 .detail-list li .btn-wrap .toggle-count:hover {border-color:#ff1b54;} */
 
 .detail-visual {overflow:hidden; flex-shrink:0; position:relative; width:300px; height:200px; padding:0; border-radius:8px;}
-.detail-visual .number {position:absolute; left:10px; top:15px; z-index:2; width:25px; height:25px; margin:0; color:#fff; font-size:15px; font-weight:700; text-align:center; border-radius:100%; border:1px solid #fff; background-color:#2e6fe9;}
 .detail-visual .visual {overflow:hidden; height:200px;}
 .detail-visual .visual img {width:100%; height:100%;}
 
@@ -692,6 +691,41 @@ a.title-3 + .travel .btn-link {background-image:none;}
 
 /* 관광지
 ========================================================================== */
+.best-tour {position:relative; padding:30px; background-color: #ddd; border-radius:12px;}
+.best-tour .number {position:absolute; left:30px; top:-15px; z-index:2; width:35px; height:35px; margin:0; color:#eab529; font-size:20px; font-weight:700; text-align:center; border-radius:100%; border:3px solid #eab529; background-color:#fff;}
+.best-tour .number:before {display:block; content:''; position:absolute; left:-6px; top:-32px; width:40px; height:40px; background:url('../image/common/king.png') no-repeat center; background-size:40px auto; animation:movingKing alternate infinite .4s;}
+@keyframes movingKing {
+	to {transform:scale(1.1);}
+}
+.best-tour .swiper-slide {border:none !important; padding:0;}
+.best-tour .detail-visual {width:70%; height:350px; border-radius:0;}
+.best-tour .detail-visual .visual {height:100%;}
+.best-tour .detail-visual .visual img {transform:scale(1.1);}
+.best-tour.detail-list li {flex-wrap:nowrap;}
+.best-tour.detail-list li .swiper-slide,
+.best-tour.detail-list li .swiper-slide .visual {width:100%;}
+.best-tour.detail-list li .txt-wrap {justify-content:flex-end; align-items:flex-end; padding-top:30px;}
+.best-tour.detail-list li .txt-wrap * {word-break:keep-all; text-align:right;}
+.best-tour.detail-list li .txt-wrap .name {font-size:24px;}
+.best-tour.detail-list li .txt-wrap p:last-of-type {margin-bottom:0;}
+.best-tour.detail-list li .txt-wrap .tour-detail {display:none;}
+.best-tour.detail-list li .btn-wrap {position:absolute; right:0; top:0;}
+.best-tour.detail-list li .toggle-count {display:none;}
+@media (max-width:700px) {
+	.best-tour {padding:20px;}
+	.best-tour .number {top:50px;}
+	.best-tour.detail-list li .txt-wrap {padding-top:0;}
+}
+@media (max-width:500px) {
+	.best-tour .detail-visual {width:100%;}
+	.best-tour.detail-list li .txt-wrap {position:absolute; bottom:0; right:0; z-index:2; padding:16px; background-color:rgba(255,255,255,0.8);}
+	.best-tour.detail-list li .txt-wrap .name {margin-bottom:16px;}
+	.best-tour.detail-list li .txt-wrap .location {font-size:17px;}
+	.best-tour.detail-list li .btn-wrap {z-index:3; right:16px; top:16px;}
+	.best-tour.detail-list li .btn-wrap .map {background-color:rgba(255,255,255,0.5);}
+	.best-tour.detail-list li .btn-wrap .map:hover {background-color:#eee;}
+}
+
 .tourist-wrap {overflow:hidden; width:100%; height:200px;}
 .tourist-wrap .visual {position:relative;}
 .tourist-wrap .visual .list-img {display:flex; flex-wrap:wrap; width:100%;}
@@ -747,9 +781,6 @@ a.title-3 + .travel .btn-link {background-image:none;}
 /* 식당
 ========================================================================== */
 .food-swiper {position:relative; height:300px; padding:0 25px;}
-.flex-wrap.food.info-travel .btn-arrow {top:calc(50% - 17.5px); margin-top:0; background-color:#fff}
-.flex-wrap.food.info-travel .btn-arrow:hover {box-shadow:0 0 5px #9a9a9a;}
-.flex-wrap.food.info-travel .btn-arrow:after {background:url('../image/common/arrow_line.png') no-repeat center; background-size:35px auto;}
 .flex-wrap.food.info-travel .swiper-button-prev {left:0;}
 .flex-wrap.food.info-travel .swiper-button-next {right:0;}
 
