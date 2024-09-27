@@ -99,7 +99,7 @@ $(function(){
 	}
 
 	
-	// 목록 (기본순 / 추천순)정렬 스크립트
+	// 목록 (기본순 / 찜한순)정렬 스크립트
 	// 제어하려는 목록
 	function appendList (myList, item) {
 		$.each(item, function(i, li){
@@ -107,10 +107,9 @@ $(function(){
 		});
 	}
 
-	// 추천순
-	function setDetailListSortUp (myList) {
-		var detailListItem = myList.children('li').get();
-		detailListItem.sort(function(a,b){ 
+	// 찜한순
+	function setDetailListSortUp (myList, item) {
+		item.sort(function(a,b){ 
 			var keyA = Number($(a).find('.count').text()); // 작은숫자
 			var keyB = Number($(b).find('.count').text()); // 큰숫자
 			// console.log(keyB < keyA) // true
@@ -120,13 +119,12 @@ $(function(){
 			return 0;
 		});
 
-		appendList(myList, detailListItem);
+		appendList(myList, item);
 	}
 	
 	// 기본순
-	function setDetailListSortDown (myList) {
-		var detailListItem = myList.children('li').get();
-		detailListItem.sort(function(a,b){ 
+	function setDetailListSortDown (myList, item) {
+		item.sort(function(a,b){ 
 			var keyA = Number($(a).find('.count').text());
 			var keyB = Number($(b).find('.count').text());
 			if (keyB > keyA) return -1;
@@ -134,7 +132,7 @@ $(function(){
 			return 0;
 		});
 
-		appendList(myList, detailListItem);
+		appendList(myList, item);
 	}
 
 	
@@ -142,11 +140,12 @@ $(function(){
 	// 목록 정렬 버튼
 	$(document).on('click', '.list-control .btn-layer', function() {
 		const setUl = $(this).parents('.list-control').siblings('.detail-list').children('ul');
+		const detailListItem = setUl.children('li').get();
 		// 버튼 효과
 		$(this).addClass('active').attr('title','선택됨').siblings('.btn-layer').removeClass('active').removeAttr('title');
 		
-		// 추천순 : 기본순
-		$(this).hasClass('layer-best') ? setDetailListSortUp(setUl) : setDetailListSortDown(setUl);
+		// 찜한순 : 기본순
+		$(this).hasClass('layer-best') ? setDetailListSortUp(setUl, detailListItem) : setDetailListSortDown(setUl, detailListItem);
 		
 	});
 
@@ -163,7 +162,7 @@ $(function(){
 		const _target = $('.best-tour .swiper-wrapper');
 		const tourList = bestTour.siblings('.contents').find('.detail-list > ul > li');
 		const tourList_length = bestTour.siblings('.contents').find('.detail-list > ul > li').length - 3;
-		_target.append(tourList.eq(Math.floor(Math.random()*tourList_length)).addClass('swiper-slide'));
+		_target.html(tourList.eq(Math.floor(Math.random()*tourList_length)).addClass('swiper-slide'));
 	}
 	
 	
