@@ -17,6 +17,9 @@ $(function(){
 	})
 
 
+	// 공지사항 추가
+	$('.notice-visual').append(notice);
+
 	// lnb 추가
 	if ($('.lnb-wrap').length) {
 		const lnb_wrap = $('.lnb-wrap');
@@ -122,20 +125,34 @@ $(function(){
 		appendList(myList, item);
 	}
 	
-	// 기본순
-	function setDetailListSortDown (myList, item) {
+
+	// 평점순
+	function setDetailListSortStar (myList, item) {
 		item.sort(function(a,b){ 
-			var keyA = Number($(a).find('.count').text());
-			var keyB = Number($(b).find('.count').text());
-			if (keyB > keyA) return -1;
-			if (keyB < keyA) return 1;
+			var keyA = Number($(a).find('.star').text().split(' ')[1]); // 작은숫자
+			var keyB = Number($(b).find('.star').text().split(' ')[1]); // 큰숫자
+			// console.log(keyB < keyA) // true
+			// a가 아래 b 가 위
+			if (keyB > keyA) return 1;
+			if (keyB < keyA) return -1;
 			return 0;
 		});
 
 		appendList(myList, item);
 	}
-
 	
+	// 기본정렬 저장 / 기본순 버튼 클릭시 노출
+	const detailList = $('.detail-list');
+	detailList.each(function() {
+		const targetList = $(this).children('ul').children('li');
+		$('.list-control .btn-layer.layer-default').on('click', function() {
+			$.each(targetList, function(i, li){
+				targetList.parent('ul').append(li);
+			});
+		});
+	})
+
+
 		
 	// 목록 정렬 버튼
 	$(document).on('click', '.list-control .btn-layer', function() {
@@ -145,14 +162,16 @@ $(function(){
 		$(this).addClass('active').attr('title','선택됨').siblings('.btn-layer').removeClass('active').removeAttr('title');
 		
 		// 찜한순 : 기본순
-		$(this).hasClass('layer-best') ? setDetailListSortUp(setUl, detailListItem) : setDetailListSortDown(setUl, detailListItem);
+		if ($(this).hasClass('layer-best') ) setDetailListSortUp(setUl, detailListItem);
+		if ($(this).hasClass('layer-star') ) setDetailListSortStar(setUl, detailListItem);
 		
 	});
 
 	// 여행정보 메인화면 숙소정보 목록정렬
 	if ($('.detail-list').hasClass('info-travel')) {
 		const setUl = $('.detail-list.info-travel > ul');
-		setDetailListSortUp(setUl);
+		const setItem = $('.detail-list.info-travel > ul > li');
+		setDetailListSortUp(setUl, setItem);
 	}
 
 

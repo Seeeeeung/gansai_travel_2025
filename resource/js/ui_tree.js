@@ -284,6 +284,41 @@ const lnb = [
 ]
 
 
+const notice = [
+	`
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+			<div class="notice">
+				<p class="tit">공지사항 제목</p>
+				<p class="txt">공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용</p>
+			</div>
+		</div>
+
+		<div class="swiper-slide">
+			<div class="notice">
+				<p class="tit">공지사항 제목</p>
+				<p class="txt">공지사항 내용</p>
+			</div>
+		</div>
+
+		<div class="swiper-slide">
+			<div class="notice">
+				<p class="tit">공지사항 제목</p>
+				<p class="txt">공지사항 내용</p>
+			</div>
+		</div>
+
+		<div class="swiper-slide">
+			<div class="notice">
+				<p class="tit">공지사항 제목</p>
+				<p class="txt">공지사항 내용</p>
+			</div>
+		</div>
+
+	</div>
+	`
+]
+
 // 2뎁스 내부 상단 예약내역 연동
 const reserved_info = ['fly', 'sleep','pass', 'ticket']
 const reserved_link = [
