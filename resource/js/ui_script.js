@@ -36,7 +36,7 @@ $(function(){
 					// lnb 활성화
 					if (`./${pageTitle}` == $(this).attr('href')){
 						$(this).parent('li').addClass('on');
-						$(this).hasClass('link') ? $(this).addClass('active').attr('title','현재 페이지').parents('li').addClass('on') : $(this).parents('li').addClass('on').children().addClass('active').attr('title','현재 페이지');
+						$(this).hasClass('link') ? $(this).addClass('active').attr('title','현재 페이지').parents('li').addClass('on') : $(this).parents('li').addClass('on').children().addClass('active').find('.depth-3.active').attr('title','현재 페이지');
 					}
 
 					// 콘텐츠 타이틀 연동
@@ -102,7 +102,7 @@ $(function(){
 	}
 
 	
-	// 목록 (기본순 / 찜한순)정렬 스크립트
+	// 목록 (기본순 / 추천순 / 평점순)정렬 스크립트
 	// 제어하려는 목록
 	function appendList (myList, item) {
 		$.each(item, function(i, li){
@@ -110,7 +110,7 @@ $(function(){
 		});
 	}
 
-	// 찜한순
+	// 추천순
 	function setDetailListSortUp (myList, item) {
 		item.sort(function(a,b){ 
 			var keyA = Number($(a).find('.count').text()); // 작은숫자
@@ -161,9 +161,10 @@ $(function(){
 		// 버튼 효과
 		$(this).addClass('active').attr('title','선택됨').siblings('.btn-layer').removeClass('active').removeAttr('title');
 		
-		// 찜한순 : 기본순
-		if ($(this).hasClass('layer-best') ) setDetailListSortUp(setUl, detailListItem);
-		if ($(this).hasClass('layer-star') ) setDetailListSortStar(setUl, detailListItem);
+		// 추천순
+		if ($(this).hasClass('layer-best')) setDetailListSortUp(setUl, detailListItem);
+		// 평점순
+		if ($(this).hasClass('layer-star')) setDetailListSortStar(setUl, detailListItem);
 		
 	});
 
