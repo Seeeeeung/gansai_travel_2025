@@ -171,8 +171,9 @@ header .allmenu .btn-allmenu-close {position:absolute; right:20px; top:24px;widt
 }
 
 
-footer {min-width:236px; height:100px; padding:30px 18px 0; color:#fff; text-align:center; background-color:#000;}
-footer .copy {margin:0; font-size:15px;}
+footer {min-width:236px; min-height:140px; padding:30px 18px; color:#fff; text-align:center; background-color:#000;}
+footer p {margin:0; color:#ccc; font-size:15px;}
+footer .copy {color:#fff;}
 
 
 
@@ -182,6 +183,7 @@ footer .copy {margin:0; font-size:15px;}
 
 /* title */
 .container .inner-wrap .title {margin-bottom:60px; color:#1d1d1d; font-size:25px; font-weight:700; text-align:center; word-break:keep-all;}
+.container .inner-wrap .title:first-child {margin-top:0;}
 .container .inner-wrap .contents {margin-top:60px;}
 .container .inner-wrap .contents:first-child {margin-top:0;}
 .container .inner-wrap .contents .title-3 {margin:0 0 24px; color:#1d1d1d; font-size:19px; font-weight:700; word-break:keep-all;}
@@ -360,7 +362,7 @@ a.title-3:hover:after {transform:rotate(90deg);}
 
 /* tab */
 .tab-list {display:flex; gap:8px; margin-bottom:24px;}
-.wrap > .tab-list {flex-wrap:wrap;}
+
 .full > .tab-list > li {width:100%;}
 .full > .tab-list > li > .btn-tab {width:100%;}
 @media (max-width:700px) {
@@ -370,11 +372,13 @@ a.title-3:hover:after {transform:rotate(90deg);}
 
 .tab-list li .btn-tab {display:flex; justify-content:center; align-items:center; padding:15px; font-size:15px; font-weight:700; word-break:keep-all; border:1px solid #ccc; background-color:#fff; transition:.3s;}
 
-.wrap .tab-list li {flex-grow:1; max-width:150px;}
+.wrap > .tab-list {flex-wrap:wrap;}
+.wrap .tab-list li {flex-grow:1; max-width:180px;}
 .wrap .tab-list li .square {width:100%;}
+.wrap > .tab-list li .btn-tab {white-space:nowrap;}
 @media (max-width:700px) {
 	.wrap .tab-list {flex-wrap:nowrap;}
-	.wrap .tab-list li {flex-grow:0; width:150px;}
+	.wrap .tab-list li {flex-grow:0; width:auto;}
 }
 
 
@@ -428,12 +432,8 @@ a.title-3 + .travel .btn-link {background-image:none;}
 
 
 /* 식당 */
-.flex-wrap.food {justify-content:flex-start; gap:12px; margin-top:0; word-break:keep-all;}
+/* .flex-wrap.food {justify-content:flex-start; gap:12px; margin-top:0; word-break:keep-all;}
 .flex-wrap.food .wrap {display:block; position:relative; width:calc(100% / 4 - 12px); height:300px; padding:0; border:none; border-radius:0;}
-.flex-wrap.food .tit {position:absolute; left:10px; top:10px; z-index:1; margin:0; padding:2px 4px; color:#fff; font-size:15px;; border:2px solid #fff; border-radius:8px; background-color:#f6a61d; animation:twinkle-tit infinite alternate .4s;}
-@keyframes twinkle-tit {
-	to {border-color:#ff1b54; background-color:#ff58ec;}
-}
 @media (max-width:1250px) {
 	.flex-wrap.food .wrap {width:calc(100% / 3 - 12px);}
 }
@@ -444,33 +444,65 @@ a.title-3 + .travel .btn-link {background-image:none;}
 	.flex-wrap.food .wrap {width:100%; height:300px;}
 }
 
+*/
 
-.food-visual {overflow:hidden; position:absolute; left:0; top:0; z-index:0; width:100%; height:100%; border-radius:12px;}
-.food-visual .food {overflow:hidden; display:block; position:relative; height:100%;}
-.food-visual .food img {display:block; position:absolute; left:0; top:0; width:100%; height:100%; transition:.4s ease-in-out;}
-/* .food-visual .food.center img {left:-30px; top:0; width:120%;}
-.food-visual .food.top img {top:-100px; } */
-.food-visual .food:hover img {transform:scale(1.1);}
+.food-main {overflow:hidden; height:500px;}
+.food-main .food {display:flex; justify-content:space-between; align-items:flex-start; height:100%; color:#1d1d1d;}
+.food-main .food .img-food {opacity:0; overflow:hidden; flex-grow:1; display:block; max-width:700px; height:600px; border-radius:100%; transform:translate(20px, 20px) rotate(15deg); transition:.4s ease-in-out;}
+.food-main .swiper-slide-active .food .img-food {opacity:1; transform:translate(0) rotate(0);}
+.food-main .food .img-food:hover {transform:scale(1.3);}
+.food-main .food .img-food img {width:100%; height:100%;}
+.food-main .food .text-wrap {display:flex; flex-direction:column; align-items:flex-end; margin-left:24px; margin-top:auto; text-align:right; transition:.4s;}
+.food-main .food .img-food:hover + .text-wrap {opacity:.5;}
 
-.food-visual .food .text-wrap {position:absolute; left:0; bottom:0; width:100%; padding:16px 0 0; background-color:rgba(255,255,255,0.8);}
-.food-visual .food .text-wrap p {margin:0; padding:0 20px; color:#1d1d1d;}
-.food-visual .food .text-wrap .name {font-weight:700;}
-
-.food-visual .food .text-wrap .location {position:relative; margin-bottom:16px; padding-left:40px; font-size:15px;}
-.food-visual .food .text-wrap .location:before {display:block; position:absolute; left:20px; top:4px; content:''; width:14px; height:14px; background:url('../image/common/location.png') no-repeat center; background-size:auto 14px;}
-
-.food-visual .food .text-wrap .coment {position:relative; padding:8px 16px 8px 40px; margin:-8px 0 0 0; font-size:15px; background-color:#fbe886;}
-.food-visual .food .text-wrap .coment:before {display:block; position:absolute; left:16px; top:10px; content:''; width:16px; height:16px; background-image:url('../image/common/light.png'); background-repeat:no-repeat; background-position:center; background-size:16px auto; animation:twinkle-icon infinite alternate .2s;}
-
-@keyframes twinkle-icon {
-	to {background-image:url('../image/common/light-blue.png');}
+.food-main .food .text-wrap .badge-wrap .badge {display:inline-block; margin:0; padding:2px 4px; vertical-align:middle; color:#fff; font-size:20px; border:2px solid #fff; border-radius:8px; background-color:#f6a61d; animation:twinkle-tit infinite alternate .4s;}
+.food-main .food .text-wrap .badge-wrap .name {display:inline-block; margin:0 0 0 12px; vertical-align:middle; font-size:40px; font-weight:700; word-break:keep-all;}
+@keyframes twinkle-tit {
+	to {border-color:#ff1b54; background-color:#ff58ec;}
 }
 
 
+@media (max-width:700px) {
+	.food-main {height:420px;}
+	.food-main .food .img-food {height:500px;}
+}
+
+.food-main .food .text-wrap p {margin:0; color:#1d1d1d; word-break:keep-all;}
+.food-main .food .text-wrap .location {display:inline-block; margin:16px 0; padding-left:40px;}
+.food-main .food .text-wrap .location:before {display:inline-block; content:''; width:14px; height:14px; margin-right:6px; vertical-align:baseline; background:url('../image/common/location.png') no-repeat center; background-size:auto 14px;}
+
+.food-main .food .text-wrap .coment {position:relative; width:100%; padding:8px 16px 8px 40px; margin:24px 0 0; font-size:15px; text-align:left; border-radius:16px; background-color:#fbe886;}
+.food-main .food .text-wrap .coment:before {display:block; position:absolute; left:16px; top:10px; content:''; width:16px; height:16px; background-image:url('../image/common/light.png'); background-repeat:no-repeat; background-position:center; background-size:16px auto; animation:twinkle-icon infinite alternate .2s;}
 
 
 
+@media (max-width:600px) {
+	.food-main {height:300px;}
+	.food-main .food .img-food {flex-grow:0; flex-shrink:0; width:60%; max-width:none; height:100%; border-radius:50px;}
+	.food-main .food .img-food:hover {transform:scale(1);}
+	
+	.food-main .food .text-wrap {justify-content:flex-start; height:100%; margin-top:0;}
+	.food-main .food .text-wrap .badge-wrap .badge {font-size:12px;}
+	.food-main .food .text-wrap .badge-wrap .name {display:block; margin:8px 0 0 0; font-size:25px;}
+	
+	.food-main .food .text-wrap p {font-size:15px;}
+	.food-main .food .text-wrap .location {display:none;}
+	.food-main .food .text-wrap .coment {margin-top:auto;}
+}
 
+@media (max-width:450px) {
+	.food-main {height:auto;}
+	.food-main .food {flex-direction:column; justify-content:flex-start;}
+	.food-main .food .img-food {width:100%; height:350px; border-radius:12px; transform:none;}
+	
+	.food-main .food .text-wrap {align-items:flex-start; gap:12px; width:100%; height:auto; margin:12px 0 0 0; text-align:left;}
+	.food-main .food .text-wrap .badge-wrap .badge {margin:0 8px 0 0;}
+	.food-main .food .text-wrap .badge-wrap .name {display:inline-block; margin:0; font-size:17px;}
+	
+	.food-main .food .text-wrap p {font-size:15px;}
+	.food-main .food .text-wrap .location {display:none;}
+	.food-main .food .text-wrap .coment {margin-top:auto;}
+}
 
 
 
@@ -691,11 +723,11 @@ a.title-3 + .travel .btn-link {background-image:none;}
 
 /* 관광지
 ========================================================================== */
-.best-tour {position:relative; padding:30px; background-color: #ddd; border-radius:12px;}
-.best-tour .number {position:absolute; left:30px; top:-15px; z-index:2; width:35px; height:35px; margin:0; color:#eab529; font-size:20px; font-weight:700; text-align:center; border-radius:100%; border:3px solid #eab529; background-color:#fff;}
-.best-tour .number:before {display:block; content:''; position:absolute; left:-6px; top:-32px; width:40px; height:40px; background:url('../image/common/king.png') no-repeat center; background-size:40px auto; animation:movingKing alternate infinite .4s;}
+.best-tour {position:relative; padding:30px; background:url('../image/common/bg-best.png') no-repeat center; background-size:cover;}
+.best-tour .number {position:absolute; left:25px; top:15px; z-index:2; width:35px; height:35px; margin:0; color:#c8b731; font-size:20px; font-weight:700; text-align:center; border-radius:100%; border:3px solid #fbe886; background-color:#fff;}
+.best-tour .number:before {display:block; content:''; position:absolute; left:-18px; top:-40px; width:50px; height:50px; background:url('../image/common/king.png') no-repeat center; background-size:50px auto; transform:rotate(-15deg); animation:movingKing alternate infinite .4s;}
 @keyframes movingKing {
-	to {transform:scale(1.1);}
+	to {transform:rotate(-15deg) scale(1.1);}
 }
 .best-tour .swiper-slide {border:none !important; padding:0;}
 .best-tour .detail-visual {width:70%; height:350px; border-radius:0;}
@@ -786,24 +818,25 @@ a.title-3 + .travel .btn-link {background-image:none;}
 .notice-menu {width:100%; min-height:56px; margin-top:40px;}
 .notice-menu .tit {position:relative; margin:0 0 8px; padding-left:28px}
 .notice-menu .tit:before {display:block; position:absolute; left:0; top:0; content:''; width:24px; height:24px; background:url('../image/common/ico-drink.png') no-repeat center; background-size:20px auto;}
+.notice-menu.search .tit:before {background:url('../image/common/ico-clip.png') no-repeat center; background-size:20px auto;}
 .notice-menu .menu-swiper {overflow:hidden; height:50px; padding:12px 24px; border-radius:8px; background-color:#f0f0f0;}
 .notice-menu .menu-swiper li {display:flex; /* justify-content:space-between; */ gap:4px}
 .notice-menu .menu-swiper li .number {flex-shrink:0; min-width:20px; margin:0; color:#2e6fe9; font-weight:700;}
-.notice-menu .menu-swiper li .txt { color:#000; margin:0;}
+.notice-menu .menu-swiper li .txt {overflow:hidden; width:100%; margin:0; color:#000; text-overflow:ellipsis; white-space:nowrap;}
 
 
-.food-swiper {position:relative; height:300px; padding:0 25px;}
+.food-swiper {position:relative; height:250px; padding:0 25px;}
 .flex-wrap.food.info-travel .swiper-button-prev {left:0;}
 .flex-wrap.food.info-travel .swiper-button-next {right:0;}
 
-.flex-wrap.food.info-travel {overflow:hidden; height:100%;}
-.flex-wrap.food.info-travel .wrap {width:calc(100% / 2 - 12px); border:1px solid #ccc; border-radius:8px;}
+.flex-wrap.food.info-travel {overflow:hidden; height:100%; margin-top:0;}
+.flex-wrap.food.info-travel .wrap {width:calc(100% / 2 - 12px); height:100%; border:1px solid #ccc; border-radius:8px;}
 .flex-wrap.food.info-travel .wrap:hover {border-color:#1d1d1d;}
 .flex-wrap.food.info-travel .food-visual {border-radius:8px;}
 .flex-wrap.food.info-travel .food {display:flex;}
 .flex-wrap.food.info-travel .food img {position:static; width:calc(100% - 150px);}
 .flex-wrap.food.info-travel .food:hover img {transform:none;}
-.flex-wrap.food.info-travel .food .text-wrap {display:inline-flex; flex-direction:column; justify-content:flex-start; gap:12px; position:static; width:160px; padding-top:50px;}
+.flex-wrap.food.info-travel .food .text-wrap {display:inline-flex; flex-direction:column; justify-content:flex-start; gap:12px; position:static; width:160px;}
 .flex-wrap.food.info-travel .food .text-wrap .coment {margin-top:auto;}
 @media (max-width:500px) {
 	.food-swiper {padding:0;}
@@ -812,6 +845,35 @@ a.title-3 + .travel .btn-link {background-image:none;}
 	.flex-wrap.food.info-travel .food img {position:absolute; width:100%;}
 	.flex-wrap.food.info-travel .food .text-wrap {display:block; position:absolute; width:100%; padding:16px 0 0;;}
 }
+
+
+
+
+.food-visual {overflow:hidden; position:absolute; left:0; top:0; z-index:0; width:100%; height:100%; border-radius:12px;}
+.food-visual .food {overflow:hidden; display:block; position:relative; height:100%;}
+.food-visual .food img {display:block; position:absolute; left:0; top:0; width:100%; height:100%; transition:.4s ease-in-out;}
+.food-visual .food:hover img {transform:scale(1.1);}
+
+.food-visual .food .text-wrap {position:absolute; left:0; bottom:0; width:100%; padding:16px 0 0; background-color:rgba(255,255,255,0.8);}
+.food-visual .food .text-wrap p {margin:0; padding:0 20px; color:#1d1d1d;}
+.food-visual .food .text-wrap .name {font-weight:700;}
+
+.food-visual .food .text-wrap .location {position:relative; margin-bottom:16px; padding-left:40px; font-size:15px;}
+.food-visual .food .text-wrap .location:before {display:block; position:absolute; left:20px; top:4px; content:''; width:14px; height:14px; background:url('../image/common/location.png') no-repeat center; background-size:auto 14px;}
+
+.food-visual .food .text-wrap .coment {position:relative; padding:8px 16px 8px 40px; margin:-8px 0 0 0; font-size:15px; background-color:#fbe886;}
+.food-visual .food .text-wrap .coment:before {display:block; position:absolute; left:16px; top:10px; content:''; width:16px; height:16px; background-image:url('../image/common/light.png'); background-repeat:no-repeat; background-position:center; background-size:16px auto; animation:twinkle-icon infinite alternate .2s;}
+
+@keyframes twinkle-icon {
+	to {background-image:url('../image/common/light-blue.png');}
+} 
+
+
+
+
+
+
+
 /* 
 @media (max-width:700px) {
 	.flex-wrap.food .wrap {width:calc(100% / 2 - 12px);}
@@ -819,3 +881,19 @@ a.title-3 + .travel .btn-link {background-image:none;}
 @media (max-width:550px) {
 	.flex-wrap.food .wrap {width:100%; height:300px;}
 } */
+
+
+
+
+
+
+
+
+
+
+/* detail-list half */
+.detail-list.half > ul {display:flex; flex-wrap:wrap; border-top:1px solid #eee; border-bottom:1px solid #eee;}
+.detail-list.half > ul > li {flex-grow:1; display:block; width:100%; max-width:calc(100% / 4); padding-right:24px; border:none;}
+.detail-list.half .detail-visual {width:100%;}
+.detail-list.half li .txt-wrap {display:block; margin-top:24px;}
+.detail-list.half li .txt-wrap > .name {margin-bottom:0;}

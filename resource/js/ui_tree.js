@@ -104,18 +104,15 @@ const gnb_tree = [
 			'./한끼정보_맛집정보_추천맛집.html', 
 			'./한끼정보_맛집정보_지역별맛집.html', 
 			'./한끼정보_맛집정보_카테고리별맛집.html', 
-			'./한끼정보_예약정보.html',
+			'./한끼정보_예약내역.html',
 			'./한끼정보_한혐식당정보.html'
 		]
 	],
 
 	[
-		'카페 &amp; 디저트', 
-		'./관광지.html', [
-			'./관광지_관광지정보_지역별관광지.html', 
-			'./관광지_관광지정보_카테고리별관광지.html', 
-			'./관광지_여행동선_확정된관광지.html', 
-			'./관광지_여행동선_동선정보.html'
+		'카페 & 디저트', 
+		'./카페디저트.html', [
+			'./카페디저트_여행지별카페.html', 
 		]
 	],
 
@@ -192,22 +189,39 @@ const lnb = [
 					<li><a href="" class="depth-3">동선 정보</a></li>
 				</ul>
 			</li>
-			<!-- 
-				<li>
-					<button type="button" class="btn-toggle"><span>예매 정보</span></button>
-					
-					<ul class="acc-cont">
-						<li><a href="" class="depth-3">교통패스 예매정보</a></li>
-						<li><a href="" class="depth-3">관광지 티켓 예매정보</a></li>
-					</ul>
-				</li>
-
-				<li>
-					<a href="" class="link"><span>여행 꿀팁</span></a>
-				</li> 
-			-->
 		</ul>
 	</div>
+
+	
+	<!-- notice visual -->
+	<div class="notice-menu search">
+		<p class="tit">알아봐야할 관광지</p>
+
+		<div class="menu-swiper">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide">
+					<p class="number">1</p>
+					<p class="txt">기모노 체험</p>
+				</li>
+
+				<li class="swiper-slide">
+					<p class="number">2</p>
+					<p class="txt">집사카페</p>
+				</li>
+
+				<li class="swiper-slide">
+					<p class="number">3</p>
+					<p class="txt">넷카페</p>
+				</li>
+
+				<li class="swiper-slide">
+					<p class="number">4</p>
+					<p class="txt">밥0원 피시방</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- // notice visual -->
 `
 ,
 `
@@ -278,8 +292,48 @@ const lnb = [
 		</div>
 	</div>
 	<!-- // notice visual -->
+`,
+
 `
-,
+<div class="lnb accordion">
+	<ul>
+		<li>
+			<a href="" class="link"><span>여행지별 카페</span></a>
+		</li>
+	</ul>
+</div>
+
+
+<!-- notice visual -->
+<div class="notice-menu">
+	<p class="tit">먹어봐야할 디저트</p>
+
+	<div class="menu-swiper">
+		<ul class="swiper-wrapper">
+			<li class="swiper-slide">
+				<p class="number">1</p>
+				<p class="txt">초코바나나</p>
+			</li>
+
+			<li class="swiper-slide">
+				<p class="number">2</p>
+				<p class="txt">당고</p>
+			</li>
+
+			<li class="swiper-slide">
+				<p class="number">3</p>
+				<p class="txt">푸딩</p>
+			</li>
+
+			<li class="swiper-slide">
+				<p class="number">4</p>
+				<p class="txt">크로칸슈</p>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- // notice visual -->
+`
 
 ]
 
@@ -326,4 +380,12 @@ const reserved_link = [
 	'./여행정보_숙소정보_예매정보.html', 
 	'./여행정보_예매정보_교통패스예매.html', 
 	'./여행정보_예매정보_관광지티켓예매.html'
+]
+
+
+const footer = [
+	`
+	<p>본 사이트는 상업적 목적으로 제작된 사이트가 아니며 내용 및 이미지 등의 저작권이 별도로 존재함을 알려드립니다.</p>
+	<p class="copy">&copy; 2024 KIM SY. All Rights Reserved.</p>
+	`
 ]

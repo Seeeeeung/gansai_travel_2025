@@ -19,6 +19,9 @@ $(function(){
 
 	// 공지사항 추가
 	$('.notice-visual').append(notice);
+	
+	// footer 추가
+	$('footer').empty().append(footer);
 
 	// lnb 추가
 	if ($('.lnb-wrap').length) {
@@ -110,15 +113,19 @@ $(function(){
 		});
 	}
 
-	// 추천순
+	// 추천순 (평점 + 찜순)
 	function setDetailListSortUp (myList, item) {
 		item.sort(function(a,b){ 
 			var keyA = Number($(a).find('.count').text()); // 작은숫자
 			var keyB = Number($(b).find('.count').text()); // 큰숫자
+			var keyC = Number($(a).find('.star').text().split(' ')[1]); // 작은숫자
+			var keyD = Number($(b).find('.star').text().split(' ')[1]); // 큰숫자
 			// console.log(keyB < keyA) // true
 			// a가 아래 b 가 위
 			if (keyB > keyA) return 1;
 			if (keyB < keyA) return -1;
+			if (keyD > keyC) return 1;
+			if (keyD < keyC) return -1;
 			return 0;
 		});
 
@@ -181,10 +188,15 @@ $(function(){
 		const bestTour = $('.best-tour');
 		const _target = $('.best-tour .swiper-wrapper');
 		const tourList = bestTour.siblings('.contents').find('.detail-list > ul > li');
-		const tourList_length = bestTour.siblings('.contents').find('.detail-list > ul > li').length - 3;
+		const tourList_length = bestTour.siblings('.contents').find('.detail-list > ul > li').length;
 		_target.html(tourList.eq(Math.floor(Math.random()*tourList_length)).addClass('swiper-slide'));
 	}
 	
+
+	// 추천맛집 목록
+	if ($('.detail-list.osusume').length) {
+		
+	}
 	
 
 	
@@ -210,8 +222,11 @@ $(function(){
 		},
 	});
 	// 꼭 가야할 맛집 swiper
-	const foodListSwiper = new Swiper('.main .food-visual', {
+	const foodListSwiper = new Swiper('.food-main', {
+		effect: 'fade',
+		fadeEffect: { crossFade: true },
 		loop: true,
+		loopedSlides: 1,
 		speed : 600,
 		simulateTouch : true,
 		autoplay: {
@@ -220,7 +235,7 @@ $(function(){
 		},
 	});
 	// 숙소정보 swiper
-	const sleepListSwiper = new Swiper('.detail-list:not(.info-travel) .detail-visual', {
+	const sleepListSwiper = new Swiper('.detail-list:not(.info-travel, .half) .detail-visual', {
 		// loop: true,
 		// loopedSlides: 1,
 		speed : 600,
@@ -338,7 +353,7 @@ $(function(){
 
 	// 맛집추천 swiper
 	const foodBestSwiper = new Swiper('.food.info-travel', {
-		// loop: true,
+		loop: true,
 		speed : 600,
 		slidesPerView: 1,
 		centeredSlides: false,
