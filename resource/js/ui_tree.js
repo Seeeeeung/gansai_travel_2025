@@ -117,12 +117,12 @@ const gnb_tree = [
 	],
 
 	[
-		'이것 어떠세요옹', 
-		'./관광지.html', [
-			'./관광지_관광지정보_지역별관광지.html', 
-			'./관광지_관광지정보_카테고리별관광지.html', 
-			'./관광지_여행동선_확정된관광지.html', 
-			'./관광지_여행동선_동선정보.html'
+		'와구주섬', 
+		'./와구주섬.html', [
+			'./와구주섬_와구와구.html', 
+			'./와구주섬_주섬주섬.html', 
+			'./와구주섬_콸콸.html', 
+			'./와구주섬_덕지덕지.html'
 		]
 	],
 
@@ -333,6 +333,27 @@ const lnb = [
 	</div>
 </div>
 <!-- // notice visual -->
+`,
+`
+<div class="lnb accordion">
+<ul>
+	<li>
+		<a href="" class="link"><span>와구와구</span></a>
+	</li>
+
+	<li>
+		<a href="" class="link"><span>주섬주섬</span></a>
+	</li>
+
+	<li>
+		<a href="" class="link"><span>콸콸</span></a>
+	</li>
+
+	<li>
+		<a href="" class="link"><span>덕지덕지</span></a>
+	</li>
+</ul>
+</div>
 `
 
 ]

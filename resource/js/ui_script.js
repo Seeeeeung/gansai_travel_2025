@@ -169,7 +169,7 @@ $(function(){
 		$(this).addClass('active').attr('title','선택됨').siblings('.btn-layer').removeClass('active').removeAttr('title');
 		
 		// 추천순
-		if ($(this).hasClass('layer-best')) setDetailListSortUp(setUl, detailListItem);
+		if ($(this).hasClass('layer-good')) setDetailListSortUp(setUl, detailListItem);
 		// 평점순
 		if ($(this).hasClass('layer-star')) setDetailListSortStar(setUl, detailListItem);
 		
@@ -192,12 +192,14 @@ $(function(){
 		_target.html(tourList.eq(Math.floor(Math.random()*tourList_length)).addClass('swiper-slide'));
 	}
 	
+	// 카페앤 디저트 오늘의 추천
+	if ($('.detail-list.cafe').length) {
+		const infoCafe = $('.detail-list.cafe > ul');
+		const infoCafeList = infoCafe.children('li');
 
-	// 추천맛집 목록
-	if ($('.detail-list.osusume').length) {
+		infoCafe.empty().append(infoCafeList.eq(Math.floor(Math.random()*infoCafeList.length)));
 		
 	}
-	
 
 	
 	// $('.detail-list .toggle-count').on('click', function() {
@@ -235,7 +237,7 @@ $(function(){
 		},
 	});
 	// 숙소정보 swiper
-	const sleepListSwiper = new Swiper('.detail-list:not(.info-travel, .half) .detail-visual', {
+	const sleepListSwiper = new Swiper('.detail-list:not(.info-travel, .short) .detail-visual', {
 		// loop: true,
 		// loopedSlides: 1,
 		speed : 600,
@@ -256,7 +258,7 @@ $(function(){
 
 	});
 	// 여행정보 - 숙소정보  swiper
-	const travelSleepSwiper = new Swiper('.info-travel.detail-list', {
+	const travelSleepSwiper = new Swiper('.info-travel.detail-list.swiper', {
 		speed : 600,
 		effect: 'fade',
 		fadeEffect: { crossFade: true },

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2025 간사이 여행</title>
+
+<link rel="stylesheet" type="text/css" href="./resource/css/import.css">
+<link rel="icon" href="./resource/image/common/icon/ico-airplane.png">
+<!-- 비행기 아이콘 제작자: Good Ware - Flaticon -->
+<!-- 움직임 아이콘 제작자: Google - Flaticon -->
+
+<script src="./resource/js/jquery-3.7.1.js"></script>
+<script src="./resource/js/jquery.easing.1.4.1.js"></script>
+<script src="./resource/js/swiper-bundle.js"></script>
+<script src="./resource/js/ui_script.js" defer></script>
+<script src="./resource/js/ui_tree.js" defer></script>
+</head>
+<body>
+
+	<!-- header -->
+	<header>
+	</header>
+	<!-- // header -->
+	
+	<!-- notice visual -->
+	<div class="notice-visual">
+	</div>
+	<!-- // notice visual -->
+
+
+	<!-- container -->
+	<div class="container">
+		<div class="lnb-wrap">
+			<h2 class="page-title"><a href="">와구주섬</a></h2>
+		</div>
+
+		
+		<!-- inner-wrap -->
+		<div class="inner-wrap">
+
+			
+			<section class="contents">
+				<h3 class="title-3">제 추천.. 어때요?</h3>
+
+				<!-- 넥스비투비 자주구매하신 상품 디자인처럼 만들기 스크롤 스와이퍼 -->
+				<!-- detail-list -->
+				<div class="detail-list short">
+					<ul>
+						<li>
+							<div class="detail-visual">
+								<div class="visual">
+									<img src="https://lh3.googleusercontent.com/p/AF1QipOJlEIbaxtasQJwPOKNuKHRYKGdPVHpPhxRxslq=s680-w680-h510" alt="이자카야 사사야">
+								</div>
+							</div>
+
+							<div class="txt-wrap">
+								<p class="name">이자카야 사사야</p>
+								
+								<p class="location">오사카 난바 센니치마에점</p>
+							</div>
+							
+						</li>
+
+						<li>
+							
+							<div class="detail-visual">
+								<div class="visual">
+									<img src="https://lh3.googleusercontent.com/p/AF1QipPRX5BmVaraq04GQsUwux4AE9dz92aq45mcWLF_=s680-w680-h510" alt="앗치치혼포">
+								</div>
+							</div>
+
+							<div class="txt-wrap">
+								<p class="name">앗치치혼포</p>
+								
+								<p class="location">오사카 도톤보리점</p>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+				<!-- // detail-list -->
+			</section>
+
+
+			<section class="contents">
+				<h3 class="title-3">조금만 보여줄게 내 쇼핑리스트 💌</h3>
+
+				<!-- 품목 너무 많으니까 한 5개정도만 노출 , 목록갯수,정렬 미노출 -->
+
+				<!-- tab-area -->
+				<div class="tab-area tab-scroll">
+					<ul class="tab-list" role="tablist">
+						<li class="on"><button type="button" id="tab_02_01" role="tab" aria-selected="true" aria-controls="tabPanel_02_01" class="btn-tab round">와구와구</button></li>
+						<li><button type="button" id="tab_02_02" role="tab" aria-selected="false" aria-controls="tabPanel_02_02" class="btn-tab round">주섬주섬</button></li>
+						<li><button type="button" id="tab_02_03" role="tab" aria-selected="false" aria-controls="tabPanel_02_03" class="btn-tab round">콸콸</button></li>
+						<li><button type="button" id="tab_02_04" role="tab" aria-selected="false" aria-controls="tabPanel_02_04" class="btn-tab round">덕지덕지</button></li>
+					</ul>
+
+					<!-- tab-cont -->
+					<div id="tabPanel_02_01" role="tabpanel" aria-labelledby="tab_02_01" class="tab-cont">
+
+						<div class="title-wrap">
+							<p class="scroll-tab-tit">와구와구</p>
+							<p class="info"><span class="ico-alert"></span>간식, 과자, 젤리, 아이스크림 등</p>
+						</div>
+
+						<div class="list-control">
+							<p class="count">총 <em class="num">0</em>건</p>
+							
+							<div class="btn-wrap">
+								<button type="button" class="btn-layer layer-default active" title="선택됨">기본순</button>
+								<button type="button" class="btn-layer layer-new">신규순</button>
+								<button type="button" class="btn-layer layer-best">인기순</button>
+							</div>
+						</div>
+		
+						<div class="detail-list short">
+							<ul>
+								<li>
+									<div class="detail-visual">
+										<div class="swiper-wrapper">
+
+											<div class="swiper-slide">
+												<div class="visual">
+													<img src="" alt="">
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="visual">
+													<img src="" alt="">
+												</div>
+											</div>
+
+				
+										</div>
+
+										<div class="btn-arrow swiper-button-disabled swiper-button-prev"><span class="sr-only">이전으로</span></div>
+										<div class="btn-arrow swiper-button-next"><span class="sr-only">다음으로</span></div>
+									</div>
+
+									<div class="txt-wrap">
+										<p class="name">과자이름</p>
+										
+										<p class="location">판매점</p>
+										<p class="desc">과자종류</p>
+										<p class="txt">* 텍스트</p>
+										<p class="coment">코멘트</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_02_02" role="tabpanel" aria-labelledby="tab_02_02" class="tab-cont">
+						<div class="title-wrap">
+							<p class="scroll-tab-tit">와구와구</p>
+							<p class="info"><span class="ico-alert"></span>간식, 과자, 젤리, 아이스크림 등</p>
+						</div>
+		
+						<div class="detail-list short">
+							<ul>
+								<li>
+									<div class="detail-visual">
+										<div class="swiper-wrapper">
+
+											<div class="swiper-slide">
+												<div class="visual">
+													<img src="" alt="">
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="visual">
+													<img src="" alt="">
+												</div>
+											</div>
+
+				
+										</div>
+
+										<div class="btn-arrow swiper-button-disabled swiper-button-prev"><span class="sr-only">이전으로</span></div>
+										<div class="btn-arrow swiper-button-next"><span class="sr-only">다음으로</span></div>
+									</div>
+
+									<div class="txt-wrap">
+										<p class="name">과자이름</p>
+										
+										<p class="location">판매점</p>
+										<p class="desc">과자종류</p>
+										<p class="txt">* 텍스트</p>
+										<p class="coment">코멘트</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_02_03" role="tabpanel" aria-labelledby="tab_02_03" class="tab-cont">
+
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_02_04" role="tabpanel" aria-labelledby="tab_02_04" class="tab-cont">
+
+					</div>
+					<!-- //tab-cont -->
+
+				</div>
+				<!-- //tab-area -->
+
+			</section>
+
+		</div>
+		<!-- //inner-wrap -->
+	</div>
+	<!-- // container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="copy">&copy; 2024 KIM SEUNGYEON. all rights reserved.</p>
+	</footer>
+	<!-- // footer -->
+
+
+</body>
+</html>
