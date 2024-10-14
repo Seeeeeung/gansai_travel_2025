@@ -237,10 +237,11 @@ $(function(){
 		},
 	});
 	// 숙소정보 swiper
-	const sleepListSwiper = new Swiper('.detail-list:not(.info-travel, .short) .detail-visual', {
+	const sleepListSwiper = new Swiper('.detail-list:not(.swiper, .no-swiper) .detail-visual', {
 		// loop: true,
 		// loopedSlides: 1,
 		speed : 600,
+		watchOverflow: true,
 		// observer: true,
 		// observeParents: true,
 		slidesPerView: 'auto',
@@ -258,7 +259,7 @@ $(function(){
 
 	});
 	// 여행정보 - 숙소정보  swiper
-	const travelSleepSwiper = new Swiper('.info-travel.detail-list.swiper', {
+	const travelSleepSwiper = new Swiper('.detail-list.swiper', {
 		speed : 600,
 		effect: 'fade',
 		fadeEffect: { crossFade: true },
@@ -386,6 +387,28 @@ $(function(){
 		},
 	});
 
+	// 숙소정보 swiper
+	const zoomSwiper = new Swiper('.zoom-visual', {
+		// loop: true,
+		// loopedSlides: 1,
+		speed : 600,
+		watchOverflow: true,
+		// observer: true,
+		// observeParents: true,
+		slidesPerView: 'auto',
+		centeredSlides: false,
+		spaceBetween:'24px',
+		// simulateTouch : true,
+		// autoplay: {
+		// 	delay: 3000,
+		// 	pauseOnMouseEnter : true,
+		// },
+		navigation : {
+			nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+			prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+		},
+
+	});
 
 	// $(window).on('resize', function() {
 	// 	if ($(window.width()) > 699) foodBestSwiper.autoplay.stop()
@@ -463,5 +486,94 @@ $(function(){
 		$tabCont.attr('tabindex','0').removeAttr('hidden').siblings('.tab-cont').attr({tabindex: '-1', hidden: 'hidden'});
 	})
 
+	// 모달창
+	if ($('.open-modal').length) {
 
+		$(document).on('mouseenter focus', '.product .detail-visual .visual', function () {
+			$(this).addClass('hover')
+		})
+		$(document).on('blur', '.product .detail-visual .visual.hover .open-modal', function () {
+			$(this).parents('.visual').removeClass('hover')
+		})
+
+		$(document).on('mouseleave', '.product .detail-visual .visual', function () {
+			$(this).removeClass('hover')
+		})
+		$(document).on('click', '.open-modal', function() {
+
+		// lnb 추가 / 제어
+		const target_list = $(this).parents('li').find('.name').text()
+		console.log(target_list)
+		$.each(dataDetail, function(index, e) {
+	if (target_list == dataDetail[index][0]) {
+		$('.layer-modal').html(dataDetail[index][1])
+	}
+		// 	if (lnb_tit.text() == gnb_tree[index][0]) {
+		// 		// header gnb 현재페이지 표시
+		// 		if (gnb_tree[index][1] == $('header .gnb a').eq(index).attr('href')) $('header .gnb a').eq(index).attr('title','현재페이지').parent('li').addClass('on');
+
+		// 		// page-title href 설정
+		// 		lnb_tit.find('a').attr('href', gnb_tree[index][1]);
+
+		// 		// lnb 추가
+		// 		lnb_wrap.append(lnb[index]);
+
+		// 		// lnb link href 설정
+		// 		setLnbMenu(index);
+		// 	}
+		});
+
+
+
+
+
+
+
+
+
+
+
+
+			const targetModal = $('#' + $(this).attr('aria-controls'));
+			const focusTarget = targetModal.find('button, input:not([type="hidden"]), select, iframe, textarea, [href], [tabindex]:not([tabindex="-1"])');
+			const focusFirst = focusTarget.first();
+			const focusLast = focusTarget.last();
+
+			const target_length = $('.product > ul > li').length
+
+
+			$(this).attr('aria-controls', 'layer_detail_' + Math.floor(Math.random()*target_length));
+			const this_id = $(this).attr('aria-controls')
+
+
+			targetModal.addClass('on');
+			targetModal.attr('id', this_id);
+			$('body').addClass('overflow');
+
+			
+			if (focusTarget.length) {
+				focusFirst.on("keydown", function(e) {
+					if (e.shiftKey && e.key === 'Tab') {
+						e.preventDefault();
+						focusLast.focus();
+					}
+				});
+				focusLast.on("keydown", function(e) {
+					if (!e.shiftKey && e.key === 'Tab') {
+						e.preventDefault();
+						focusFirst.focus();
+					}
+				});
+			}
+
+		})
+
+		$(document).on('click', '.close-layer', function() {
+			const target_ID = $('[aria-controls="' + $(this).parents('.layer-modal').attr('id') + '"]' )
+			// target_ID.focus()
+			$(this).parents('.layer-modal').removeClass('on');
+			$('body').removeClass('overflow')
+
+		})
+	}
 });
