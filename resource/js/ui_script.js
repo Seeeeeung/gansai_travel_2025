@@ -201,6 +201,7 @@ $(function(){
 		
 	}
 
+
 	
 	// $('.detail-list .toggle-count').on('click', function() {
 	// 	var count = 0;
@@ -211,6 +212,103 @@ $(function(){
 	// 		$(this).removeClass('check').children('.count').text(count);
 	// 	}
 	// })
+
+
+
+
+	// 모달창
+	if ($('.open-modal').length) {
+		// 접근성
+		// const targetModal = $('#' + $(this).attr('aria-controls'));
+		// const focusTarget = targetModal.find('button, input:not([type="hidden"]), select, iframe, textarea, [href], [tabindex]:not([tabindex="-1"])');
+		// const focusFirst = focusTarget.first();
+		// const focusLast = focusTarget.last();
+
+
+		
+		// if (focusTarget.length) {
+		// 	focusFirst.on("keydown", function(e) {
+		// 		if (e.shiftKey && e.key === 'Tab') {
+		// 			e.preventDefault();
+		// 			focusLast.focus();
+		// 		}
+		// 	});
+		// 	focusLast.on("keydown", function(e) {
+		// 		if (!e.shiftKey && e.key === 'Tab') {
+		// 			e.preventDefault();
+		// 			focusFirst.focus();
+		// 		}
+		// 	});
+		// }
+
+		// 레이어 열기
+		$(document).on('click', '.open-modal', function() {
+			$('body').addClass('overflow');
+		});
+		
+
+		// 레이어 닫기
+		$(document).on('click', '.close-layer', function() {
+			$(this).parents('.layer-modal').removeClass('on');
+			$('body').removeClass('overflow');
+		})
+	}
+
+	// 와구와구 목록 모달창
+	if ($('.product .open-modal').length) {
+		// 돋보기 아이폰 활성화
+		$(document).on('mouseenter focus', '.product .detail-visual .visual', function () {
+			$(this).addClass('hover')
+			$(this).parents('.swiper-wrapper').css('z-index','11')
+		})
+		$(document).on('blur', '.product .detail-visual .visual.hover .open-modal', function () {
+			$(this).parents('.visual').removeClass('hover')
+			$(this).parents('.swiper-wrapper').css('z-index','1')
+		})
+
+		$(document).on('mouseleave', '.product .detail-visual .visual', function () {
+			$(this).removeClass('hover')
+			$(this).parents('.swiper-wrapper').css('z-index','1')
+		})
+
+
+		// 자세히보기 버튼 클릭 모달창 오픈
+		$(document).on('click', '.product .open-modal', function() {
+			const _targetBtn = $('.detail-list.product > ul').find('.open-modal');
+			
+			// 각 버튼 레이어 오픈 설정값 적용
+			_targetBtn.each(function(index, ele) {
+				$(ele).attr('aria-controls', 'layer_detail_' + index);
+			});
+			
+			// 해당 레이어 id 설정
+			const productModal = $('body').children('#layer_detail');
+			productModal.attr('id',$(this).attr('aria-controls')).addClass('on');
+			
+			// 목록 이미지 모달로 복제
+			const detailVisual = $(this).parents('.visual').children('img').clone();
+			console.log(detailVisual)
+			const cloneParent = productModal.find('.zoom-visual');
+			cloneParent.html(detailVisual);
+		});
+		
+		$(document).on('click', '[id^="layer_detail"] .close-layer', function() {
+			$(this).parents('.layer-modal').attr('id','layer_detail');
+		})
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
 
 	// 공지사항 swiper
 	const alertListSwiper = new Swiper('.notice-visual', {
@@ -237,7 +335,7 @@ $(function(){
 		},
 	});
 	// 숙소정보 swiper
-	const sleepListSwiper = new Swiper('.detail-list:not(.swiper, .no-swiper) .detail-visual', {
+	const sleepListSwiper = new Swiper('.detail-list:not(.swiper, .no-swiper, .short) .detail-visual', {
 		// loop: true,
 		// loopedSlides: 1,
 		speed : 600,
@@ -258,6 +356,16 @@ $(function(){
 		},
 
 	});
+	// // 와구주섬  swiper
+	const productSwiper = new Swiper('.product .detail-visual', {
+		slidesPerView: 1,
+		speed : 600,
+		watchOverflow: true,
+		pagination: {
+			el: ".swiper-pagination",
+		},
+	});
+
 	// 여행정보 - 숙소정보  swiper
 	const travelSleepSwiper = new Swiper('.detail-list.swiper', {
 		speed : 600,
@@ -387,33 +495,6 @@ $(function(){
 		},
 	});
 
-	// 숙소정보 swiper
-	const zoomSwiper = new Swiper('.zoom-visual', {
-		// loop: true,
-		// loopedSlides: 1,
-		speed : 600,
-		watchOverflow: true,
-		// observer: true,
-		// observeParents: true,
-		slidesPerView: 'auto',
-		centeredSlides: false,
-		spaceBetween:'24px',
-		// simulateTouch : true,
-		// autoplay: {
-		// 	delay: 3000,
-		// 	pauseOnMouseEnter : true,
-		// },
-		navigation : {
-			nextEl : '.swiper-button-next', // 다음 버튼 클래스명
-			prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
-		},
-
-	});
-
-	// $(window).on('resize', function() {
-	// 	if ($(window.width()) > 699) foodBestSwiper.autoplay.stop()
-	// })
-
 
 
 
@@ -486,94 +567,4 @@ $(function(){
 		$tabCont.attr('tabindex','0').removeAttr('hidden').siblings('.tab-cont').attr({tabindex: '-1', hidden: 'hidden'});
 	})
 
-	// 모달창
-	if ($('.open-modal').length) {
-
-		$(document).on('mouseenter focus', '.product .detail-visual .visual', function () {
-			$(this).addClass('hover')
-		})
-		$(document).on('blur', '.product .detail-visual .visual.hover .open-modal', function () {
-			$(this).parents('.visual').removeClass('hover')
-		})
-
-		$(document).on('mouseleave', '.product .detail-visual .visual', function () {
-			$(this).removeClass('hover')
-		})
-		$(document).on('click', '.open-modal', function() {
-
-		// lnb 추가 / 제어
-		const target_list = $(this).parents('li').find('.name').text()
-		console.log(target_list)
-		$.each(dataDetail, function(index, e) {
-	if (target_list == dataDetail[index][0]) {
-		$('.layer-modal').html(dataDetail[index][1])
-	}
-		// 	if (lnb_tit.text() == gnb_tree[index][0]) {
-		// 		// header gnb 현재페이지 표시
-		// 		if (gnb_tree[index][1] == $('header .gnb a').eq(index).attr('href')) $('header .gnb a').eq(index).attr('title','현재페이지').parent('li').addClass('on');
-
-		// 		// page-title href 설정
-		// 		lnb_tit.find('a').attr('href', gnb_tree[index][1]);
-
-		// 		// lnb 추가
-		// 		lnb_wrap.append(lnb[index]);
-
-		// 		// lnb link href 설정
-		// 		setLnbMenu(index);
-		// 	}
-		});
-
-
-
-
-
-
-
-
-
-
-
-
-			const targetModal = $('#' + $(this).attr('aria-controls'));
-			const focusTarget = targetModal.find('button, input:not([type="hidden"]), select, iframe, textarea, [href], [tabindex]:not([tabindex="-1"])');
-			const focusFirst = focusTarget.first();
-			const focusLast = focusTarget.last();
-
-			const target_length = $('.product > ul > li').length
-
-
-			$(this).attr('aria-controls', 'layer_detail_' + Math.floor(Math.random()*target_length));
-			const this_id = $(this).attr('aria-controls')
-
-
-			targetModal.addClass('on');
-			targetModal.attr('id', this_id);
-			$('body').addClass('overflow');
-
-			
-			if (focusTarget.length) {
-				focusFirst.on("keydown", function(e) {
-					if (e.shiftKey && e.key === 'Tab') {
-						e.preventDefault();
-						focusLast.focus();
-					}
-				});
-				focusLast.on("keydown", function(e) {
-					if (!e.shiftKey && e.key === 'Tab') {
-						e.preventDefault();
-						focusFirst.focus();
-					}
-				});
-			}
-
-		})
-
-		$(document).on('click', '.close-layer', function() {
-			const target_ID = $('[aria-controls="' + $(this).parents('.layer-modal').attr('id') + '"]' )
-			// target_ID.focus()
-			$(this).parents('.layer-modal').removeClass('on');
-			$('body').removeClass('overflow')
-
-		})
-	}
 });
