@@ -353,8 +353,8 @@ a.title-3:hover:after {transform:rotate(90deg);}
 
 .ico-alert {background-image:url('../image/common/icon/ico-info.png');}
 .ico-safe {background-image:url('../image/common/icon/ico-safe-red.png');}
-.ico-glasses {background-image:url('../image/common/icon/ico-ico-glass.png');}
-.ico-window {background-image:url('../image/common/icon/ico-ico-window.png');}
+.ico-glasses {background-image:url('../image/common/icon/ico-glass.png');}
+.ico-window {background-image:url('../image/common/icon/ico-window.png');}
 
 
 
