@@ -1005,10 +1005,11 @@ a.title-3 + .travel .btn-link {background-image:none;}
 	100% {box-shadow:0 0 15px #555}
 }
 
-.product.detail-list .txt-wrap .price {position:relative; margin-top:auto; padding-left:28px; font-size:16px; color:#000;}
-/* .product.detail-list .txt-wrap .txt + p:last-child {margin-top:auto;} */
+.product.detail-list .txt-wrap .price {position:relative; margin-bottom:24px; padding-left:28px; font-size:16px; color:#000;}
+.product.detail-list .txt-wrap .price:last-child {margin-bottom:0;}
 .product.detail-list .txt-wrap .price:before {display:block; position:absolute; left:0; top:2px; content:''; width:18px; height:18px; background:url('../image/common/icon/ico-price-blue.png') no-repeat center; background-size:18px auto;}
 
+.product.detail-list .txt-wrap .coment:last-child {margin-top:auto;}
 
 .layer-modal .wrap .cont .zoom-visual {overflow:hidden; width:100%; max-width:500px;}
 .layer-modal .wrap .cont img {width:100%; height:100%;}
