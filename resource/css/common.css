@@ -221,7 +221,12 @@ a.title-3:hover:after {transform:rotate(90deg);}
 .coment {position:relative; width:100%; padding:8px 16px 8px 40px; margin:24px 0 0; font-size:15px; text-align:left; border-radius:16px; background-color:#fbe886;}
 .coment:before {display:block; position:absolute; left:16px; top:10px; content:''; width:16px; height:16px; background-image:url('../image/common/icon/ico-light.png'); background-repeat:no-repeat; background-position:center; background-size:16px auto; animation:twinkle-icon infinite alternate .2s;}
 
-
+.twinkle {animation:twinkle_txt alternate infinite ease-in-out .7s;}
+@keyframes twinkle_txt {
+	0% {color:#ffa200;}
+	50% {color:#006e18;}
+	100% {color:#d50136;}
+}
 
 
 /* 리스트 컨트롤 */
@@ -1018,3 +1023,6 @@ a.title-3 + .travel .btn-link {background-image:none;}
 @media (max-width:700px) {
 	.layer-modal .wrap .cont .zoom-visual {max-width:none;}
 }
+
+
+
