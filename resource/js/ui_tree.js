@@ -411,3 +411,5483 @@ const footer = [
 	`
 ]
 
+
+// 와구주섬 리스트
+const productList = [
+	['와구와구', 
+		[
+			[
+				'과자', [
+					`
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://i.namu.wiki/i/-bB818aF0cO5oq7YskLxupT8q113VPNIK4DPYkE56ipF-X6ReLD7fR83KzAGV3JVIcAUVagySSp5GuGhyZxVXoIeUOEHdN1p9mF-tS4OtN5Hf3QL5MvZH_fSpXcceU_qgnAoJ3tBu-AWkBgD9F1hug.webp" alt="白い恋人">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">시로이코이비토 (白い恋人)</p>
+							
+							<p class="location">간사이 공항 면세점 판매</p>
+							<p class="txt">* 쿠키샌드에 화이트 혹은 블랙 초콜릿바른 랑그드샤형 과자</p>
+							<p class="price">720엔 ~ 4,800엔</p>
+							<p class="coment">선물용으로 좋아보임</p>
+						</div>
+					</li>
+					
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.croket.co.kr/item/thumbnail/b6eaf973b000b2073e1f0424717bd82a.webp" alt="슈가버터샌드트리 기본맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://sitem.ssgcdn.com/64/70/21/item/1000526217064_i1_750.jpg" alt="슈가버터샌드트리 사과맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://sitem.ssgcdn.com/72/69/70/item/1000272706972_i1_750.jpg" alt="슈가버터샌드트리 선물용">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">슈가버터샌드트리 3개입</p>
+							
+							<p class="location">세븐일레븐 / 오사카 한큐백화점(선물용 3가지맛)</p>
+							<p class="txt">* 웨하스같은 쿠키에 두툼한 크림이 샌드된 과자</p>
+							<p class="price">예상 200엔 ~ 300엔<br>선물용 3,000엔</p>
+							<p class="coment">편의점은 3개입 별도포장</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://japantomo.com/data/editor/2009/f181c2ad232b0ea4b2cae3aaab680be3_1599721626_6583.png" alt="부르봉 쿠키 4종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://japantomo.com/data/editor/2009/f181c2ad232b0ea4b2cae3aaab680be3_1599721684_2026.png" alt="부르봉 쿠키">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">부르봉 쿠키</p>
+							
+							<p class="location">마트 (대형마트가 제일 저렴)</p>
+							<p class="txt">* 겹겹의 바삭한 크레이프 쿠키를 초콜릿으로 코딩한 쿠키</p>
+							<p class="price">예상 200엔 ~ 250엔</p>
+							<p class="coment">보라색이 제일 대중적 / 선물용으로 좋을듯</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://sitem.ssgcdn.com/23/77/45/item/1000563457723_i1_750.jpg" alt="샤샤 초콜릿 초코">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://sitem.ssgcdn.com/78/10/69/item/1000556691078_i1_750.jpg" alt="샤샤 초콜릿 녹차">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://image.croket.co.kr/storeItem/63242d6a471a8cfc68843903/itemImg/1663315307194/0/item_2EXfC.jpeg" alt="샤샤 초콜릿 딸기">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">샤샤 초콜릿</p>
+							
+							<p class="location">편의점, 마트</p>
+							<p class="txt">* 여러겹으로 겹쳐서 만든 초콜릿</p>
+							<p class="price">248엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://gw.alicdn.com/imgextra/i3/845908271/O1CN01B22wj42AyATovXsgM_!!0-item_pic.jpg_540x540q90.jpg" alt="치즈아몬드 센베이 3종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/5213673552/B.jpg?901000000" alt="치즈아몬드 센베이">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">산코제과 치즈아몬드 센베이</p>
+							
+							<p class="location">편의점</p>
+							<p class="txt">* 크래커에 치즈아몬드를 올린 일본 쌀과자</p>
+							<p class="price">280엔</p>
+							<p class="coment">술안주로 먹어도 좋은 크래커</p>
+						</div>
+					</li>
+
+
+					<li class="best">
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyMzEyMjBfMjc0/MDAxNzAzMDU1NjM4MzEw.pMCIfRv1nanSaGzRzh0-CFWD6XceP5wdog5zXMXAmI4g.ataOfzvFuGRnttJ0pIb8zJ6sixzmkPq5ziGS6jG9hTMg.JPEG.zmfpdyd1004/SE-d4a89248-054e-4371-b510-085754d5f3c8.jpg?type=w800" alt="모리가나 크림치즈 쿠키">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">모리가나 크림치즈 쿠키</p>
+							
+							<p class="location">돈키호테</p>
+							<p class="txt">* 바삭하고 가벼운 식감의 구운 초콜릿 속에 입에서 녹을것 같은 진한 치즈쿠키</p>
+							<p class="price">159엔</p>
+							<p class="coment">치즈타르트로 유명한 "베이크"의 제품이다 / 구매하기 어려우니 보이면 꼭 쟁이세요</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAxNzAxMTBfMTQ4/MDAxNDg0MDI0NjA5OTE1.xyHhcFhT3rBRnxvyN9_wJBsIRfaQzxzRx5Y7mil8QkMg.o_duCwXTWAMzoozHB6mQi8mZn3BUoKkcwaHXcT93AOsg.JPEG.blick3636/TR_170104_CARAMELISER_01.jpg?type=w420" alt="카라메리제 와플 쿠키">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAxNzAxMTBfNzIg/MDAxNDg0MDI0NjEwOTky.oHeoYdHH-gsVU-J6E8HGf2lM5t-mjCWls-LiS3D2jPwg.PeOKAx9X9ZIuDasEPoIjpeui56ELr0ZAV3Qai_I2wBEg.JPEG.blick3636/TR_170104_CARAMELISER_05.jpg?type=w420" alt="카라메리제 와플 쿠키">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">카라메리제 와플 쿠키</p>
+							
+							<p class="location">면세점에서 판매 (도쿄제품이라 안팔수도)</p>
+							<p class="txt">* 달고나맛 코팅이 되어있는 와플모양 쿠키</p>
+							<p class="price">?엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://contents.lotteon.com/itemimage/20240121213117/LO/22/49/04/60/70/_2/24/90/46/07/1/LO2249046070_2249046071_1.png" alt="아이보리쉬 빵모양 쿠키">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">아이보리쉬 빵모양 쿠키</p>
+							
+							<p class="location">면세점</p>
+							<p class="txt">* 빵모양의 쿠키 / 정보 많이 없음</p>
+							<p class="price">?엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/5883139494/B.png?388000000" alt="가루비 피자포테이토">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">가루비 피자포테이토</p>
+							
+							<p class="location">드럭스토어, 돈키호테, 편의점</p>
+							<p class="txt">* 피자맛 포테이토칩</p>
+							<p class="price">? 엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://d2gfz7wkiigkmv.cloudfront.net/pickin/2/1/2/8R595Cd4SDSdAQEboJkutw" alt="토하토 아미자가 소금맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://japantomo.com/data/editor/2408/d3ebf20fa711c25f6f45ebdbd2131ab3_1724293166_7165.jpg" alt="토하토 아미자가 2종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">토하토 아미자가</p>
+							
+							<p class="location">?</p>
+							<p class="txt">* 신기한 모양의 과자</p>
+							<p class="price">? 엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.croket.co.kr/item/thumbnail/b3e3a347135d4a95fd6e1875c957b675.webp" alt="가루비 카타아게 포테토 블랙페퍼맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">가루비 카타아게 포테토 블랙페퍼맛</p>
+							
+							<p class="location">드럭스토어, 돈키호테, 편의점</p>
+							<p class="txt">* 후추맛 포테이포칩</p>
+							<p class="price">323엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://image.isy.co.kr/products/nv/2000000283/1_18.jpg" alt="롯데 파이노미">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://www.news1.kr/_next/image?url=https%3A%2F%2Fi3n.news1.kr%2Fsystem%2Fphotos%2F2024%2F10%2F25%2F6948922%2Fhigh.jpg&w=1920&q=75" alt="롯데 파이노미">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">롯데 파이노미</p>
+							
+							<p class="location">마트, 편의점 등</p>
+							<p class="txt">* 홈런볼 같은 패스튜리 쿠키</p>
+							<p class="price">168엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://m.tanaka-shop.net/web/product/extra/big/202311/e25c262c59dd433f86f0bcca206bcc7c.jpg" alt="블랙썬더 초콜릿바">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">블랙썬더 (여러가지맛)</p>
+							
+							<p class="location">마트, 돈키호테, 세븐일레븐</p>
+							<p class="txt">* 코코아쿠키에 초콜릿으로 코딩된 비스킷(과자)</p>
+							<p class="price">250 ~ 300엔</p>
+							<p class="coment">미니미한게 선물용으로 좋을듯</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://image.croket.co.kr/storeItem/60e293fac289ed69f47c8c17/itemImg/1625461755813/0/item_KNWXW.jpeg" alt="알포트 6종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://www.wishbucket.io/_next/image?url=https%3A%2F%2Fd2gfz7wkiigkmv.cloudfront.net%2Fpickin%2F2%2F1%2F2%2F3cY_ETLUTDGfqHl3GZw0_g&w=1080&q=75" alt="알포트 밤 초콜릿">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">알포트</p>
+							
+							<p class="location">드럭스토어, 돈키호테, 편의점</p>
+							<p class="txt">* 빈츠같이 초콜릿으로 덮힌 비스킷</p>
+							<p class="price">98엔</p>
+							<p class="coment">밤맛이 먹어보고싶네요</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://coudae.s3.ap-northeast-2.amazonaws.com/A01044006/product/B0CXHRL9V3/970L1500_.jpg" alt="가나 초콜릿 휩(밀크바닐라)">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">프리미엄 가나 초콜릿휩</p>
+							
+							<p class="location">편의점</p>
+							<p class="txt">* 프리미엄 초콜릿 안에 크리미한 초콜릿이 들어있는 가나 초콜릿</p>
+							<p class="price">238엔</p>
+							<p class="coment">비슷하게 생긴거 보면 구매하기 / 맛있다함~</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://japandrug.jp/cdn/shop/files/1_39f49a03-51e8-4015-8083-1bbd72cf7ce0.jpg?v=1700798611" alt="메이지 가르보 초콜릿 2종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">메이지 가르보 초콜릿</p>
+							
+							<p class="location">드럭스토어, 돈키호테, 편의점</p>
+							<p class="txt">* 초코쿠키 겉에 맛별 초콜릿이 감싸져있는 간식</p>
+							<p class="price">180엔</p>
+							<p class="coment">이거 맛잇쩡</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://japantomo.com/data/editor/1711/58ca32bbc810da835ee3b84f4e6912ad_1509944982_1259.png" alt="카라무초 핫칠리맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://barleymoll.com/data/item/1607311700/5002.jpg" alt="카라무초 스틱 핫칠리맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">카라무초</p>
+
+							<p class="location">마트, 편의점</p>
+							<p class="txt">* 스윙칩 상위호환버전? 감자칩</p>
+							<p class="price">127엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://m.baribari.kr/web/product/big/20200427/d1d13ca2ef33c1ded05e7afca2e68a61.jpg" alt="쟈가리코 샐러드맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">쟈가리코 샐러드맛</p>
+
+							<p class="location">편의점, 돈키호테 등</p>
+							<p class="txt">* 짭짤한 감자스틱</p>
+							<p class="price">128엔</p>
+							<p class="coment">쟈가리코 과자 실패없지비!</p>
+						</div>
+					</li>
+					`
+				]
+			],
+			[
+				'빵 · 케이크', [
+					`
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.croket.co.kr/item/thumbnail/19e4adf22a809cbc504ae626e2320694.webp" alt="진한 가토 쇼콜라 4개입">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img1.tmon.kr/cdn4/deals/2024/04/08/26284904906/front_e723c_oxo7g.jpg" alt="우지말차 가토 쇼콜라 4개입">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">진한 가토 쇼콜라 4개입</p>
+							
+							<p class="location">세븐일레븐</p>
+							<p class="txt">* 달지않고 물리지않는 깔끔한 초코맛 디저트</p>
+							<p class="price">예상 300엔 ~ 500엔</p>
+							<p class="coment">녹차맛도 있나봄</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/d/duckcar/20230117/20230117203000.jpg" alt="모찌촉감롤 초코맛">
+				
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+				
+										</div>
+				
+									</div>
+								</div>
+				
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://blog.kakaocdn.net/dn/cqadbK/btr9mgHCjSY/9LmMyrdneUeirOrtCQOQV0/img.jpg" alt="모찌촉감롤 밀크크림맛">
+				
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+				
+										</div>
+				
+									</div>
+								</div>
+				
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://blog.kakaocdn.net/dn/Immkf/btr9nnMTXq3/K8uu3JcD44k2i1kXAeU29K/img.jpg" alt="모찌촉감롤 호두맛">
+				
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+				
+										</div>
+				
+									</div>
+								</div>
+				
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://blog.kakaocdn.net/dn/6WBEX/btr9nm8iTUA/WyCmKN9kneUPx1nZBKKooK/img.jpg" alt="모찌촉감롤 딸기맛">
+				
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+				
+										</div>
+				
+									</div>
+								</div>
+							</div>
+				
+							<div class="swiper-pagination"></div>
+						</div>
+			
+						<div class="txt-wrap">
+							<p class="name">모찌촉감 롤(모찌롤) もち食感ロール</p>
+							
+							<p class="location">로손편의점</p>
+							<p class="txt">* 떡같은 식감에 여러가지 맛 크림을 넣은 롤케이크</p>
+							<p class="price">397엔</p>
+							<p class="coment">여러가지 맛이있다.</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReSwlmUzt6h2sWwKrh06Z3kJbwSOySfUmSug&s" alt="모찌 뿌요">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://blog.kakaocdn.net/dn/bTvqB6/btsJonDlhss/G3SyO0apyQBKYP98tYHrA1/img.png" alt="모찌 뿌요 컷팅">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">모찌 뿌요 (もちぷよ)</p>
+							
+							<p class="location">로숀편의점</p>
+							<p class="txt">* 떡같은 찰기가 느껴지는 빵안에 묽은 크림을 넣은 디저트</p>
+							<p class="price">108엔</p>
+							<p class="coment">차가울때 먹는게 제일 맛있다고한다.</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://iemone.jp/iemone-cms/wp-content/uploads/2021/06/202680-02.jpg" alt="못찌리 크레이프">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://pbs.twimg.com/media/FhAJ8J1aAAAEd9F.jpg:large" alt="못찌리 크레이프 단면">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">못찌리 크레이프 (もっちりクレープ)</p>
+							
+							<p class="location">로숀편의점</p>
+							<p class="txt">* 크레이프 안에 우유생크림과 가나슈 초코크림이 들어간 디저트</p>
+							<p class="price">160엔</p>
+						</div>
+					</li>
+
+					
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyNDA3MTlfNjAg/MDAxNzIxMzc5NjU5MTc5.6QzlaFEtghbe076YL-VFXgGASQJePugBB4sOdV3YA2Eg.JnVH6i1KBM23d3JTDyYFLFrJVXqh8_RpL6E8BQx8CQYg.JPEG/%EC%9D%BC%EB%B3%B8_%ED%8E%B8%EC%9D%98%EC%A0%90-032.jpg?type=w800" alt="트윈 슈">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://favehey.com/wp-content/uploads/2023/08/%EC%9D%BC%EB%B3%B8%ED%8E%B8%EC%9D%98%EC%A0%90.jpg" alt="트윈 단면">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">트윈 크림 슈</p>
+							
+							<p class="location">로숀편의점</p>
+							<p class="txt">* 생크림과 슈크림이 같이 들어있는 슈</p>
+							<p class="price">197엔</p>
+							<p class="coment">사자마자 먹어야 빵이 더 맛있다고 한다.</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://newsatcl-pctr.c.yimg.jp/dk/expert-image/moka/article/00410024/top_1677805777720.jpeg?exp=10800" alt="베이크드 커스터드 크림 타르트">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://stat.ameba.jp/user_images/20230302/12/junskynet/df/04/p/o0900090015249947005.png" alt="베이크드 커스터드 크림 타르트 단면">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">베이크드 커스터드 크림 타르트</p>
+							
+							<p class="location">로숀편의점</p>
+							<p class="txt">* 바삭한 타르트지와 단단하지만 부드러운 커스터드 크림</p>
+							<p class="price">225엔</p>
+						</div>
+					</li>
+					`
+				]
+			],
+			[
+				'푸딩', [
+					`
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://blog.kakaocdn.net/dn/bazOp4/btsGYSFXCZ0/6FkjMgrwT7gWqhm3dFtYUk/img.jpg" alt="루나 바닐라 요구르트">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyMzAzMDZfMjA2/MDAxNjc4MTAxNDg1Njky.zWzieLx25tQxp1OBrTeFFTf9qThCXiW0tpP3ddYZmPIg.w8lNvqAlhOu-HI5lFxf2hTbeQxmXlkBsW7qX37Po4gQg.JPEG.lja1327/IMG_7091.jpg?type=w800" alt="루나 바닐라 요구르트 상세샷">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">루나 바닐라 요구르트 푸딩</p>
+
+							<p class="location">편의점에 잘 없고 마트에 조금 있음</p>
+							<p class="txt">* 새콤한 향 + 은은한 바닐라향의 요거트맛</p>
+							<p class="price">102엔</p>
+							<p class="coment">조금 단단한 요구르트(푸딩까진 아닌듯)</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA5MzBfMTY4/MDAxNjAxNDU2Mzc5MzMw.eNK3VDVLYGimcYVp1k6RO1urA3F2hJ17C0oYOXfxxfcg.e4DmoXIID1QwMh5zRvrdiZ8fMy_sECllEsJM_EmKSdUg.JPEG.kireina34/output_3315521724.jpg?type=w800" alt="후와슈와 수플레 푸링">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">후와슈와 수플레 푸링</p>
+
+							<p class="location">패밀리마트</p>
+							<p class="txt">* 수플레케이크와 크림이 올라간 푸딩</p>
+							<p class="price">298엔</p>
+							<p class="coment">츄벨ㄹㄹㄹ릅</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://cdn.011st.com/11dims/resize/2000x2000/quality/75/11src/product/6550394357/B.jpg?173000000" alt="야키푸딩">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">야키푸딩</p>
+
+							<p class="location">편의점, 마트</p>
+							<p class="txt">* 표면을 살짝 구운 야끼 캐러멜 푸딩</p>
+							<p class="price">139 엔</p>
+							<p class="coment">아래 캐러멜 시럽과 섞어 먹으면 맛남</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyMzAxMjhfNDUg/MDAxNjc0ODgxNTk2ODcy.Etf-2ZRKZUoMzHBjdlw-QVolqFEmpzpSc5lHUB98pzQg.-t4AkZ5xQ2A6iR-_SYN_HF9NrWPBBgdfZj4CNX3ZZc0g.JPEG.wonhyangiii/IMG_3853.JPG?type=w800" alt="코히제리">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://blog.kakaocdn.net/dn/Mvmcn/btr5ORqZA6i/OhB3IlvbxdyuykpNzpRGrK/img.jpg" alt="코히제리">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">코히제리</p>
+
+							<p class="location">편의점, 마트 등</p>
+							<p class="txt">* 달지않은 커피젤리 위에 구성품인 연유/아이스크림/생크림을 곁들이면 극락! 섞지말고 그대로 드세용</p>
+							<p class="price">110엔</p>
+							<p class="coment">커피젤리만 먹으면 단맛이없으니 꼭 첨가해주세요잉</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/0db2/7ac7ce0d04546b869e0e673f073cfdd02872bc98a529b957554df34918dd.jpg" alt="쟈지밀크 푸딩">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">쟈지밀크 푸딩</p>
+
+							<p class="location">편의점, 마트 등</p>
+							<p class="txt">* 사르르 녹는 우유맛 푸딩</p>
+							<p class="price">170엔</p>
+							<p class="coment">과연 한국제품과의 차이는 ?</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://cdn.shopify.com/s/files/1/0601/7200/9692/files/6_e238b39a-f6bd-46a7-8661-d1cac7530abb_480x480.jpg?v=1651471583" alt="카마다시 토로케루 푸딩">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.daily.co.kr/@files/www.daily.co.kr/content/food/2019/20190515/1b9ceb9a89c6ab0aef290bc148b22b8c.jpg" alt="카마다시 토로케루 푸딩">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">카마다시 토로케루 푸딩</p>
+
+							<p class="location">패밀리 마트</p>
+							<p class="txt">* 계란과 생크림을 아낌없이 사용해서 만든 진하고 크리미한 푸딩</p>
+							<p class="price">189엔</p>
+							<p class="coment">유투버의 추천</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/07/30/VbQJ/tFlvaTSs04.jpeg?quality=70.0&width=1080" alt="나메라카 푸딩">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">나메라카 푸딩</p>
+
+							<p class="location">세븐일레븐</p>
+							<p class="txt">* 달콤하고 부드러운 우유와 커드터드 맛 푸딩</p>
+							<p class="price">155엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAxMjJfMTAg%2FMDAxNjQyODA5MDg0NjIy.oU-P10QrVEfjiMe2qOjNM_0l9KRYz4eWNIkPG3UH12cg.oIlspMzeDkWORHjeH2XqXemxG-w5-2Q03MDmJiYD8Ukg.JPEG.fpsks1004%2Foutput_1911917891.jpg&type=sc960_832" alt="코다와리 키와미 푸딩">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160422_7%2Fchuri0321_1461289963957yD81C_JPEG%2FSAM_0001.JPG&type=sc960_832" alt="코다와리 키와미 푸딩 말차">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">코다와리 키와미 푸딩</p>
+
+							<p class="location">마트, 편의점</p>
+							<p class="txt">* 부드럽지만 탄탄한 푸딩 밑엔 시럽이 있어요!</p>
+							<p class="price">93엔</p>
+							<p class="coment">초코, 바닐라, 녹차 등 여러가지 맛이 있다</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://dategom.com/wp-content/uploads/2023/10/OHAYO-%EC%8B%A0%EC%84%A0%EB%9E%80-%EB%85%B8%EB%A6%87%ED%95%98%EA%B2%8C-%EA%B5%AC%EC%9A%B4-%ED%91%B8%EB%94%A9.jpg" alt="오하요 신선란 푸딩">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">오하요 신선란 푸딩</p>
+
+							<p class="location">편의점, 마트</p>
+							<p class="txt">* 신선한 게란맛이 듬뿍 나는 커스터드 푸딩 / 차게해서 드세요</p>
+							<p class="price">140엔</p>
+						</div>
+					</li>
+					`
+				]
+			],
+			[
+				'아이스크림', [
+					`
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://newsatcl-pctr.c.yimg.jp/dk/expert-image/shingekinogourmet/article/00418055/internal_1678692072654.jpeg?fill=1&fc=fff&exp=10800" alt="소우아이스크림 메론소다후루토맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/20140521_280/mimityan1_1400670839746V1GBK_JPEG/251154_615.jpg?type=w420" alt="소우아이스크림 망고파인맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">爽 (소우) 아이스크림</p>
+							
+							<p class="location">패밀리마트</p>
+							<p class="txt">* 여러가지맛을 판매중인 "와" 같은 아이스크림</p>
+							<p class="price">126엔</p>
+							<p class="coment">단종된맛이 꽤 많습니다</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://pbs.twimg.com/media/FA3FVdjVkAECXTI.jpg" alt="아이스 노미 포도 망고 복숭아">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiPqmOkMfMg3J9uRQlY-rj7YE4ISFFrRCDxgSWRJsdb_FCNZk-X6QkkNJxlAsQ4uoBQgQ&usqp=CAU" alt="아이스노미 키위 복숭아">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPbCssJu6wipRUL7yH8jCNa5UyjgBut8Rcpw&s" alt="아이스노미 녹차">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">아이스 노미 아이스크림</p>
+							
+							<p class="location">편의점</p>
+							<p class="txt">* 여러가지 과일맛 아이스노미 아이스크림</p>
+							<p class="price">173엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://pbs.twimg.com/media/D6G1iyuUEAAXrMy.jpg" alt="이타초코 아이스크림 민초">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyMzEwMTRfMzEg/MDAxNjk3MjExNTYxMDI5.4wHwF7x_qgt-utY6GD5JffQYHf9I9ta8VtBmhcXDLd4g.kXPyvRZR6yBtYYYaoZ2GBqqfRYC7j30dQ4cCxhrbsbog.JPEG.whiteswps/IMG_2764.jpg?type=w800" alt="이타초코 아이스크림 초코">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA4MjZfMTIg%2FMDAxNzI0NjIxNzU0ODk4.PSX6Yl9jwNiZMRqtRYrQfR8o9AnMixN4_0s4dHgZ96sg.2cbIzPzrATKHMh1QEeydSP3_-YyRUJLcdmc92zoaX60g.JPEG%2FIMG_9005.JPG&type=sc960_832" alt="이타초코 아이스크림 푸딩">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">이타초코 아이스</p>
+							
+							<p class="location">편의점</p>
+							<p class="txt">* 바삭한 초콜릿 안에 아이스크림이 가득</p>
+							<p class="price">161엔</p>
+							<p class="coment">계절별로 나오는 한정판 맛이 존재한다고 한다</p>
+						</div>
+					</li>
+
+					
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyMzA0MTdfMjg2/MDAxNjgxNzMxMTg5MDE5.E2s97-OwnDZqrE7s5gdyYvYR5oQSVuhNx8DTX1DqDa8g.7COLCoEsA04rAttc31Rg42PTrCXPUEcI_nD82QO0H_Ug.JPEG.kireina34/SE-26630894-BE5F-485D-8ABD-974FCEC19D3C.jpg?type=w800" alt="오하요 브렐레 아이스크림 초코">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://d2uja84sd90jmv.cloudfront.net/posts/AludcXOuXa7gaAL-tNTx0A/ms.jpg" alt="오하요 브렐레 아이스크림 바닐라">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://blog.kakaocdn.net/dn/YoIAk/btsIlm1HAhq/asWQFEeb3y2n7weHqngRZK/img.jpg" alt="오하요 브렐레 아이스크림 바닐라 실물">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">오하요 브렐레 아이스크림</p>
+							
+							<p class="location">로숀, 세븐일레븐</p>
+							<p class="txt">* 바삭한 설탕코팅 아래로 홋카이돗산 우유를 사용한 아이스크림</p>
+							<p class="price">338엔</p>
+							<p class="coment">구매시 스푼 별도로 제공(안주면 달라해야함)</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mkmon.com/cdn/shop/articles/1692944358319.jpg?v=1692944359" alt="하겐다즈 하나모찌 인절미">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAxODAzMTRfMjYz/MDAxNTIwOTgxNzQ0MzUy.W-7mEwygJy40RkT3e7mxUbHAAS_poaWPJeXa9yLqTHcg.8LKmlrq6L0eaReewA4CpYy1QClP6yJNN-dvJmxm4OLMg.JPEG.gami1023/20180307_113557.jpg?type=w800" alt="하겐다즈 하나모찌 벚꽃">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">하겐다즈 하나모찌</p>
+							
+							<p class="location">편의점 또는 마트나 백화점</p>
+							<p class="txt">* 하겐다즈 아이스크림에 토핑과 떡을 올린 디저트</p>
+							<p class="price">288엔</p>
+							<p class="coment">판매점이 적어서 눈에 보이면 살것</p>
+						</div>
+					</li>
+
+					
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdZGtgR0eWlt8_Hjeo0BKUpjilUjShFmBW9A&s" alt="피노 꿀고구마맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyNDAyMTdfMjkx/MDAxNzA4MTQyNTEwMDEy.6M5ueGf-uLNhRMYAdkzAOzoeArkaOaR3rzt1FUXQYuYg.MMKAIIp0Gt5giVXF_lMjkYaRe8XR3wpG8dsOWqgJk7Ug.JPEG.jane1994kr/output_521272661.jpg?type=w800" alt="피노 꿀고구마맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">피노 아이스크림 꿀고구마맛</p>
+							
+							<p class="location">편의점</p>
+							<p class="txt">* 고구마페이스트를 사용한 고구마아이스크림에 캐러멜 풍미의 토핑을 섞은 고구마맛의 초콜릿으로 코딩한 아이스크림</p>
+							<p class="price">200엔</p>
+							<p class="coment">한정판이라 판매종료했을 수 있음</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTABOQdE05vLmYEe1ZEynx2GoInufKQTzVxJw&s" alt="히토쿠치 카누레 아이스">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://pbs.twimg.com/media/GHgFpvIbsAALW-R.jpg" alt="히토쿠치 카누레 아이스 단면">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">히토쿠치 카누레 아이스</p>
+							
+							<p class="location">세븐일레븐</p>
+							<p class="txt">* 까눌레모양 한입 아이스크림</p>
+							<p class="price">? 엔</p>
+						</div>
+					</li>
+
+					<li class="best">
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2jtuZmETg1aP4zAlQKCIB7vbDoqFjonMfNQ&s" alt="생초콜릿 아이스크림">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyMzEwMTVfMTI0/MDAxNjk3MzQ0MDgxMDE2.XQSuD0WWxJuvy0oyhsLnVsICPzhiq3wSVzlGyar5Of4g.A-VZ0iTopr7MAlvBco31Q8b_SyONxuGMdNVHcLsunxYg.JPEG.hhjhhj9964/20231006%EF%BC%BF003708.jpg?type=w800" alt="생초콜릿 아이스크림">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">탯뿌리 생초코 아이스</p>
+							
+							<p class="location">세븐일레븐</p>
+							<p class="txt">* 생초코의 부드러운 부분이 아이스크림이 되어 극락</p>
+							<p class="price">300엔</p>
+							<p class="coment">개맛있겠다 이건 꼭 먹어야함</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://www.morinaga.co.jp/jumbo/kr/assets/img/item/item_01_01.png" alt="초코모나카 아이스">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://d28dpoj42hxr8c.cloudfront.net/files/user/201608062107_6.jpg?v=1470485237" alt="초코모나카 아이스 단면">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">초코모나카 아이스</p>
+							
+							<p class="location">편의점</p>
+							<p class="txt">* 초콜릿을 감싼 아이스크림을 감싼 모나카</p>
+							<p class="price">173엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://d28dpoj42hxr8c.cloudfront.net/files/user/201608062107_1.jpg?v=1470485237" alt="야와모찌 아이스 3종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">야와모찌 아이스</p>
+							
+							<p class="location">드럭스토어, 돈키호테, 편의점</p>
+							<p class="txt">* 맛별로 다른 시럽과 5개의 모찌가 올라가있는 아이스크림</p>
+							<p class="price">100 ~ 130엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://storage.googleapis.com/ikidane/upload/smi_b193b0eae1/smi_b193b0eae1.jpg" alt="아이스와플콘 말차">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">아이스와플콘 말차</p>
+							
+							<p class="location">세븐일레븐</p>
+							<p class="txt">* 한정판 와플콘 녹차 아이스크림</p>
+							<p class="price">248엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://www.foodnews.news/data/photos/20220833/art_16607967384457_e7c8e5.jpg" alt="갈아만드는 과일 스무디">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://res.heraldm.com/phpwas/restmb_idxmake.php?idx=507&simg=/content/image/2022/09/04/20220904000095_0.jpg" alt="갈아만드는 과일 스무디">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name"><a href="" target="_blank" title="새창에서 열기">갈아만드는 과일 스무디</a></p>
+
+							<p class="location">세븐일레븐</p>
+							<p class="txt">* 냉동과일을 직접 갈아먹을수 있는 스무디</p>
+							<p class="price">278엔</p>
+							<p class="coment">스무디 작동법은 상세페이지 참고</p>
+						</div>
+					</li>
+					`
+				]
+			],
+			[
+				'젤리 · 캔디', [
+					`
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://s3-ap-northeast-1.amazonaws.com/img.yic.co.kr/goodsDesc/goodsDesc_2022021016384316444787238201.jpg" alt="칼피스 모찌">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">칼피스 모찌</p>
+							
+							<p class="location">편의점이나 드럭스토어 또는 돈키호테</p>
+							<p class="txt">* 칼피스크림이 들어있는 요구르트맛 젤리</p>
+							<p class="coment">살짝얼려먹으면 더 맛있다함</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://d2gfz7wkiigkmv.cloudfront.net/pickin/2/1/2/K5VAwdM9QC-Rxn9DM1RMeg" alt="부르봉 페투치네 5종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/5689813820/B.jpg?370000000" alt="부르봉 페투치네 포도맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">부르봉 페투치네 젤리</p>
+							
+							<p class="location">편의점. 돈키호테 등</p>
+							<p class="txt">* 페투치네 면처럼 생긴 젤리</p>
+							<p class="price">100엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://www.wishbucket.io/_next/image?url=https%3A%2F%2Fd2gfz7wkiigkmv.cloudfront.net%2Fpickin%2F2%2F1%2F2%2FBnA0zmCvQiGdr8lCIIqZCQ&w=640&q=75" alt="퓨어랄 구미 5종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://blog.kakaocdn.net/dn/QLITz/btsqm6UdRMc/DOjXMVpNHrJKMYUKLKlkwK/img.jpg" alt="퓨어랄 구미 복숭아, 머스켓">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://shuttlepeople.com/data/item/1500000669/thumb-7ZOo7Ja0656E6rWs66465S46riw45g2_600x600.png" alt="퓨어랄 구미 단면">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">퓨어랄 구미 젤리</p>
+							
+							<p class="location">드럭스토어, 편의점</p>
+							<p class="txt">* 폭신한 식감의 안에 쫄깃한 과일젤리가 들어있는 젤리</p>
+							<p class="price">120엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/198b/b608b853dddaed9767d31edf944e7407f68a748d38950dfa71837e9b60fa.jpg" alt="UHA 푸초 스틱젤리">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://sitem.ssgcdn.com/67/70/95/item/1000048957067_i1_750.jpg" alt="UHA 푸초 스틱젤리">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">UHA 푸초 스틱젤리</p>
+							
+							<p class="location">드럭스토어, 돈키호테, 편의점</p>
+							<p class="txt">* 마이쮸같은 젤리안에 또 젤리를 넣은 젤리</p>
+							<p class="price">130엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.croket.co.kr/item/contents/49a543de85853719618dc90520ec95a7.jpeg" alt="까먹는 생젤리 무쿠나마구미 3종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.croket.co.kr/item/thumbnail/024acf6e940fc5000c24984bdb937535.webp" alt="까먹는 생젤리 무쿠나마구미 머스캣맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">까먹는 생젤리 무쿠나마구미</p>
+							
+							<p class="location">돈키호테</p>
+							<p class="txt">* 탱글한 과일맛 젤리</p>
+							<p class="price">298엔</p>
+							<p class="coment">초큼 달다고 한다</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOi66jACMxPA3_Zi_aCvzP0XvD7P71yB8PLA&s" alt="아사히 미츠야 사이다 소다 캔디 4가지맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://stat.ameba.jp/user_images/20230302/12/junskynet/df/04/p/o0900090015249947005.png" alt="아사히 미츠야 사이다 소다 캔디">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">아사히 미츠야 사이다 소다 캔디</p>
+							
+							<p class="location">?</p>
+							<p class="txt">* 사이다 캔디로 탄산쏘는 느낌을 맛볼수 있다</p>
+							<p class="price">? 엔</p>
+							<p class="coment">다른맛도 판매함</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://nppip.com/data/item/1656379134/66qo66as64KY6rCA7KCc6rO8.jpg" alt="모리나가 카라멜 4종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">모리나가 카라멜</p>
+							
+							<p class="location">드럭스토어, 돈키호테, 편의점</p>
+							<p class="txt">* 신기한 맛 카라멜 (팥색은 팥맛 카라멜)</p>
+							<p class="price">300엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://nppip.com/data/item/1721350296/7KCc66qp7J2E7J6F66Cl7ZW07KO87IS47JqU_00120240719T093922.135.jpg" alt="드라이 미캉">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">드라이 미캉</p>
+							
+							<p class="location">패밀리마트</p>
+							<p class="txt">* 쫄깃한 말린 귤의 식감</p>
+							<p class="price">? 엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.croket.co.kr/item/thumbnail/60c9f32ad33e582fc439182e0db8bc5a.webp" alt="모리나가 프리미엄 하이츄 5종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://image.croket.co.kr/storeItem/63f43bbcb14e99002ec2147f/itemImg/1676950461191/0/item_koeMP.jpeg" alt="모리나가 프리미엄 하이츄 귤">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">모리나가 프리미엄 하이츄</p>
+							
+							<p class="location">드럭스토어, 돈키호테, 편의점</p>
+							<p class="txt">* 마이쮸보다 쫀득하고 부드러운 식감의 젤리</p>
+							<p class="price">예상 130 ~ 150엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.khan.co.kr/lady/2023/09/11/news-p.v1.20230911.81e1330eca8b4a0180a08eff8b4b7c9b_P1.png" alt="곤약젤리">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">곤약젤리</p>
+							<p class="txt">* 곤약맛 안나는 맛난곤약! 젤리</p>
+							<p class="price">? 엔</p>
+							<p class="coment">컵타입의 곤약젤리는 국내반입이 안된다는 사실!</p>
+						</div>
+					</li>
+					`
+				]
+			],
+			[
+				'컵라면', [
+					`
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/QjIL7_134678_1.jpg" alt="산요 삿포로이치방 참깨돈부리된장라멘">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">산요 삿포로이치방 참깨돈부리된장라멘</p>
+							
+							<p class="txt">* 참깨가 들어간 된장라멘</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img3.tmon.kr/cdn4/deals/2024/07/23/27325924746/front_acce4_1tmyu.jpg" alt="산요 삿포로 이치방 조개국물 돈부리 소금 라멘">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">산요 삿포로 이치방 조개국물 돈부리 소금 라멘</p>
+							
+							<p class="txt">* 조개국물 해장 싹~</p>
+							<p class="coment">비슷하게 생긴 일반 소금라멘이 있으니 주의바람</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/Ps0B3_134681_1-600x600.jpg" alt="에이스쿡 매운카레 야키소바">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">에이스쿡 매운카레 야키소바</p>
+							
+							<p class="txt">* 맵찔이도 가능</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://sep-item.ssgcdn.com/67/55/87/item/1000565875567_i1_350.jpg" alt="에이스쿡 매운카레 라멘">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">에이스쿡 매운카레 라멘</p>
+							
+							<p class="txt">* 위에껀 야끼소바 이건 라멘~</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/mG9bD_134674_1.jpg" alt="산요 삿포로이치방 완전매운 탄탄멘">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">산요 삿포로이치방 완전매운 탄탄멘</p>
+							<p class="txt">* 산초맛 확 느껴지는 탄탄멘</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/TNBGs_134675_1.jpg" alt="산요 삿포로이치방 유자 시오라멘">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">산요 삿포로이치방 유자 시오라멘</p>
+							<p class="txt">* 유자향이 나서 상큼+깔끔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/BC1Ah_134676_1.jpg" alt="산요 삿포로 이치방 순두비찌개라멘">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">산요 삿포로 이치방 순두비찌개라멘</p>
+							<p class="txt">* 순찌라멘</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/iFmh3_134677_1.jpg" alt="산요 삿포로이치방 돈부리 간장라멘">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">산요 삿포로이치방 돈부리 간장라멘</p>
+							<p class="txt">* 볶은파가 완전 많이 들어간 라멘</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/4nC5E_134668_1.jpg" alt="묘조 스테미나 중화소바">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">묘조 스테미나 중화소바</p>
+							<p class="txt">* 마늘+간장맛 스프에 빨간 국물</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/Qp7cp_134670_1.jpg" alt="묘조 잇페이짱 스테미나 돼지고기 시오타레">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">묘조 잇페이짱 스테미나 돼지고기 시오타레</p>
+							<p class="txt">* 마늘+마요 건더기 많은 볶음면</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/2nCzz_134673_1.jpg" alt="산요 삿포로 이치방 햇생강맛 시오 야키소바">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">산요 삿포로 이치방 햇생강맛 시오 야키소바</p>
+							<p class="txt">* 상큼한(?) 생강맛 야키소바</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://thumbnail7.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/0898/7ee2cd60e2cab0e370a0caa8437b8b84ae74ee07c05959e1c12962060797.png" alt="동양수산 키츠네 야끼우동">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">동양수산 키츠네 야끼우동</p>
+							<p class="txt">* 간장베이스에 시치미토핑이 있는 볶음우동</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://www.maruchan.co.jp/news_topics/documents/2201_noukouniboshiudon.gif" alt="동양수산 멸치 다시 우동">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">동양수산 멸치 다시 우동</p>
+							<p class="txt">* 농후한 국물 우동</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/uk9RR_134666_1-600x600.jpg" alt="동양수산 마루짱세이멘 농후멸치 양파라면">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">동양수산 마루짱세이멘 농후멸치 양파라면</p>
+							<p class="txt">* 돈코츠 베이스에 양파 듬뿍</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/YpXh2_134667_1.jpg" alt="묘조 챠루메라 국물없는 짬뽕">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">묘조 챠루메라 국물없는 짬뽕</p>
+							<p class="txt">* 돈코츠 베이스에 해물맛까지</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://www.saradamall.com/data/item/1723605895/92.png" alt="닛신 ufo 감자치즈 야끼소바">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">닛신 ufo 감자치즈 야끼소바</p>
+							<p class="txt">* 매쉬포테이토랑 찰떡궁합</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.croket.co.kr/item/thumbnail/ba28c4299734aad254c28492c483f1c4.webp" alt="닛신 마제 야끼소바">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">닛신 마제 야끼소바</p>
+							<p class="txt">* 라유 마요네즈가 들어있어서 진한맛! 자극적!</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.croket.co.kr/item/thumbnail/f03168f0a7c5a3abad0af914ba7f3413.webp" alt="닛신 돈베이 매운 키츠네 우동">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">닛신 돈베이 매운 키츠네 우동</p>
+							<p class="txt">* 유부토핑이 있는 한국인이 좋아하는 빨간 국물</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://sports.chosun.com/news/html/2024/06/25/2024062501001891200257381.jpg" alt="닛신라왕 복어소금라멘">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">닛신라왕 복어소금라멘</p>
+							<p class="txt">* 유자향 싹 퍼지는 깔끔한 국물 / 오직 일본에서만 구매 가능</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/51a4/ddeed8c614d4cadb3108184696d5ad03b58d981e0ad3cb0f200f7330c1ce.jpg" alt="닛신 몽고탄멘 나카모토">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">닛신 몽고탄멘 나카모토</p>
+
+							<p class="location">세븐일레븐</p>
+							<p class="txt">* 신라면에서 살짝 매운맛의 마라중화맛</p>
+							<p class="price">280엔</p>
+							<p class="coment">난쟁이나라의 장신공주 <strong class="twinkle">PICK !</strong> / 한정판이라 판매 안할수도</p>
+						</div>
+					</li>
+
+					<li class="best">
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/97ce/d226466155cc0295c151bcd7c040bb07aacbc8c9ae0255d9c88981fb8c8d.jpg" alt="마루짱 시로이 치카라모찌 우동">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://www.niconicomall.com/data/file/review/thumb-20210503104626_3959_500x667.jpg" alt="마루짱 시로이 치카라모찌 우동 실제샷">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">마루짱 시로이 치카라모찌 우동</p>
+
+							<p class="location">마트, 돈키호테, 편의점</p>
+							<p class="txt">* 쫄깃한 떡이 들어간 우동</p>
+							<p class="price">190엔</p>
+							<p class="coment">맛있겟당</p>
+						</div>
+					</li>
+					`
+				]
+			],
+			[
+				'그 외', [
+					`
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Pommes_d_amour.jpg/1200px-Pommes_d_amour.jpg" alt="링고아메 캔디애플">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">링고아메</p>
+							
+							<p class="location">Candy apple (캔디애플 - 가맹점)</p>
+							<p class="txt">* "캔디애플"이라는 링고아메를 판매하는 디저트집이 있다.</p>
+							<p class="price">225엔</p>
+							<p class="coment">동선상 지나가는 경우 구매하면 좋을듯</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://dategom.com/wp-content/uploads/2023/10/%EC%84%B8%EB%B8%90%EC%9D%BC%EB%A0%88%EB%B8%90-%EC%88%99%EC%84%B1-%EB%A7%A4%EC%9A%B4-%EB%AA%85%EB%9E%80%EC%A0%93.jpg" alt="숙성 매운 명란젓">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">숙성 매운 명란젓</p>
+
+							<p class="location">세븐일레븐</p>
+							<p class="txt">* 숙성시킨 매운 명란젓을 넣은 주먹밥</p>
+							<p class="price">175엔</p>
+							<p class="coment">댝생님의 최애</p>
+						</div>
+					</li>
+					`
+				]
+			],
+		]
+	],
+	
+	// 여기부터 작업시작
+	['와구와구', 
+		[
+			[
+				'과자', [
+					`
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://i.namu.wiki/i/-bB818aF0cO5oq7YskLxupT8q113VPNIK4DPYkE56ipF-X6ReLD7fR83KzAGV3JVIcAUVagySSp5GuGhyZxVXoIeUOEHdN1p9mF-tS4OtN5Hf3QL5MvZH_fSpXcceU_qgnAoJ3tBu-AWkBgD9F1hug.webp" alt="白い恋人">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">시로이코이비토 (白い恋人)</p>
+							
+							<p class="location">간사이 공항 면세점 판매</p>
+							<p class="txt">* 쿠키샌드에 화이트 혹은 블랙 초콜릿바른 랑그드샤형 과자</p>
+							<p class="price">720엔 ~ 4,800엔</p>
+							<p class="coment">선물용으로 좋아보임</p>
+						</div>
+					</li>
+					
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.croket.co.kr/item/thumbnail/b6eaf973b000b2073e1f0424717bd82a.webp" alt="슈가버터샌드트리 기본맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://sitem.ssgcdn.com/64/70/21/item/1000526217064_i1_750.jpg" alt="슈가버터샌드트리 사과맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://sitem.ssgcdn.com/72/69/70/item/1000272706972_i1_750.jpg" alt="슈가버터샌드트리 선물용">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">슈가버터샌드트리 3개입</p>
+							
+							<p class="location">세븐일레븐 / 오사카 한큐백화점(선물용 3가지맛)</p>
+							<p class="txt">* 웨하스같은 쿠키에 두툼한 크림이 샌드된 과자</p>
+							<p class="price">예상 200엔 ~ 300엔<br>선물용 3,000엔</p>
+							<p class="coment">편의점은 3개입 별도포장</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://japantomo.com/data/editor/2009/f181c2ad232b0ea4b2cae3aaab680be3_1599721626_6583.png" alt="부르봉 쿠키 4종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://japantomo.com/data/editor/2009/f181c2ad232b0ea4b2cae3aaab680be3_1599721684_2026.png" alt="부르봉 쿠키">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">부르봉 쿠키</p>
+							
+							<p class="location">마트 (대형마트가 제일 저렴)</p>
+							<p class="txt">* 겹겹의 바삭한 크레이프 쿠키를 초콜릿으로 코딩한 쿠키</p>
+							<p class="price">예상 200엔 ~ 250엔</p>
+							<p class="coment">보라색이 제일 대중적 / 선물용으로 좋을듯</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://sitem.ssgcdn.com/23/77/45/item/1000563457723_i1_750.jpg" alt="샤샤 초콜릿 초코">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://sitem.ssgcdn.com/78/10/69/item/1000556691078_i1_750.jpg" alt="샤샤 초콜릿 녹차">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://image.croket.co.kr/storeItem/63242d6a471a8cfc68843903/itemImg/1663315307194/0/item_2EXfC.jpeg" alt="샤샤 초콜릿 딸기">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">샤샤 초콜릿</p>
+							
+							<p class="location">편의점, 마트</p>
+							<p class="txt">* 여러겹으로 겹쳐서 만든 초콜릿</p>
+							<p class="price">248엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://gw.alicdn.com/imgextra/i3/845908271/O1CN01B22wj42AyATovXsgM_!!0-item_pic.jpg_540x540q90.jpg" alt="치즈아몬드 센베이 3종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/5213673552/B.jpg?901000000" alt="치즈아몬드 센베이">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">산코제과 치즈아몬드 센베이</p>
+							
+							<p class="location">편의점</p>
+							<p class="txt">* 크래커에 치즈아몬드를 올린 일본 쌀과자</p>
+							<p class="price">280엔</p>
+							<p class="coment">술안주로 먹어도 좋은 크래커</p>
+						</div>
+					</li>
+
+
+					<li class="best">
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyMzEyMjBfMjc0/MDAxNzAzMDU1NjM4MzEw.pMCIfRv1nanSaGzRzh0-CFWD6XceP5wdog5zXMXAmI4g.ataOfzvFuGRnttJ0pIb8zJ6sixzmkPq5ziGS6jG9hTMg.JPEG.zmfpdyd1004/SE-d4a89248-054e-4371-b510-085754d5f3c8.jpg?type=w800" alt="모리가나 크림치즈 쿠키">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">모리가나 크림치즈 쿠키</p>
+							
+							<p class="location">돈키호테</p>
+							<p class="txt">* 바삭하고 가벼운 식감의 구운 초콜릿 속에 입에서 녹을것 같은 진한 치즈쿠키</p>
+							<p class="price">159엔</p>
+							<p class="coment">치즈타르트로 유명한 "베이크"의 제품이다 / 구매하기 어려우니 보이면 꼭 쟁이세요</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAxNzAxMTBfMTQ4/MDAxNDg0MDI0NjA5OTE1.xyHhcFhT3rBRnxvyN9_wJBsIRfaQzxzRx5Y7mil8QkMg.o_duCwXTWAMzoozHB6mQi8mZn3BUoKkcwaHXcT93AOsg.JPEG.blick3636/TR_170104_CARAMELISER_01.jpg?type=w420" alt="카라메리제 와플 쿠키">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAxNzAxMTBfNzIg/MDAxNDg0MDI0NjEwOTky.oHeoYdHH-gsVU-J6E8HGf2lM5t-mjCWls-LiS3D2jPwg.PeOKAx9X9ZIuDasEPoIjpeui56ELr0ZAV3Qai_I2wBEg.JPEG.blick3636/TR_170104_CARAMELISER_05.jpg?type=w420" alt="카라메리제 와플 쿠키">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">카라메리제 와플 쿠키</p>
+							
+							<p class="location">면세점에서 판매 (도쿄제품이라 안팔수도)</p>
+							<p class="txt">* 달고나맛 코팅이 되어있는 와플모양 쿠키</p>
+							<p class="price">?엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://contents.lotteon.com/itemimage/20240121213117/LO/22/49/04/60/70/_2/24/90/46/07/1/LO2249046070_2249046071_1.png" alt="아이보리쉬 빵모양 쿠키">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">아이보리쉬 빵모양 쿠키</p>
+							
+							<p class="location">면세점</p>
+							<p class="txt">* 빵모양의 쿠키 / 정보 많이 없음</p>
+							<p class="price">?엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/5883139494/B.png?388000000" alt="가루비 피자포테이토">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">가루비 피자포테이토</p>
+							
+							<p class="location">드럭스토어, 돈키호테, 편의점</p>
+							<p class="txt">* 피자맛 포테이토칩</p>
+							<p class="price">? 엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://d2gfz7wkiigkmv.cloudfront.net/pickin/2/1/2/8R595Cd4SDSdAQEboJkutw" alt="토하토 아미자가 소금맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://japantomo.com/data/editor/2408/d3ebf20fa711c25f6f45ebdbd2131ab3_1724293166_7165.jpg" alt="토하토 아미자가 2종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">토하토 아미자가</p>
+							
+							<p class="location">?</p>
+							<p class="txt">* 신기한 모양의 과자</p>
+							<p class="price">? 엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.croket.co.kr/item/thumbnail/b3e3a347135d4a95fd6e1875c957b675.webp" alt="가루비 카타아게 포테토 블랙페퍼맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">가루비 카타아게 포테토 블랙페퍼맛</p>
+							
+							<p class="location">드럭스토어, 돈키호테, 편의점</p>
+							<p class="txt">* 후추맛 포테이포칩</p>
+							<p class="price">323엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://image.isy.co.kr/products/nv/2000000283/1_18.jpg" alt="롯데 파이노미">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://www.news1.kr/_next/image?url=https%3A%2F%2Fi3n.news1.kr%2Fsystem%2Fphotos%2F2024%2F10%2F25%2F6948922%2Fhigh.jpg&w=1920&q=75" alt="롯데 파이노미">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">롯데 파이노미</p>
+							
+							<p class="location">마트, 편의점 등</p>
+							<p class="txt">* 홈런볼 같은 패스튜리 쿠키</p>
+							<p class="price">168엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://m.tanaka-shop.net/web/product/extra/big/202311/e25c262c59dd433f86f0bcca206bcc7c.jpg" alt="블랙썬더 초콜릿바">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">블랙썬더 (여러가지맛)</p>
+							
+							<p class="location">마트, 돈키호테, 세븐일레븐</p>
+							<p class="txt">* 코코아쿠키에 초콜릿으로 코딩된 비스킷(과자)</p>
+							<p class="price">250 ~ 300엔</p>
+							<p class="coment">미니미한게 선물용으로 좋을듯</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://image.croket.co.kr/storeItem/60e293fac289ed69f47c8c17/itemImg/1625461755813/0/item_KNWXW.jpeg" alt="알포트 6종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://www.wishbucket.io/_next/image?url=https%3A%2F%2Fd2gfz7wkiigkmv.cloudfront.net%2Fpickin%2F2%2F1%2F2%2F3cY_ETLUTDGfqHl3GZw0_g&w=1080&q=75" alt="알포트 밤 초콜릿">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">알포트</p>
+							
+							<p class="location">드럭스토어, 돈키호테, 편의점</p>
+							<p class="txt">* 빈츠같이 초콜릿으로 덮힌 비스킷</p>
+							<p class="price">98엔</p>
+							<p class="coment">밤맛이 먹어보고싶네요</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://coudae.s3.ap-northeast-2.amazonaws.com/A01044006/product/B0CXHRL9V3/970L1500_.jpg" alt="가나 초콜릿 휩(밀크바닐라)">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">프리미엄 가나 초콜릿휩</p>
+							
+							<p class="location">편의점</p>
+							<p class="txt">* 프리미엄 초콜릿 안에 크리미한 초콜릿이 들어있는 가나 초콜릿</p>
+							<p class="price">238엔</p>
+							<p class="coment">비슷하게 생긴거 보면 구매하기 / 맛있다함~</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://japandrug.jp/cdn/shop/files/1_39f49a03-51e8-4015-8083-1bbd72cf7ce0.jpg?v=1700798611" alt="메이지 가르보 초콜릿 2종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">메이지 가르보 초콜릿</p>
+							
+							<p class="location">드럭스토어, 돈키호테, 편의점</p>
+							<p class="txt">* 초코쿠키 겉에 맛별 초콜릿이 감싸져있는 간식</p>
+							<p class="price">180엔</p>
+							<p class="coment">이거 맛잇쩡</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://japantomo.com/data/editor/1711/58ca32bbc810da835ee3b84f4e6912ad_1509944982_1259.png" alt="카라무초 핫칠리맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://barleymoll.com/data/item/1607311700/5002.jpg" alt="카라무초 스틱 핫칠리맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">카라무초</p>
+
+							<p class="location">마트, 편의점</p>
+							<p class="txt">* 스윙칩 상위호환버전? 감자칩</p>
+							<p class="price">127엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://m.baribari.kr/web/product/big/20200427/d1d13ca2ef33c1ded05e7afca2e68a61.jpg" alt="쟈가리코 샐러드맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">쟈가리코 샐러드맛</p>
+
+							<p class="location">편의점, 돈키호테 등</p>
+							<p class="txt">* 짭짤한 감자스틱</p>
+							<p class="price">128엔</p>
+							<p class="coment">쟈가리코 과자 실패없지비!</p>
+						</div>
+					</li>
+					`
+				]
+			],
+			[
+				'빵 · 케이크', [
+					`
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.croket.co.kr/item/thumbnail/19e4adf22a809cbc504ae626e2320694.webp" alt="진한 가토 쇼콜라 4개입">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img1.tmon.kr/cdn4/deals/2024/04/08/26284904906/front_e723c_oxo7g.jpg" alt="우지말차 가토 쇼콜라 4개입">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">진한 가토 쇼콜라 4개입</p>
+							
+							<p class="location">세븐일레븐</p>
+							<p class="txt">* 달지않고 물리지않는 깔끔한 초코맛 디저트</p>
+							<p class="price">예상 300엔 ~ 500엔</p>
+							<p class="coment">녹차맛도 있나봄</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/d/duckcar/20230117/20230117203000.jpg" alt="모찌촉감롤 초코맛">
+				
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+				
+										</div>
+				
+									</div>
+								</div>
+				
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://blog.kakaocdn.net/dn/cqadbK/btr9mgHCjSY/9LmMyrdneUeirOrtCQOQV0/img.jpg" alt="모찌촉감롤 밀크크림맛">
+				
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+				
+										</div>
+				
+									</div>
+								</div>
+				
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://blog.kakaocdn.net/dn/Immkf/btr9nnMTXq3/K8uu3JcD44k2i1kXAeU29K/img.jpg" alt="모찌촉감롤 호두맛">
+				
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+				
+										</div>
+				
+									</div>
+								</div>
+				
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://blog.kakaocdn.net/dn/6WBEX/btr9nm8iTUA/WyCmKN9kneUPx1nZBKKooK/img.jpg" alt="모찌촉감롤 딸기맛">
+				
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+				
+										</div>
+				
+									</div>
+								</div>
+							</div>
+				
+							<div class="swiper-pagination"></div>
+						</div>
+			
+						<div class="txt-wrap">
+							<p class="name">모찌촉감 롤(모찌롤) もち食感ロール</p>
+							
+							<p class="location">로손편의점</p>
+							<p class="txt">* 떡같은 식감에 여러가지 맛 크림을 넣은 롤케이크</p>
+							<p class="price">397엔</p>
+							<p class="coment">여러가지 맛이있다.</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReSwlmUzt6h2sWwKrh06Z3kJbwSOySfUmSug&s" alt="모찌 뿌요">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://blog.kakaocdn.net/dn/bTvqB6/btsJonDlhss/G3SyO0apyQBKYP98tYHrA1/img.png" alt="모찌 뿌요 컷팅">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">모찌 뿌요 (もちぷよ)</p>
+							
+							<p class="location">로숀편의점</p>
+							<p class="txt">* 떡같은 찰기가 느껴지는 빵안에 묽은 크림을 넣은 디저트</p>
+							<p class="price">108엔</p>
+							<p class="coment">차가울때 먹는게 제일 맛있다고한다.</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://iemone.jp/iemone-cms/wp-content/uploads/2021/06/202680-02.jpg" alt="못찌리 크레이프">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://pbs.twimg.com/media/FhAJ8J1aAAAEd9F.jpg:large" alt="못찌리 크레이프 단면">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">못찌리 크레이프 (もっちりクレープ)</p>
+							
+							<p class="location">로숀편의점</p>
+							<p class="txt">* 크레이프 안에 우유생크림과 가나슈 초코크림이 들어간 디저트</p>
+							<p class="price">160엔</p>
+						</div>
+					</li>
+
+					
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyNDA3MTlfNjAg/MDAxNzIxMzc5NjU5MTc5.6QzlaFEtghbe076YL-VFXgGASQJePugBB4sOdV3YA2Eg.JnVH6i1KBM23d3JTDyYFLFrJVXqh8_RpL6E8BQx8CQYg.JPEG/%EC%9D%BC%EB%B3%B8_%ED%8E%B8%EC%9D%98%EC%A0%90-032.jpg?type=w800" alt="트윈 슈">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://favehey.com/wp-content/uploads/2023/08/%EC%9D%BC%EB%B3%B8%ED%8E%B8%EC%9D%98%EC%A0%90.jpg" alt="트윈 단면">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">트윈 크림 슈</p>
+							
+							<p class="location">로숀편의점</p>
+							<p class="txt">* 생크림과 슈크림이 같이 들어있는 슈</p>
+							<p class="price">197엔</p>
+							<p class="coment">사자마자 먹어야 빵이 더 맛있다고 한다.</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://newsatcl-pctr.c.yimg.jp/dk/expert-image/moka/article/00410024/top_1677805777720.jpeg?exp=10800" alt="베이크드 커스터드 크림 타르트">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://stat.ameba.jp/user_images/20230302/12/junskynet/df/04/p/o0900090015249947005.png" alt="베이크드 커스터드 크림 타르트 단면">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">베이크드 커스터드 크림 타르트</p>
+							
+							<p class="location">로숀편의점</p>
+							<p class="txt">* 바삭한 타르트지와 단단하지만 부드러운 커스터드 크림</p>
+							<p class="price">225엔</p>
+						</div>
+					</li>
+					`
+				]
+			],
+			[
+				'푸딩', [
+					`
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://blog.kakaocdn.net/dn/bazOp4/btsGYSFXCZ0/6FkjMgrwT7gWqhm3dFtYUk/img.jpg" alt="루나 바닐라 요구르트">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyMzAzMDZfMjA2/MDAxNjc4MTAxNDg1Njky.zWzieLx25tQxp1OBrTeFFTf9qThCXiW0tpP3ddYZmPIg.w8lNvqAlhOu-HI5lFxf2hTbeQxmXlkBsW7qX37Po4gQg.JPEG.lja1327/IMG_7091.jpg?type=w800" alt="루나 바닐라 요구르트 상세샷">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">루나 바닐라 요구르트 푸딩</p>
+
+							<p class="location">편의점에 잘 없고 마트에 조금 있음</p>
+							<p class="txt">* 새콤한 향 + 은은한 바닐라향의 요거트맛</p>
+							<p class="price">102엔</p>
+							<p class="coment">조금 단단한 요구르트(푸딩까진 아닌듯)</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA5MzBfMTY4/MDAxNjAxNDU2Mzc5MzMw.eNK3VDVLYGimcYVp1k6RO1urA3F2hJ17C0oYOXfxxfcg.e4DmoXIID1QwMh5zRvrdiZ8fMy_sECllEsJM_EmKSdUg.JPEG.kireina34/output_3315521724.jpg?type=w800" alt="후와슈와 수플레 푸링">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">후와슈와 수플레 푸링</p>
+
+							<p class="location">패밀리마트</p>
+							<p class="txt">* 수플레케이크와 크림이 올라간 푸딩</p>
+							<p class="price">298엔</p>
+							<p class="coment">츄벨ㄹㄹㄹ릅</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://cdn.011st.com/11dims/resize/2000x2000/quality/75/11src/product/6550394357/B.jpg?173000000" alt="야키푸딩">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">야키푸딩</p>
+
+							<p class="location">편의점, 마트</p>
+							<p class="txt">* 표면을 살짝 구운 야끼 캐러멜 푸딩</p>
+							<p class="price">139 엔</p>
+							<p class="coment">아래 캐러멜 시럽과 섞어 먹으면 맛남</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyMzAxMjhfNDUg/MDAxNjc0ODgxNTk2ODcy.Etf-2ZRKZUoMzHBjdlw-QVolqFEmpzpSc5lHUB98pzQg.-t4AkZ5xQ2A6iR-_SYN_HF9NrWPBBgdfZj4CNX3ZZc0g.JPEG.wonhyangiii/IMG_3853.JPG?type=w800" alt="코히제리">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://blog.kakaocdn.net/dn/Mvmcn/btr5ORqZA6i/OhB3IlvbxdyuykpNzpRGrK/img.jpg" alt="코히제리">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">코히제리</p>
+
+							<p class="location">편의점, 마트 등</p>
+							<p class="txt">* 달지않은 커피젤리 위에 구성품인 연유/아이스크림/생크림을 곁들이면 극락! 섞지말고 그대로 드세용</p>
+							<p class="price">110엔</p>
+							<p class="coment">커피젤리만 먹으면 단맛이없으니 꼭 첨가해주세요잉</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/0db2/7ac7ce0d04546b869e0e673f073cfdd02872bc98a529b957554df34918dd.jpg" alt="쟈지밀크 푸딩">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">쟈지밀크 푸딩</p>
+
+							<p class="location">편의점, 마트 등</p>
+							<p class="txt">* 사르르 녹는 우유맛 푸딩</p>
+							<p class="price">170엔</p>
+							<p class="coment">과연 한국제품과의 차이는 ?</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://cdn.shopify.com/s/files/1/0601/7200/9692/files/6_e238b39a-f6bd-46a7-8661-d1cac7530abb_480x480.jpg?v=1651471583" alt="카마다시 토로케루 푸딩">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.daily.co.kr/@files/www.daily.co.kr/content/food/2019/20190515/1b9ceb9a89c6ab0aef290bc148b22b8c.jpg" alt="카마다시 토로케루 푸딩">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">카마다시 토로케루 푸딩</p>
+
+							<p class="location">패밀리 마트</p>
+							<p class="txt">* 계란과 생크림을 아낌없이 사용해서 만든 진하고 크리미한 푸딩</p>
+							<p class="price">189엔</p>
+							<p class="coment">유투버의 추천</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/07/30/VbQJ/tFlvaTSs04.jpeg?quality=70.0&width=1080" alt="나메라카 푸딩">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">나메라카 푸딩</p>
+
+							<p class="location">세븐일레븐</p>
+							<p class="txt">* 달콤하고 부드러운 우유와 커드터드 맛 푸딩</p>
+							<p class="price">155엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAxMjJfMTAg%2FMDAxNjQyODA5MDg0NjIy.oU-P10QrVEfjiMe2qOjNM_0l9KRYz4eWNIkPG3UH12cg.oIlspMzeDkWORHjeH2XqXemxG-w5-2Q03MDmJiYD8Ukg.JPEG.fpsks1004%2Foutput_1911917891.jpg&type=sc960_832" alt="코다와리 키와미 푸딩">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160422_7%2Fchuri0321_1461289963957yD81C_JPEG%2FSAM_0001.JPG&type=sc960_832" alt="코다와리 키와미 푸딩 말차">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">코다와리 키와미 푸딩</p>
+
+							<p class="location">마트, 편의점</p>
+							<p class="txt">* 부드럽지만 탄탄한 푸딩 밑엔 시럽이 있어요!</p>
+							<p class="price">93엔</p>
+							<p class="coment">초코, 바닐라, 녹차 등 여러가지 맛이 있다</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://dategom.com/wp-content/uploads/2023/10/OHAYO-%EC%8B%A0%EC%84%A0%EB%9E%80-%EB%85%B8%EB%A6%87%ED%95%98%EA%B2%8C-%EA%B5%AC%EC%9A%B4-%ED%91%B8%EB%94%A9.jpg" alt="오하요 신선란 푸딩">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">오하요 신선란 푸딩</p>
+
+							<p class="location">편의점, 마트</p>
+							<p class="txt">* 신선한 게란맛이 듬뿍 나는 커스터드 푸딩 / 차게해서 드세요</p>
+							<p class="price">140엔</p>
+						</div>
+					</li>
+					`
+				]
+			],
+			[
+				'아이스크림', [
+					`
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://newsatcl-pctr.c.yimg.jp/dk/expert-image/shingekinogourmet/article/00418055/internal_1678692072654.jpeg?fill=1&fc=fff&exp=10800" alt="소우아이스크림 메론소다후루토맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/20140521_280/mimityan1_1400670839746V1GBK_JPEG/251154_615.jpg?type=w420" alt="소우아이스크림 망고파인맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">爽 (소우) 아이스크림</p>
+							
+							<p class="location">패밀리마트</p>
+							<p class="txt">* 여러가지맛을 판매중인 "와" 같은 아이스크림</p>
+							<p class="price">126엔</p>
+							<p class="coment">단종된맛이 꽤 많습니다</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://pbs.twimg.com/media/FA3FVdjVkAECXTI.jpg" alt="아이스 노미 포도 망고 복숭아">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiPqmOkMfMg3J9uRQlY-rj7YE4ISFFrRCDxgSWRJsdb_FCNZk-X6QkkNJxlAsQ4uoBQgQ&usqp=CAU" alt="아이스노미 키위 복숭아">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPbCssJu6wipRUL7yH8jCNa5UyjgBut8Rcpw&s" alt="아이스노미 녹차">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">아이스 노미 아이스크림</p>
+							
+							<p class="location">편의점</p>
+							<p class="txt">* 여러가지 과일맛 아이스노미 아이스크림</p>
+							<p class="price">173엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://pbs.twimg.com/media/D6G1iyuUEAAXrMy.jpg" alt="이타초코 아이스크림 민초">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyMzEwMTRfMzEg/MDAxNjk3MjExNTYxMDI5.4wHwF7x_qgt-utY6GD5JffQYHf9I9ta8VtBmhcXDLd4g.kXPyvRZR6yBtYYYaoZ2GBqqfRYC7j30dQ4cCxhrbsbog.JPEG.whiteswps/IMG_2764.jpg?type=w800" alt="이타초코 아이스크림 초코">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA4MjZfMTIg%2FMDAxNzI0NjIxNzU0ODk4.PSX6Yl9jwNiZMRqtRYrQfR8o9AnMixN4_0s4dHgZ96sg.2cbIzPzrATKHMh1QEeydSP3_-YyRUJLcdmc92zoaX60g.JPEG%2FIMG_9005.JPG&type=sc960_832" alt="이타초코 아이스크림 푸딩">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">이타초코 아이스</p>
+							
+							<p class="location">편의점</p>
+							<p class="txt">* 바삭한 초콜릿 안에 아이스크림이 가득</p>
+							<p class="price">161엔</p>
+							<p class="coment">계절별로 나오는 한정판 맛이 존재한다고 한다</p>
+						</div>
+					</li>
+
+					
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyMzA0MTdfMjg2/MDAxNjgxNzMxMTg5MDE5.E2s97-OwnDZqrE7s5gdyYvYR5oQSVuhNx8DTX1DqDa8g.7COLCoEsA04rAttc31Rg42PTrCXPUEcI_nD82QO0H_Ug.JPEG.kireina34/SE-26630894-BE5F-485D-8ABD-974FCEC19D3C.jpg?type=w800" alt="오하요 브렐레 아이스크림 초코">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://d2uja84sd90jmv.cloudfront.net/posts/AludcXOuXa7gaAL-tNTx0A/ms.jpg" alt="오하요 브렐레 아이스크림 바닐라">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://blog.kakaocdn.net/dn/YoIAk/btsIlm1HAhq/asWQFEeb3y2n7weHqngRZK/img.jpg" alt="오하요 브렐레 아이스크림 바닐라 실물">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">오하요 브렐레 아이스크림</p>
+							
+							<p class="location">로숀, 세븐일레븐</p>
+							<p class="txt">* 바삭한 설탕코팅 아래로 홋카이돗산 우유를 사용한 아이스크림</p>
+							<p class="price">338엔</p>
+							<p class="coment">구매시 스푼 별도로 제공(안주면 달라해야함)</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mkmon.com/cdn/shop/articles/1692944358319.jpg?v=1692944359" alt="하겐다즈 하나모찌 인절미">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAxODAzMTRfMjYz/MDAxNTIwOTgxNzQ0MzUy.W-7mEwygJy40RkT3e7mxUbHAAS_poaWPJeXa9yLqTHcg.8LKmlrq6L0eaReewA4CpYy1QClP6yJNN-dvJmxm4OLMg.JPEG.gami1023/20180307_113557.jpg?type=w800" alt="하겐다즈 하나모찌 벚꽃">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">하겐다즈 하나모찌</p>
+							
+							<p class="location">편의점 또는 마트나 백화점</p>
+							<p class="txt">* 하겐다즈 아이스크림에 토핑과 떡을 올린 디저트</p>
+							<p class="price">288엔</p>
+							<p class="coment">판매점이 적어서 눈에 보이면 살것</p>
+						</div>
+					</li>
+
+					
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdZGtgR0eWlt8_Hjeo0BKUpjilUjShFmBW9A&s" alt="피노 꿀고구마맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyNDAyMTdfMjkx/MDAxNzA4MTQyNTEwMDEy.6M5ueGf-uLNhRMYAdkzAOzoeArkaOaR3rzt1FUXQYuYg.MMKAIIp0Gt5giVXF_lMjkYaRe8XR3wpG8dsOWqgJk7Ug.JPEG.jane1994kr/output_521272661.jpg?type=w800" alt="피노 꿀고구마맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">피노 아이스크림 꿀고구마맛</p>
+							
+							<p class="location">편의점</p>
+							<p class="txt">* 고구마페이스트를 사용한 고구마아이스크림에 캐러멜 풍미의 토핑을 섞은 고구마맛의 초콜릿으로 코딩한 아이스크림</p>
+							<p class="price">200엔</p>
+							<p class="coment">한정판이라 판매종료했을 수 있음</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTABOQdE05vLmYEe1ZEynx2GoInufKQTzVxJw&s" alt="히토쿠치 카누레 아이스">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://pbs.twimg.com/media/GHgFpvIbsAALW-R.jpg" alt="히토쿠치 카누레 아이스 단면">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">히토쿠치 카누레 아이스</p>
+							
+							<p class="location">세븐일레븐</p>
+							<p class="txt">* 까눌레모양 한입 아이스크림</p>
+							<p class="price">? 엔</p>
+						</div>
+					</li>
+
+					<li class="best">
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2jtuZmETg1aP4zAlQKCIB7vbDoqFjonMfNQ&s" alt="생초콜릿 아이스크림">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyMzEwMTVfMTI0/MDAxNjk3MzQ0MDgxMDE2.XQSuD0WWxJuvy0oyhsLnVsICPzhiq3wSVzlGyar5Of4g.A-VZ0iTopr7MAlvBco31Q8b_SyONxuGMdNVHcLsunxYg.JPEG.hhjhhj9964/20231006%EF%BC%BF003708.jpg?type=w800" alt="생초콜릿 아이스크림">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">탯뿌리 생초코 아이스</p>
+							
+							<p class="location">세븐일레븐</p>
+							<p class="txt">* 생초코의 부드러운 부분이 아이스크림이 되어 극락</p>
+							<p class="price">300엔</p>
+							<p class="coment">개맛있겠다 이건 꼭 먹어야함</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://www.morinaga.co.jp/jumbo/kr/assets/img/item/item_01_01.png" alt="초코모나카 아이스">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://d28dpoj42hxr8c.cloudfront.net/files/user/201608062107_6.jpg?v=1470485237" alt="초코모나카 아이스 단면">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">초코모나카 아이스</p>
+							
+							<p class="location">편의점</p>
+							<p class="txt">* 초콜릿을 감싼 아이스크림을 감싼 모나카</p>
+							<p class="price">173엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://d28dpoj42hxr8c.cloudfront.net/files/user/201608062107_1.jpg?v=1470485237" alt="야와모찌 아이스 3종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">야와모찌 아이스</p>
+							
+							<p class="location">드럭스토어, 돈키호테, 편의점</p>
+							<p class="txt">* 맛별로 다른 시럽과 5개의 모찌가 올라가있는 아이스크림</p>
+							<p class="price">100 ~ 130엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://storage.googleapis.com/ikidane/upload/smi_b193b0eae1/smi_b193b0eae1.jpg" alt="아이스와플콘 말차">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">아이스와플콘 말차</p>
+							
+							<p class="location">세븐일레븐</p>
+							<p class="txt">* 한정판 와플콘 녹차 아이스크림</p>
+							<p class="price">248엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://www.foodnews.news/data/photos/20220833/art_16607967384457_e7c8e5.jpg" alt="갈아만드는 과일 스무디">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://res.heraldm.com/phpwas/restmb_idxmake.php?idx=507&simg=/content/image/2022/09/04/20220904000095_0.jpg" alt="갈아만드는 과일 스무디">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name"><a href="" target="_blank" title="새창에서 열기">갈아만드는 과일 스무디</a></p>
+
+							<p class="location">세븐일레븐</p>
+							<p class="txt">* 냉동과일을 직접 갈아먹을수 있는 스무디</p>
+							<p class="price">278엔</p>
+							<p class="coment">스무디 작동법은 상세페이지 참고</p>
+						</div>
+					</li>
+					`
+				]
+			],
+			[
+				'젤리 · 캔디', [
+					`
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://s3-ap-northeast-1.amazonaws.com/img.yic.co.kr/goodsDesc/goodsDesc_2022021016384316444787238201.jpg" alt="칼피스 모찌">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">칼피스 모찌</p>
+							
+							<p class="location">편의점이나 드럭스토어 또는 돈키호테</p>
+							<p class="txt">* 칼피스크림이 들어있는 요구르트맛 젤리</p>
+							<p class="coment">살짝얼려먹으면 더 맛있다함</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://d2gfz7wkiigkmv.cloudfront.net/pickin/2/1/2/K5VAwdM9QC-Rxn9DM1RMeg" alt="부르봉 페투치네 5종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/5689813820/B.jpg?370000000" alt="부르봉 페투치네 포도맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">부르봉 페투치네 젤리</p>
+							
+							<p class="location">편의점. 돈키호테 등</p>
+							<p class="txt">* 페투치네 면처럼 생긴 젤리</p>
+							<p class="price">100엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://www.wishbucket.io/_next/image?url=https%3A%2F%2Fd2gfz7wkiigkmv.cloudfront.net%2Fpickin%2F2%2F1%2F2%2FBnA0zmCvQiGdr8lCIIqZCQ&w=640&q=75" alt="퓨어랄 구미 5종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://blog.kakaocdn.net/dn/QLITz/btsqm6UdRMc/DOjXMVpNHrJKMYUKLKlkwK/img.jpg" alt="퓨어랄 구미 복숭아, 머스켓">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://shuttlepeople.com/data/item/1500000669/thumb-7ZOo7Ja0656E6rWs66465S46riw45g2_600x600.png" alt="퓨어랄 구미 단면">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">퓨어랄 구미 젤리</p>
+							
+							<p class="location">드럭스토어, 편의점</p>
+							<p class="txt">* 폭신한 식감의 안에 쫄깃한 과일젤리가 들어있는 젤리</p>
+							<p class="price">120엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/198b/b608b853dddaed9767d31edf944e7407f68a748d38950dfa71837e9b60fa.jpg" alt="UHA 푸초 스틱젤리">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://sitem.ssgcdn.com/67/70/95/item/1000048957067_i1_750.jpg" alt="UHA 푸초 스틱젤리">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">UHA 푸초 스틱젤리</p>
+							
+							<p class="location">드럭스토어, 돈키호테, 편의점</p>
+							<p class="txt">* 마이쮸같은 젤리안에 또 젤리를 넣은 젤리</p>
+							<p class="price">130엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.croket.co.kr/item/contents/49a543de85853719618dc90520ec95a7.jpeg" alt="까먹는 생젤리 무쿠나마구미 3종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.croket.co.kr/item/thumbnail/024acf6e940fc5000c24984bdb937535.webp" alt="까먹는 생젤리 무쿠나마구미 머스캣맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">까먹는 생젤리 무쿠나마구미</p>
+							
+							<p class="location">돈키호테</p>
+							<p class="txt">* 탱글한 과일맛 젤리</p>
+							<p class="price">298엔</p>
+							<p class="coment">초큼 달다고 한다</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOi66jACMxPA3_Zi_aCvzP0XvD7P71yB8PLA&s" alt="아사히 미츠야 사이다 소다 캔디 4가지맛">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://stat.ameba.jp/user_images/20230302/12/junskynet/df/04/p/o0900090015249947005.png" alt="아사히 미츠야 사이다 소다 캔디">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">아사히 미츠야 사이다 소다 캔디</p>
+							
+							<p class="location">?</p>
+							<p class="txt">* 사이다 캔디로 탄산쏘는 느낌을 맛볼수 있다</p>
+							<p class="price">? 엔</p>
+							<p class="coment">다른맛도 판매함</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://nppip.com/data/item/1656379134/66qo66as64KY6rCA7KCc6rO8.jpg" alt="모리나가 카라멜 4종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">모리나가 카라멜</p>
+							
+							<p class="location">드럭스토어, 돈키호테, 편의점</p>
+							<p class="txt">* 신기한 맛 카라멜 (팥색은 팥맛 카라멜)</p>
+							<p class="price">300엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://nppip.com/data/item/1721350296/7KCc66qp7J2E7J6F66Cl7ZW07KO87IS47JqU_00120240719T093922.135.jpg" alt="드라이 미캉">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">드라이 미캉</p>
+							
+							<p class="location">패밀리마트</p>
+							<p class="txt">* 쫄깃한 말린 귤의 식감</p>
+							<p class="price">? 엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.croket.co.kr/item/thumbnail/60c9f32ad33e582fc439182e0db8bc5a.webp" alt="모리나가 프리미엄 하이츄 5종">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://image.croket.co.kr/storeItem/63f43bbcb14e99002ec2147f/itemImg/1676950461191/0/item_koeMP.jpeg" alt="모리나가 프리미엄 하이츄 귤">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">모리나가 프리미엄 하이츄</p>
+							
+							<p class="location">드럭스토어, 돈키호테, 편의점</p>
+							<p class="txt">* 마이쮸보다 쫀득하고 부드러운 식감의 젤리</p>
+							<p class="price">예상 130 ~ 150엔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.khan.co.kr/lady/2023/09/11/news-p.v1.20230911.81e1330eca8b4a0180a08eff8b4b7c9b_P1.png" alt="곤약젤리">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">곤약젤리</p>
+							<p class="txt">* 곤약맛 안나는 맛난곤약! 젤리</p>
+							<p class="price">? 엔</p>
+							<p class="coment">컵타입의 곤약젤리는 국내반입이 안된다는 사실!</p>
+						</div>
+					</li>
+					`
+				]
+			],
+			[
+				'컵라면', [
+					`
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/QjIL7_134678_1.jpg" alt="산요 삿포로이치방 참깨돈부리된장라멘">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">산요 삿포로이치방 참깨돈부리된장라멘</p>
+							
+							<p class="txt">* 참깨가 들어간 된장라멘</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img3.tmon.kr/cdn4/deals/2024/07/23/27325924746/front_acce4_1tmyu.jpg" alt="산요 삿포로 이치방 조개국물 돈부리 소금 라멘">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">산요 삿포로 이치방 조개국물 돈부리 소금 라멘</p>
+							
+							<p class="txt">* 조개국물 해장 싹~</p>
+							<p class="coment">비슷하게 생긴 일반 소금라멘이 있으니 주의바람</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/Ps0B3_134681_1-600x600.jpg" alt="에이스쿡 매운카레 야키소바">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">에이스쿡 매운카레 야키소바</p>
+							
+							<p class="txt">* 맵찔이도 가능</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://sep-item.ssgcdn.com/67/55/87/item/1000565875567_i1_350.jpg" alt="에이스쿡 매운카레 라멘">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">에이스쿡 매운카레 라멘</p>
+							
+							<p class="txt">* 위에껀 야끼소바 이건 라멘~</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/mG9bD_134674_1.jpg" alt="산요 삿포로이치방 완전매운 탄탄멘">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">산요 삿포로이치방 완전매운 탄탄멘</p>
+							<p class="txt">* 산초맛 확 느껴지는 탄탄멘</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/TNBGs_134675_1.jpg" alt="산요 삿포로이치방 유자 시오라멘">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">산요 삿포로이치방 유자 시오라멘</p>
+							<p class="txt">* 유자향이 나서 상큼+깔끔</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/BC1Ah_134676_1.jpg" alt="산요 삿포로 이치방 순두비찌개라멘">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">산요 삿포로 이치방 순두비찌개라멘</p>
+							<p class="txt">* 순찌라멘</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/iFmh3_134677_1.jpg" alt="산요 삿포로이치방 돈부리 간장라멘">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">산요 삿포로이치방 돈부리 간장라멘</p>
+							<p class="txt">* 볶은파가 완전 많이 들어간 라멘</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/4nC5E_134668_1.jpg" alt="묘조 스테미나 중화소바">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">묘조 스테미나 중화소바</p>
+							<p class="txt">* 마늘+간장맛 스프에 빨간 국물</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/Qp7cp_134670_1.jpg" alt="묘조 잇페이짱 스테미나 돼지고기 시오타레">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">묘조 잇페이짱 스테미나 돼지고기 시오타레</p>
+							<p class="txt">* 마늘+마요 건더기 많은 볶음면</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/2nCzz_134673_1.jpg" alt="산요 삿포로 이치방 햇생강맛 시오 야키소바">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">산요 삿포로 이치방 햇생강맛 시오 야키소바</p>
+							<p class="txt">* 상큼한(?) 생강맛 야키소바</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://thumbnail7.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/0898/7ee2cd60e2cab0e370a0caa8437b8b84ae74ee07c05959e1c12962060797.png" alt="동양수산 키츠네 야끼우동">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">동양수산 키츠네 야끼우동</p>
+							<p class="txt">* 간장베이스에 시치미토핑이 있는 볶음우동</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://www.maruchan.co.jp/news_topics/documents/2201_noukouniboshiudon.gif" alt="동양수산 멸치 다시 우동">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">동양수산 멸치 다시 우동</p>
+							<p class="txt">* 농후한 국물 우동</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/uk9RR_134666_1-600x600.jpg" alt="동양수산 마루짱세이멘 농후멸치 양파라면">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">동양수산 마루짱세이멘 농후멸치 양파라면</p>
+							<p class="txt">* 돈코츠 베이스에 양파 듬뿍</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/YpXh2_134667_1.jpg" alt="묘조 챠루메라 국물없는 짬뽕">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">묘조 챠루메라 국물없는 짬뽕</p>
+							<p class="txt">* 돈코츠 베이스에 해물맛까지</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://www.saradamall.com/data/item/1723605895/92.png" alt="닛신 ufo 감자치즈 야끼소바">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">닛신 ufo 감자치즈 야끼소바</p>
+							<p class="txt">* 매쉬포테이토랑 찰떡궁합</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.croket.co.kr/item/thumbnail/ba28c4299734aad254c28492c483f1c4.webp" alt="닛신 마제 야끼소바">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">닛신 마제 야끼소바</p>
+							<p class="txt">* 라유 마요네즈가 들어있어서 진한맛! 자극적!</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://img.croket.co.kr/item/thumbnail/f03168f0a7c5a3abad0af914ba7f3413.webp" alt="닛신 돈베이 매운 키츠네 우동">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">닛신 돈베이 매운 키츠네 우동</p>
+							<p class="txt">* 유부토핑이 있는 한국인이 좋아하는 빨간 국물</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://sports.chosun.com/news/html/2024/06/25/2024062501001891200257381.jpg" alt="닛신라왕 복어소금라멘">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">닛신라왕 복어소금라멘</p>
+							<p class="txt">* 유자향 싹 퍼지는 깔끔한 국물 / 오직 일본에서만 구매 가능</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/51a4/ddeed8c614d4cadb3108184696d5ad03b58d981e0ad3cb0f200f7330c1ce.jpg" alt="닛신 몽고탄멘 나카모토">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">닛신 몽고탄멘 나카모토</p>
+
+							<p class="location">세븐일레븐</p>
+							<p class="txt">* 신라면에서 살짝 매운맛의 마라중화맛</p>
+							<p class="price">280엔</p>
+							<p class="coment">난쟁이나라의 장신공주 <strong class="twinkle">PICK !</strong> / 한정판이라 판매 안할수도</p>
+						</div>
+					</li>
+
+					<li class="best">
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/97ce/d226466155cc0295c151bcd7c040bb07aacbc8c9ae0255d9c88981fb8c8d.jpg" alt="마루짱 시로이 치카라모찌 우동">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://www.niconicomall.com/data/file/review/thumb-20210503104626_3959_500x667.jpg" alt="마루짱 시로이 치카라모찌 우동 실제샷">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">마루짱 시로이 치카라모찌 우동</p>
+
+							<p class="location">마트, 돈키호테, 편의점</p>
+							<p class="txt">* 쫄깃한 떡이 들어간 우동</p>
+							<p class="price">190엔</p>
+							<p class="coment">맛있겟당</p>
+						</div>
+					</li>
+					`
+				]
+			],
+			[
+				'그 외', [
+					`
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Pommes_d_amour.jpg/1200px-Pommes_d_amour.jpg" alt="링고아메 캔디애플">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">링고아메</p>
+							
+							<p class="location">Candy apple (캔디애플 - 가맹점)</p>
+							<p class="txt">* "캔디애플"이라는 링고아메를 판매하는 디저트집이 있다.</p>
+							<p class="price">225엔</p>
+							<p class="coment">동선상 지나가는 경우 구매하면 좋을듯</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://dategom.com/wp-content/uploads/2023/10/%EC%84%B8%EB%B8%90%EC%9D%BC%EB%A0%88%EB%B8%90-%EC%88%99%EC%84%B1-%EB%A7%A4%EC%9A%B4-%EB%AA%85%EB%9E%80%EC%A0%93.jpg" alt="숙성 매운 명란젓">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">숙성 매운 명란젓</p>
+
+							<p class="location">세븐일레븐</p>
+							<p class="txt">* 숙성시킨 매운 명란젓을 넣은 주먹밥</p>
+							<p class="price">175엔</p>
+							<p class="coment">댝생님의 최애</p>
+						</div>
+					</li>
+					`
+				]
+			],
+		]
+	],
+]

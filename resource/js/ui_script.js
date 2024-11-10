@@ -96,92 +96,6 @@ $(function(){
 		});
 	}
 
-	// 총 건수 설정
-	if ($('.list-control').length) {
-		$('.list-control').each(function() {
-			const list = $(this).siblings('.detail-list').children('ul').children('li');
-			$(this).find('.num').text(list.length);
-		});
-	}
-
-	
-	// 목록 (기본순 / 추천순 / 평점순)정렬 스크립트
-	// 제어하려는 목록
-	function appendList (myList, item) {
-		$.each(item, function(i, li){
-			myList.append(li);
-		});
-	}
-
-	// 추천순 (평점 + 찜순)
-	function setDetailListSortUp (myList, item) {
-		item.sort(function(a,b){ 
-			var keyA = Number($(a).find('.count').text()); // 작은숫자
-			var keyB = Number($(b).find('.count').text()); // 큰숫자
-			var keyC = Number($(a).find('.star').text().split(' ')[1]); // 작은숫자
-			var keyD = Number($(b).find('.star').text().split(' ')[1]); // 큰숫자
-			// console.log(keyB < keyA) // true
-			// a가 아래 b 가 위
-			if (keyB > keyA) return 1;
-			if (keyB < keyA) return -1;
-			if (keyD > keyC) return 1;
-			if (keyD < keyC) return -1;
-			return 0;
-		});
-
-		appendList(myList, item);
-	}
-	
-
-	// 평점순
-	function setDetailListSortStar (myList, item) {
-		item.sort(function(a,b){ 
-			var keyA = Number($(a).find('.star').text().split(' ')[1]); // 작은숫자
-			var keyB = Number($(b).find('.star').text().split(' ')[1]); // 큰숫자
-			// console.log(keyB < keyA) // true
-			// a가 아래 b 가 위
-			if (keyB > keyA) return 1;
-			if (keyB < keyA) return -1;
-			return 0;
-		});
-
-		appendList(myList, item);
-	}
-	
-	// 기본정렬 저장 / 기본순 버튼 클릭시 노출
-	const detailList = $('.detail-list');
-	detailList.each(function() {
-		const targetList = $(this).children('ul').children('li');
-		$('.list-control .btn-layer.layer-default').on('click', function() {
-			$.each(targetList, function(i, li){
-				targetList.parent('ul').append(li);
-			});
-		});
-	})
-
-
-		
-	// 목록 정렬 버튼
-	$(document).on('click', '.list-control .btn-layer', function() {
-		const setUl = $(this).parents('.list-control').siblings('.detail-list').children('ul');
-		const detailListItem = setUl.children('li').get();
-		// 버튼 효과
-		$(this).addClass('active').attr('title','선택됨').siblings('.btn-layer').removeClass('active').removeAttr('title');
-		
-		// 추천순
-		if ($(this).hasClass('layer-good')) setDetailListSortUp(setUl, detailListItem);
-		// 평점순
-		if ($(this).hasClass('layer-star')) setDetailListSortStar(setUl, detailListItem);
-		
-	});
-
-	// 여행정보 메인화면 숙소정보 목록정렬
-	if ($('.detail-list').hasClass('info-travel')) {
-		const setUl = $('.detail-list.info-travel > ul');
-		const setItem = $('.detail-list.info-travel > ul > li');
-		setDetailListSortUp(setUl, setItem);
-	}
-
 
 	// 관광지 금주의 인기장소
 	if ($('.best-tour').length) {
@@ -199,6 +113,31 @@ $(function(){
 
 		infoCafe.empty().append(infoCafeList.eq(Math.floor(Math.random()*infoCafeList.length)));
 		
+	}
+
+
+
+	// 와구주섬 목록/타이틀 연동
+	if ($('.detail-list.product').length) {
+		const productTab = $('.detail-list.product').closest('.tab-scroll').find('.btn-tab');
+
+		productTab.each(function() {
+			const productTabTargetId = $(this).attr('aria-controls');
+			const _target = $('#' + productTabTargetId);
+			const _targetText = $(this).text();
+			_target.children('.scroll-tab-tit').text(_targetText);
+		});
+
+		$.each(productList, function(index, arr) {
+			if ($('#page-title').text() == productList[index][0]) {
+				$.each(productList[index][1], function(arrIndex, arrChild) {
+					if ($('.scroll-tab-tit').eq(arrIndex).text() == arrChild[0]) {
+						$('.scroll-tab-tit').eq(arrIndex).siblings('.product').children('ul').append(arrChild[1])
+					}
+				})
+	
+			}
+		})
 	}
 
 
@@ -566,5 +505,94 @@ $(function(){
 		$(this).attr('aria-selected','true').parent('li').addClass('on').siblings('li').removeClass('on').children().attr('aria-selected', 'false');
 		$tabCont.attr('tabindex','0').removeAttr('hidden').siblings('.tab-cont').attr({tabindex: '-1', hidden: 'hidden'});
 	})
+
+
+	
+	// 총 건수 설정
+	if ($('.list-control').length) {
+		$('.list-control').each(function() {
+			const list = $(this).siblings('.detail-list').children('ul').children('li');
+			$(this).find('.num').text(list.length);
+		});
+	}
+
+	
+	// 목록 (기본순 / 추천순 / 평점순)정렬 스크립트
+	// 제어하려는 목록
+	function appendList (myList, item) {
+		$.each(item, function(i, li){
+			myList.append(li);
+		});
+	}
+
+	// 추천순 (평점 + 찜순)
+	function setDetailListSortUp (myList, item) {
+		item.sort(function(a,b){ 
+			var keyA = Number($(a).find('.count').text()); // 작은숫자
+			var keyB = Number($(b).find('.count').text()); // 큰숫자
+			var keyC = Number($(a).find('.star').text().split(' ')[1]); // 작은숫자
+			var keyD = Number($(b).find('.star').text().split(' ')[1]); // 큰숫자
+			// console.log(keyB < keyA) // true
+			// a가 아래 b 가 위
+			if (keyB > keyA) return 1;
+			if (keyB < keyA) return -1;
+			if (keyD > keyC) return 1;
+			if (keyD < keyC) return -1;
+			return 0;
+		});
+
+		appendList(myList, item);
+	}
+	
+
+	// 평점순
+	function setDetailListSortStar (myList, item) {
+		item.sort(function(a,b){ 
+			var keyA = Number($(a).find('.star').text().split(' ')[1]); // 작은숫자
+			var keyB = Number($(b).find('.star').text().split(' ')[1]); // 큰숫자
+			// console.log(keyB < keyA) // true
+			// a가 아래 b 가 위
+			if (keyB > keyA) return 1;
+			if (keyB < keyA) return -1;
+			return 0;
+		});
+
+		appendList(myList, item);
+	}
+	
+	// 기본정렬 저장 / 기본순 버튼 클릭시 노출
+	const detailList = $('.detail-list');
+	detailList.each(function() {
+		const targetList = $(this).children('ul').children('li');
+		$('.list-control .btn-layer.layer-default').on('click', function() {
+			$.each(targetList, function(i, li){
+				targetList.parent('ul').append(li);
+			});
+		});
+	})
+
+
+		
+	// 목록 정렬 버튼
+	$(document).on('click', '.list-control .btn-layer', function() {
+		const setUl = $(this).parents('.list-control').siblings('.detail-list').children('ul');
+		const detailListItem = setUl.children('li').get();
+		// 버튼 효과
+		$(this).addClass('active').attr('title','선택됨').siblings('.btn-layer').removeClass('active').removeAttr('title');
+		
+		// 추천순
+		if ($(this).hasClass('layer-good')) setDetailListSortUp(setUl, detailListItem);
+		// 평점순
+		if ($(this).hasClass('layer-star')) setDetailListSortStar(setUl, detailListItem);
+		
+	});
+
+	// 여행정보 메인화면 숙소정보 목록정렬
+	if ($('.detail-list').hasClass('info-travel')) {
+		const setUl = $('.detail-list.info-travel > ul');
+		const setItem = $('.detail-list.info-travel > ul > li');
+		setDetailListSortUp(setUl, setItem);
+	}
+
 
 });

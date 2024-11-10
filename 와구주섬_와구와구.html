@@ -39,48 +39,164 @@
 		<!-- inner-wrap -->
 		<div class="inner-wrap">
 			<section class="contents">
-				<h3 class="title-3" id="page-title">예약 내역</h3>
-
-				<div class="list-control">
-					<p class="count">총 <em class="num">0</em>건</p>
+				<div class="title-wrap">
+					<h3 class="title-3" id="page-title">와구와구</h3>
+					<p class="info"><span class="ico-alert"></span>간식, 과자, 젤리, 아이스크림 등</p>
 				</div>
 
-				<!-- detail-list -->
-				<div class="detail-list short">
-					<ul>
-						<li>
-							<div class="detail-visual">
-								<div class="visual">
-									<img src="https://lh3.googleusercontent.com/p/AF1QipOJlEIbaxtasQJwPOKNuKHRYKGdPVHpPhxRxslq=s680-w680-h510" alt="이자카야 사사야">
-								</div>
-							</div>
-
-							<div class="txt-wrap">
-								<p class="name">이자카야 사사야</p>
-								
-								<p class="location">오사카 난바 센니치마에점</p>
-							</div>
-							
-						</li>
-
-						<li>
-							
-							<div class="detail-visual">
-								<div class="visual">
-									<img src="https://lh3.googleusercontent.com/p/AF1QipPRX5BmVaraq04GQsUwux4AE9dz92aq45mcWLF_=s680-w680-h510" alt="앗치치혼포">
-								</div>
-							</div>
-
-							<div class="txt-wrap">
-								<p class="name">앗치치혼포</p>
-								
-								<p class="location">오사카 도톤보리점</p>
-							</div>
-						</li>
-
+				<!-- tab-area -->
+				<div class="tab-area tab-scroll">
+					<ul class="tab-list" role="tablist">
+						<li class="on"><button type="button" id="tab_02_01" role="tab" aria-selected="true" aria-controls="tabPanel_02_01" class="btn-tab round">과자</button></li>
+						<li><button type="button" id="tab_02_02" role="tab" aria-selected="false" aria-controls="tabPanel_02_02" class="btn-tab round">빵 &middot; 케이크</button></li>
+						<li><button type="button" id="tab_02_03" role="tab" aria-selected="false" aria-controls="tabPanel_02_03" class="btn-tab round">푸딩</button></li>
+						<li><button type="button" id="tab_02_04" role="tab" aria-selected="false" aria-controls="tabPanel_02_04" class="btn-tab round">아이스크림</button></li>
+						<li><button type="button" id="tab_02_05" role="tab" aria-selected="false" aria-controls="tabPanel_02_05" class="btn-tab round">젤리 &middot; 캔디</button></li>
+						<li><button type="button" id="tab_02_06" role="tab" aria-selected="false" aria-controls="tabPanel_02_06" class="btn-tab round">컵라면</button></li>
+						<li><button type="button" id="tab_02_07" role="tab" aria-selected="false" aria-controls="tabPanel_02_07" class="btn-tab round">그 외</button></li>
 					</ul>
+
+					<!-- tab-cont -->
+					<div id="tabPanel_02_01" role="tabpanel" aria-labelledby="tab_02_01" class="tab-cont">
+						<p class="scroll-tab-tit">과자</p>
+
+						<div class="list-control">
+							<p class="count">총 <em class="num">0</em>건</p>
+							
+							<div class="btn-wrap">
+								<button type="button" class="btn-layer layer-default active" title="선택됨">기본순</button>
+								<button type="button" class="btn-layer layer-new">신규순</button>
+								<button type="button" class="btn-layer layer-best">인기순</button>
+							</div>
+						</div>
+		
+						<div class="detail-list short product">
+							<ul>
+							</ul>
+						</div>
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_02_02" role="tabpanel" aria-labelledby="tab_02_02" class="tab-cont">
+						<p class="scroll-tab-tit">빵 &middot; 케이크</p>
+						<div class="list-control">
+							<p class="count">총 <em class="num">0</em>건</p>
+							
+							<div class="btn-wrap">
+								<button type="button" class="btn-layer layer-default active" title="선택됨">기본순</button>
+								<button type="button" class="btn-layer layer-new">신규순</button>
+								<button type="button" class="btn-layer layer-best">인기순</button>
+							</div>
+						</div>
+		
+						<div class="detail-list short product">
+							<ul>
+							</ul>
+						</div>
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_02_03" role="tabpanel" aria-labelledby="tab_02_03" class="tab-cont">
+						<p class="scroll-tab-tit">푸딩</p>
+						<div class="list-control">
+							<p class="count">총 <em class="num">0</em>건</p>
+							
+							<div class="btn-wrap">
+								<button type="button" class="btn-layer layer-default active" title="선택됨">기본순</button>
+								<button type="button" class="btn-layer layer-new">신규순</button>
+								<button type="button" class="btn-layer layer-best">인기순</button>
+							</div>
+						</div>
+		
+						<div class="detail-list short product">
+							<ul>
+							</ul>
+						</div>
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_02_04" role="tabpanel" aria-labelledby="tab_02_04" class="tab-cont">
+						<p class="scroll-tab-tit">아이스크림</p>
+						<div class="list-control">
+							<p class="count">총 <em class="num">0</em>건</p>
+							
+							<div class="btn-wrap">
+								<button type="button" class="btn-layer layer-default active" title="선택됨">기본순</button>
+								<button type="button" class="btn-layer layer-new">신규순</button>
+								<button type="button" class="btn-layer layer-best">인기순</button>
+							</div>
+						</div>
+		
+						<div class="detail-list short product">
+							<ul>
+							</ul>
+						</div>
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_02_05" role="tabpanel" aria-labelledby="tab_02_05" class="tab-cont">
+						<p class="scroll-tab-tit">젤리 &middot; 캔디</p>
+						<div class="list-control">
+							<p class="count">총 <em class="num">0</em>건</p>
+							
+							<div class="btn-wrap">
+								<button type="button" class="btn-layer layer-default active" title="선택됨">기본순</button>
+								<button type="button" class="btn-layer layer-new">신규순</button>
+								<button type="button" class="btn-layer layer-best">인기순</button>
+							</div>
+						</div>
+		
+						<div class="detail-list short product">
+							<ul>
+							</ul>
+						</div>
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_02_06" role="tabpanel" aria-labelledby="tab_02_06" class="tab-cont">
+						<p class="scroll-tab-tit">컵라면</p>
+						<div class="list-control">
+							<p class="count">총 <em class="num">0</em>건</p>
+							
+							<div class="btn-wrap">
+								<button type="button" class="btn-layer layer-default active" title="선택됨">기본순</button>
+								<button type="button" class="btn-layer layer-new">신규순</button>
+								<button type="button" class="btn-layer layer-best">인기순</button>
+							</div>
+						</div>
+		
+						<div class="detail-list short product">
+							<ul>
+							</ul>
+						</div>
+					</div>
+					<!-- //tab-cont -->
+
+					<!-- tab-cont -->
+					<div id="tabPanel_02_07" role="tabpanel" aria-labelledby="tab_02_07" class="tab-cont">
+						<p class="scroll-tab-tit">그 외</p>
+						<div class="list-control">
+							<p class="count">총 <em class="num">0</em>건</p>
+							
+							<div class="btn-wrap">
+								<button type="button" class="btn-layer layer-default active" title="선택됨">기본순</button>
+								<button type="button" class="btn-layer layer-new">신규순</button>
+								<button type="button" class="btn-layer layer-best">인기순</button>
+							</div>
+						</div>
+		
+						<div class="detail-list short product">
+							<ul>
+							</ul>
+						</div>
+					</div>
+					<!-- //tab-cont -->
 				</div>
-				<!-- // detail-list -->
 			</section>
 
 		</div>
