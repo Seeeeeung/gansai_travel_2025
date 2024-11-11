@@ -125,19 +125,39 @@ $(function(){
 			const productTabTargetId = $(this).attr('aria-controls');
 			const _target = $('#' + productTabTargetId);
 			const _targetText = $(this).text();
-			_target.children('.scroll-tab-tit').text(_targetText);
+			
+			_target.find('.scroll-tab-tit').text(_targetText);
 		});
 
-		$.each(productList, function(index, arr) {
-			if ($('#page-title').text() == productList[index][0]) {
-				$.each(productList[index][1], function(arrIndex, arrChild) {
-					if ($('.scroll-tab-tit').eq(arrIndex).text() == arrChild[0]) {
-						$('.scroll-tab-tit').eq(arrIndex).siblings('.product').children('ul').append(arrChild[1])
+		$.each(productList, function(index, productArray) {
+			// 와구주섬 메인
+			if ($('.tab-scroll.show').length) {
+				const listTitle = $('.scroll-tab-tit').eq(index);
+				const targetUl = listTitle.parent().siblings('.product').children('ul');
+				targetUl.append(productArray[1]);
+
+				const listSet = [targetUl.children().splice(1)];
+				const randomList = [];
+
+				$.each(listSet, function(index, li) {
+					while(li.length > 4){
+						const randomSet = li.splice(Math.floor(Math.random() * li.length))
+						randomList.push(randomSet)
+						targetUl.empty().append(randomSet);
 					}
-				})
-	
+				});
 			}
-		})
+
+			// 상세패이지
+			if ($('#page-title').text() == productList[index][0]) {
+					$.each(productList[index][1], function(productArrayIndex, productArrayChild) {
+					if ($('.scroll-tab-tit').eq(productArrayIndex).text() == productArrayChild[0]) {
+						$('.scroll-tab-tit').eq(productArrayIndex).siblings('.product').children('ul').append(productArrayChild[1])
+					}
+				});
+			}
+
+		});
 	}
 
 
@@ -503,9 +523,46 @@ $(function(){
 		const $tabIndex = $(this).attr('aria-controls')
 		const $tabCont = $('#' + $tabIndex)
 		$(this).attr('aria-selected','true').parent('li').addClass('on').siblings('li').removeClass('on').children().attr('aria-selected', 'false');
-		$tabCont.attr('tabindex','0').removeAttr('hidden').siblings('.tab-cont').attr({tabindex: '-1', hidden: 'hidden'});
+		$tabCont.attr('tabindex','0');
+
+		if ($(this).closest('.tab-scroll').length) {
+			$('html, body').animate({scrollTop: $tabCont.offset().top - 164}, 500);
+		} else {
+			$tabCont.removeAttr('hidden').siblings('.tab-cont').attr({tabindex: '-1', hidden: 'hidden'});
+		}
 	})
 
+
+	const stickyTabHeight = $('.tab-scroll .tab-list').outerHeight();
+	function scrollTabHandler () {
+		const windowTop = $(window).scrollTop();
+		const scrollTabBtn = $('.tab-scroll [role="tab"]');
+		const tabAreaTop = $('.tab-scroll').offset().top;
+		
+		scrollTabBtn.each(function() {
+			const _targetId = $(this).attr('aria-controls');
+			const _target = $('#' + _targetId);
+			const _targetTop = _target.offset().top - tabAreaTop - stickyTabHeight + 24;
+		
+			switch(true) {
+				case windowTop == 0 : 
+					$('.tab-scroll .tab-list').removeClass('scroll');
+					break;
+				case windowTop < _targetTop : 
+					$('.tab-scroll .tab-list').addClass('scroll');
+					break;
+				case windowTop > _targetTop : 
+					$('.tab-scroll .tab-list').addClass('scroll');
+					$(this).attr('aria-selected','true').parent('li').addClass('on').siblings('li').removeClass('on').children().attr('aria-selected', 'false');
+					break;
+			}
+		});
+	}
+	scrollTabHandler();
+
+	$(window).on('scroll', function() {
+		scrollTabHandler();
+	})
 
 	
 	// 총 건수 설정
