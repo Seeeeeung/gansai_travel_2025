@@ -993,7 +993,8 @@ a.title-3 + .travel .btn-link {background-image:none;}
 
 .detail-list.product > ul > li {display:flex; flex-direction:column; justify-content:stretch;}
 .detail-list.product > ul > li .txt-wrap {display:flex; height:100%; margin-top:0;}
-.detail-list.product li .txt-wrap > .txt {margin-bottom:24px;}
+/* .detail-list.product li .txt-wrap > .txt {margin-bottom:24px;} */
+.detail-list.product li .txt-wrap > .price {margin-top:24px;}
 
 
 .product .detail-visual .visual {position:relative;}
@@ -1028,7 +1029,7 @@ a.title-3 + .travel .btn-link {background-image:none;}
 
 
 /* progress swiper */
-.progress-wrap.product {display:flex; align-items:flex-start;}
-.progress-wrap.product .title-3 {flex-shrink:0; align-self:center; margin:0 !important;}
-.progress-wrap .product {overflow:hidden; position:relative; margin-left:120px; padding:24px 0 24px 24px; border-left:1px solid #93b5ff;}
-.progress-wrap .product > .swiper-pagination {top:auto; bottom:0; background-color:#000; border:1px solid red;}
+.progress-wrap .product {overflow:hidden; position:relative;}
+.progress-wrap .product .swiper-wrapper {flex-wrap:nowrap; padding-bottom:24px; border-bottom:none;}
+.progress-wrap .product .swiper-slide {border:none;}
+.progress-wrap .product > .swiper-pagination {overflow:hidden; width:200px; top:auto; bottom:0; left:calc(50% - 100px); border-radius:8px; background-color:#93b5ff;}

@@ -120,6 +120,7 @@ $(function(){
 	// 와구주섬 목록/타이틀 연동
 	if ($('.detail-list.product').length) {
 		const productTab = $('.detail-list.product').closest('.tab-scroll').find('.btn-tab');
+		const recomList = $('.progress-wrap.product').find('.swiper-wrapper').eq(0);
 
 		productTab.each(function() {
 			const productTabTargetId = $(this).attr('aria-controls');
@@ -129,16 +130,35 @@ $(function(){
 			_target.find('.scroll-tab-tit').text(_targetText);
 		});
 
+		// 추천목록
+		$.each(productList, function(index, array) {
+			const setList = document.createElement('div');
+			const mergeArr = array.flat(Infinity);
+			setList.innerHTML = mergeArr
+			const allList = [];
+			allList.push(setList.children)
+			// allList = setList.append(setList.children)
+
+			// allList = setList.children
+			// setList.find('li')
+			// const setList = allList.find('li');
+			// recomList.empty().append(setList).find('li').addClass('swiper-slide').splice(Math.floor(Math.random() * setList.length))
+			// console.log(allList)
+
+		});
+			
+			
+			
 		$.each(productList, function(index, productArray) {
 			// 와구주섬 메인
 			if ($('.tab-scroll.show').length) {
 				const listTitle = $('.scroll-tab-tit').eq(index);
 				const targetUl = listTitle.parent().siblings('.product').children('ul');
 				targetUl.append(productArray[1]);
-
+				
 				const listSet = [targetUl.children().splice(1)];
 				const randomList = [];
-
+				
 				$.each(listSet, function(index, li) {
 					while(li.length > 4){
 						const randomSet = li.splice(Math.floor(Math.random() * li.length))
@@ -456,9 +476,9 @@ $(function(){
 
 	// 맛집추천 swiper
 	const recommendSwiper = new Swiper('.progress-wrap > .product', {
-		// loop: true,
+		loop: true,
 		speed : 600,
-		// slidesPerView: 1,
+		slidesPerView: 'auto',
 		// centeredSlides: false,
 		// spaceBetween:'24px',
 		// simulateTouch : true,
@@ -468,11 +488,11 @@ $(function(){
 			el: ".progress-wrap .product > .swiper-pagination",
 			type: "progressbar",
 		},
-		// autoplay: {
-		// 	enabled:true,
-		// 	delay: 3000,
-		// 	pauseOnMouseEnter : true,
-		// },
+		autoplay: {
+			enabled:true,
+			delay: 3000,
+			pauseOnMouseEnter : true,
+		},
 	});
 
 
@@ -671,6 +691,9 @@ $(function(){
 		const setItem = $('.detail-list.info-travel > ul > li');
 		setDetailListSortUp(setUl, setItem);
 	}
+
+	// 와구주섬 추천목록
+
 
 
 });
