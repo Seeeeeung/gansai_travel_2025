@@ -1027,3 +1027,8 @@ a.title-3 + .travel .btn-link {background-image:none;}
 
 
 
+/* progress swiper */
+.progress-wrap.product {display:flex; align-items:flex-start;}
+.progress-wrap.product .title-3 {flex-shrink:0; align-self:center; margin:0 !important;}
+.progress-wrap .product {overflow:hidden; position:relative; margin-left:120px; padding:24px 0 24px 24px; border-left:1px solid #93b5ff;}
+.progress-wrap .product > .swiper-pagination {top:auto; bottom:0; background-color:#000; border:1px solid red;}

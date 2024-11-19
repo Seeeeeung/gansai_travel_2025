@@ -454,6 +454,27 @@ $(function(){
 		},
 	});
 
+	// 맛집추천 swiper
+	const recommendSwiper = new Swiper('.progress-wrap > .product', {
+		// loop: true,
+		speed : 600,
+		// slidesPerView: 1,
+		// centeredSlides: false,
+		// spaceBetween:'24px',
+		// simulateTouch : true,
+		// observer: true,
+		// observeParents: true,
+		pagination: {
+			el: ".progress-wrap .product > .swiper-pagination",
+			type: "progressbar",
+		},
+		// autoplay: {
+		// 	enabled:true,
+		// 	delay: 3000,
+		// 	pauseOnMouseEnter : true,
+		// },
+	});
+
 
 
 
