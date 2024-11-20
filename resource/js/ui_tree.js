@@ -358,6 +358,14 @@ const lnb = [
 
 ]
 
+const btnTop = [
+	`
+	<div class="fixed-wrap">
+		<button type="button" class="btn-top">TOP<span class="sr-only">상단으로 이동</span></button>
+	</div>
+	`
+]
+
 
 const notice = [
 	`
@@ -3467,7 +3475,7 @@ const productList = [
 					<p class="location">돈키호테, 드럭스토어</p>
 					<p class="txt">* 과일을 베이스로 만들어 상큼+고소한 맛 / 고기에 찍어먹거나 볶음요리용으로 사용 가능</p>
 					<p class="price">? 엔</p>
-					<p class="coment">탬메핑 <span class="twinkle">PICK !</span></p>
+					<p class="coment">짝꿍핑 <span class="twinkle">PICK !</span></p>
 				</div>
 			</li>
 
@@ -3496,7 +3504,7 @@ const productList = [
 					<p class="location">로피아(마트)</p>
 					<p class="txt">* 짭잘달달한 한국에 없는 맛인 일본식 스키야키가 먹고싶을때 사용</p>
 					<p class="price">259엔</p>
-					<p class="coment">탬메핑 <span class="twinkle">PICK !</span></p>
+					<p class="coment">짝꿍핑 <span class="twinkle">PICK !</span></p>
 				</div>
 			</li>
 			`
@@ -4254,7 +4262,7 @@ const productList = [
 
 							<p class="location">드럭스토어</p>
 							<p class="price">? 엔</p>
-							<p class="coment">탬메핑의 애용 파스</p>
+							<p class="coment">짝꿍핑의 애용 파스</p>
 						</div>
 					</li>
 

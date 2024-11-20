@@ -120,8 +120,8 @@ $(function(){
 	// 와구주섬 목록/타이틀 연동
 	if ($('.detail-list.product').length) {
 		const productTab = $('.detail-list.product').closest('.tab-scroll').find('.btn-tab');
-		const recomList = $('.progress-wrap.product').find('.swiper-wrapper').eq(0);
 
+		// 탭 타이틀 텍스트 설정
 		productTab.each(function() {
 			const productTabTargetId = $(this).attr('aria-controls');
 			const _target = $('#' + productTabTargetId);
@@ -129,25 +129,6 @@ $(function(){
 			
 			_target.find('.scroll-tab-tit').text(_targetText);
 		});
-
-		// 추천목록
-		$.each(productList, function(index, array) {
-			const setList = document.createElement('div');
-			const mergeArr = array.flat(Infinity);
-			setList.innerHTML = mergeArr
-			const allList = [];
-			allList.push(setList.children)
-			// allList = setList.append(setList.children)
-
-			// allList = setList.children
-			// setList.find('li')
-			// const setList = allList.find('li');
-			// recomList.empty().append(setList).find('li').addClass('swiper-slide').splice(Math.floor(Math.random() * setList.length))
-			// console.log(allList)
-
-		});
-			
-			
 			
 		$.each(productList, function(index, productArray) {
 			// 와구주섬 메인
@@ -158,7 +139,7 @@ $(function(){
 				
 				const listSet = [targetUl.children().splice(1)];
 				const randomList = [];
-				
+
 				$.each(listSet, function(index, li) {
 					while(li.length > 4){
 						const randomSet = li.splice(Math.floor(Math.random() * li.length))
@@ -170,16 +151,82 @@ $(function(){
 
 			// 상세패이지
 			if ($('#page-title').text() == productList[index][0]) {
-					$.each(productList[index][1], function(productArrayIndex, productArrayChild) {
+				$.each(productList[index][1], function(productArrayIndex, productArrayChild) {
 					if ($('.scroll-tab-tit').eq(productArrayIndex).text() == productArrayChild[0]) {
 						$('.scroll-tab-tit').eq(productArrayIndex).siblings('.product').children('ul').append(productArrayChild[1])
+					} else {
+						$('.product').children('ul').append(productArrayChild)
+						console.log(productArrayChild[0])
 					}
+
 				});
 			}
 
 		});
+
+		const listSetArr = $(productList);
+		const recomList = $('.progress-wrap.product').find('.swiper-wrapper');
+		recomList.append(productList.flat(Infinity))
+		let targetList = recomList.children();
+
+		const arrayFromObject = Array.from(targetList);
+		console.log(arrayFromObject);
+		
+		console.log(typeof arrayFromObject); // 값들만 포함된 배열
+
+		
+		// while(targetList.length > 100){ // 왜 100인지 모르겠구요
+		// }
+		targetList.sort(function() { return Math.random() - 0.5; });
+		targetList.splice(Math.floor(Math.random() * targetList.length) ,30)
+		recomList.empty();
+		$.each(targetList, function(i, li) {
+			recomList.append(li)
+		});
+
+		// 2024-11-20 배열이아니라서 안잘림 어캐하누
+		console.log(recomList.children().slice(0,40))
+		recomList.find('li').slice(0,20).addClass('swiper-slide');
+		if (!recomList.find('li').hasClass('swiper-slide')) recomList.find('li:not(.swiper-slide)').remove()
+		
+		// console.log(recomList.find('li'))
+
+		// const li = recomList.find('li');
+		// console.log(li)
+		// for (let i=li.length - 1; i>0; i--) {
+		// 	let j = Math.floor(Math.random()*(i+1));
+		// 	li[i] = li[j]
+		// 	console.log(li[i], li[j])
+		// }
+		// targetList.sort(function() {
+		// 	Math.random() - 0.5
+		// })
+	}
+	function appendList (myList, item) {
+	
 	}
 
+	// 추천순 (평점 + 찜순)
+	function setDetailListSortUp (myList, item) {
+		item.sort(function(a,b){ 
+			var keyA = Number($(a).find('.count').text()); // 작은숫자
+			var keyB = Number($(b).find('.count').text()); // 큰숫자
+			var keyC = Number($(a).find('.star').text().split(' ')[1]); // 작은숫자
+			var keyD = Number($(b).find('.star').text().split(' ')[1]); // 큰숫자
+			// console.log(keyB < keyA) // true
+			// a가 아래 b 가 위
+			if (keyB > keyA) return 1;
+			if (keyB < keyA) return -1;
+			if (keyD > keyC) return 1;
+			if (keyD < keyC) return -1;
+			return 0;
+		});
+
+		appendList(myList,);
+		$.each(function(i, li){
+			myList.append(li);
+		});
+	}
 
 	
 	// $('.detail-list .toggle-count').on('click', function() {
@@ -574,36 +621,39 @@ $(function(){
 	})
 
 
-	const stickyTabHeight = $('.tab-scroll .tab-list').outerHeight();
-	function scrollTabHandler () {
-		const windowTop = $(window).scrollTop();
-		const scrollTabBtn = $('.tab-scroll [role="tab"]');
-		const tabAreaTop = $('.tab-scroll').offset().top;
-		
-		scrollTabBtn.each(function() {
-			const _targetId = $(this).attr('aria-controls');
-			const _target = $('#' + _targetId);
-			const _targetTop = _target.offset().top - tabAreaTop - stickyTabHeight + 24;
-		
-			switch(true) {
-				case windowTop == 0 : 
-					$('.tab-scroll .tab-list').removeClass('scroll');
-					break;
-				case windowTop < _targetTop : 
-					$('.tab-scroll .tab-list').addClass('scroll');
-					break;
-				case windowTop > _targetTop : 
-					$('.tab-scroll .tab-list').addClass('scroll');
-					$(this).attr('aria-selected','true').parent('li').addClass('on').siblings('li').removeClass('on').children().attr('aria-selected', 'false');
-					break;
-			}
-		});
-	}
-	scrollTabHandler();
-
-	$(window).on('scroll', function() {
+	if ($('.tab-scroll').length) {
+		const stickyTabHeight = $('.tab-scroll .tab-list').outerHeight();
+		function scrollTabHandler () {
+			const windowTop = $(window).scrollTop();
+			const scrollTabBtn = $('.tab-scroll [role="tab"]');
+			const tabAreaTop = $('.tab-scroll').offset().top;
+			
+			scrollTabBtn.each(function() {
+				const _targetId = $(this).attr('aria-controls');
+				const _target = $('#' + _targetId);
+				const _targetTop = _target.offset().top - tabAreaTop - stickyTabHeight + 24;
+			
+				switch(true) {
+					case windowTop == 0 : 
+						$('.tab-scroll .tab-list').removeClass('scroll');
+						break;
+					case windowTop < _targetTop : 
+						$('.tab-scroll .tab-list').addClass('scroll');
+						break;
+					case windowTop > _targetTop : 
+						$('.tab-scroll .tab-list').addClass('scroll');
+						$(this).attr('aria-selected','true').parent('li').addClass('on').siblings('li').removeClass('on').children().attr('aria-selected', 'false');
+						break;
+				}
+			});
+		}
 		scrollTabHandler();
-	})
+	
+		$(window).on('scroll', function() {
+			scrollTabHandler();
+		});
+
+	}
 
 	
 	// 총 건수 설정
@@ -692,8 +742,9 @@ $(function(){
 		setDetailListSortUp(setUl, setItem);
 	}
 
-	// 와구주섬 추천목록
 
+	// 상단으로 이동
+	$('body').append(btnTop)
 
 
 });
