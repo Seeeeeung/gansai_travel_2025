@@ -1,4 +1,22 @@
 $(function(){
+	// 상단으로 이동버튼
+	$('body').append(btnTop);
+	function scrollTopHandle() {
+		const windowTop = $(window).scrollTop();
+		const _btnTop = $('.fixed-wrap .btn-top');
+		windowTop == 0 ? _btnTop.removeClass('show') : _btnTop.addClass('show');
+
+		_btnTop.on('click', function() {
+			$('html, body').animate({scrollTop : 0}, 500);
+		});
+	}
+
+	scrollTopHandle()
+	$(window).on('scroll', function() {
+		scrollTopHandle()
+	});
+	
+	
 
 	// page url 체크 후 lnb action 제어
 	const pageUrl = (decodeURIComponent(window.location.href));
@@ -313,7 +331,6 @@ $(function(){
 			
 			// 목록 이미지 모달로 복제
 			const detailVisual = $(this).parents('.visual').children('img').clone();
-			console.log(detailVisual)
 			const cloneParent = productModal.find('.zoom-visual');
 			cloneParent.html(detailVisual);
 		});
@@ -334,213 +351,212 @@ $(function(){
 
 
 
-
-
-	// 공지사항 swiper
-	const alertListSwiper = new Swiper('.notice-visual', {
-		direction: 'vertical',
-		loop: true,
-		speed : 600,
-		simulateTouch : false,
-		autoplay: {
-			delay: 3000,
-			pauseOnMouseEnter : true,
-		},
-	});
-	// 꼭 가야할 맛집 swiper
-	const foodListSwiper = new Swiper('.food-main', {
-		effect: 'fade',
-		fadeEffect: { crossFade: true },
-		loop: true,
-		loopedSlides: 1,
-		speed : 600,
-		simulateTouch : true,
-		autoplay: {
-			delay: 3000,
-			pauseOnMouseEnter : true,
-		},
-	});
-	// 숙소정보 swiper
-	const sleepListSwiper = new Swiper('.detail-list:not(.swiper, .no-swiper, .short) .detail-visual', {
-		// loop: true,
-		// loopedSlides: 1,
-		speed : 600,
-		watchOverflow: true,
-		// observer: true,
-		// observeParents: true,
-		slidesPerView: 'auto',
-		centeredSlides: false,
-		spaceBetween:'24px',
-		// simulateTouch : true,
-		// autoplay: {
-		// 	delay: 3000,
-		// 	pauseOnMouseEnter : true,
-		// },
-		navigation : {
-			nextEl : '.swiper-button-next', // 다음 버튼 클래스명
-			prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
-		},
-
-	});
-	// // 와구주섬  swiper
-	const productSwiper = new Swiper('.product .detail-visual', {
-		slidesPerView: 1,
-		speed : 600,
-		watchOverflow: true,
-		pagination: {
-			el: ".swiper-pagination",
-		},
-	});
-
-	// 여행정보 - 숙소정보  swiper
-	const travelSleepSwiper = new Swiper('.detail-list.swiper', {
-		speed : 600,
-		effect: 'fade',
-		fadeEffect: { crossFade: true },
-		autoplay: {
-			delay: 3000,
-			pauseOnMouseEnter : true,
-		},
-	});
-	
-	
-	// 여행꿀팁 swiper
-	const tipListSwiper = new Swiper('.box-window .info-travel', {
-		direction: 'vertical',
-		// loop: true,
-		// loopedSlides: 1,
-		speed : 600,
-		simulateTouch : true,
-		slidesPerView: 'auto',
-		spaceBetween:'24px',
-		autoplay: {
-			delay: 1000,
-			pauseOnMouseEnter : true,
-			disableOnInteraction: false,
-		},
-		mousewheel: {
-			sensitivity: .4,
-		},
-	});
-
-	// 관광지 메인 비주얼 swiper
-	const tourVisualSwiper = new Swiper('.tourist-wrap', {
-		loop: true,
-		effect: 'fade',
-		loopedSlides: 1,
-		speed : 500,
-		simulateTouch : true,
-		// spaceBetween:'20px',
-		autoplay: {
-			delay: 3000,
-			pauseOnMouseEnter : true,
-			disableOnInteraction: false,
-		},
-	});
-	// 금주 인기장소 swiper
-	const bestTourListSwiper = new Swiper('.best-tour', {
-		// direction: 'vertical',
-		// loop: true,
-		// loopedSlides: 1,
-		effect: 'fade',
-		speed : 600,
-		simulateTouch : true,
-		slidesPerView: 1,
-		spaceBetween:'20px',
-		autoplay: {
-			delay: 1000,
-			pauseOnMouseEnter : true,
-			disableOnInteraction: false,
-		},
-	});
-	// 금주 인기장소 이미지 swiper
-	const bestTourImgtSwiper = new Swiper('.best-tour .detail-visual', {
-		// direction: 'vertical',
-		loop: true,
-		loopedSlides: 1,
-		observer: true,
-		observeParents: true,
-		// effect: 'fade',
-		speed : 600,
-		simulateTouch : true,
-		slidesPerView: 1,
-		spaceBetween:'20px',
-		autoplay: {
-			delay: 1000,
-			pauseOnMouseEnter : true,
-		},
-	});
-	// 꼭먹어야할 메뉴 swiper
-	const noticeMenuSwiper = new Swiper('.menu-swiper', {
-		direction: 'vertical',
-		loop: true,
-		loopedSlides: 1,
-		observer: true,
-		observeParents: true,
-		// effect: 'fade',
-		speed : 600,
-		simulateTouch : true,
-		slidesPerView: 1,
-		spaceBetween:'20px',
-		autoplay: {
-			delay: 1000,
-			pauseOnMouseEnter : true,
-		},
-	});
-
-	// 맛집추천 swiper
-	const foodBestSwiper = new Swiper('.food.info-travel', {
-		loop: true,
-		speed : 600,
-		slidesPerView: 1,
-		centeredSlides: false,
-		spaceBetween:'24px',
-		simulateTouch : true,
-		observer: true,
-		observeParents: true,
-		autoplay: {
-			enabled:true,
-			delay: 3000,
-			pauseOnMouseEnter : true,
-		},
-		navigation : {
-			nextEl : '.swiper-button-next', // 다음 버튼 클래스명
-			prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
-		},
-		breakpoints: {
-        
-			700: {
-				slidesPerView: 2,
+// ================================ swiper ========================================================
+		// 공지사항 swiper
+		const alertListSwiper = new Swiper('.notice-visual', {
+			direction: 'vertical',
+			loop: true,
+			speed : 600,
+			simulateTouch : false,
+			autoplay: {
+				delay: 3000,
+				pauseOnMouseEnter : true,
 			},
-			920: {
-				slidesPerView: 1,
+		});
+		// 꼭 가야할 맛집 swiper
+		const foodListSwiper = new Swiper('.food-main', {
+			effect: 'fade',
+			fadeEffect: { crossFade: true },
+			loop: true,
+			loopedSlides: 1,
+			speed : 600,
+			simulateTouch : true,
+			autoplay: {
+				delay: 3000,
+				pauseOnMouseEnter : true,
 			},
-			1000: {
-				slidesPerView: 2,
+		});
+		// 숙소정보 swiper
+		const sleepListSwiper = new Swiper('.detail-list:not(.swiper, .no-swiper, .short) .detail-visual', {
+			// loop: true,
+			// loopedSlides: 1,
+			speed : 600,
+			watchOverflow: true,
+			// observer: true,
+			// observeParents: true,
+			slidesPerView: 'auto',
+			centeredSlides: false,
+			spaceBetween:'24px',
+			// simulateTouch : true,
+			// autoplay: {
+			// 	delay: 3000,
+			// 	pauseOnMouseEnter : true,
+			// },
+			navigation : {
+				nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+				prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
 			},
-		},
-	});
 
-	// 맛집추천 swiper
-	const recommendSwiper = new Swiper('.progress-wrap > .product', {
-		loop: true,
-		speed : 600,
-		slidesPerView: 'auto',
-		// centeredSlides: false,
-		// spaceBetween:'24px',
-		// simulateTouch : true,
-		// observer: true,
-		// observeParents: true,
-		pagination: {
-			el: ".progress-wrap .product > .swiper-pagination",
-			type: "progressbar",
-		},
-		autoplay: {
-			enabled:true,
-			delay: 3000,
-			pauseOnMouseEnter : true,
-		},
-	});
+		});
+		// // 와구주섬  swiper
+		const productSwiper = new Swiper('.product .detail-visual', {
+			slidesPerView: 1,
+			speed : 600,
+			watchOverflow: true,
+			pagination: {
+				el: ".swiper-pagination",
+			},
+		});
+
+		// 여행정보 - 숙소정보  swiper
+		const travelSleepSwiper = new Swiper('.detail-list.swiper', {
+			speed : 600,
+			effect: 'fade',
+			fadeEffect: { crossFade: true },
+			autoplay: {
+				delay: 3000,
+				pauseOnMouseEnter : true,
+			},
+		});
+		
+		
+		// 여행꿀팁 swiper
+		const tipListSwiper = new Swiper('.box-window .info-travel', {
+			direction: 'vertical',
+			// loop: true,
+			// loopedSlides: 1,
+			speed : 600,
+			simulateTouch : true,
+			slidesPerView: 'auto',
+			spaceBetween:'24px',
+			autoplay: {
+				delay: 1000,
+				pauseOnMouseEnter : true,
+				disableOnInteraction: false,
+			},
+			mousewheel: {
+				sensitivity: .4,
+			},
+		});
+
+		// 관광지 메인 비주얼 swiper
+		const tourVisualSwiper = new Swiper('.tourist-wrap', {
+			loop: true,
+			effect: 'fade',
+			loopedSlides: 1,
+			speed : 500,
+			simulateTouch : true,
+			// spaceBetween:'20px',
+			autoplay: {
+				delay: 3000,
+				pauseOnMouseEnter : true,
+				disableOnInteraction: false,
+			},
+		});
+		// 금주 인기장소 swiper
+		const bestTourListSwiper = new Swiper('.best-tour', {
+			// direction: 'vertical',
+			// loop: true,
+			// loopedSlides: 1,
+			effect: 'fade',
+			speed : 600,
+			simulateTouch : true,
+			slidesPerView: 1,
+			spaceBetween:'20px',
+			autoplay: {
+				delay: 1000,
+				pauseOnMouseEnter : true,
+				disableOnInteraction: false,
+			},
+		});
+		// 금주 인기장소 이미지 swiper
+		const bestTourImgtSwiper = new Swiper('.best-tour .detail-visual', {
+			// direction: 'vertical',
+			loop: true,
+			loopedSlides: 1,
+			observer: true,
+			observeParents: true,
+			// effect: 'fade',
+			speed : 600,
+			simulateTouch : true,
+			slidesPerView: 1,
+			spaceBetween:'20px',
+			autoplay: {
+				delay: 1000,
+				pauseOnMouseEnter : true,
+			},
+		});
+		// 꼭먹어야할 메뉴 swiper
+		const noticeMenuSwiper = new Swiper('.menu-swiper', {
+			direction: 'vertical',
+			loop: true,
+			loopedSlides: 1,
+			observer: true,
+			observeParents: true,
+			// effect: 'fade',
+			speed : 600,
+			simulateTouch : true,
+			slidesPerView: 1,
+			spaceBetween:'20px',
+			autoplay: {
+				delay: 1000,
+				pauseOnMouseEnter : true,
+			},
+		});
+
+		// 맛집추천 swiper
+		const foodBestSwiper = new Swiper('.food.info-travel', {
+			loop: true,
+			speed : 600,
+			slidesPerView: 1,
+			centeredSlides: false,
+			spaceBetween:'24px',
+			simulateTouch : true,
+			observer: true,
+			observeParents: true,
+			autoplay: {
+				enabled:true,
+				delay: 3000,
+				pauseOnMouseEnter : true,
+			},
+			navigation : {
+				nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+				prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+			},
+			breakpoints: {
+					
+				700: {
+					slidesPerView: 2,
+				},
+				920: {
+					slidesPerView: 1,
+				},
+				1000: {
+					slidesPerView: 2,
+				},
+			},
+		});
+
+		// 와구주섬 추천목록 swiper
+		const recommendSwiper = new Swiper('.progress-wrap > .product', {
+			loop: true,
+			speed : 600,
+			slidesPerView: 'auto',
+			// centeredSlides: false,
+			// spaceBetween:'24px',
+			// simulateTouch : true,
+			// observer: true,
+			// observeParents: true,
+			pagination: {
+				el: ".progress-wrap .product > .swiper-pagination",
+				type: "progressbar",
+			},
+			// autoplay: {
+			// 	enabled:true,
+			// 	delay: 3000,
+			// 	pauseOnMouseEnter : true,
+			// },
+		});
 
 
 
@@ -648,13 +664,12 @@ $(function(){
 			});
 		}
 		scrollTabHandler();
-	
+
 		$(window).on('scroll', function() {
 			scrollTabHandler();
 		});
-
+		
 	}
-
 	
 	// 총 건수 설정
 	if ($('.list-control').length) {
@@ -742,9 +757,6 @@ $(function(){
 		setDetailListSortUp(setUl, setItem);
 	}
 
-
-	// 상단으로 이동
-	$('body').append(btnTop)
 
 
 });

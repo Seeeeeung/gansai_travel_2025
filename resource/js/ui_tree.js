@@ -361,7 +361,7 @@ const lnb = [
 const btnTop = [
 	`
 	<div class="fixed-wrap">
-		<button type="button" class="btn-top">TOP<span class="sr-only">상단으로 이동</span></button>
+		<button type="button" title="상단으로 이동" class="btn-top">TOP</button>
 	</div>
 	`
 ]
