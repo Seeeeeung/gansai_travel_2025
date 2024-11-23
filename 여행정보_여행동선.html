@@ -16,6 +16,12 @@
 <script src="./resource/js/swiper-bundle.js"></script>
 <script src="./resource/js/ui_script.js" defer></script>
 <script src="./resource/js/ui_tree.js" defer></script>
+<script src="./resource/js/map.json" defer></script>
+
+
+<!-- 지도 오픈소스 : https://leafletjs.com/ -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 </head>
 <body>
 
@@ -38,32 +44,8 @@
 		
 		<!-- inner-wrap-->
 		<div class="inner-wrap">
-			<div class="infomation-wrap">
-				<p class="title">
-					안녕하세요 <em>여행자</em>님,<br>
-					예매 내역을 확인해주세요.
-				</p>
-
-				<div class="travel reserved">
-					<a href="" class="btn-link fly">
-						<p class="tit">항공권 예매</p>
-						<p class="desc"><em>2</em>건</p>
-					</a>
-					<a href="" class="btn-link sleep">
-						<p class="tit">숙소 예매</p>
-						<p class="desc"><em>0</em>건</p>
-					</a>
-					<a href="" class="btn-link pass">
-						<p class="tit">교통패스</p>
-						<p class="desc"><em>0</em>건</p>
-					</a>
-					<a href="" class="btn-link ticket">
-						<p class="tit">관광지 티켓</p>
-						<p class="desc"><em>0</em>건</p>
-					</a>
-				</div>
-
-
+			<div class="map-area">
+				<div id="map"></div>
 			</div>
 
 			<section class="contents">
@@ -154,7 +136,6 @@
 			</section>
 			<section class="contents">
 				<h3 class="title-3">기피지역</h3>
-				기피지역 아코디언으로 추가? 지도? 이미지?
 			</section>
 		</div>
 		<!-- // inner-wrap-->
@@ -167,6 +148,6 @@
 	</footer>
 	<!-- // footer -->
 
-
+<script src="./resource/js/map.js"></script>
 </body>
 </html>

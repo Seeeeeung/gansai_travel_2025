@@ -1,0 +1,14 @@
+{
+  "datas": [
+    {
+      "key": 1,
+      "title": "위험지역",
+      "lat": "34.6",
+      "lang": "135.49",
+			"color": "#d50136",
+			"fillColor": "#f03",
+			"fillOpacity": 0.5,
+			"radius": 500
+    }
+  ]
+}

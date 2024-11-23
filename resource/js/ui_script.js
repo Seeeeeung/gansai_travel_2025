@@ -1,4 +1,6 @@
 $(function(){
+	
+// ================================ 공통 ========================================================
 	// 상단으로 이동버튼
 	$('body').append(btnTop);
 	function scrollTopHandle() {
@@ -16,8 +18,160 @@ $(function(){
 		scrollTopHandle()
 	});
 	
-	
 
+	// 아코디언
+	$(document).on('click', '.accordion:not(.open) .btn-toggle', function(e) {
+		e.preventDefault();
+
+		const $parentLi = $(this).closest('li');
+		const $accCont = $parentLi.find('.acc-cont');
+		// const isMenuClosed = $('.container').hasClass('close');
+
+		// if (isMenuClosed) {
+		// 	$('.container').removeClass('close');
+		// }
+
+		$parentLi.toggleClass('on');
+		$accCont.slideToggle(150);
+
+		$parentLi.siblings('li').removeClass('on').find('.acc-cont').slideUp(150);
+	});
+	
+	// 아코디언 - lnb
+	if ($('.lnb.accordion').length) {
+		
+		$(window).on('resize', function() {
+			if ($(window).width() < 921) {
+				$('.lnb .acc-cont').css('display', 'none').parent('li').removeClass('on');
+			} else {
+				$('.lnb.accordion > ul > li').find('.active').parent('li').addClass('on').find('.acc-cont').slideDown(150).parent('li').siblings().removeClass('on').find('.acc-cont').slideUp(150);
+			}
+		});
+		if ($(window).width() < 921) {
+			$('.lnb .acc-cont').css('display', 'none').parent('li').removeClass('on');
+		} 
+	}
+
+	// 아코디언 동시오픈 가능
+	$(document).on('click', '.accordion.open .btn-toggle', function(e) {
+		e.preventDefault();
+		const $parentLi_all = $(this).closest('li');
+		$parentLi_all.hasClass('on') ? $parentLi_all.removeClass('on').find('.acc-cont').slideUp(150) : $parentLi_all.addClass('on').find('.acc-cont').slideDown(150);
+	});
+
+
+
+
+	// tab
+	$(document).on('click', '[role="tab"]', function(e) {
+		const $tabIndex = $(this).attr('aria-controls')
+		const $tabCont = $('#' + $tabIndex)
+		$(this).attr('aria-selected','true').parent('li').addClass('on').siblings('li').removeClass('on').children().attr('aria-selected', 'false');
+		$tabCont.attr('tabindex','0');
+
+		if ($(this).closest('.tab-scroll').length) {
+			$('html, body').animate({scrollTop: $tabCont.offset().top - 164}, 500);
+		} else {
+			$tabCont.removeAttr('hidden').siblings('.tab-cont').attr({tabindex: '-1', hidden: 'hidden'});
+		}
+	})
+
+
+	if ($('.tab-scroll').length) {
+		const stickyTabHeight = $('.tab-scroll .tab-list').outerHeight();
+		function scrollTabHandler () {
+			const windowTop = $(window).scrollTop();
+			const scrollTabBtn = $('.tab-scroll [role="tab"]');
+			const tabAreaTop = $('.tab-scroll').offset().top;
+			
+			scrollTabBtn.each(function() {
+				const _targetId = $(this).attr('aria-controls');
+				const _target = $('#' + _targetId);
+				const _targetTop = _target.offset().top - tabAreaTop - stickyTabHeight + 24;
+			
+				switch(true) {
+					case windowTop == 0 : 
+						$('.tab-scroll .tab-list').removeClass('scroll');
+						break;
+					case windowTop < _targetTop : 
+						$('.tab-scroll .tab-list').addClass('scroll');
+						break;
+					case windowTop > _targetTop : 
+						$('.tab-scroll .tab-list').addClass('scroll');
+						$(this).attr('aria-selected','true').parent('li').addClass('on').siblings('li').removeClass('on').children().attr('aria-selected', 'false');
+						break;
+				}
+			});
+		}
+		scrollTabHandler();
+
+		$(window).on('scroll', function() {
+			scrollTabHandler();
+		});
+		
+	}
+	
+	// 총 건수 설정
+	if ($('.list-control').length) {
+		$('.list-control').each(function() {
+			const list = $(this).siblings('.detail-list').children('ul').children('li');
+			$(this).find('.num').text(list.length);
+		});
+	}
+
+	// 모달창
+	if ($('.open-modal').length) {
+		// 접근성
+		// const targetModal = $('#' + $(this).attr('aria-controls'));
+		// const focusTarget = targetModal.find('button, input:not([type="hidden"]), select, iframe, textarea, [href], [tabindex]:not([tabindex="-1"])');
+		// const focusFirst = focusTarget.first();
+		// const focusLast = focusTarget.last();
+
+
+		
+		// if (focusTarget.length) {
+		// 	focusFirst.on("keydown", function(e) {
+		// 		if (e.shiftKey && e.key === 'Tab') {
+		// 			e.preventDefault();
+		// 			focusLast.focus();
+		// 		}
+		// 	});
+		// 	focusLast.on("keydown", function(e) {
+		// 		if (!e.shiftKey && e.key === 'Tab') {
+		// 			e.preventDefault();
+		// 			focusFirst.focus();
+		// 		}
+		// 	});
+		// }
+
+		// 레이어 열기
+		$(document).on('click', '.open-modal', function() {
+			$('body').addClass('overflow');
+		});
+		
+
+		// 레이어 닫기
+		$(document).on('click', '.close-layer', function() {
+			$(this).parents('.layer-modal').removeClass('on');
+			$('body').removeClass('overflow');
+		})
+	}
+
+	
+	// 찜하기..
+		// $('.detail-list .toggle-count').on('click', function() {
+		// 	var count = 0;
+		// 	if (!$(this).hasClass('check')) {
+		// 		$(this).addClass('check').children('.count').text(count + 1).attr('title','추천됨');
+		// 		count = $(this).children('.count').text();
+		// 	} else {
+		// 		$(this).removeClass('check').children('.count').text(count);
+		// 	}
+		// })
+
+
+
+// ================================ 레이아웃 ========================================================
 	// page url 체크 후 lnb action 제어
 	const pageUrl = (decodeURIComponent(window.location.href));
 	const pageTitle = pageUrl.split('/').reverse()[0];	
@@ -40,6 +194,8 @@ $(function(){
 	
 	// footer 추가
 	$('footer').empty().append(footer);
+
+
 
 	// lnb 추가
 	if ($('.lnb-wrap').length) {
@@ -67,6 +223,7 @@ $(function(){
 				});
 			});
 		}
+
 
 
 		// lnb 추가 / 제어
@@ -103,6 +260,39 @@ $(function(){
 
 	}
 
+	// 전체메뉴열기
+	if ($('.btn-allmenu').length) {
+		const allmenu = $('header .allmenu');
+		const allmenuBtn = allmenu.siblings('.btn-all-menu');
+		$(document).on('click', 'header .btn-allmenu', function() {
+			$(this).siblings('.allmenu').addClass('active');
+			$('body').addClass('overflow');
+		})
+
+
+
+		// 전체메뉴 url 설정
+		const allMenuDepth_01 = $('header .allmenu-list > ul > li > a');
+		const allMenuDepth_02 = $('header .allmenu .contents');
+		
+		$.each(gnb_tree, function(index, e) {
+			if (allMenuDepth_01.eq(index).text() == gnb_tree[index][0]) {
+				// allmenu depth01 href 설정
+				allMenuDepth_01.eq(index).attr('href', gnb_tree[index][1]);
+				
+				// depth02 href 설정
+				$.each(gnb_tree[index][2], function(subIndex, depth02) {
+					allMenuDepth_02.eq(index).find('a').eq(subIndex).attr('href', depth02);
+				});
+			}
+		});
+	}
+
+
+
+
+// ================================ 콘텐츠 ========================================================
+
 	// 여행 예매정보 링크이동
 	if ($('.infomation-wrap').length) {
 		const pageInfo = $('.infomation-wrap .reserved .btn-link');
@@ -132,7 +322,6 @@ $(function(){
 		infoCafe.empty().append(infoCafeList.eq(Math.floor(Math.random()*infoCafeList.length)));
 		
 	}
-
 
 
 	// 와구주섬 목록/타이틀 연동
@@ -182,120 +371,26 @@ $(function(){
 
 		});
 
-		const listSetArr = $(productList);
+		
+		// 와구주섬 추천목록
 		const recomList = $('.progress-wrap.product').find('.swiper-wrapper');
+		
 		recomList.append(productList.flat(Infinity))
+		
 		let targetList = recomList.children();
-
-		const arrayFromObject = Array.from(targetList);
-		console.log(arrayFromObject);
-		
-		console.log(typeof arrayFromObject); // 값들만 포함된 배열
-
-		
-		// while(targetList.length > 100){ // 왜 100인지 모르겠구요
-		// }
 		targetList.sort(function() { return Math.random() - 0.5; });
 		targetList.splice(Math.floor(Math.random() * targetList.length) ,30)
 		recomList.empty();
+		
 		$.each(targetList, function(i, li) {
-			recomList.append(li)
+			recomList.append(li);
+			recomList.find('li').slice(0,20).addClass('swiper-slide');
+			recomList.find('li').slice(20,li.length).addClass('del');
+			recomList.find('.del').remove();
 		});
 
-		// 2024-11-20 배열이아니라서 안잘림 어캐하누
-		console.log(recomList.children().slice(0,40))
-		recomList.find('li').slice(0,20).addClass('swiper-slide');
-		if (!recomList.find('li').hasClass('swiper-slide')) recomList.find('li:not(.swiper-slide)').remove()
-		
-		// console.log(recomList.find('li'))
-
-		// const li = recomList.find('li');
-		// console.log(li)
-		// for (let i=li.length - 1; i>0; i--) {
-		// 	let j = Math.floor(Math.random()*(i+1));
-		// 	li[i] = li[j]
-		// 	console.log(li[i], li[j])
-		// }
-		// targetList.sort(function() {
-		// 	Math.random() - 0.5
-		// })
-	}
-	function appendList (myList, item) {
-	
-	}
-
-	// 추천순 (평점 + 찜순)
-	function setDetailListSortUp (myList, item) {
-		item.sort(function(a,b){ 
-			var keyA = Number($(a).find('.count').text()); // 작은숫자
-			var keyB = Number($(b).find('.count').text()); // 큰숫자
-			var keyC = Number($(a).find('.star').text().split(' ')[1]); // 작은숫자
-			var keyD = Number($(b).find('.star').text().split(' ')[1]); // 큰숫자
-			// console.log(keyB < keyA) // true
-			// a가 아래 b 가 위
-			if (keyB > keyA) return 1;
-			if (keyB < keyA) return -1;
-			if (keyD > keyC) return 1;
-			if (keyD < keyC) return -1;
-			return 0;
-		});
-
-		appendList(myList,);
-		$.each(function(i, li){
-			myList.append(li);
-		});
-	}
-
-	
-	// $('.detail-list .toggle-count').on('click', function() {
-	// 	var count = 0;
-	// 	if (!$(this).hasClass('check')) {
-	// 		$(this).addClass('check').children('.count').text(count + 1).attr('title','추천됨');
-	// 		count = $(this).children('.count').text();
-	// 	} else {
-	// 		$(this).removeClass('check').children('.count').text(count);
-	// 	}
-	// })
 
 
-
-
-	// 모달창
-	if ($('.open-modal').length) {
-		// 접근성
-		// const targetModal = $('#' + $(this).attr('aria-controls'));
-		// const focusTarget = targetModal.find('button, input:not([type="hidden"]), select, iframe, textarea, [href], [tabindex]:not([tabindex="-1"])');
-		// const focusFirst = focusTarget.first();
-		// const focusLast = focusTarget.last();
-
-
-		
-		// if (focusTarget.length) {
-		// 	focusFirst.on("keydown", function(e) {
-		// 		if (e.shiftKey && e.key === 'Tab') {
-		// 			e.preventDefault();
-		// 			focusLast.focus();
-		// 		}
-		// 	});
-		// 	focusLast.on("keydown", function(e) {
-		// 		if (!e.shiftKey && e.key === 'Tab') {
-		// 			e.preventDefault();
-		// 			focusFirst.focus();
-		// 		}
-		// 	});
-		// }
-
-		// 레이어 열기
-		$(document).on('click', '.open-modal', function() {
-			$('body').addClass('overflow');
-		});
-		
-
-		// 레이어 닫기
-		$(document).on('click', '.close-layer', function() {
-			$(this).parents('.layer-modal').removeClass('on');
-			$('body').removeClass('overflow');
-		})
 	}
 
 	// 와구와구 목록 모달창
@@ -342,11 +437,112 @@ $(function(){
 	}
 
 
+	// 관광지 한눈에보기 animation
+	if ($('.tourist-wrap').length) {
+		let slider_index = 0;
+		function accentSlideSet(){
+			const _target = $('.tourist-wrap .swiper-slide-active .list-img li');
+			_target.removeClass('on');
+			_target.eq(slider_index).addClass('on');
+			slider_index++;
+
+			if(slider_index >= _target.length) slider_index= 0;
+		}
+		
+		setInterval(accentSlideSet, 500);
+	}
+	
+	
 
 
 
 
 
+
+
+
+
+
+
+
+
+	// ================================ 정렬 ========================================================
+		// 목록 (기본순 / 추천순 / 평점순)정렬 스크립트
+		// 제어하려는 목록
+		function appendList (myList, item) {
+			$.each(item, function(i, li){
+				myList.append(li);
+			});
+		}
+
+		// 추천순 (평점 + 찜순)
+		function setDetailListSortUp (myList, item) {
+			item.sort(function(a,b){ 
+				var keyA = Number($(a).find('.count').text()); // 작은숫자
+				var keyB = Number($(b).find('.count').text()); // 큰숫자
+				var keyC = Number($(a).find('.star').text().split(' ')[1]); // 작은숫자
+				var keyD = Number($(b).find('.star').text().split(' ')[1]); // 큰숫자
+				// console.log(keyB < keyA) // true
+				// a가 아래 b 가 위
+				if (keyB > keyA) return 1;
+				if (keyB < keyA) return -1;
+				if (keyD > keyC) return 1;
+				if (keyD < keyC) return -1;
+				return 0;
+			});
+
+			appendList(myList, item);
+		}
+		
+
+		// 평점순
+		function setDetailListSortStar (myList, item) {
+			item.sort(function(a,b){ 
+				var keyA = Number($(a).find('.star').text().split(' ')[1]); // 작은숫자
+				var keyB = Number($(b).find('.star').text().split(' ')[1]); // 큰숫자
+				// console.log(keyB < keyA) // true
+				// a가 아래 b 가 위
+				if (keyB > keyA) return 1;
+				if (keyB < keyA) return -1;
+				return 0;
+			});
+
+			appendList(myList, item);
+		}
+		
+		// 기본정렬 저장 / 기본순 버튼 클릭시 노출
+		const detailList = $('.detail-list');
+		detailList.each(function() {
+			const targetList = $(this).children('ul').children('li');
+			$('.list-control .btn-layer.layer-default').on('click', function() {
+				$.each(targetList, function(i, li){
+					targetList.parent('ul').append(li);
+				});
+			});
+		})
+
+
+			
+		// 목록 정렬 버튼
+		$(document).on('click', '.list-control .btn-layer', function() {
+			const setUl = $(this).parents('.list-control').siblings('.detail-list').children('ul');
+			const detailListItem = setUl.children('li').get();
+			// 버튼 효과
+			$(this).addClass('active').attr('title','선택됨').siblings('.btn-layer').removeClass('active').removeAttr('title');
+			
+			// 추천순
+			if ($(this).hasClass('layer-good')) setDetailListSortUp(setUl, detailListItem);
+			// 평점순
+			if ($(this).hasClass('layer-star')) setDetailListSortStar(setUl, detailListItem);
+			
+		});
+
+		// 여행정보 메인화면 숙소정보 목록정렬
+		if ($('.detail-list').hasClass('info-travel')) {
+			const setUl = $('.detail-list.info-travel > ul');
+			const setItem = $('.detail-list.info-travel > ul > li');
+			setDetailListSortUp(setUl, setItem);
+		}
 
 
 
@@ -398,18 +594,9 @@ $(function(){
 			},
 
 		});
-		// // 와구주섬  swiper
-		const productSwiper = new Swiper('.product .detail-visual', {
-			slidesPerView: 1,
-			speed : 600,
-			watchOverflow: true,
-			pagination: {
-				el: ".swiper-pagination",
-			},
-		});
 
 		// 여행정보 - 숙소정보  swiper
-		const travelSleepSwiper = new Swiper('.detail-list.swiper', {
+		const travelSleepSwiper = new Swiper('.info-travel.detail-list.swiper', {
 			speed : 600,
 			effect: 'fade',
 			fadeEffect: { crossFade: true },
@@ -558,205 +745,20 @@ $(function(){
 			// },
 		});
 
-
-
-
-
-
-
-	// 관광지 한눈에보기 animation
-	if ($('.tourist-wrap').length) {
-		let slider_index = 0;
-		function accentSlideSet(){
-			const _target = $('.tourist-wrap .swiper-slide-active .list-img li');
-			_target.removeClass('on');
-			_target.eq(slider_index).addClass('on');
-			slider_index++;
-
-			if(slider_index >= _target.length) slider_index= 0;
-		}
-		
-		setInterval(accentSlideSet, 500);
-	}
-	
-	// 아코디언
-	$(document).on('click', '.accordion:not(.open) .btn-toggle', function(e) {
-		e.preventDefault();
-
-		const $parentLi = $(this).closest('li');
-		const $accCont = $parentLi.find('.acc-cont');
-		// const isMenuClosed = $('.container').hasClass('close');
-
-		// if (isMenuClosed) {
-		// 	$('.container').removeClass('close');
-		// }
-
-		$parentLi.toggleClass('on');
-		$accCont.slideToggle(150);
-
-		$parentLi.siblings('li').removeClass('on').find('.acc-cont').slideUp(150);
-	});
-	
-	// 아코디언 - lnb
-	if ($('.lnb.accordion').length) {
-		
-		$(window).on('resize', function() {
-			if ($(window).width() < 921) {
-				$('.lnb .acc-cont').css('display', 'none').parent('li').removeClass('on');
-			} else {
-				$('.lnb.accordion > ul > li').find('.active').parent('li').addClass('on').find('.acc-cont').slideDown(150).parent('li').siblings().removeClass('on').find('.acc-cont').slideUp(150);
-			}
+		// // 와구주섬  swiper
+		const productSwiper = new Swiper('.product .detail-visual', {
+			slidesPerView: 1,
+			speed : 600,
+			watchOverflow: true,
+			pagination: {
+				el: ".swiper-pagination",
+			},
+			autoplay: {
+				enabled:true,
+				delay: 3000,
+				pauseOnMouseEnter : true,
+			},
 		});
-		if ($(window).width() < 921) {
-			$('.lnb .acc-cont').css('display', 'none').parent('li').removeClass('on');
-		} 
-	}
-
-	// 아코디언 동시오픈 가능
-	$(document).on('click', '.accordion.open .btn-toggle', function(e) {
-		e.preventDefault();
-		const $parentLi_all = $(this).closest('li');
-		$parentLi_all.hasClass('on') ? $parentLi_all.removeClass('on').find('.acc-cont').slideUp(150) : $parentLi_all.addClass('on').find('.acc-cont').slideDown(150);
-	});
-
-
-
-
-	// tab
-	$(document).on('click', '[role="tab"]', function(e) {
-		const $tabIndex = $(this).attr('aria-controls')
-		const $tabCont = $('#' + $tabIndex)
-		$(this).attr('aria-selected','true').parent('li').addClass('on').siblings('li').removeClass('on').children().attr('aria-selected', 'false');
-		$tabCont.attr('tabindex','0');
-
-		if ($(this).closest('.tab-scroll').length) {
-			$('html, body').animate({scrollTop: $tabCont.offset().top - 164}, 500);
-		} else {
-			$tabCont.removeAttr('hidden').siblings('.tab-cont').attr({tabindex: '-1', hidden: 'hidden'});
-		}
-	})
-
-
-	if ($('.tab-scroll').length) {
-		const stickyTabHeight = $('.tab-scroll .tab-list').outerHeight();
-		function scrollTabHandler () {
-			const windowTop = $(window).scrollTop();
-			const scrollTabBtn = $('.tab-scroll [role="tab"]');
-			const tabAreaTop = $('.tab-scroll').offset().top;
-			
-			scrollTabBtn.each(function() {
-				const _targetId = $(this).attr('aria-controls');
-				const _target = $('#' + _targetId);
-				const _targetTop = _target.offset().top - tabAreaTop - stickyTabHeight + 24;
-			
-				switch(true) {
-					case windowTop == 0 : 
-						$('.tab-scroll .tab-list').removeClass('scroll');
-						break;
-					case windowTop < _targetTop : 
-						$('.tab-scroll .tab-list').addClass('scroll');
-						break;
-					case windowTop > _targetTop : 
-						$('.tab-scroll .tab-list').addClass('scroll');
-						$(this).attr('aria-selected','true').parent('li').addClass('on').siblings('li').removeClass('on').children().attr('aria-selected', 'false');
-						break;
-				}
-			});
-		}
-		scrollTabHandler();
-
-		$(window).on('scroll', function() {
-			scrollTabHandler();
-		});
-		
-	}
-	
-	// 총 건수 설정
-	if ($('.list-control').length) {
-		$('.list-control').each(function() {
-			const list = $(this).siblings('.detail-list').children('ul').children('li');
-			$(this).find('.num').text(list.length);
-		});
-	}
-
-	
-	// 목록 (기본순 / 추천순 / 평점순)정렬 스크립트
-	// 제어하려는 목록
-	function appendList (myList, item) {
-		$.each(item, function(i, li){
-			myList.append(li);
-		});
-	}
-
-	// 추천순 (평점 + 찜순)
-	function setDetailListSortUp (myList, item) {
-		item.sort(function(a,b){ 
-			var keyA = Number($(a).find('.count').text()); // 작은숫자
-			var keyB = Number($(b).find('.count').text()); // 큰숫자
-			var keyC = Number($(a).find('.star').text().split(' ')[1]); // 작은숫자
-			var keyD = Number($(b).find('.star').text().split(' ')[1]); // 큰숫자
-			// console.log(keyB < keyA) // true
-			// a가 아래 b 가 위
-			if (keyB > keyA) return 1;
-			if (keyB < keyA) return -1;
-			if (keyD > keyC) return 1;
-			if (keyD < keyC) return -1;
-			return 0;
-		});
-
-		appendList(myList, item);
-	}
-	
-
-	// 평점순
-	function setDetailListSortStar (myList, item) {
-		item.sort(function(a,b){ 
-			var keyA = Number($(a).find('.star').text().split(' ')[1]); // 작은숫자
-			var keyB = Number($(b).find('.star').text().split(' ')[1]); // 큰숫자
-			// console.log(keyB < keyA) // true
-			// a가 아래 b 가 위
-			if (keyB > keyA) return 1;
-			if (keyB < keyA) return -1;
-			return 0;
-		});
-
-		appendList(myList, item);
-	}
-	
-	// 기본정렬 저장 / 기본순 버튼 클릭시 노출
-	const detailList = $('.detail-list');
-	detailList.each(function() {
-		const targetList = $(this).children('ul').children('li');
-		$('.list-control .btn-layer.layer-default').on('click', function() {
-			$.each(targetList, function(i, li){
-				targetList.parent('ul').append(li);
-			});
-		});
-	})
-
-
-		
-	// 목록 정렬 버튼
-	$(document).on('click', '.list-control .btn-layer', function() {
-		const setUl = $(this).parents('.list-control').siblings('.detail-list').children('ul');
-		const detailListItem = setUl.children('li').get();
-		// 버튼 효과
-		$(this).addClass('active').attr('title','선택됨').siblings('.btn-layer').removeClass('active').removeAttr('title');
-		
-		// 추천순
-		if ($(this).hasClass('layer-good')) setDetailListSortUp(setUl, detailListItem);
-		// 평점순
-		if ($(this).hasClass('layer-star')) setDetailListSortStar(setUl, detailListItem);
-		
-	});
-
-	// 여행정보 메인화면 숙소정보 목록정렬
-	if ($('.detail-list').hasClass('info-travel')) {
-		const setUl = $('.detail-list.info-travel > ul');
-		const setItem = $('.detail-list.info-travel > ul > li');
-		setDetailListSortUp(setUl, setItem);
-	}
-
 
 
 });

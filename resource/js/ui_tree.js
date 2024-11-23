@@ -9,6 +9,7 @@ const gnb = [
 			</nav>
 	
 			<button type="button" class="btn-allmenu"><span class="sr-only">전체메뉴 열기</span></button>
+
 			<div class="allmenu">
 				<div class="allmenu-list">
 					<p class="tit">전체메뉴</p>
@@ -16,51 +17,77 @@ const gnb = [
 						<li>
 							<a href="">여행 정보</a>
 							<ul class="contents">
-								<li><a href="">항공편 정보</a></li>
-								<li><a href="">숙소 정보</a></li>
-								<li><a href="">교통 정보</a></li>
+								<li><a href="">여행동선</a></li>
+								<li>항공편 정보
+									<ul class="depth-2">
+										<li><a href="">예매 정보</a></li>
+										<li><a href="">안내사항</a></li>
+									</ul>
+								</li>
+								<li>숙소 정보
+									<ul class="depth-2">
+										<li><a href="">추천 목록</a></li>
+										<li><a href="">예매 정보</a></li>
+									</ul>
+								</li>
+								<li>예매 정보
+									<ul class="depth-2">
+										<li><a href="">교통패스 예매정보</a></li>
+										<li><a href="">관광지 티켓 예매정보</a></li>
+										<li><a href="">Wifi 예매정보</a></li>
+									</ul>
+								</li>
 								<li><a href="">여행 꿀팁</a></li>
 							</ul>
 						</li>
-		
+
 						<li>
-							<a href="">여행지</a>
+							<a href="">관광지</a>
 							<ul class="contents">
-								<li><a href="">오사카</a></li>
-								<li><a href="">나라</a></li>
-								<li><a href="">교토</a></li>
-								<li><a href="">이와지마</a></li>
-								<li><a href="">고베</a></li>
-								<li><a href="">한혐 식당 정보</a></li>
+								<li>관광지 정보
+									<ul class="depth-2">
+										<li><a href="">지역별 관광지</a></li>
+										<li><a href="">카테고리별 관광지</a></li>
+									</ul>
+								</li>
+								<li>여행 동선
+									<ul class="depth-2">
+										<li><a href="">확정된 관광지</a></li>
+										<li><a href="">동선 정보</a></li>
+									</ul>
+								</li>
 							</ul>
 						</li>
-		
+
 						<li>
-							<a href="">식당</a>
+							<a href="">한끼 정보</a>
 							<ul class="contents">
-								<li><a href="">여행지별 식당</a></li>
-								<li><a href="">카테고리별 식당</a></li>
+								<li>맛집 정보
+									<ul class="depth-2">
+										<li><a href="">추천 맛집</a></li>
+										<li><a href="">지역별 맛집</a></li>
+										<li><a href="">카테고리별 맛집</a></li>
+									</ul>
+								</li>
+								<li><a href="">예약 내역</a></li>
+								<li><a href="">한혐식당 정보</a></li>
 							</ul>
 						</li>
-		
+
 						<li>
 							<a href="">카페 &amp; 디저트</a>
 							<ul class="contents">
-								<li><a href="">여행지별 카페</a></li>
+								<li><a href="">여행지별 정보</a></li>
 							</ul>
 						</li>
-		
+
 						<li>
-							<a href="">이것 어떠세요옹</a>
+							<a href="">와구주섬</a>
 							<ul class="contents">
-								<li><a href="">약 &amp; 생활용품</a></li>
-								<li><a href="">간식류</a></li>
-								<li><a href="">아이스크림</a></li>
-								<li><a href="">푸딩</a></li>
-								<li><a href="">컵라면</a></li>
-								<li><a href="">음료수</a></li>
-								<li><a href="">술</a></li>
-								<li><a href="">소스</a></li>
+								<li><a href="">와구와구</a></li>
+								<li><a href="">주섬주섬</a></li>
+								<li><a href="">콸콸</a></li>
+								<li><a href="">덕지덕지</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -79,11 +106,12 @@ const gnb_tree = [
 		'./여행정보.html', [
 			'./여행정보_여행동선.html', 
 			'./여행정보_항공편정보_예매정보.html', 
-			'./여행정보_항공편정보_안내사항.html', 
-			'./여행정보_숙소정보_추천목록.html', 
-			'./여행정보_숙소정보_예매정보.html', 
-			'./여행정보_예매정보_교통패스예매.html', 
-			'./여행정보_예매정보_관광지티켓예매.html', 
+			'./여행정보_항공편정보_안내사항.html',
+			'./여행정보_숙소정보_추천목록.html',
+			'./여행정보_숙소정보_예매정보.html',
+			'./여행정보_예매정보_교통패스예매.html',
+			'./여행정보_예매정보_관광지티켓예매.html',
+			'./여행정보_예매정보_Wifi예매.html',
 			'./여행정보_여행꿀팁.html'
 		]
 	],
@@ -160,6 +188,7 @@ const lnb = [
 				<ul class="acc-cont">
 					<li><a href="" class="depth-3">교통패스 예매정보</a></li>
 					<li><a href="" class="depth-3">관광지 티켓 예매정보</a></li>
+					<li><a href="" class="depth-3">Wifi 예매정보</a></li>
 				</ul>
 			</li>
 
@@ -443,7 +472,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -496,7 +525,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -537,7 +566,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -590,7 +619,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -630,7 +659,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -660,7 +689,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -701,7 +730,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -729,7 +758,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -757,7 +786,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -797,7 +826,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -825,7 +854,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -865,7 +894,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -893,7 +922,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -934,7 +963,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -963,7 +992,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -992,7 +1021,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1033,7 +1062,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1061,7 +1090,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1107,7 +1136,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1172,7 +1201,7 @@ const productList = [
 								</div>
 							</div>
 				
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 			
 						<div class="txt-wrap">
@@ -1213,7 +1242,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1254,7 +1283,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1295,7 +1324,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1336,7 +1365,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1381,7 +1410,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1410,7 +1439,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1439,7 +1468,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1480,7 +1509,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1509,7 +1538,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1550,7 +1579,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1579,7 +1608,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1619,7 +1648,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1648,7 +1677,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1693,7 +1722,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1746,7 +1775,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1798,7 +1827,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1852,7 +1881,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1893,7 +1922,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1936,7 +1965,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -1977,7 +2006,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2017,7 +2046,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2058,7 +2087,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2086,7 +2115,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2114,7 +2143,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2154,16 +2183,16 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name"><a href="" target="_blank" title="새창에서 열기">갈아만드는 과일 스무디</a></p>
+							<p class="name">갈아만드는 과일 스무디</p>
 
 							<p class="location">세븐일레븐</p>
 							<p class="txt">* 냉동과일을 직접 갈아먹을수 있는 스무디</p>
 							<p class="price">278엔</p>
-							<p class="coment">스무디 작동법은 상세페이지 참고</p>
+							<p class="coment">스무디 작동법 : 물건 결제 후 기계에 바코드 찍고 비닐 뜯고 화면의 push 누름</p>
 						</div>
 					</li>
 					`
@@ -2188,7 +2217,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2228,7 +2257,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2280,7 +2309,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2320,7 +2349,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2360,7 +2389,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2401,7 +2430,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2430,7 +2459,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2458,7 +2487,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2498,7 +2527,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2526,7 +2555,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2558,7 +2587,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2584,7 +2613,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2611,7 +2640,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2637,7 +2666,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2663,7 +2692,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2688,7 +2717,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2713,7 +2742,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2738,7 +2767,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2763,7 +2792,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2788,7 +2817,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2813,7 +2842,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2838,7 +2867,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2863,7 +2892,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2888,7 +2917,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2913,7 +2942,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2938,7 +2967,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2963,7 +2992,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -2988,7 +3017,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -3013,7 +3042,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -3038,7 +3067,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -3079,7 +3108,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -3113,7 +3142,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -3142,7 +3171,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -3191,7 +3220,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3232,7 +3261,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3273,7 +3302,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3302,7 +3331,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3355,7 +3384,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3384,7 +3413,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3409,7 +3438,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3437,7 +3466,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3466,7 +3495,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3495,7 +3524,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3530,7 +3559,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3557,7 +3586,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3586,7 +3615,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3627,7 +3656,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3656,7 +3685,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3685,7 +3714,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3714,7 +3743,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3740,7 +3769,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3766,7 +3795,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3794,7 +3823,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3823,7 +3852,7 @@ const productList = [
 						</div>
 					</div>
 
-					<div class="swiper-pagination"></div>
+					<div class="swiper-pagination dot"></div>
 				</div>
 
 				<div class="txt-wrap">
@@ -3859,7 +3888,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -3898,7 +3927,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -3926,7 +3955,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -3955,7 +3984,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -3983,7 +4012,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -4017,7 +4046,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -4045,7 +4074,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -4072,7 +4101,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -4100,7 +4129,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -4139,7 +4168,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -4184,7 +4213,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -4224,7 +4253,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -4254,7 +4283,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -4282,7 +4311,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
@@ -4314,7 +4343,7 @@ const productList = [
 								</div>
 							</div>
 
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination dot"></div>
 						</div>
 
 						<div class="txt-wrap">
