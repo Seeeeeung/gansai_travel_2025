@@ -3,15 +3,15 @@ $(function(){
 // ================================ 공통 ========================================================
 	// 상단으로 이동버튼
 	$('body').append(btnTop);
+	const _btnTop = $('.fixed-wrap .btn-top');
 	function scrollTopHandle() {
 		const windowTop = $(window).scrollTop();
-		const _btnTop = $('.fixed-wrap .btn-top');
 		windowTop == 0 ? _btnTop.removeClass('show') : _btnTop.addClass('show');
-
-		_btnTop.on('click', function() {
-			$('html, body').animate({scrollTop : 0}, 500);
-		});
 	}
+
+	_btnTop.on('click', function() {
+		$('html, body').animate({scrollTop : 0}, 500);
+	});
 
 	scrollTopHandle()
 	$(window).on('scroll', function() {
@@ -111,14 +111,6 @@ $(function(){
 		
 	}
 	
-	// 총 건수 설정
-	if ($('.list-control').length) {
-		$('.list-control').each(function() {
-			const list = $(this).siblings('.detail-list').children('ul').children('li');
-			$(this).find('.num').text(list.length);
-		});
-	}
-
 	// 모달창
 	if ($('.open-modal').length) {
 		// 접근성
@@ -260,14 +252,21 @@ $(function(){
 
 	}
 
-	// 전체메뉴열기
+	// 전체메뉴
 	if ($('.btn-allmenu').length) {
 		const allmenu = $('header .allmenu');
 		const allmenuBtn = allmenu.siblings('.btn-all-menu');
+
+		// 전체메뉴 열기
 		$(document).on('click', 'header .btn-allmenu', function() {
 			$(this).siblings('.allmenu').addClass('active');
 			$('body').addClass('overflow');
-		})
+		});
+		// 전체메뉴 닫기
+		$(document).on('click', 'header .btn-allmenu-close', function() {
+			$(this).closest('.allmenu').removeClass('active');
+			$('body').removeClass('overflow');
+		});
 
 
 
@@ -459,6 +458,14 @@ $(function(){
 
 
 
+	// 총 건수 설정
+	if ($('.list-control').length) {
+		$('.list-control').each(function() {
+			const list = $(this).siblings('.detail-list').children('ul').children('li');
+			$(this).find('.num').text(list.length);
+		});
+	}
+
 
 
 
@@ -543,6 +550,16 @@ $(function(){
 			const setItem = $('.detail-list.info-travel > ul > li');
 			setDetailListSortUp(setUl, setItem);
 		}
+
+
+
+
+// ================================ main ========================================================
+		// 보노보노
+		const bono = $('.main .bonobono');
+		const targetBono = $('.main .bonobono .talk .txt');
+		bono.on('mouse')
+
 
 
 
