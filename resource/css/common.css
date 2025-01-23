@@ -82,18 +82,23 @@ header .gnb li .contents li a:hover:after {left:50%;}
 header .btn-allmenu {width:40px; height:40px; margin-left:15px; padding:0; background:transparent url('../image/common/btn/btn-allmenu.png') no-repeat center;}
 header .allmenu {display:none; position:fixed; left:0; top:0; right:0; bottom:0; z-index:1000; width:100%; height:100%; background-color:rgba(0,0,0,0.7);}
 header .allmenu.active {display:flex; justify-content:center; align-items:center;}
-header .allmenu .allmenu-list  {display:flex; flex-direction:column; position:relative; width:600px; max-width:calc(100% - 30px); max-height:calc(100% - 50px); padding:0 0 30px 0; border:1px dotted #c8c8c8; border-radius:8px; background-color:#fff;}
+header .allmenu .allmenu-list  {display:flex; flex-direction:column; position:relative; width:700px; max-width:calc(100% - 30px); max-height:calc(100% - 50px); padding:0 0 30px 0; border:1px dotted #c8c8c8; border-radius:8px; background-color:#fff;}
 header .allmenu .allmenu-list .tit {margin:0; padding:20px 60px 24px 30px; font-size:25px; color:#1d1d1d; font-weight:700;}
 header .allmenu .allmenu-list > ul {overflow-y:auto; height:100%; padding:0 30px;}
-header .allmenu .allmenu-list > ul > li + li {margin:24px 0 0 0;}
-header .allmenu .allmenu-list > ul > li > a {display:inline-block; padding-left:30px; color:#1d1d1d; font-size:19px; font-weight:700; background:url('../image/common/icon/ico-music.png') no-repeat center left; background-size:16px; transition:.3s;}
+header .allmenu .allmenu-list > ul > li {padding-bottom:16px; border-bottom:2px dashed #ccc;}
+header .allmenu .allmenu-list > ul > li:last-child {border-bottom:none;}
+header .allmenu .allmenu-list > ul > li + li {margin:40px 0 0 0;}
+header .allmenu .allmenu-list > ul > li > a {display:inline-block; margin-bottom:16px; padding-left:30px; color:#1d1d1d; font-size:19px; font-weight:700; background:url('../image/common/icon/ico-music.png') no-repeat center left; background-size:16px; transition:.3s;}
 header .allmenu .allmenu-list > ul > li > a:hover {background-image:url('../image/common/icon/ico-music-primary.png');}
-header .allmenu .allmenu-list ul .contents {display:flex; flex-direction:column; flex-wrap:wrap; gap:24px; margin-top:12px;}
-header .allmenu .allmenu-list ul .contents > li {padding-bottom:24px; color:#414141; font-weight:700; border-bottom:2px dashed #ccc;}
-header .allmenu .allmenu-list ul .contents li a {display:block; padding:10px; color:#555; font-weight:400; border:1px solid #d8d8d8; border-radius:8px; transition:.3s;}
-header .allmenu .allmenu-list ul .contents > li > a {color:#414141; font-weight:700;}
+header .allmenu .allmenu-list ul .contents {display:flex; flex-direction:column; flex-wrap:wrap; gap:24px;}
+header .allmenu .allmenu-list ul .contents > li {display:flex; align-items:flex-start; gap:24px; position:relative; padding-left:16px;}
+header .allmenu .allmenu-list ul .contents > li::before {display:block; position:absolute; left:0; top:calc(50% - 1.5px); content:''; width:3px; height:3px; background-color:#414141;}
+header .allmenu .allmenu-list ul .contents > li:last-child {border-bottom:none;}
+header .allmenu .allmenu-list ul .contents li a {display:inline-block; padding:10px; color:#555; font-weight:400; border:1px solid #d8d8d8; border-radius:8px; transition:.3s;}
+header .allmenu .allmenu-list ul .contents li .depth-1 {flex-shrink:0; align-self:center; margin:0; color:#414141; font-weight:700;}
+header .allmenu .allmenu-list ul .contents > li > a {padding:10px 0; color:#414141; font-weight:700; border:none;}
 header .allmenu .allmenu-list ul .contents li a:hover {color:#1d1d1d; background-color:#fce49a;}
-header .allmenu .allmenu-list ul .contents .depth-2 {display:flex; gap:12px; margin-top:12px;}
+header .allmenu .allmenu-list ul .contents .depth-2 {display:flex; gap:12px; flex-wrap:wrap;}
 
 
 header .allmenu .btn-allmenu-close {position:absolute; right:20px; top:24px;width:24px; height:24px; padding:0; background:url('../image/common/btn/btn-allmenu-close.png') no-repeat center;}
@@ -474,7 +479,7 @@ a.title-3:hover:after {transform:rotate(90deg);}
 .main .wrap-bono .bonobono:hover .talk {opacity:1;}
 
 .main .info-link-travel {display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:24px;}
-.main .info-link-travel a {position:relative; display:block; min-width:150px; padding:60px 32px 24px; color:#1d1d1d; text-align:center; border-radius:12px; background-color:#f0f0f0; transition:.3s;}
+.main .info-link-travel a {position:relative; display:block; min-width:150px; padding:60px 32px 24px; color:#1d1d1d; text-align:center; border-radius:12px; background-color:#e9f0ff; transition:.3s;}
 .main .info-link-travel a i {display:block; position:absolute; right:calc(50% - 15px); top:20px; width:30px; height:30px; background-repeat:no-repeat; background-position:center; background-size:contain;}
 .main .info-link-travel a:hover {background-color:#93b5ff}
 

@@ -17,40 +17,45 @@ const gnb = [
 						<li>
 							<a href="">여행 정보</a>
 							<ul class="contents">
-								<li><a href="">여행동선</a></li>
-								<li>항공편 정보
+								<li><a href="" class="depth-1">여행동선</a></li>
+								<li>
+									<p class="depth-1">항공편 정보</p>
 									<ul class="depth-2">
 										<li><a href="">예매 정보</a></li>
 										<li><a href="">안내사항</a></li>
 									</ul>
 								</li>
-								<li>숙소 정보
+								<li>
+									<p class="depth-1">숙소 정보</p>
 									<ul class="depth-2">
 										<li><a href="">추천 목록</a></li>
 										<li><a href="">예매 정보</a></li>
 									</ul>
 								</li>
-								<li>예매 정보
+								<li>
+									<p class="depth-1">예매 정보</p>
 									<ul class="depth-2">
 										<li><a href="">교통패스 예매정보</a></li>
 										<li><a href="">관광지 티켓 예매정보</a></li>
 										<li><a href="">Wifi 예매정보</a></li>
 									</ul>
 								</li>
-								<li><a href="">여행 꿀팁</a></li>
+								<li><a href="" class="depth-1">여행 꿀팁</a></li>
 							</ul>
 						</li>
 
 						<li>
-							<a href="">관광지</a>
+							<a href="" class="depth-1">관광지</a>
 							<ul class="contents">
-								<li>관광지 정보
+								<li>
+									<p class="depth-1">관광지 정보</p>
 									<ul class="depth-2">
 										<li><a href="">지역별 관광지</a></li>
 										<li><a href="">카테고리별 관광지</a></li>
 									</ul>
 								</li>
-								<li>여행 동선
+								<li>
+									<p class="depth-1">예매 정보</p>
 									<ul class="depth-2">
 										<li><a href="">확정된 관광지</a></li>
 										<li><a href="">동선 정보</a></li>
@@ -62,32 +67,33 @@ const gnb = [
 						<li>
 							<a href="">한끼 정보</a>
 							<ul class="contents">
-								<li>맛집 정보
+								<li>
+									<p class="depth-1">맛집 정보</p>
 									<ul class="depth-2">
 										<li><a href="">추천 맛집</a></li>
 										<li><a href="">지역별 맛집</a></li>
 										<li><a href="">카테고리별 맛집</a></li>
 									</ul>
 								</li>
-								<li><a href="">예약 내역</a></li>
-								<li><a href="">한혐식당 정보</a></li>
+								<li><a href="" class="depth-1">예약 내역</a></li>
+								<li><a href="" class="depth-1">한혐식당 정보</a></li>
 							</ul>
 						</li>
 
 						<li>
 							<a href="">카페 &amp; 디저트</a>
 							<ul class="contents">
-								<li><a href="">여행지별 정보</a></li>
+								<li><a href="" class="depth-1">여행지별 정보</a></li>
 							</ul>
 						</li>
 
 						<li>
 							<a href="">와구주섬</a>
 							<ul class="contents">
-								<li><a href="">와구와구</a></li>
-								<li><a href="">주섬주섬</a></li>
-								<li><a href="">콸콸</a></li>
-								<li><a href="">덕지덕지</a></li>
+								<li><a href="" class="depth-1">와구와구</a></li>
+								<li><a href="" class="depth-1">주섬주섬</a></li>
+								<li><a href="" class="depth-1">콸콸</a></li>
+								<li><a href="" class="depth-1">덕지덕지</a></li>
 							</ul>
 						</li>
 					</ul>
