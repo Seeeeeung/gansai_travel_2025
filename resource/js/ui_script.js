@@ -556,15 +556,56 @@ $(function(){
 
 // ================================ main ========================================================
 		// 보노보노
-		const bono = $('.main .bonobono');
-		const targetBono = $('.main .bonobono .talk .txt');
-		bono.on('mouse')
+		const bono = $('.main .wrap-bono');
+		const targetBono = $('.main .bonobono');
+		const targetBonoTxt = $('.main .bonobono .talk .txt');
+		bono.on('mouseover', function(event) {
+			console.log(Math.floor(Math.random() * bonoTalk.length))
+			if (event.target.closest('.bonobono') || event.target.closest('a') !== null) {
+				targetBono.addClass('on')
+				targetBonoTxt.text(bonoTalk[Math.floor(Math.random() * bonoTalk.length)])
+			} else {
+				targetBono.removeClass('on')
+			}
+		})
+
 
 
 
 
 
 // ================================ swiper ========================================================
+		// 메인 - 관광지
+		const travelCollection = new Swiper('.travel-collection .swiper', {
+			loop: true,
+			speed : 600,
+			simulateTouch : false,
+			slidesPerView: 3,
+			spaceBetween:'24px',
+			centeredSlides: true,
+			autoplay: {
+				delay: 3000,
+				pauseOnMouseEnter : true,
+			},
+		});
+		
+		// 메인 - 카페
+		const cafeCollection = new Swiper('.cafe-collection .swiper', {
+			loop: true,
+			speed : 600,
+			simulateTouch : false,
+			slidesPerView: 3,
+			spaceBetween:'50px',
+			centeredSlides: true,
+			autoplay: {
+				delay: 3000,
+				pauseOnMouseEnter : true,
+			},
+		});
+
+
+
+
 		// 공지사항 swiper
 		const alertListSwiper = new Swiper('.notice-visual', {
 			direction: 'vertical',
@@ -576,6 +617,7 @@ $(function(){
 				pauseOnMouseEnter : true,
 			},
 		});
+
 		// 꼭 가야할 맛집 swiper
 		const foodListSwiper = new Swiper('.food-main', {
 			effect: 'fade',
@@ -589,6 +631,7 @@ $(function(){
 				pauseOnMouseEnter : true,
 			},
 		});
+
 		// 숙소정보 swiper
 		const sleepListSwiper = new Swiper('.detail-list:not(.swiper, .no-swiper, .short) .detail-visual', {
 			// loop: true,
@@ -673,6 +716,7 @@ $(function(){
 				disableOnInteraction: false,
 			},
 		});
+
 		// 금주 인기장소 이미지 swiper
 		const bestTourImgtSwiper = new Swiper('.best-tour .detail-visual', {
 			// direction: 'vertical',
