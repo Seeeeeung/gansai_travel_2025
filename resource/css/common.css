@@ -811,7 +811,10 @@ a.title-3 + .travel .btn-link {background-image:none;}
 .tip-info .list-tip li .btn-txt:last-child {margin-right:0;}
 .tip-info .list-tip li [class^='ico-'] {display:block; position:absolute; left:2px; top:5px; content:''; width:20px; height:20px; background-repeat:no-repeat; background-position:center; background-size:20px auto;}
 .tip-info .list-tip li p.tit {font-weight:700; color:#1d1d1d;}
+.tip-info .list-tip li p.tit + .tit {margin-top:8px;}
 .tip-info .list-tip li .txt {margin-top:8px;}
+
+.tip-info .list-tip li .list {margin-top:8px; font-size:15px;}
 
 
 
