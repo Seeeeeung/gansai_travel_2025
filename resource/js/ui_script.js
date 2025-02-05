@@ -37,21 +37,6 @@ $(function(){
 		$parentLi.siblings('li').removeClass('on').find('.acc-cont').slideUp(150);
 	});
 	
-	// 아코디언 - lnb
-	if ($('.lnb.accordion').length) {
-		
-		$(window).on('resize', function() {
-			if ($(window).width() < 921) {
-				$('.lnb .acc-cont').css('display', 'none').parent('li').removeClass('on');
-			} else {
-				$('.lnb.accordion > ul > li').find('.active').parent('li').addClass('on').find('.acc-cont').slideDown(150).parent('li').siblings().removeClass('on').find('.acc-cont').slideUp(150);
-			}
-		});
-		if ($(window).width() < 921) {
-			$('.lnb .acc-cont').css('display', 'none').parent('li').removeClass('on');
-		} 
-	}
-
 	// 아코디언 동시오픈 가능
 	$(document).on('click', '.accordion.open .btn-toggle', function(e) {
 		e.preventDefault();
@@ -287,6 +272,23 @@ $(function(){
 		});
 	}
 
+
+	// 아코디언 - lnb
+	if ($('.lnb.accordion').length) {
+		$(window).on('resize', function() {
+			if ($(window).width() < 921) {
+				$('.lnb .acc-cont.active').css('display', 'none').parent('li').removeClass('on');
+			} else {
+				$('.lnb.accordion > ul > li').find('.active').parent('li').addClass('on').find('.acc-cont').slideDown(150).parent('li').siblings().removeClass('on').find('.acc-cont').slideUp(150);
+			}
+
+
+		});
+
+		if ($(window).width() < 921) {
+			$('.lnb .acc-cont').css('display', 'none').parent('li').removeClass('on');
+		} 
+	}
 
 
 
@@ -556,17 +558,16 @@ $(function(){
 
 // ================================ main ========================================================
 		// 보노보노
-		const bono = $('.main .wrap-bono');
 		const targetBono = $('.main .bonobono');
 		const targetBonoTxt = $('.main .bonobono .talk .txt');
-		bono.on('mouseover', function(event) {
-			console.log(Math.floor(Math.random() * bonoTalk.length))
-			if (event.target.closest('.bonobono') || event.target.closest('a') !== null) {
-				targetBono.addClass('on')
-				targetBonoTxt.text(bonoTalk[Math.floor(Math.random() * bonoTalk.length)])
-			} else {
-				targetBono.removeClass('on')
-			}
+
+		$(document).on('mouseenter', '.main .bonobono, .main .wrap-bono .info-link-travel a', function() {
+			targetBono.addClass('on')
+			targetBonoTxt.text(bonoTalk[Math.floor(Math.random() * bonoTalk.length)])
+		})
+
+		$(document).on('mouseleave', '.main .bonobono, .main .wrap-bono .info-link-travel a', function() {
+			targetBono.removeClass('on')
 		})
 
 
@@ -579,13 +580,19 @@ $(function(){
 		const travelCollection = new Swiper('.travel-collection .swiper', {
 			loop: true,
 			speed : 600,
-			simulateTouch : false,
-			slidesPerView: 3,
+			simulateTouch : true,
+			// slidesPerView: 3,
 			spaceBetween:'24px',
 			centeredSlides: true,
 			autoplay: {
 				delay: 3000,
 				pauseOnMouseEnter : true,
+			},
+			breakpoints: {
+					
+				700: {
+					slidesPerView: 2,
+				},
 			},
 		});
 		
@@ -594,12 +601,24 @@ $(function(){
 			loop: true,
 			speed : 600,
 			simulateTouch : false,
-			slidesPerView: 3,
 			spaceBetween:'50px',
 			centeredSlides: true,
+			slidesPerView: 1,
 			autoplay: {
 				delay: 3000,
 				pauseOnMouseEnter : true,
+			},
+			breakpoints: {
+					
+				950: {
+					slidesPerView: 3,
+				},
+				// 700: {
+				// 	slidesPerView: 2,
+				// },
+				500: {
+					slidesPerView: 2,
+				},
 			},
 		});
 
