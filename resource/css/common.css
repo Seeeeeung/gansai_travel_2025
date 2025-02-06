@@ -850,15 +850,22 @@ a.title-3 + .travel .btn-link {background-image:none;}
 .tip-info .img-wrap {overflow:hidden; display:block; max-width:400px; min-width:100px; border-radius:8px; border:1px solid #ccc; padding:10px;}
 .tip-info .img-wrap img {width:100%;}
 .tip-info .img-wrap + .list-tip {margin-top:12px;}
-.tip-info .list-tip .img-wrap {display:flex; gap:12px; flex-wrap:wrap; max-width:none;}
+
+.tip-info .list-tip .img-wrap.atm {display:flex; gap:12px; flex-wrap:wrap; max-width:none;}
 .tip-info .img-wrap.atm img {width:calc((100% - 24px) / 3);}
+
+.tip-info .list-tip.coupon {display:flex; align-items:flex-start; gap:24px; flex-wrap:wrap;}
+.tip-info .list-tip.coupon > li {margin:0; padding:0; width:calc((100% - 72px) / 4); border-bottom:none;}
+.tip-info .list-tip.coupon > li .tit {margin-top:16px; font-size:17px; text-align:center;}
 
 @media (max-width:700px) {
 	.tip-info .img-wrap.atm img {width:calc((100% - 12px) / 2);}
+	.tip-info .list-tip.coupon > li {width:calc((100% - 48px) / 3);}
 }
 
 @media (max-width:500px) {
 	.tip-info .img-wrap.atm img {width:100%;}
+	.tip-info .list-tip.coupon > li {width:100%;}
 }
 
 .tip-info .list-tip > li {padding-bottom:10px;  border-bottom:1px solid #ccc;}

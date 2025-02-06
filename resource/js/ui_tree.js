@@ -2201,6 +2201,47 @@ const productList = [
 							<p class="coment">스무디 작동법 : 물건 결제 후 기계에 바코드 찍고 비닐 뜯고 화면의 push 누름</p>
 						</div>
 					</li>
+
+					<li class="new">
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://blog.kakaocdn.net/dn/bB2fOY/btsivPGrYOe/e4DrFYDrudUu5VraXpeIt1/img.jpg" alt="에프터눈티 로얄밀크티 프라페">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="visual">
+										<img src="https://mblogthumb-phinf.pstatic.net/MjAyMTA4MjZfMTUz/MDAxNjI5OTI5MDQwMDM5.6bNUfirCkp9pa9VdOMci5jjahuPP8tdTXM_ORkg6ukkg.NVaYYrnbQUXBQ9yaxt5HVO-Epa3VzER_4KUbhohFw-8g.JPEG.hankyulpark/IMG_7266.JPG?type=w800" alt="에프터눈티 로얄밀크티 프라페 기계">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-pagination dot"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">에프터눈티 로얄밀크티 프라페</p>
+
+							<p class="location">패밀리마트</p>
+							<p class="txt">* 진한 밀크티 향과 맛</p>
+							<p class="price">325엔</p>
+							<p class="coment">모든 지점에 있는건 아님</p>
+						</div>
+					</li>
 					`
 				]
 			],
