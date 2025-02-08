@@ -123,6 +123,7 @@ $(function(){
 
 		// 레이어 열기
 		$(document).on('click', '.open-modal', function() {
+			$('#' + $(this).attr('aria-controls')).addClass('on')
 			$('body').addClass('overflow');
 		});
 		
@@ -132,6 +133,8 @@ $(function(){
 			$(this).parents('.layer-modal').removeClass('on');
 			$('body').removeClass('overflow');
 		})
+
+
 	}
 
 	
@@ -411,7 +414,6 @@ $(function(){
 			$(this).parents('.swiper-wrapper').css('z-index','1')
 		})
 
-
 		// 자세히보기 버튼 클릭 모달창 오픈
 		$(document).on('click', '.product .open-modal', function() {
 			const _targetBtn = $('.detail-list.product > ul').find('.open-modal');
@@ -432,7 +434,7 @@ $(function(){
 		});
 		
 		$(document).on('click', '[id^="layer_detail"] .close-layer', function() {
-			$(this).parents('.layer-modal').attr('id','layer_detail');
+			$(this).parents('.layer-modal').attr('id','layer_detail').removeClass('on');
 		})
 
 	}

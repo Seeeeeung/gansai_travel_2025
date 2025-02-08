@@ -689,6 +689,7 @@ a.title-3 + .travel .btn-link {background-image:none;}
 .ticket-info > li p {margin:0;}
 .ticket-info > li .tit {flex-shrink:0; height:25px; padding-top:2px; font-size:15px; color:#1d1d1d; font-weight:700;}
 .ticket-info > li .tit:after {display:inline-block; content:''; width:1px; height:10px; margin:0 16px; background-color:#ccc;}
+.ticket-info > li .txt {font-size:17px;}
 .ticket-info > li a {padding:2px 4px;}
 
 @media (max-width:500px) {
@@ -855,8 +856,8 @@ a.title-3 + .travel .btn-link {background-image:none;}
 .tip-info .img-wrap.atm img {width:calc((100% - 24px) / 3);}
 
 .tip-info .list-tip.coupon {display:flex; align-items:flex-start; gap:24px; flex-wrap:wrap;}
-.tip-info .list-tip.coupon > li {margin:0; padding:0; width:calc((100% - 72px) / 4); border-bottom:none;}
-.tip-info .list-tip.coupon > li .tit {margin-top:16px; font-size:17px; text-align:center;}
+.tip-info .list-tip.coupon > li {margin:0; padding:0; width:calc((100% - 72px) / 4); border-bottom:none; text-align:center;}
+.tip-info .list-tip.coupon > li .tit {margin-top:16px; font-size:17px;}
 
 @media (max-width:700px) {
 	.tip-info .img-wrap.atm img {width:calc((100% - 12px) / 2);}
@@ -876,7 +877,7 @@ a.title-3 + .travel .btn-link {background-image:none;}
 .tip-info .list-tip li [class^='ico-'] {display:block; position:absolute; left:2px; top:5px; content:''; width:20px; height:20px; background-repeat:no-repeat; background-position:center; background-size:20px auto;}
 .tip-info .list-tip li p.tit {font-weight:700; color:#1d1d1d;}
 .tip-info .list-tip li p.tit + .tit {margin-top:8px;}
-.tip-info .list-tip li .txt {margin-top:8px;}
+.tip-info .list-tip li .tit + .txt {margin-top:8px;}
 .tip-info .list-tip li .btn-txt + .tit {margin-top:8px;}
 
 

@@ -1434,6 +1434,36 @@ const productList = [
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="visual">
+										<img src="https://pbs.twimg.com/media/GC5wN5ebgAAnBCY.jpg" alt="토라쿠 로얄 커스터드 푸딩">
+
+										<div class="big-img">
+											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
+
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div class="swiper-pagination dot"></div>
+						</div>
+
+						<div class="txt-wrap">
+							<p class="name">토라쿠 로얄 커스터드 푸딩</p>
+
+							<p class="location">편의점에 잘 없고 마트에 조금 있음</p>
+							<p class="txt">* 편의점계의 최고급 맛 푸딩, 안에 카라멜 시럽이 별도로 들어가있다.</p>
+							<p class="price">?엔</p>
+							<p class="coment">파는데가 적어 구하기 힘드니 지나가다 보이면 구매</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="detail-visual">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="visual">
 										<img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA5MzBfMTY4/MDAxNjAxNDU2Mzc5MzMw.eNK3VDVLYGimcYVp1k6RO1urA3F2hJ17C0oYOXfxxfcg.e4DmoXIID1QwMh5zRvrdiZ8fMy_sECllEsJM_EmKSdUg.JPEG.kireina34/output_3315521724.jpg?type=w800" alt="후와슈와 수플레 푸링">
 
 										<div class="big-img">
