@@ -126,9 +126,10 @@ header .allmenu .btn-allmenu-close {position:absolute; right:20px; top:24px;widt
 
 /* 공지사항 */
 .notice-visual {overflow:hidden; min-width:236px; height:80px; margin-top:80px; padding:0 18px; background-color:#e9f0ff;}
-.notice-visual .notice {display:flex; align-items:center; max-width:1250px; margin:0 auto; height:100%; padding:30px 0;}
+.notice-visual .swiper-slide {display:flex; align-items:center;;}
+.notice-visual .notice {display:flex; align-items:flex-start; max-width:1250px; margin:0 auto; width:100%;}
 .notice-visual .notice p {margin:0;}
-.notice-visual .notice .tit {color:#1d1d1d; font-weight:700;}
+.notice-visual .notice .tit {flex-shrink:0; color:#1d1d1d; font-weight:700;}
 .notice-visual .notice .txt {margin-left:24px;;}
 @media (max-width:700px) {
 	.notice-visual {height:50px;;}
@@ -166,7 +167,7 @@ header .allmenu .btn-allmenu-close {position:absolute; right:20px; top:24px;widt
 
 .lnb-wrap .lnb.accordion li .acc-cont {padding:16px 16px 4px 20px; border-bottom:none;}
 .lnb-wrap .lnb.accordion li .acc-cont li .depth-3 {display:inline-block; position:relative; color:#1d1d1d; word-wrap:break-word;}
-.lnb-wrap .lnb.accordion li .acc-cont li.on .depth-3 {padding-right:13px; font-weight:700;}
+.lnb-wrap .lnb.accordion li .acc-cont li.on .depth-3 {padding-right:10px; font-weight:700;}
 .lnb-wrap .lnb.accordion li .acc-cont li.on .depth-3:after {display:block; position:absolute; right:0; top:6px; content:''; width:4px; height:4px; border-radius:4px; background-color:#2e6fe9;}
 .lnb-wrap .lnb.accordion li .acc-cont li .depth-3:hover {font-weight:700;}
 .lnb-wrap + * {width:calc(100% - 250px);}

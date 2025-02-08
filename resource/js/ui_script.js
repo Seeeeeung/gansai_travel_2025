@@ -632,11 +632,11 @@ $(function(){
 			direction: 'vertical',
 			loop: true,
 			speed : 600,
-			simulateTouch : false,
-			autoplay: {
-				delay: 3000,
-				pauseOnMouseEnter : true,
-			},
+			simulateTouch : true,
+			// autoplay: {
+			// 	delay: 5000,
+			// 	pauseOnMouseEnter : true,
+			// },
 		});
 
 		// 꼭 가야할 맛집 swiper
