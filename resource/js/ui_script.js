@@ -139,15 +139,14 @@ $(function(){
 
 	
 	// 찜하기..
-		// $('.detail-list .toggle-count').on('click', function() {
-		// 	var count = 0;
-		// 	if (!$(this).hasClass('check')) {
-		// 		$(this).addClass('check').children('.count').text(count + 1).attr('title','추천됨');
-		// 		count = $(this).children('.count').text();
-		// 	} else {
-		// 		$(this).removeClass('check').children('.count').text(count);
-		// 	}
-		// })
+		$('.detail-list .toggle-count').on('click', function() {
+			var count = Number($(this).children('.count').text());
+			if ($(this).hasClass('check')) {
+				$(this).removeClass('check').children('.count').text(count - 1);
+			} else {
+				$(this).addClass('check').children('.count').text(count + 1).attr('title','추천됨');	
+			}
+		})
 
 
 

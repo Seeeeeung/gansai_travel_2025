@@ -784,9 +784,9 @@ a.title-3 + .travel .btn-link {background-image:none;}
 .detail-list li .btn-wrap .star + .map {margin-top:12px;}
 
 /* 좋아요기능 구현 못함 */
-.detail-list li .btn-wrap .toggle-count {margin-top:8px; padding:0 0 0 18px; font-size:15px; background:#fff url('../image/common/icon/ico-like-fill.png') no-repeat center left; background-size:16px auto; transition:.3s; cursor:default;}
+.detail-list li .btn-wrap .toggle-count {margin-top:8px; padding:0 0 0 18px; font-size:15px; background:#fff url('../image/common/icon/ico-like.png') no-repeat center left; background-size:16px auto; transition:.3s; cursor:pointer;}
 .detail-list li .btn-wrap .toggle-count .count {display:inline-block; width:18px; vertical-align:middle;}
-/* .detail-list li .btn-wrap .toggle-count.check {background:#fff url('../image/common/like-fill.png') no-repeat center left; background-size:16px auto;} */
+.detail-list li .btn-wrap .toggle-count.check {background:#fff url('../image/common/icon/ico-like-fill.png') no-repeat center left; background-size:16px auto;}
 /* .detail-list li .btn-wrap .toggle-count {margin-top:8px; padding:4px 8px 4px 30px; font-size:15px; border-radius:8px; border:1px solid #fff; background:#ffc3d2 url('../image/common/like.png') no-repeat center left 8px; background-size:16px auto; transition:.3s;}
 .detail-list li .btn-wrap .toggle-count.check {background:#ffc3d2 url('../image/common/like-fill.png') no-repeat center left 8px; background-size:16px auto;}
 .detail-list li .btn-wrap .toggle-count:hover {border-color:#ff1b54;} */
