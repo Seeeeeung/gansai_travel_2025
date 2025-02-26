@@ -1151,7 +1151,11 @@ const productList = [
 
 						<div class="txt-wrap">
 							<div class="name">
-								카라무초</p>
+								카라무초
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">마트, 편의점</p>
 							<p class="txt">* 스윙칩 상위호환버전? 감자칩</p>
@@ -1180,7 +1184,11 @@ const productList = [
 
 						<div class="txt-wrap">
 							<div class="name">
-								쟈가리코 샐러드맛</p>
+								쟈가리코 샐러드맛
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">편의점, 돈키호테 등</p>
 							<p class="txt">* 짭짤한 감자스틱</p>
@@ -1531,7 +1539,11 @@ const productList = [
 
 						<div class="txt-wrap">
 							<div class="name">
-								루나 바닐라 요구르트 푸딩</p>
+								루나 바닐라 요구르트 푸딩
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">편의점에 잘 없고 마트에 조금 있음</p>
 							<p class="txt">* 새콤한 향 + 은은한 바닐라향의 요거트맛</p>
@@ -1562,7 +1574,11 @@ const productList = [
 
 						<div class="txt-wrap">
 							<div class="name">
-								토라쿠 로얄 커스터드 푸딩</p>
+								토라쿠 로얄 커스터드 푸딩
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">편의점에 잘 없고 마트에 조금 있음</p>
 							<p class="txt">* 편의점계의 최고급 맛 푸딩, 안에 카라멜 시럽이 별도로 들어가있다.</p>
@@ -1592,7 +1608,11 @@ const productList = [
 
 						<div class="txt-wrap">
 							<div class="name">
-								후와슈와 수플레 푸링</p>
+								후와슈와 수플레 푸링
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">패밀리마트</p>
 							<p class="txt">* 수플레케이크와 크림이 올라간 푸딩</p>
@@ -1622,7 +1642,11 @@ const productList = [
 
 						<div class="txt-wrap">
 							<div class="name">
-								야키푸딩</p>
+								야키푸딩
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">편의점, 마트</p>
 							<p class="txt">* 표면을 살짝 구운 야끼 캐러멜 푸딩</p>
@@ -1664,7 +1688,11 @@ const productList = [
 
 						<div class="txt-wrap">
 							<div class="name">
-								코히제리</p>
+								코히제리
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">편의점, 마트 등</p>
 							<p class="txt">* 달지않은 커피젤리 위에 구성품인 연유/아이스크림/생크림을 곁들이면 극락! 섞지말고 그대로 드세용</p>
@@ -1694,7 +1722,11 @@ const productList = [
 
 						<div class="txt-wrap">
 							<div class="name">
-								쟈지밀크 푸딩</p>
+								쟈지밀크 푸딩
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">편의점, 마트 등</p>
 							<p class="txt">* 사르르 녹는 우유맛 푸딩</p>
@@ -1736,7 +1768,11 @@ const productList = [
 
 						<div class="txt-wrap">
 							<div class="name">
-								카마다시 토로케루 푸딩</p>
+								카마다시 토로케루 푸딩
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">패밀리 마트</p>
 							<p class="txt">* 계란과 생크림을 아낌없이 사용해서 만든 진하고 크리미한 푸딩</p>
@@ -1766,7 +1802,11 @@ const productList = [
 
 						<div class="txt-wrap">
 							<div class="name">
-								나메라카 푸딩</p>
+								나메라카 푸딩
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">세븐일레븐</p>
 							<p class="txt">* 달콤하고 부드러운 우유와 커드터드 맛 푸딩</p>
@@ -1807,7 +1847,11 @@ const productList = [
 
 						<div class="txt-wrap">
 							<div class="name">
-								코다와리 키와미 푸딩</p>
+								코다와리 키와미 푸딩
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">마트, 편의점</p>
 							<p class="txt">* 부드럽지만 탄탄한 푸딩 밑엔 시럽이 있어요!</p>
@@ -1837,7 +1881,11 @@ const productList = [
 
 						<div class="txt-wrap">
 							<div class="name">
-								오하요 신선란 푸딩</p>
+								오하요 신선란 푸딩
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">편의점, 마트</p>
 							<p class="txt">* 신선한 게란맛이 듬뿍 나는 커스터드 푸딩 / 차게해서 드세요</p>
@@ -2399,7 +2447,11 @@ const productList = [
 
 						<div class="txt-wrap">
 							<div class="name">
-								갈아만드는 과일 스무디</p>
+								갈아만드는 과일 스무디
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">세븐일레븐</p>
 							<p class="txt">* 냉동과일을 직접 갈아먹을수 있는 스무디</p>
@@ -2441,7 +2493,11 @@ const productList = [
 
 						<div class="txt-wrap">
 							<div class="name">
-								에프터눈티 로얄밀크티 프라페</p>
+								에프터눈티 로얄밀크티 프라페
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">패밀리마트</p>
 							<p class="txt">* 진한 밀크티 향과 맛</p>
