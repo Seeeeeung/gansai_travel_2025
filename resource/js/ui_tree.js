@@ -50,6 +50,7 @@ const gnb = [
 								<li>
 									<p class="depth-1">관광지 정보</p>
 									<ul class="depth-2">
+										<li><a href="">동선별 관광지</a></li>
 										<li><a href="">지역별 관광지</a></li>
 										<li><a href="">카테고리별 관광지</a></li>
 									</ul>
@@ -125,6 +126,7 @@ const gnb_tree = [
 	[
 		'관광지', 
 		'./관광지.html', [
+			'./관광지_관광지정보_동선별관광지.html', 
 			'./관광지_관광지정보_지역별관광지.html', 
 			'./관광지_관광지정보_카테고리별관광지.html', 
 			'./관광지_여행동선_확정된관광지.html', 
@@ -211,6 +213,7 @@ const lnb = [
 				<button type="button" class="btn-toggle"><span>관광지 정보</span></button>
 				
 				<ul class="acc-cont">
+					<li><a href="" class="depth-3">동선별 관광지</a></li>
 					<li><a href="" class="depth-3">지역별 관광지</a></li>
 					<li><a href="" class="depth-3">카테고리별 관광지</a></li>
 				</ul>
@@ -476,13 +479,19 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">시로이코이비토 (白い恋人)</p>
+							<div class="name">
+								시로이코이비토 (白い恋人)
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">간사이 공항 면세점 판매</p>
 							<p class="txt">* 쿠키샌드에 화이트 혹은 블랙 초콜릿바른 랑그드샤형 과자</p>
 							<p class="price">720엔 ~ 4,800엔</p>
 							<p class="coment">선물용으로 좋아보임</p>
 						</div>
+
 					</li>
 					
 					<li>
@@ -529,7 +538,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">슈가버터샌드트리 3개입</p>
+							<div class="name">
+								슈가버터샌드트리 3개입
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">세븐일레븐 / 오사카 한큐백화점(선물용 3가지맛)</p>
 							<p class="txt">* 웨하스같은 쿠키에 두툼한 크림이 샌드된 과자</p>
@@ -570,7 +584,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">부르봉 쿠키</p>
+							<div class="name">
+								부르봉 쿠키
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">마트 (대형마트가 제일 저렴)</p>
 							<p class="txt">* 겹겹의 바삭한 크레이프 쿠키를 초콜릿으로 코딩한 쿠키</p>
@@ -623,7 +642,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">샤샤 초콜릿</p>
+							<div class="name">
+								샤샤 초콜릿
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">편의점, 마트</p>
 							<p class="txt">* 여러겹으로 겹쳐서 만든 초콜릿</p>
@@ -663,7 +687,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">산코제과 치즈아몬드 센베이</p>
+							<div class="name">
+								산코제과 치즈아몬드 센베이
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">편의점</p>
 							<p class="txt">* 크래커에 치즈아몬드를 올린 일본 쌀과자</p>
@@ -693,7 +722,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">모리가나 크림치즈 쿠키</p>
+							<div class="name">
+								모리가나 크림치즈 쿠키
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">돈키호테</p>
 							<p class="txt">* 바삭하고 가벼운 식감의 구운 초콜릿 속에 입에서 녹을것 같은 진한 치즈쿠키</p>
@@ -734,7 +768,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">카라메리제 와플 쿠키</p>
+							<div class="name">
+								카라메리제 와플 쿠키
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">면세점에서 판매 (도쿄제품이라 안팔수도)</p>
 							<p class="txt">* 달고나맛 코팅이 되어있는 와플모양 쿠키</p>
@@ -762,7 +801,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">아이보리쉬 빵모양 쿠키</p>
+							<div class="name">
+								아이보리쉬 빵모양 쿠키
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">면세점</p>
 							<p class="txt">* 빵모양의 쿠키 / 정보 많이 없음</p>
@@ -790,7 +834,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">가루비 피자포테이토</p>
+							<div class="name">
+								가루비 피자포테이토
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">드럭스토어, 돈키호테, 편의점</p>
 							<p class="txt">* 피자맛 포테이토칩</p>
@@ -830,7 +879,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">토하토 아미자가</p>
+							<div class="name">
+								토하토 아미자가
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">?</p>
 							<p class="txt">* 신기한 모양의 과자</p>
@@ -858,7 +912,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">가루비 카타아게 포테토 블랙페퍼맛</p>
+							<div class="name">
+								가루비 카타아게 포테토 블랙페퍼맛
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">드럭스토어, 돈키호테, 편의점</p>
 							<p class="txt">* 후추맛 포테이포칩</p>
@@ -898,7 +957,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">롯데 파이노미</p>
+							<div class="name">
+								롯데 파이노미
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">마트, 편의점 등</p>
 							<p class="txt">* 홈런볼 같은 패스튜리 쿠키</p>
@@ -926,7 +990,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">블랙썬더 (여러가지맛)</p>
+							<div class="name">
+								블랙썬더 (여러가지맛)
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">마트, 돈키호테, 세븐일레븐</p>
 							<p class="txt">* 코코아쿠키에 초콜릿으로 코딩된 비스킷(과자)</p>
@@ -967,7 +1036,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">알포트</p>
+							<div class="name">
+								알포트
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">드럭스토어, 돈키호테, 편의점</p>
 							<p class="txt">* 빈츠같이 초콜릿으로 덮힌 비스킷</p>
@@ -996,7 +1070,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">프리미엄 가나 초콜릿휩</p>
+							<div class="name">
+								프리미엄 가나 초콜릿휩
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">편의점</p>
 							<p class="txt">* 프리미엄 초콜릿 안에 크리미한 초콜릿이 들어있는 가나 초콜릿</p>
@@ -1025,7 +1104,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">메이지 가르보 초콜릿</p>
+							<div class="name">
+								메이지 가르보 초콜릿
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">드럭스토어, 돈키호테, 편의점</p>
 							<p class="txt">* 초코쿠키 겉에 맛별 초콜릿이 감싸져있는 간식</p>
@@ -1066,7 +1150,8 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">카라무초</p>
+							<div class="name">
+								카라무초</p>
 
 							<p class="location">마트, 편의점</p>
 							<p class="txt">* 스윙칩 상위호환버전? 감자칩</p>
@@ -1094,7 +1179,8 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">쟈가리코 샐러드맛</p>
+							<div class="name">
+								쟈가리코 샐러드맛</p>
 
 							<p class="location">편의점, 돈키호테 등</p>
 							<p class="txt">* 짭짤한 감자스틱</p>
@@ -1140,7 +1226,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">진한 가토 쇼콜라 4개입</p>
+							<div class="name">
+								진한 가토 쇼콜라 4개입
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">세븐일레븐</p>
 							<p class="txt">* 달지않고 물리지않는 깔끔한 초코맛 디저트</p>
@@ -1205,7 +1296,12 @@ const productList = [
 						</div>
 			
 						<div class="txt-wrap">
-							<p class="name">모찌촉감 롤(모찌롤) もち食感ロール</p>
+							<div class="name">
+								모찌촉감 롤(모찌롤) もち食感ロール
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">로손편의점</p>
 							<p class="txt">* 떡같은 식감에 여러가지 맛 크림을 넣은 롤케이크</p>
@@ -1246,7 +1342,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">모찌 뿌요 (もちぷよ)</p>
+							<div class="name">
+								모찌 뿌요 (もちぷよ)
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">로숀편의점</p>
 							<p class="txt">* 떡같은 찰기가 느껴지는 빵안에 묽은 크림을 넣은 디저트</p>
@@ -1287,7 +1388,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">못찌리 크레이프 (もっちりクレープ)</p>
+							<div class="name">
+								못찌리 크레이프 (もっちりクレープ)
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">로숀편의점</p>
 							<p class="txt">* 크레이프 안에 우유생크림과 가나슈 초코크림이 들어간 디저트</p>
@@ -1328,7 +1434,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">트윈 크림 슈</p>
+							<div class="name">
+								트윈 크림 슈
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">로숀편의점</p>
 							<p class="txt">* 생크림과 슈크림이 같이 들어있는 슈</p>
@@ -1369,7 +1480,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">베이크드 커스터드 크림 타르트</p>
+							<div class="name">
+								베이크드 커스터드 크림 타르트
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">로숀편의점</p>
 							<p class="txt">* 바삭한 타르트지와 단단하지만 부드러운 커스터드 크림</p>
@@ -1414,7 +1530,8 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">루나 바닐라 요구르트 푸딩</p>
+							<div class="name">
+								루나 바닐라 요구르트 푸딩</p>
 
 							<p class="location">편의점에 잘 없고 마트에 조금 있음</p>
 							<p class="txt">* 새콤한 향 + 은은한 바닐라향의 요거트맛</p>
@@ -1444,7 +1561,8 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">토라쿠 로얄 커스터드 푸딩</p>
+							<div class="name">
+								토라쿠 로얄 커스터드 푸딩</p>
 
 							<p class="location">편의점에 잘 없고 마트에 조금 있음</p>
 							<p class="txt">* 편의점계의 최고급 맛 푸딩, 안에 카라멜 시럽이 별도로 들어가있다.</p>
@@ -1473,7 +1591,8 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">후와슈와 수플레 푸링</p>
+							<div class="name">
+								후와슈와 수플레 푸링</p>
 
 							<p class="location">패밀리마트</p>
 							<p class="txt">* 수플레케이크와 크림이 올라간 푸딩</p>
@@ -1502,7 +1621,8 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">야키푸딩</p>
+							<div class="name">
+								야키푸딩</p>
 
 							<p class="location">편의점, 마트</p>
 							<p class="txt">* 표면을 살짝 구운 야끼 캐러멜 푸딩</p>
@@ -1543,7 +1663,8 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">코히제리</p>
+							<div class="name">
+								코히제리</p>
 
 							<p class="location">편의점, 마트 등</p>
 							<p class="txt">* 달지않은 커피젤리 위에 구성품인 연유/아이스크림/생크림을 곁들이면 극락! 섞지말고 그대로 드세용</p>
@@ -1572,7 +1693,8 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">쟈지밀크 푸딩</p>
+							<div class="name">
+								쟈지밀크 푸딩</p>
 
 							<p class="location">편의점, 마트 등</p>
 							<p class="txt">* 사르르 녹는 우유맛 푸딩</p>
@@ -1613,7 +1735,8 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">카마다시 토로케루 푸딩</p>
+							<div class="name">
+								카마다시 토로케루 푸딩</p>
 
 							<p class="location">패밀리 마트</p>
 							<p class="txt">* 계란과 생크림을 아낌없이 사용해서 만든 진하고 크리미한 푸딩</p>
@@ -1642,7 +1765,8 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">나메라카 푸딩</p>
+							<div class="name">
+								나메라카 푸딩</p>
 
 							<p class="location">세븐일레븐</p>
 							<p class="txt">* 달콤하고 부드러운 우유와 커드터드 맛 푸딩</p>
@@ -1682,7 +1806,8 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">코다와리 키와미 푸딩</p>
+							<div class="name">
+								코다와리 키와미 푸딩</p>
 
 							<p class="location">마트, 편의점</p>
 							<p class="txt">* 부드럽지만 탄탄한 푸딩 밑엔 시럽이 있어요!</p>
@@ -1711,7 +1836,8 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">오하요 신선란 푸딩</p>
+							<div class="name">
+								오하요 신선란 푸딩</p>
 
 							<p class="location">편의점, 마트</p>
 							<p class="txt">* 신선한 게란맛이 듬뿍 나는 커스터드 푸딩 / 차게해서 드세요</p>
@@ -1756,7 +1882,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">爽 (소우) 아이스크림</p>
+							<div class="name">
+								爽 (소우) 아이스크림
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">패밀리마트</p>
 							<p class="txt">* 여러가지맛을 판매중인 "와" 같은 아이스크림</p>
@@ -1809,7 +1940,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">아이스 노미 아이스크림</p>
+							<div class="name">
+								아이스 노미 아이스크림
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">편의점</p>
 							<p class="txt">* 여러가지 과일맛 아이스노미 아이스크림</p>
@@ -1861,7 +1997,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">이타초코 아이스</p>
+							<div class="name">
+								이타초코 아이스
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">편의점</p>
 							<p class="txt">* 바삭한 초콜릿 안에 아이스크림이 가득</p>
@@ -1915,7 +2056,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">오하요 브렐레 아이스크림</p>
+							<div class="name">
+								오하요 브렐레 아이스크림
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">로숀, 세븐일레븐</p>
 							<p class="txt">* 바삭한 설탕코팅 아래로 홋카이돗산 우유를 사용한 아이스크림</p>
@@ -1956,7 +2102,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">하겐다즈 하나모찌</p>
+							<div class="name">
+								하겐다즈 하나모찌
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">편의점 또는 마트나 백화점</p>
 							<p class="txt">* 하겐다즈 아이스크림에 토핑과 떡을 올린 디저트</p>
@@ -1999,7 +2150,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">피노 아이스크림 꿀고구마맛</p>
+							<div class="name">
+								피노 아이스크림 꿀고구마맛
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">편의점</p>
 							<p class="txt">* 고구마페이스트를 사용한 고구마아이스크림에 캐러멜 풍미의 토핑을 섞은 고구마맛의 초콜릿으로 코딩한 아이스크림</p>
@@ -2040,7 +2196,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">히토쿠치 카누레 아이스</p>
+							<div class="name">
+								히토쿠치 카누레 아이스
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">세븐일레븐</p>
 							<p class="txt">* 까눌레모양 한입 아이스크림</p>
@@ -2080,7 +2241,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">탯뿌리 생초코 아이스</p>
+							<div class="name">
+								탯뿌리 생초코 아이스
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">세븐일레븐</p>
 							<p class="txt">* 생초코의 부드러운 부분이 아이스크림이 되어 극락</p>
@@ -2121,7 +2287,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">초코모나카 아이스</p>
+							<div class="name">
+								초코모나카 아이스
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">편의점</p>
 							<p class="txt">* 초콜릿을 감싼 아이스크림을 감싼 모나카</p>
@@ -2149,7 +2320,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">야와모찌 아이스</p>
+							<div class="name">
+								야와모찌 아이스
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">드럭스토어, 돈키호테, 편의점</p>
 							<p class="txt">* 맛별로 다른 시럽과 5개의 모찌가 올라가있는 아이스크림</p>
@@ -2177,7 +2353,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">아이스와플콘 말차</p>
+							<div class="name">
+								아이스와플콘 말차
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">세븐일레븐</p>
 							<p class="txt">* 한정판 와플콘 녹차 아이스크림</p>
@@ -2217,7 +2398,8 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">갈아만드는 과일 스무디</p>
+							<div class="name">
+								갈아만드는 과일 스무디</p>
 
 							<p class="location">세븐일레븐</p>
 							<p class="txt">* 냉동과일을 직접 갈아먹을수 있는 스무디</p>
@@ -2258,7 +2440,8 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">에프터눈티 로얄밀크티 프라페</p>
+							<div class="name">
+								에프터눈티 로얄밀크티 프라페</p>
 
 							<p class="location">패밀리마트</p>
 							<p class="txt">* 진한 밀크티 향과 맛</p>
@@ -2292,7 +2475,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">칼피스 모찌</p>
+							<div class="name">
+								칼피스 모찌
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">편의점이나 드럭스토어 또는 돈키호테</p>
 							<p class="txt">* 칼피스크림이 들어있는 요구르트맛 젤리</p>
@@ -2332,7 +2520,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">부르봉 페투치네 젤리</p>
+							<div class="name">
+								부르봉 페투치네 젤리
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">편의점. 돈키호테 등</p>
 							<p class="txt">* 페투치네 면처럼 생긴 젤리</p>
@@ -2384,7 +2577,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">퓨어랄 구미 젤리</p>
+							<div class="name">
+								퓨어랄 구미 젤리
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">드럭스토어, 편의점</p>
 							<p class="txt">* 폭신한 식감의 안에 쫄깃한 과일젤리가 들어있는 젤리</p>
@@ -2424,7 +2622,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">UHA 푸초 스틱젤리</p>
+							<div class="name">
+								UHA 푸초 스틱젤리
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">드럭스토어, 돈키호테, 편의점</p>
 							<p class="txt">* 마이쮸같은 젤리안에 또 젤리를 넣은 젤리</p>
@@ -2464,7 +2667,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">까먹는 생젤리 무쿠나마구미</p>
+							<div class="name">
+								까먹는 생젤리 무쿠나마구미
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">돈키호테</p>
 							<p class="txt">* 탱글한 과일맛 젤리</p>
@@ -2505,7 +2713,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">아사히 미츠야 사이다 소다 캔디</p>
+							<div class="name">
+								아사히 미츠야 사이다 소다 캔디
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">?</p>
 							<p class="txt">* 사이다 캔디로 탄산쏘는 느낌을 맛볼수 있다</p>
@@ -2534,7 +2747,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">모리나가 카라멜</p>
+							<div class="name">
+								모리나가 카라멜
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">드럭스토어, 돈키호테, 편의점</p>
 							<p class="txt">* 신기한 맛 카라멜 (팥색은 팥맛 카라멜)</p>
@@ -2562,7 +2780,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">드라이 미캉</p>
+							<div class="name">
+								드라이 미캉
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">패밀리마트</p>
 							<p class="txt">* 쫄깃한 말린 귤의 식감</p>
@@ -2602,7 +2825,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">모리나가 프리미엄 하이츄</p>
+							<div class="name">
+								모리나가 프리미엄 하이츄
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">드럭스토어, 돈키호테, 편의점</p>
 							<p class="txt">* 마이쮸보다 쫀득하고 부드러운 식감의 젤리</p>
@@ -2630,7 +2858,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">곤약젤리</p>
+							<div class="name">
+								곤약젤리
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							<p class="txt">* 곤약맛 안나는 맛난곤약! 젤리</p>
 							<p class="price">? 엔</p>
 							<p class="coment">컵타입의 곤약젤리는 국내반입이 안된다는 사실!</p>
@@ -2662,7 +2896,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">산요 삿포로이치방 참깨돈부리된장라멘</p>
+							<div class="name">
+								산요 삿포로이치방 참깨돈부리된장라멘
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							
 							<p class="txt">* 참깨가 들어간 된장라멘</p>
 						</div>
@@ -2688,7 +2928,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">산요 삿포로 이치방 조개국물 돈부리 소금 라멘</p>
+							<div class="name">
+								산요 삿포로 이치방 조개국물 돈부리 소금 라멘
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							
 							<p class="txt">* 조개국물 해장 싹~</p>
 							<p class="coment">비슷하게 생긴 일반 소금라멘이 있으니 주의바람</p>
@@ -2715,7 +2961,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">에이스쿡 매운카레 야키소바</p>
+							<div class="name">
+								에이스쿡 매운카레 야키소바
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							
 							<p class="txt">* 맵찔이도 가능</p>
 						</div>
@@ -2741,7 +2993,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">에이스쿡 매운카레 라멘</p>
+							<div class="name">
+								에이스쿡 매운카레 라멘
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							
 							<p class="txt">* 위에껀 야끼소바 이건 라멘~</p>
 						</div>
@@ -2767,7 +3025,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">산요 삿포로이치방 완전매운 탄탄멘</p>
+							<div class="name">
+								산요 삿포로이치방 완전매운 탄탄멘
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							<p class="txt">* 산초맛 확 느껴지는 탄탄멘</p>
 						</div>
 					</li>
@@ -2792,7 +3056,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">산요 삿포로이치방 유자 시오라멘</p>
+							<div class="name">
+								산요 삿포로이치방 유자 시오라멘
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							<p class="txt">* 유자향이 나서 상큼+깔끔</p>
 						</div>
 					</li>
@@ -2817,7 +3087,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">산요 삿포로 이치방 순두비찌개라멘</p>
+							<div class="name">
+								산요 삿포로 이치방 순두비찌개라멘
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							<p class="txt">* 순찌라멘</p>
 						</div>
 					</li>
@@ -2842,7 +3118,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">산요 삿포로이치방 돈부리 간장라멘</p>
+							<div class="name">
+								산요 삿포로이치방 돈부리 간장라멘
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							<p class="txt">* 볶은파가 완전 많이 들어간 라멘</p>
 						</div>
 					</li>
@@ -2867,7 +3149,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">묘조 스테미나 중화소바</p>
+							<div class="name">
+								묘조 스테미나 중화소바
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							<p class="txt">* 마늘+간장맛 스프에 빨간 국물</p>
 						</div>
 					</li>
@@ -2892,7 +3180,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">묘조 잇페이짱 스테미나 돼지고기 시오타레</p>
+							<div class="name">
+								묘조 잇페이짱 스테미나 돼지고기 시오타레
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							<p class="txt">* 마늘+마요 건더기 많은 볶음면</p>
 						</div>
 					</li>
@@ -2917,7 +3211,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">산요 삿포로 이치방 햇생강맛 시오 야키소바</p>
+							<div class="name">
+								산요 삿포로 이치방 햇생강맛 시오 야키소바
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							<p class="txt">* 상큼한(?) 생강맛 야키소바</p>
 						</div>
 					</li>
@@ -2942,7 +3242,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">동양수산 키츠네 야끼우동</p>
+							<div class="name">
+								동양수산 키츠네 야끼우동
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							<p class="txt">* 간장베이스에 시치미토핑이 있는 볶음우동</p>
 						</div>
 					</li>
@@ -2967,7 +3273,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">동양수산 멸치 다시 우동</p>
+							<div class="name">
+								동양수산 멸치 다시 우동
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							<p class="txt">* 농후한 국물 우동</p>
 						</div>
 					</li>
@@ -2992,7 +3304,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">동양수산 마루짱세이멘 농후멸치 양파라면</p>
+							<div class="name">
+								동양수산 마루짱세이멘 농후멸치 양파라면
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							<p class="txt">* 돈코츠 베이스에 양파 듬뿍</p>
 						</div>
 					</li>
@@ -3017,7 +3335,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">묘조 챠루메라 국물없는 짬뽕</p>
+							<div class="name">
+								묘조 챠루메라 국물없는 짬뽕
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							<p class="txt">* 돈코츠 베이스에 해물맛까지</p>
 						</div>
 					</li>
@@ -3042,7 +3366,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">닛신 ufo 감자치즈 야끼소바</p>
+							<div class="name">
+								닛신 ufo 감자치즈 야끼소바
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							<p class="txt">* 매쉬포테이토랑 찰떡궁합</p>
 						</div>
 					</li>
@@ -3067,7 +3397,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">닛신 마제 야끼소바</p>
+							<div class="name">
+								닛신 마제 야끼소바
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							<p class="txt">* 라유 마요네즈가 들어있어서 진한맛! 자극적!</p>
 						</div>
 					</li>
@@ -3092,7 +3428,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">닛신 돈베이 매운 키츠네 우동</p>
+							<div class="name">
+								닛신 돈베이 매운 키츠네 우동
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							<p class="txt">* 유부토핑이 있는 한국인이 좋아하는 빨간 국물</p>
 						</div>
 					</li>
@@ -3117,7 +3459,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">닛신라왕 복어소금라멘</p>
+							<div class="name">
+								닛신라왕 복어소금라멘
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							<p class="txt">* 유자향 싹 퍼지는 깔끔한 국물 / 오직 일본에서만 구매 가능</p>
 						</div>
 					</li>
@@ -3142,8 +3490,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">닛신 몽고탄멘 나카모토</p>
-
+							<div class="name">
+								닛신 몽고탄멘 나카모토
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 							<p class="location">세븐일레븐</p>
 							<p class="txt">* 신라면에서 살짝 매운맛의 마라중화맛</p>
 							<p class="price">280엔</p>
@@ -3183,7 +3536,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">마루짱 시로이 치카라모찌 우동</p>
+							<div class="name">
+								마루짱 시로이 치카라모찌 우동
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 
 							<p class="location">마트, 돈키호테, 편의점</p>
 							<p class="txt">* 쫄깃한 떡이 들어간 우동</p>
@@ -3217,7 +3576,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">링고아메</p>
+							<div class="name">
+								링고아메
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 							
 							<p class="location">Candy apple (캔디애플 - 가맹점)</p>
 							<p class="txt">* "캔디애플"이라는 링고아메를 판매하는 디저트집이 있다.</p>
@@ -3246,7 +3610,13 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">숙성 매운 명란젓</p>
+							<div class="name">
+								숙성 매운 명란젓
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 
 							<p class="location">세븐일레븐</p>
 							<p class="txt">* 숙성시킨 매운 명란젓을 넣은 주먹밥</p>
@@ -3295,9 +3665,15 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">아이리스 푸드 이나리모찌 4개입 (유부 찰떡)</p>
-					
-					<p class="location">돈키호테</p>
+							<div class="name">
+								아이리스 푸드 이나리모찌 4개입 (유부 찰떡)
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
+
+							<p class="location">돈키호테</p>
 					<p class="txt">* 유부와 떡 별도 포장 / 렌지에 데우거나 조리해서 먹어야합니다.</p>
 					<p class="price">400엔</p>
 					<p class="coment">맛있게 먹는법 검색해서 먹으면 좋을듯</p>
@@ -3336,9 +3712,15 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">칼디 스프레드</p>
-					
-					<p class="location">칼디(KALDI) 체인점</p>
+							<div class="name">
+								칼디 스프레드
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
+
+							<p class="location">칼디(KALDI) 체인점</p>
 					<p class="txt">* 식빵에 바르고 구우면 메론빵</p>
 					<p class="price">332엔</p>
 					<p class="coment">오직 칼디에서만 구매 가능 / 스프레드 외 다른 간식부터 식재료까지 판매하니 방문희망</p>
@@ -3377,9 +3759,15 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">베르데 토스트 스프레드</p>
-					
-					<p class="location">돈키호테, 마트 (가격차이있음)</p>
+							<div class="name">
+								베르데 토스트 스프레드
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
+
+							<p class="location">돈키호테, 마트 (가격차이있음)</p>
 					<p class="txt">* 두꺼운빵에 (얇으면 기름지다고함) 발라 에어프라이어나 오븐에 구워먹으면 마늘빵이 됩니다!</p>
 					<p class="price">238엔</p>
 					<p class="coment">여러종류 중 마늘스프레드 추천</p>
@@ -3406,9 +3794,15 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">노리타마 후리가케</p>
+							<div class="name">
+								노리타마 후리가케
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 
-					<p class="location">백엔샵, 마트, 돈키호테 등</p>
+							<p class="location">백엔샵, 마트, 돈키호테 등</p>
 					<p class="txt">* 우동이나 밥 위에 뿌려주는 후레이크</p>
 					<p class="price">100엔</p>
 					<p class="coment">유부초밥 밥에 섞어도 맛나보인다</p>
@@ -3459,9 +3853,15 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">산토리 삿포로 레몬사와 원액</p>
+							<div class="name">
+								산토리 삿포로 레몬사와 원액
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 
-					<p class="location">돈키호테</p>
+							<p class="location">돈키호테</p>
 					<p class="txt">* 원액에 당분이 함류되어있어 토닉워터보단 탄산수를 타마시면 사와가 됩니다! / 노란색(기본), 파란색(진한맛)</p>
 					<p class="price">? 엔</p>
 					<p class="coment">국내 수화물 반입 가능여부 확인필요</p>
@@ -3488,7 +3888,12 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">ac재킷</p>
+							<div class="name">
+								ac재킷
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 					<p class="txt">* 선풍기 자켓</p>
 				</div>
 			</li>
@@ -3513,9 +3918,15 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">푸딩믹스</p>
+							<div class="name">
+								푸딩믹스
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 
-					<p class="location">일본 다이소(백엔샵)</p>
+							<p class="location">일본 다이소(백엔샵)</p>
 					<p class="price">100엔</p>
 					<p class="coment">난쟁이나라의 장신공주 <span class="twinkle">PICK !</span></p>
 				</div>
@@ -3541,9 +3952,15 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">모모야 약간 매운맛 라유 - 고추기름</p>
+							<div class="name">
+								모모야 약간 매운맛 라유 - 고추기름
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 
-					<p class="location">드럭스토어, 돈키호테 등</p>
+							<p class="location">드럭스토어, 돈키호테 등</p>
 					<p class="txt">* 마늘+고추 조합 / 흰쌀밥과 비벼먹으면 극락</p>
 					<p class="price">300엔</p>
 					<p class="coment">라유 필요한사람~ 저요~</p>
@@ -3570,9 +3987,15 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">에바라 황금고기 소스 3종</p>
+							<div class="name">
+								에바라 황금고기 소스 3종
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 
-					<p class="location">돈키호테, 드럭스토어</p>
+							<p class="location">돈키호테, 드럭스토어</p>
 					<p class="txt">* 과일을 베이스로 만들어 상큼+고소한 맛 / 고기에 찍어먹거나 볶음요리용으로 사용 가능</p>
 					<p class="price">? 엔</p>
 					<p class="coment">짝꿍핑 <span class="twinkle">PICK !</span></p>
@@ -3599,9 +4022,15 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">에바라 스키야키 타레 마일드</p>
+							<div class="name">
+								에바라 스키야키 타레 마일드
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 
-					<p class="location">로피아(마트)</p>
+							<p class="location">로피아(마트)</p>
 					<p class="txt">* 짭잘달달한 한국에 없는 맛인 일본식 스키야키가 먹고싶을때 사용</p>
 					<p class="price">259엔</p>
 					<p class="coment">짝꿍핑 <span class="twinkle">PICK !</span></p>
@@ -3634,7 +4063,12 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">칼피스 워터/소다/리치</p>
+							<div class="name">
+								칼피스 워터/소다/리치
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 					<p class="txt">* 일본의 유산균 음료수 / 완전 살균한 무균음료 / 밍밍한 밀키스맛</p>
 					<p class="price">162엔</p>
 					<p class="coment">원액도 판매하니 음료와 구분 주의</p>
@@ -3661,9 +4095,15 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">메론소다 환타</p>
+							<div class="name">
+								메론소다 환타
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 
-					<p class="location">세븐일레븐</p>
+							<p class="location">세븐일레븐</p>
 					<p class="txt">* 소다에 메론향과 메론색상을 첨가한 음료 / 매우 달다</p>
 					<p class="price">140엔</p>
 					<p class="coment">희귀템으로 보이면 구매하기</p>
@@ -3690,9 +4130,15 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">메이지 우유</p>
+							<div class="name">
+								메이지 우유
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 
-					<p class="location">대중목욕탕 / 대중 온천 등 자판기</p>
+							<p class="location">대중목욕탕 / 대중 온천 등 자판기</p>
 					<p class="txt">* 우유</p>
 					<p class="price">? 엔</p>
 					<p class="coment">목욕후 우유 한병 때리기</p>
@@ -3731,9 +4177,15 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">홍차화전 로얄밀크티</p>
+							<div class="name">
+								홍차화전 로얄밀크티
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 
-					<p class="location">편의점</p>
+							<p class="location">편의점</p>
 					<p class="txt">* 일본의 유명한 밀크티</p>
 					<p class="price">? 엔</p>
 					<p class="coment">표지가 다를수 있음 "홍차화전"만 확인</p>
@@ -3760,9 +4212,15 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">아야타카 말차라떼</p>
+							<div class="name">
+								아야타카 말차라떼
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 
-					<p class="location">패밀리마트, 편의점</p>
+							<p class="location">패밀리마트, 편의점</p>
 					<p class="txt">* 코카콜라에서 만든 일본산 말차 100% 라떼</p>
 					<p class="price">179엔</p>
 					<p class="coment">맛있겠다 사야겠따</p>
@@ -3789,9 +4247,15 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">소켄비차</p>
+							<div class="name">
+								소켄비차
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 
-					<p class="location">편의점</p>
+							<p class="location">편의점</p>
 					<p class="txt">* 코카콜라에서 만든 노카페인 보리차</p>
 					<p class="price">138엔</p>
 					<p class="coment">갈증날때 수분충전</p>
@@ -3818,7 +4282,12 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">홍차화전 크래프트 복숭아티</p>
+							<div class="name">
+								홍차화전 크래프트 복숭아티
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 					<p class="txt">* 복숭아 과즙을 듬뿍 넣은 복숭아 아이스티</p>
 					<p class="price">예상 200 ~ 280엔</p>
 				</div>
@@ -3844,7 +4313,12 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">오후의 홍차</p>
+							<div class="name">
+								오후의 홍차
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 					<p class="txt">* 기린음료에서 출시한 일본의 최초의 페트병 홍차</p>
 					<p class="price">? 엔</p>
 				</div>
@@ -3870,9 +4344,15 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">유자레몬 사이다</p>
+							<div class="name">
+								유자레몬 사이다
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 
-					<p class="location">세븐일레븐</p>
+							<p class="location">세븐일레븐</p>
 					<p class="txt">* 유자과즙에 레몬 과즙을 혼합한 사이다</p>
 					<p class="price">106엔</p>
 				</div>
@@ -3898,9 +4378,15 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">자판기 콘스프</p>
+							<div class="name">
+								자판기 콘스프
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 
-					<p class="location">길거리 자판기</p>
+							<p class="location">길거리 자판기</p>
 					<p class="txt">* 달달 고소하며 후루룩 먹기 편함</p>
 					<p class="price">130 ~ 140엔</p>
 					<p class="coment">플라이투더숟가락 <strong class="twinkle">PICK !</strong></p>
@@ -3927,9 +4413,15 @@ const productList = [
 				</div>
 
 				<div class="txt-wrap">
-					<p class="name">자판기 게 전골 스프</p>
+							<div class="name">
+								자판기 게 전골 스프
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
+							
 
-					<p class="location">자판기(희귀템)</p>
+							<p class="location">자판기(희귀템)</p>
 					<p class="txt">* 마늘맛이 조금 가미된 백숙맛이 더 잘나는 게 스프</p>
 					<p class="price">? 엔</p>
 				</div>
@@ -3963,7 +4455,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">이브 퀵 두통약 DX</p>
+							<div class="name">
+								이브 퀵 두통약 DX
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">드럭스토어</p>
 							<p class="price">? 엔</p>
@@ -4002,7 +4499,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">마시는 소화제 솔맥</p>
+							<div class="name">
+								마시는 소화제 솔맥
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">편의점, 드럭스토어</p>
 							<p class="txt">* 초록색이 더 빠른 효과 !</p>
@@ -4030,7 +4532,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">용각산 다이렉트 3종</p>
+							<div class="name">
+								용각산 다이렉트 3종
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">드럭스토어</p>
 							<p class="txt">* 목의 불쾌함을 완화시켜주는 효과로 인기 있는 용각산 / 가루스틱 타입과 사탕타입이 있다</p>
@@ -4059,7 +4566,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">피로회복제 活蔘28(카츠진28)</p>
+							<div class="name">
+								피로회복제 活蔘28(카츠진28)
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">드럭스토어</p>
 							<p class="price">? 엔</p>
@@ -4087,7 +4599,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">비타트 오구치 레몬 가글</p>
+							<div class="name">
+								비타트 오구치 레몬 가글
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">돈키호테, 드럭스토어</p>
 							<p class="txt">* 입안의 오염, 잔여물 제거, 단백질을 굳혀서 씻어내는 가글</p>
@@ -4121,7 +4638,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">가려움약 물파스 액체무히s</p>
+							<div class="name">
+								가려움약 물파스 액체무히s
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">드럭스토어</p>
 							<p class="txt">* 가려움 물파스</p>
@@ -4149,7 +4671,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">관절 통증 로키소닌s로션a</p>
+							<div class="name">
+								관절 통증 로키소닌s로션a
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">드럭스토어</p>
 							<p class="price">? 엔</p>
@@ -4176,7 +4703,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">페어아크네 크림(여드름 치료제)</p>
+							<div class="name">
+								페어아크네 크림(여드름 치료제)
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">돈키호테, 드럭스토어</p>
 							<p class="txt">* 여드름 치료제로 치료 부위에만 소량 도포(전체 도포아님)</p>
@@ -4204,7 +4736,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">보습크림 NIVEA MEN CREME(made in Germany)</p>
+							<div class="name">
+								보습크림 NIVEA MEN CREME(made in Germany)
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">돈키호테, 드럭스토어</p>
 							<p class="price">? 엔</p>
@@ -4243,7 +4780,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">바닐라 코짓 쿨 밥밥 모어 젤 러빗</p>
+							<div class="name">
+								바닐라 코짓 쿨 밥밥 모어 젤 러빗
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">돈키호테, 드럭스토어</p>
 							<p class="txt">* 순간냉각 스프레이</p>
@@ -4288,7 +4830,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">구내염 패치</p>
+							<div class="name">
+								구내염 패치
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">드럭스토어</p>
 							<p class="txt">* 두개 무슨 차이인지 모르겠음</p>
@@ -4328,7 +4875,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">가려움 패치</p>
+							<div class="name">
+								가려움 패치
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">드럭스토어</p>
 							<p class="txt">* 벌레물린데 붙이면 좋다</p>
@@ -4358,7 +4910,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">샤론파스</p>
+							<div class="name">
+								샤론파스
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">드럭스토어</p>
 							<p class="price">? 엔</p>
@@ -4386,7 +4943,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">코바야시제약 냉타올(히야시 타오르)</p>
+							<div class="name">
+								코바야시제약 냉타올(히야시 타오르)
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">드럭스토어</p>
 							<p class="price">? 엔</p>
@@ -4418,7 +4980,12 @@ const productList = [
 						</div>
 
 						<div class="txt-wrap">
-							<p class="name">사쿠라 쁘띠케어 세정 보존액 10ml</p>
+							<div class="name">
+								사쿠라 쁘띠케어 세정 보존액 10ml
+								<div class="btn-wrap">
+									<button type="button" class="toggle-count"><span class="count">0</span></button>
+								</div>
+							</div>
 
 							<p class="location">드럭스토어</p>
 							<p class="txt">* 렌즈세척액</p>

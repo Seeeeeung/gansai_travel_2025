@@ -137,18 +137,6 @@ $(function(){
 
 	}
 
-	
-	// 찜하기..
-		$('.detail-list .toggle-count').on('click', function() {
-			var count = Number($(this).children('.count').text());
-			if ($(this).hasClass('check')) {
-				$(this).removeClass('check').children('.count').text(count - 1);
-			} else {
-				$(this).addClass('check').children('.count').text(count + 1).attr('title','추천됨');	
-			}
-		})
-
-
 
 // ================================ 레이아웃 ========================================================
 	// page url 체크 후 lnb action 제어
@@ -523,7 +511,14 @@ $(function(){
 		// 기본정렬 저장 / 기본순 버튼 클릭시 노출
 		const detailList = $('.detail-list');
 		detailList.each(function() {
-			const targetList = $(this).children('ul').children('li');
+			const targetUl = $(this).children('ul')
+			const targetList = targetUl.children('li');
+
+			// 추천순
+			if ($('.layer-good').hasClass('active')) setDetailListSortUp(targetUl, targetList);
+			// 평점순
+			if ($('.layer-star').hasClass('active')) setDetailListSortStar(targetUl, targetList);
+			
 			$('.list-control .btn-layer.layer-default').on('click', function() {
 				$.each(targetList, function(i, li){
 					targetList.parent('ul').append(li);
@@ -532,6 +527,7 @@ $(function(){
 		})
 
 
+			
 			
 		// 목록 정렬 버튼
 		$(document).on('click', '.list-control .btn-layer', function() {
@@ -548,11 +544,22 @@ $(function(){
 		});
 
 		// 여행정보 메인화면 숙소정보 목록정렬
-		if ($('.detail-list').hasClass('info-travel')) {
-			const setUl = $('.detail-list.info-travel > ul');
-			const setItem = $('.detail-list.info-travel > ul > li');
-			setDetailListSortUp(setUl, setItem);
-		}
+		// if ($('.detail-list').hasClass('info-travel')) {
+		// 	const setUl = $('.detail-list.info-travel > ul');
+		// 	const setItem = $('.detail-list.info-travel > ul > li');
+		// 	setDetailListSortUp(setUl, setItem);
+		// }
+
+		// 관광지정보 동선별관광지 목록정렬
+		// if ($('.detail-list')) {
+		// 	const setList = $('.detail-list');
+		// 	$.each(setList, function(ul) {
+		// 		const setUl = ul.children('ul');
+		// 		const setItem = setUl.children('li');
+		// 		setDetailListSortUp(setUl, setItem);
+
+		// 	})
+		// }
 
 
 
@@ -574,6 +581,18 @@ $(function(){
 
 
 
+
+
+	
+	// 찜하기..
+	$('.detail-list .toggle-count').on('click', function() {
+		var count = Number($(this).children('.count').text());
+		if ($(this).hasClass('check')) {
+			$(this).removeClass('check').children('.count').text(count - 1);
+		} else {
+			$(this).addClass('check').children('.count').text(count + 1).attr('title','추천됨');	
+		}
+	})
 
 
 // ================================ swiper ========================================================

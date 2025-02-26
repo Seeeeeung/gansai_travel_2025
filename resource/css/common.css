@@ -1126,6 +1126,10 @@ a.title-3 + .travel .btn-link {background-image:none;}
 
 .detail-list.product > ul > li {display:flex; flex-direction:column; justify-content:stretch; flex-wrap:nowrap;}
 .detail-list.product > ul > li .txt-wrap {display:flex; height:100%; margin-top:0;}
+.detail-list.product > ul > li .name {position:relative; padding-right:35px;}
+.detail-list.product > ul > li .btn-wrap {width:18px; height:18px; margin:0; position:absolute; top:3px; right:0;}
+.detail-list.product > ul > li .btn-wrap .toggle-count {width:100%; height:100%; margin:0;}
+.detail-list.product > ul > li .btn-wrap .toggle-count .count {overflow:hidden; position:absolute; width:1px; height:1px; padding:0; margin:-1px; clip:rect(0 0 0 0); white-space:nowrap; border:0;}
 /* .detail-list.product li .txt-wrap > .txt {margin-bottom:24px;} */
 .detail-list.product li .txt-wrap > .price {margin-top:24px;}
 
@@ -1174,3 +1178,32 @@ a.title-3 + .travel .btn-link {background-image:none;}
 .fixed-wrap {position:fixed; bottom:30px; right:30px; z-index:999; width:60px; height:40px;}
 .fixed-wrap .btn-top {visibility:hidden; opacity:0; position:absolute; left:0; top:300px; width:60px; height:40px; padding:0; border-radius:24px; border:1px solid #5a5a5a; background-color:#fff; transition:visibility 1s, opacity 1s, top .6s cubic-bezier(.13,1.03,.63,1.27);}
 .fixed-wrap .btn-top.show {visibility:visible; opacity:1; top:0;}
+
+
+
+
+
+
+
+/* 동선정보 */
+.list-movement {display:flex; gap:24px; padding:20px 0; border:1px solid #414141; border-left:none; border-right:none;}
+.list-movement li p {margin:0;}
+.list-movement li {position:relative; max-width:150px; word-break:keep-all}
+.list-movement li::before {display:block; position:absolute; top:15px; right:-28px; content:''; width:30px; height:3px; background-color:rgb(250, 171, 250);}
+.list-movement li:last-child::before {display:none;}
+.list-movement li .tit {margin-bottom:10px; padding:4px 10px; color:#000; font-weight:700; border-radius:10px; background-color:rgb(250, 171, 250); white-space:nowrap;}
+.list-movement li .txt {font-size:15px;}
+
+@media (max-width:1200px) {
+	.list-movement {flex-wrap:wrap;}
+	.list-movement li::before {display:none;}
+}
+
+@media (max-width:700px) {
+	.list-movement {flex-direction: column; padding-left:20px;}
+	.list-movement li::before {display:block; top:24px; left:-20px; content:''; width:3px; height:calc(100% + 10px);}
+	.list-movement li::after {display:block; position:absolute; top:15px; left:-20px; content:''; width:3px; height:3px; background-color:rgb(255, 0, 255);}
+	.list-movement li {max-width:100%;}
+}
+
+
