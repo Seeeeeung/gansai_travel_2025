@@ -2913,7 +2913,7 @@ const productList = [
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="visual">
-										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/QjIL7_134678_1.jpg" alt="산요 삿포로이치방 참깨돈부리된장라멘">
+										<img src="./resource/image/contents/img-ramen-03.jpg" alt="산요 삿포로이치방 참깨돈부리된장라멘">
 
 										<div class="big-img">
 											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
@@ -2978,7 +2978,7 @@ const productList = [
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="visual">
-										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/Ps0B3_134681_1-600x600.jpg" alt="에이스쿡 매운카레 야키소바">
+										<img src="./resource/image/contents/img-ramen-04.jpg" alt="에이스쿡 매운카레 야키소바">
 
 										<div class="big-img">
 											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
@@ -3042,7 +3042,7 @@ const productList = [
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="visual">
-										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/mG9bD_134674_1.jpg" alt="산요 삿포로이치방 완전매운 탄탄멘">
+										<img src="./resource/image/contents/img-ramen-06.jpg" alt="산요 삿포로이치방 완전매운 탄탄멘">
 
 										<div class="big-img">
 											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
@@ -3073,7 +3073,7 @@ const productList = [
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="visual">
-										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/TNBGs_134675_1.jpg" alt="산요 삿포로이치방 유자 시오라멘">
+										<img src="./resource/image/contents/img-ramen-05.jpg" alt="산요 삿포로이치방 유자 시오라멘">
 
 										<div class="big-img">
 											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
@@ -3104,7 +3104,7 @@ const productList = [
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="visual">
-										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/BC1Ah_134676_1.jpg" alt="산요 삿포로 이치방 순두비찌개라멘">
+										<img src="./resource/image/contents/img-ramen-07.jpg" alt="산요 삿포로 이치방 순두부찌개라멘">
 
 										<div class="big-img">
 											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
@@ -3135,7 +3135,7 @@ const productList = [
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="visual">
-										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/iFmh3_134677_1.jpg" alt="산요 삿포로이치방 돈부리 간장라멘">
+										<img src="./resource/image/contents/img-ramen-01.jpg" alt="산요 삿포로이치방 돈부리 간장라멘">
 
 										<div class="big-img">
 											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
@@ -3166,7 +3166,7 @@ const productList = [
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="visual">
-										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/4nC5E_134668_1.jpg" alt="묘조 스테미나 중화소바">
+										<img src="./resource/image/contents/img-ramen-08.jpg" alt="묘조 스테미나 중화소바">
 
 										<div class="big-img">
 											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
@@ -3197,7 +3197,7 @@ const productList = [
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="visual">
-										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/Qp7cp_134670_1.jpg" alt="묘조 잇페이짱 스테미나 돼지고기 시오타레">
+										<img src="./resource/image/contents/img-ramen-09.jpg" alt="묘조 잇페이짱 스테미나 돼지고기 시오타레">
 
 										<div class="big-img">
 											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
@@ -3228,7 +3228,7 @@ const productList = [
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="visual">
-										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/2nCzz_134673_1.jpg" alt="산요 삿포로 이치방 햇생강맛 시오 야키소바">
+										<img src="./resource/image/contents/img-ramen-10.jpg" alt="산요 삿포로 이치방 햇생강맛 시오 야키소바">
 
 										<div class="big-img">
 											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
@@ -3321,7 +3321,7 @@ const productList = [
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="visual">
-										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/uk9RR_134666_1-600x600.jpg" alt="동양수산 마루짱세이멘 농후멸치 양파라면">
+										<img src="./resource/image/contents/img-ramen-11.jpg" alt="동양수산 마루짱세이멘 농후멸치 양파라면">
 
 										<div class="big-img">
 											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
@@ -3352,7 +3352,7 @@ const productList = [
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="visual">
-										<img src="https://jp.nppip.com/wp-content/uploads/2024/07/YpXh2_134667_1.jpg" alt="묘조 챠루메라 국물없는 짬뽕">
+										<img src="./resource/image/contents/img-ramen-12.jpg" alt="묘조 챠루메라 국물없는 짬뽕">
 
 										<div class="big-img">
 											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
@@ -3383,7 +3383,7 @@ const productList = [
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="visual">
-										<img src="https://www.saradamall.com/data/item/1723605895/92.png" alt="닛신 ufo 감자치즈 야끼소바">
+										<img src="./resource/image/contents/img-ramen-02.jpg" alt="닛신 ufo 감자치즈 야끼소바">
 
 										<div class="big-img">
 											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
