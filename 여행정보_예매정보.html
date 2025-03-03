@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2025 간사이 여행</title>
+
+<link rel="stylesheet" type="text/css" href="./resource/css/import.css">
+<link rel="icon" href="./resource/image/common/icon/ico-airplane.png">
+<!-- 비행기 아이콘 제작자: Good Ware - Flaticon -->
+<!-- 움직임 아이콘 제작자: Google - Flaticon -->
+
+<script src="./resource/js/jquery-3.7.1.js"></script>
+<script src="./resource/js/jquery.easing.1.4.1.js"></script>
+<script src="./resource/js/swiper-bundle.js"></script>
+<script src="./resource/js/ui_script.js" defer></script>
+<script src="./resource/js/ui_tree.js" defer></script>
+</head>
+<body>
+
+	<!-- header -->
+	<header>
+	</header>
+	<!-- // header -->
+	
+	<!-- notice visual -->
+	<div class="notice-visual">
+	</div>
+	<!-- // notice visual -->
+
+
+
+	<!-- container -->
+	<div class="container">
+		<div class="lnb-wrap">
+			<h2 class="page-title"><a href="">여행 정보</a></h2>
+		</div>
+		
+		<!-- inner-wrap-->
+		<div class="inner-wrap">
+			<div class="infomation-wrap">
+				<p class="title">
+					안녕하세요 <em>여행자</em>님,<br>
+					예매 내역을 확인해주세요.
+
+					<span class="money">티켓,패스 총 결제금액은 <em>250,392</em>원 입니다.</span>
+				</p>
+
+				<div class="travel reserved">
+					<a href="" class="btn-link fly">
+						<p class="tit">항공권 예매</p>
+						<p class="desc"><em>2</em>건</p>
+					</a>
+					<a href="" class="btn-link sleep">
+						<p class="tit">숙소 예매</p>
+						<p class="desc"><em>2</em>건</p>
+					</a>
+					<a href="" class="btn-link pass">
+						<p class="tit">교통패스</p>
+						<p class="desc"><em>0</em>건</p>
+					</a>
+					<a href="" class="btn-link ticket">
+						<p class="tit">관광지 티켓</p>
+						<p class="desc"><em>1</em>건</p>
+					</a>
+				</div>
+
+			</div>
+
+
+
+			<section class="contents">
+				<!-- 패스 구매시 구매처, 구매 상세 내역 노출 -->
+				<h3 class="title-3" id="page-title">예매 정보</h3>
+
+
+
+				<div class="title-wrap">
+					<h4 class="title-4">관광지 티켓 예매 정보</h4>
+
+					<a href="https://www.klook.com/ko/bookings/?spm=Activity.TopNavigation.Booking&clickId=f327e64aa2" target="_blank" title="새창으로 열기" class="info btn-txt"><i class="ico-window"></i>티켓 구매처</a>
+				</div>
+
+				<!-- 예매정보 없는 경우 -->
+				<!-- <div class="no-data">
+				예매된 관광지 티켓 정보가 없습니다.
+				</div> -->
+				<!-- <p class="title-3">예매해야할 관광지</p> -->
+
+				<!-- accordion -->
+				<div class="accordion reserved">
+					<ul>
+						<li>
+							<button type="button" class="btn-toggle active"><span>유니버셜 스튜디오 재팬 입장권</span></button>
+							
+							<ul class="acc-cont ticket-info active">
+								<li>
+									<p class="tit">사용날짜</p>
+									<p class="txt">2025-03-23 (일) 오후 3시 입장</p>
+								</li>
+								<li>
+									<p class="tit">상세</p>
+									<p class="txt">1일 스튜디오 패스 + 슈퍼 닌텐도 월드</p>
+								</li>
+								<li>
+									<p class="tit">증정</p>
+									<p class="txt">간사이 조이패스, Esim 3GB</p>
+								</li>
+								<li>
+									<p class="tit">결제금액</p>
+									<p class="txt">143,400원</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+
+			<section class="contents">
+				<div class="title-wrap">
+					<h4 class="title-4">교통패스 예매정보</h4>
+
+					<a href="https://www.klook.com/ko/bookings/?spm=Activity.TopNavigation.Booking&clickId=f327e64aa2" target="_blank" title="새창으로 열기" class="info btn-txt"><i class="ico-window"></i>패스 구매처</a>
+				</div>
+
+				<!-- <div class="no-data">
+					예매한 교통패스 정보가 없습니다.
+				</div> -->
+				<!-- accordion -->
+				<div class="accordion pass">
+					<ul>
+						<li class="on">
+							<button type="button" class="btn-toggle"><span>JR 서일본 간사이 와이드 패스(5일권) - 예매 예정</span></button>
+							
+							<ul class="acc-cont ticket-info active">
+								<li>
+									<p class="tit">사용날짜</p>
+									<p class="txt">2025-03-22 (토) ~ 03-25 (화)</p>
+								</li>
+								<li>
+									<p class="tit">증정</p>
+									<p class="txt">오카야마 조이패스</p>
+								</li>
+								<li>
+									<p class="tit">결제금액</p>
+									<p class="txt">106,992원</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- // accordion -->
+
+			</section>
+				
+
+			<section class="contents">
+				<h4 class="title-4">Wifi 예매 정보</h4>
+
+				<!-- 예매정보 없는 경우 -->
+				<!-- <div class="no-data">
+				예매된 와이파이 정보가 없습니다.
+				</div> -->
+				<div class="accordion reserved">
+					<ul>
+						<li>
+							<button type="button" class="btn-toggle active"><span>일본 eSIM</span></button>
+							
+							<ul class="acc-cont ticket-info active">
+								<li>
+									<p class="tit">사용날짜</p>
+									<p class="txt">2025-03-22 (토) ~ 15일까지 사용가능</p>
+								</li>
+								<li>
+									<p class="tit">상세</p>
+									<p class="txt">3GB 데이터 전용</p>
+								</li>
+								<li>
+									<p class="tit">결제금액</p>
+									<p class="txt">0원</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+
+			
+			<!-- <div class="contents"> -->
+				<!-- 패스 구매전 노출 -->
+				<!-- <p class="title-3">예약 해야할 Wifi</p> -->
+
+				<!-- accordion -->
+				<!-- <div class="accordion wifi">
+					<ul>
+						<li>
+							<button type="button" class="btn-toggle"><span>e심 (유심형) 판매처</span></button>
+							
+							<ul class="acc-cont ticket-info">
+								<li>
+									<p class="tit">도시락eSIM</p>
+									<a href="https://dosirakesim.com/" target="_blank" title="새창으로 열기" class="btn-txt txt">도시락eSIM 공식</a>
+								</li>
+								<li>
+									<p class="tit">유심스토어</p>
+									<a href="https://smartstore.naver.com/usimstore/products/7757217952?nt_source=chochocho_o&nt_medium=jpsim&" target="_blank" title="새창으로 열기" class="btn-txt txt">네이버 스토어</a>
+								</li>
+								<li>
+									<p class="tit">마이리얼트립</p>
+									<a href="https://www.myrealtrip.com/search?q=%EC%98%A4%EC%82%AC%EC%B9%B4E%EC%8B%AC&qct=Osaka&qcr=Japan&mktcity=19&utm_source=google&utm_medium=cpc&utm_campaign=20797114683&utm_content=155606193803&utm_term=kwd-1874215531172&gad_source=1&gclid=CjwKCAiA9IC6BhA3EiwAsbltONJM8gZbz2zLj923qqxCiulFqGYA1C1dDVVJtz65tjqX5zC46LeSahoCz2YQAvD_BwE" target="_blank" title="새창으로 열기" class="btn-txt txt">오사카E심</a>
+								</li>
+								<li>
+									<p class="tit">Trip.com</p>
+									<a href="https://kr.trip.com/sale/w/10229/esim.html?locale=ko-KR&allianceid=14887&sid=44733396&ppcid=ckid-_adid-_akid-_adgid-&utm_source=google&utm_medium=cpc&utm_campaign=20945187483&gad_source=1&gclid=CjwKCAiA9IC6BhA3EiwAsbltOFc21HNbcbDpbE--0HKgBkP-pa9UewQbS9OuNbVsSdaSs5pTHyu-LBoCXEoQAvD_BwE" target="_blank" title="새창으로 열기" class="btn-txt txt">트립닷컴</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<button type="button" class="btn-toggle"><span>포켓와이파이</span></button>
+							
+							<ul class="acc-cont ticket-info">
+								<li>
+									<p class="tit">와이파이도시락</p>
+									<a href="https://www.wifidosirak.com/v3/index.aspx?utm_source=sa&utm_medium=google&utm_campaign=%EC%99%80%EC%9D%B4%EB%93%9C%EB%AA%A8%EB%B0%94%EC%9D%BC%5Fp&utm_term=%ED%8F%AC%EC%BC%93%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4&utm_content=%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4%5F%EC%9D%BC%EB%B0%98%5F%EA%B5%AD%EB%82%B4%EB%AC%B8%EC%95%88&gad_source=1&gclid=CjwKCAiA9IC6BhA3EiwAsbltOH98mXWeCirP3zMg5q6b6dpaEBX8cx_gtJmR7FKGM9VlIXHPL2pRlBoC8xwQAvD_BwE" target="_blank" title="새창으로 열기" class="btn-txt txt">wifidosirak 공식</a>
+								</li>
+								<li>
+									<p class="tit">인터넷 검색</p>
+									<p class="txt">투어사이트 등 다수</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div> -->
+				<!-- // accordion -->
+
+			<!-- </div> -->
+		</div>
+		<!-- // inner-wrap-->
+	</div>
+	<!-- // container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="copy">&copy; 2024 KIM SEUNGYEON. all rights reserved.</p>
+	</footer>
+	<!-- // footer -->
+
+
+</body>
+</html>
