@@ -668,6 +668,8 @@ a.title-3 + .travel .btn-link {background-image:none;}
 .inner-wrap .infomation-wrap .title {margin:0; font-size:19px; font-weight:400; text-align:left;}
 .inner-wrap .infomation-wrap .title em {font-weight:700;}
 .infomation-wrap .travel {flex-wrap:wrap; gap:12px; width:450px; margin-top:0; margin-left:20px;}
+.infomation-wrap .title .money {display:block; font-size:16px; margin-top:12px;}
+.infomation-wrap .title .money em {color:#d50136;}
 
 .infomation-wrap .travel .btn-link {align-items:flex-end; width:calc(100% / 2 - 6px); padding-left:80px; padding-right:20px; background-image:none; background-color:#fff; box-shadow:0 5px 10px 0 #cacace}
 .infomation-wrap .travel .btn-link:before {width:50px; height:calc(100% - 24px); background-size:30px auto;}
@@ -1135,13 +1137,14 @@ a.title-3 + .travel .btn-link {background-image:none;}
 
 
 .product .detail-visual .visual {position:relative;}
+.stay .detail-visual .visual {position:relative;}
 .product .detail-visual .visual img {transition:.3s ease-out;}
 .product .detail-visual .visual:hover img {transform:scale(1.2);}
-.product .detail-visual .visual .big-img {opacity:0; display:flex; justify-content:center; align-items:center; position:absolute; left:0; top:0; z-index:2; width:100%; height:100%; background-color:rgba(255,255,255,0.5); transition:.4s;}
-.product .detail-visual .visual .big-img .btn-zoom {opacity:0; width:50px; height:50px; border-radius:100%; background-image:url('../image/common/btn/btn-zoom-in.png'); background-repeat:no-repeat; background-size:30px auto; background-position:center; background-color:#fff; transform:scale(0); transition:.4s;}
-.product .detail-visual .visual.hover .big-img .btn-zoom {animation:boxshadow alternate infinite .8s;}
-.product .detail-visual .visual.hover .big-img {opacity:1;}
-.product .detail-visual .visual.hover .big-img .btn-zoom {opacity:1; transform:scale(1);}
+.detail-visual .visual .big-img {opacity:0; display:flex; justify-content:center; align-items:center; position:absolute; left:0; top:0; z-index:2; width:100%; height:100%; background-color:rgba(255,255,255,0.5); transition:.4s;}
+.detail-visual .visual .big-img .btn-zoom {opacity:0; width:50px; height:50px; border-radius:100%; background-image:url('../image/common/btn/btn-zoom-in.png'); background-repeat:no-repeat; background-size:30px auto; background-position:center; background-color:#fff; transform:scale(0); transition:.4s;}
+.detail-visual .visual.hover .big-img .btn-zoom {animation:boxshadow alternate infinite .8s;}
+.detail-visual .visual.hover .big-img {opacity:1;}
+.detail-visual .visual.hover .big-img .btn-zoom {opacity:1; transform:scale(1);}
 
 @keyframes boxshadow {
 	0% {box-shadow:0 0 0px #fff}
@@ -1157,6 +1160,7 @@ a.title-3 + .travel .btn-link {background-image:none;}
 
 .layer-modal .wrap .cont .zoom-visual {overflow:hidden; width:100%; max-width:500px;}
 .layer-modal .wrap .cont img {width:100%; min-width:500px; height:100%;}
+.stay .layer-modal .wrap .cont .zoom-visual {max-width:1000px;}
 
 
 @media (max-width:700px) {

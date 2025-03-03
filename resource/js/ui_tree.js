@@ -25,13 +25,7 @@ const gnb = [
 										<li><a href="">안내사항</a></li>
 									</ul>
 								</li>
-								<li>
-									<p class="depth-1">숙소 정보</p>
-									<ul class="depth-2">
-										<li><a href="">추천 목록</a></li>
-										<li><a href="">예매 정보</a></li>
-									</ul>
-								</li>
+								<li><a href="" class="depth-1">숙소 정보</a></li>
 								<li>
 									<p class="depth-1">예매 정보</p>
 									<ul class="depth-2">
@@ -114,7 +108,7 @@ const gnb_tree = [
 			'./여행정보_여행동선.html', 
 			'./여행정보_항공편정보_예매정보.html', 
 			'./여행정보_항공편정보_안내사항.html',
-			'./여행정보_숙소정보_추천목록.html',
+			// './여행정보_숙소정보_추천목록.html',
 			'./여행정보_숙소정보_예매정보.html',
 			'./여행정보_예매정보_교통패스예매.html',
 			'./여행정보_예매정보_관광지티켓예매.html',
@@ -182,12 +176,7 @@ const lnb = [
 			</li>
 
 			<li>
-				<button type="button" class="btn-toggle"><span>숙소 정보</span></button>
-				
-				<ul class="acc-cont">
-					<li><a href="" class="depth-3">추천 목록</a></li>
-					<li><a href="" class="depth-3">예매 정보</a></li>
-				</ul>
+				<a href="" class="link"><span>숙소 정보</span></a>
 			</li>
 
 			<li>

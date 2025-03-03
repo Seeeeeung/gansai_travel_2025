@@ -385,18 +385,18 @@ $(function(){
 	}
 
 	// 와구와구 목록 모달창
-	if ($('.product .open-modal').length) {
+	if ($('.open-modal').length) {
 		// 돋보기 아이폰 활성화
-		$(document).on('mouseenter focus', '.product .detail-visual .visual', function () {
+		$(document).on('mouseenter focus', '.detail-visual .visual', function () {
 			$(this).addClass('hover')
 			$(this).parents('.swiper-wrapper').css('z-index','11')
 		})
-		$(document).on('blur', '.product .detail-visual .visual.hover .open-modal', function () {
+		$(document).on('blur', '.detail-visual .visual.hover .open-modal', function () {
 			$(this).parents('.visual').removeClass('hover')
 			$(this).parents('.swiper-wrapper').css('z-index','1')
 		})
 
-		$(document).on('mouseleave', '.product .detail-visual .visual', function () {
+		$(document).on('mouseleave', '.detail-visual .visual', function () {
 			$(this).removeClass('hover')
 			$(this).parents('.swiper-wrapper').css('z-index','1')
 		})
