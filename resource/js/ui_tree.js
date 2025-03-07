@@ -386,8 +386,8 @@ const notice = [
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
 			<div class="notice">
-				<p class="tit">환영합니다 !</p>
-				<p class="txt">본 사이트는 일본 여행을 위한 내용을 정리해둔 사이트 입니다. 내용은 언제나 바뀔수 있습니다.</p>
+				<p class="tit">얘두라</p>
+				<p class="txt">거의 다 왔다 좀만 더 힘내자 !</p>
 			</div>
 		</div>
 
@@ -398,12 +398,6 @@ const notice = [
 			</div>
 		</div>
 
-		<div class="swiper-slide">
-			<div class="notice">
-				<p class="tit">찜하기 관련 안내</p>
-				<p class="txt">해당 목록 찜하기 하트를 클릭 후 새로고침 하지 않고 게시글 상단 정렬 '추천순'을 누른 뒤 화면 캡쳐를 관리자에게 보내주시면 찜사항을 반영해드리겠습니다.</p>
-			</div>
-		</div>
 
 
 	</div>

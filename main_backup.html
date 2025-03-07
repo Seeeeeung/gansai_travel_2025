@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2025 간사이 여행</title>
+
+<link rel="stylesheet" type="text/css" href="./resource/css/import.css">
+<link rel="icon" href="./resource/image/common/icon/ico-airplane.png">
+<!-- 비행기 아이콘 제작자: Good Ware - Flaticon -->
+<!-- 움직임 아이콘 제작자: Google - Flaticon -->
+
+<script src="./resource/js/jquery-3.7.1.js"></script>
+<script src="./resource/js/jquery.easing.1.4.1.js"></script>
+<script src="./resource/js/swiper-bundle.js"></script>
+<script src="./resource/js/ui_script.js" defer></script>
+<script src="./resource/js/ui_tree.js" defer></script>
+
+
+<!-- 지도 오픈소스 : https://leafletjs.com/ -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+
+</head>
+<body class="main">
+
+	<!-- header -->
+	<header>
+	</header>
+	<!-- // header -->
+	
+	<!-- notice visual -->
+	<div class="notice-visual">
+	</div>
+	<!-- // notice visual -->
+
+
+	<!-- container -->
+	<div class="container">
+
+		<!-- inner-wrap-->
+		<section class="inner-wrap">
+			<h2 class="title">2025 오사카 여행정보</h2>
+			
+			<div class="box-alert right">
+				<a href="./여행정보.html" class="info btn-txt"><i class="ico-glasses"></i>여행정보 한눈에 확인하기</a>
+			</div>
+
+			<div class="wrap-bono">
+				<div class="bonobono">
+					<img src="./resource/image/common/bg/main_bono.jpg" alt="보노보노">
+					
+					<div class="talk">
+						<p class="txt">말이야</p>
+					</div>
+				</div>
+
+				<div class="info-link-travel">
+					<a href="./여행정보_여행동선.html"><i class="ico-travel-01"></i>여행 동선</a>
+					<a href="./여행정보_항공편정보_예매정보.html"><i class="ico-travel-02"></i>항공편 정보</a>
+					<a href="./여행정보_숙소정보_예매정보.html"><i class="ico-travel-03"></i>숙소 정보</a>
+					<a href="./여행정보_예매정보_교통패스예매.html"><i class="ico-travel-04"></i>교통패스 정보</a>
+					<a href="./관광지.html"><i class="ico-travel-05"></i>관광지 정보</a>
+					<a href="./한끼정보.html"><i class="ico-travel-06"></i>한끼 정보</a>
+					<a href="./와구주섬.html"><i class="ico-travel-07"></i>와구주섬</a>
+				</div>
+			</div>
+		</section>
+		<!-- // inner-wrap-->
+
+
+		<!-- inner-wrap-->
+		<section class="inner-wrap">
+			<h2 class="title">제일 맛집인 곳은 어디일까요?</h2><!-- 식당 -->
+			
+			<div class="box-alert right">
+				<p class="info"><i class="ico-alert"></i>확정된 식당이 아니며 확정시 상세 내용이 업로드 될 예정입니다.</p>
+			</div>
+
+			<div class="food-main">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="food">
+							<a href="https://maps.app.goo.gl/4VV1wYjHxC8LHHHC7" target="_blank" title="새창으로 열기" class="img-food">
+								<img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/01783a34-e7a6-442d-871e-21ad837693dc.jpeg" alt="카니도라쿠 대게회">
+							</a>
+
+							<div class="text-wrap">
+								<div class="badge-wrap">
+									<p class="badge">대게회</p>
+									<p class="name">카니도라쿠</p>
+								</div>
+								<p class="location">오사카 도톤보리 본점 난바 역에서 도보 4분</p>
+								<p class="txt">* 런치세트로 먹은 사람들이 꽤 있다 / 게살밥 단품 추가 가능</p>
+								<p class="coment">다른 대게회 식당 찾아보기</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="food">
+							<a href="https://maps.app.goo.gl/rqquRXKaUG964yfe8" target="_blank" title="새창으로 열기" class="img-food">
+								<img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/5a3367fc-fbad-4836-87c7-891c8948c72d.jpeg" alt="사카에스시 (가성비 스시)">
+							</a>
+
+							<div class="text-wrap">
+								<div class="badge-wrap">
+									<p class="badge">가성비 스시</p>
+									<p class="name">사카에스시</p>
+								</div>
+								<p class="location">오사카 타마야초점 사카이스지선 나가호리바시 역에서 도보 7분</p>
+								<p class="coment">한혐한다는 소문이 있다</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="food">
+							<a href="https://maps.app.goo.gl/caFd8Hu457b6KCyy8" target="_blank" title="새창으로 열기" class="img-food">
+								<img src="https://lh3.googleusercontent.com/p/AF1QipNxHl5X2J6taksLVkAQN0W72CJeZT3ZBBG1qZeT=s680-w680-h510" alt="스시 잇신">
+							</a>
+
+							<div class="text-wrap">
+								<div class="badge-wrap">
+									<p class="badge">스시</p>
+									<p class="name">스시 잇신</p>
+								</div>
+								<p class="location">오사카 우메다역에서 도보 10분</p>
+								<p class="txt">* 친절한 스시집</p>
+								<p class="coment">숙소가 근처면 가볼만한 곳</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="food">
+							<a href="https://maps.app.goo.gl/1xGLCcCGcsX6o78Q7" target="_blank" title="새창으로 열기" class="img-food">
+								<img src="https://lh3.googleusercontent.com/p/AF1QipPCji5dYGVS-GxOD2ePeOKrno9y5L0bwjCDumOS=s680-w680-h510" alt="고리짱">
+							</a>
+
+							<div class="text-wrap">
+								<div class="badge-wrap">
+									<p class="badge">야키니쿠</p>
+									<p class="name">야키니쿠 고리짱</p>
+								</div>
+								<p class="location">오사카 우메다 본점 다니마치 선 히가시우메다 역 M2 출구에서 도보 3분</p>
+								<p class="txt">* 산처럼 쌓아주는 양념된 파와 우설의 조화가 일품인 야키니쿠 전문점</p>
+								<p class="coment">두꺼운 우설을 판매하는것같다</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="food">
+							<a href="https://maps.app.goo.gl/5Fs6CFJfAewSELgS6" target="_blank" title="새창으로 열기" class="img-food">
+								<img src="https://lh3.googleusercontent.com/p/AF1QipOYmJn6CHpIbSZpzjcAa0uEGicLWi2_l2MyHls=s680-w680-h510" alt="템페이 신사이바시">
+							</a>
+
+							<div class="text-wrap">
+								<div class="badge-wrap">
+									<p class="badge">야키니쿠</p>
+									<p class="name">Tempei (템페이)</p>
+								</div>
+								<p class="location">오사카 신사이바시</p>
+								<p class="coment">갈비살과 날계란밥이 맛있는곳</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="food">
+							<a href="https://maps.app.goo.gl/vo7ip86bXRZj4rJJA" target="_blank" title="새창으로 열기" class="img-food">
+								<img src="https://lh3.googleusercontent.com/p/AF1QipP3cGhTo1zn8a4s4ymALmCyRtJwPY1LtU0HI6Mc=s680-w680-h510" alt="헤이죠엔">
+							</a>
+
+							<div class="text-wrap">
+								<div class="badge-wrap">
+									<p class="badge">야키니쿠</p>
+									<p class="name">에사카 헤이죠엔(평정원)</p>
+								</div>
+								<p class="location">오사카 에사카 (우메다보다 위쪽 난바에서 20분)</p>
+								<p class="coment">마츠다 부장님의 추천(유투버인가)</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="food">
+							<a href="https://maps.app.goo.gl/pNjcQQjGyk9uZ8w5A" target="_blank" title="새창으로 열기" class="img-food">
+								<img src="https://blog.kakaocdn.net/dn/x6GBs/btrXTRjyijI/Ra6SVkKQd69k73QgPpQvrk/img.png" alt="이치란 라멘">
+							</a>
+
+							<div class="text-wrap">
+								<div class="badge-wrap">
+									<p class="badge">라멘</p>
+									<p class="name">이치란 라멘</p>
+								</div>
+								<p class="location">오사카 도톤보리점 별관 미도스지 선 난바 역 14번 출구에서 도보 3분 (지점 많음)</p>
+								<p class="coment">전과자 승리가 따라한 맛집</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="food">
+							<a href="https://maps.app.goo.gl/eFpxnjvS5AYJN3AaA" target="_blank" title="새창으로 열기" class="img-food">
+								<img src="https://lh3.googleusercontent.com/p/AF1QipNCsIAhDt5MlJDRve6XmPeRoteVSjnpBhZc4zJL=s680-w680-h510" alt="규슈라멘 키오">
+							</a>
+
+							<div class="text-wrap">
+								<div class="badge-wrap">
+									<p class="badge">라멘</p>
+									<p class="name">규슈라멘 키오</p>
+								</div>
+								<p class="location">오사카 도톤보리</p>
+								<p class="txt">* 현지인 맛집</p>
+								<p class="coment">토마토라멘이 맛있는 곳</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="food">
+							<a href="https://maps.app.goo.gl/4WQxDaKNGr5Nf2Fw5" target="_blank" title="새창으로 열기" class="img-food">
+								<img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/132062da-5412-461e-bafd-375eef254a14.jpeg" alt="우오토요">
+							</a>
+
+							<div class="text-wrap">
+								<div class="badge-wrap">
+									<p class="badge">노포덮밥</p>
+									<p class="name">우오토요</p>
+								</div>
+								<p class="location">오사카 난바 구로몬시장쪽</p>
+								<p class="txt">* 꽤 유명한 길거리 덮밥집</p>
+								<p class="coment">숯불에 구운 생선과 장어덮밥</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="food">
+							<a href="https://maps.app.goo.gl/a6XH8W61bHY1UXsD9" target="_blank" title="새창으로 열기" class="img-food">
+								<img src="https://lh3.googleusercontent.com/p/AF1QipOHY0FtlfWkNYMjKxAk0aGm1fj_vVoaBzZM7cuL=s680-w680-h510" alt="치야키 우나기 호젠지 야마카즈">
+							</a>
+
+							<div class="text-wrap">
+								<div class="badge-wrap">
+									<p class="badge">해산물 덮밥</p>
+									<p class="name">치야키 우나기 호젠지 야마카즈</p>
+								</div>
+								<p class="location">오사카 난바 도톤보리</p>
+								<p class="txt">* 가격이 조금 사악하고 양이 적다</p>
+								<p class="coment">장어덮밥 오오모리로 !</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="food">
+							<a href="https://maps.app.goo.gl/gLjKQ8cNwDUQ2659A" target="_blank" title="새창으로 열기" class="img-food">
+								<img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/1f5b1954-1367-4427-b1e4-6e9c8e956ff4.jpeg" alt="덴뿌라 다이키치">
+							</a>
+
+							<div class="text-wrap">
+								<div class="badge-wrap">
+									<p class="badge">튀김</p>
+									<p class="name">덴뿌라 다이키치</p>
+								</div>
+								<p class="location">오사카 난바시티</p>
+								<p class="txt">* 웨이팅 어마무시함</p>
+								<p class="coment">존맛이라 일본 연예인들이 많이가는 곳</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="food">
+							<a href="https://maps.app.goo.gl/TXCkPeHEKLw5BknH6" target="_blank" title="새창으로 열기" class="img-food">
+								<img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/8ab3678e-8b85-40f0-88dd-9e255d119eea.jpeg" alt="돈카츠 다이키">
+							</a>
+
+							<div class="text-wrap">
+								<div class="badge-wrap">
+									<p class="badge">돈카츠</p>
+									<p class="name">돈카츠 다이키</p>
+								</div>
+								<p class="location">오사카 신사이바시</p>
+								<p class="txt">* 웨이팅 어마무시함</p>
+								<p class="coment">오픈런 하는 미슐랭 히레카츠 맛집</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="food">
+							<a href="https://maps.app.goo.gl/dd9CARoFY6mYkmtN7" target="_blank" title="새창으로 열기" class="img-food">
+								<img src="https://lh3.googleusercontent.com/p/AF1QipO9eTExEywvUkDv7GX7GfQPSfRrHPne2x_xg4sP=s680-w680-h510" alt="모미지 오코노미야키">
+							</a>
+
+							<div class="text-wrap">
+								<div class="badge-wrap">
+									<p class="badge">오코노미야키</p>
+									<p class="name">모미지</p>
+								</div>
+								<p class="location">오사카 다나마치큐초메역 도보 2분</p>
+								<p class="txt">* 미슐랭 오코노미야키 전문점</p>
+								<p class="coment">전남친이 물어봤다는 그곳</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="food">
+							<a href="https://maps.app.goo.gl/EefFVwmHBozDQtcu5" target="_blank" title="새창으로 열기" class="img-food">
+								<img src="https://lh3.googleusercontent.com/p/AF1QipNW8fq7F5Z_YnL3qJIzKqQAjSxjDclR0CGTA8Fs=s680-w680-h510" alt="모헤지">
+							</a>
+
+							<div class="text-wrap">
+								<div class="badge-wrap">
+									<p class="badge">몬자야키</p>
+									<p class="name">모헤지</p>
+								</div>
+								<p class="location">오사카 우메다 루쿠아점 JR 우메다 역에서 도보 3분, 루쿠아 쇼핑몰 10층 위치</p>
+								<p class="txt">* 채소와 해산물을 넣은 반죽을 철판에 구워주는 '몬자야키' 전문점</p>
+								<p class="coment">리뷰가 조금 안좋군 / 외국인 무시리뷰 있음</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="food">
+							<a href="https://maps.app.goo.gl/55tFmqUWE1a7Pzbz7" target="_blank" title="새창으로 열기" class="img-food">
+								<img src="https://lh3.googleusercontent.com/p/AF1QipMOAd_LhKwizc60vTm8iZOzuudXofJQSyiwTssE=s680-w680-h510" alt="하나타코">
+							</a>
+
+							<div class="text-wrap">
+								<div class="badge-wrap">
+									<p class="badge">타코야키</p>
+									<p class="name">하나타코</p>
+								</div>
+								<p class="location">오사카 미도스지 선 우메다 역에서 도보 1분</p>
+								<p class="coment">파와 마요네즈가 듬뿍 토핑된 타코야키를 맛볼 수 있는 곳</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="food">
+							<a href="https://maps.app.goo.gl/vv7Y2TYeNayrbg2S9" target="_blank" title="새창으로 열기" class="img-food">
+								<img src="https://lh3.googleusercontent.com/p/AF1QipPG9BToY2YKFcMnYVH6omcyHX4vHV5SaadSyBEd=s680-w680-h510" alt="오사카 아비코 아시안 바 라마이">
+							</a>
+
+							<div class="text-wrap">
+								<div class="badge-wrap">
+									<p class="badge">스프카레</p>
+									<p class="name">아시안 바 라마이 오사카 아비코점</p>
+								</div>
+								<p class="location">오사카 아비코점 미도스지선 아비코역에서 도보 1분</p>
+								<p class="coment">삿뽀로 스프카레 맛집</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="food">
+							<a href="https://maps.app.goo.gl/3Lz3CQncmLKA3UecA" target="_blank" title="새창으로 열기" class="img-food">
+								<img src="https://lh3.googleusercontent.com/p/AF1QipNWNsm6PdkQRySnhk1Xc0qw4reD0zEikZcS0W5a=s680-w680-h510" alt="스미야 코바코">
+							</a>
+
+							<div class="text-wrap">
+								<div class="badge-wrap">
+									<p class="badge">이자카야 (야키토리)</p>
+									<p class="name">스미야 코바코</p>
+								</div>
+								<p class="location">오사카 구로몬 시장 긴테쓰 나라 선 긴테쓰닛폰바시 역 10번 출구에서 도보 4분</p>
+								<p class="coment">일본주와 어울리는 생 닭고기 회와 구이를 함께 선보이는 야키토리</p>
+							</div>
+						</div>
+					</div>
+
+					
+				</div>
+			</div>
+
+			<!-- accordion -->
+			<div class="accordion warn">
+				<ul>
+					<li>
+						<button type="button" class="btn-toggle"><span>기피해야할 한혐 식당을 알아두세요</span></button>
+						
+							<ol class="list-warn acc-cont">
+								<li>1. 이자카야 사사야 난바 센니치마에점</li>
+								<li>2. 앗치치혼포 도톤보리점 (타코야끼)</li>
+							</ol>
+					</li>
+				</ul>
+			</div>
+			<!-- // accordion -->
+
+		</section>
+		<!-- // inner-wrap-->
+
+		<!-- inner-wrap-->
+		<section class="inner-wrap">
+			<h2 class="title">관광지 맛보기</h2>
+			
+			<div class="box-alert right">
+				<a href="./관광지.html" class="info btn-txt"><i class="ico-glasses"></i>더 많은 정보 확인하기</a>
+			</div>
+
+			<div class="travel-collection">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="visual">
+								<img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/0637703f-ce7b-40c8-a71b-d53e66d5f4ce.jpeg" alt="도톤보리 글리코상">
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="visual">
+								<img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/c6c1f99c-d042-4b30-94ca-72f7bee60afd.jpeg" alt="도톤보리강 대관람차">
+							</div>
+						</div>
+						
+						<div class="swiper-slide">
+							<div class="visual">
+								<img src="https://rimage.gnst.jp/livejapan.com/public/article/detail/a/20/00/a2000456/img/ko/a2000456_parts_5ecf6a6346ab5.jpg?20230930150800&q=80&rw=686&rh=490" alt="신사이바시 스지 상점가 외관">
+							</div>
+						</div>
+						
+						<div class="swiper-slide">
+							<div class="visual">
+								<img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/df724ace-e951-4c66-a645-0a3e1719e9a2.jpeg" alt="에비스타워 외관">
+							</div>
+						</div>
+						
+						<div class="swiper-slide">
+							<div class="visual">
+								<img src="https://imagedelivery.net/Ahwf2rDz3ZiXm1qkpDKg1w/live/-/media/23F8CD08AB8A42FAB01AA6214AA98F9D.jpg/w=750?d=20180105T074243&w=750" alt="츠텐카쿠 전망대 야경">
+							</div>
+						</div>
+						
+						<div class="swiper-slide">
+							<div class="visual">
+								<img src="https://storage.googleapis.com/ikidane/upload/spot_873_26299_6423aa2c37/spot_873_26299_6423aa2c37.jpg" alt="료안지 내관">
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="visual">
+								<img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/21852cba-37d9-46c8-877c-c40ce267b36c.jpeg" alt="가모강 노을 외관">
+							</div>
+						</div>
+						
+						<div class="swiper-slide">
+							<div class="visual">
+								<img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/137ee5bc-f5cc-4462-9695-47a02a676ae4.jpeg" alt="폰토쵸 거리 골목">
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="visual">
+								<img src="https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/42e1648c-be89-4d6e-8516-014c0452134b.jpeg" alt="후시미이나리 신사 도리이 터널">
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- // inner-wrap-->
+
+		<!-- inner-wrap-->
+		<section class="inner-wrap">
+			<h2 class="title">맛있겠지 🤤</h2>
+			
+			<div class="box-alert right">
+				<a href="./카페디저트.html" class="info btn-txt"><i class="ico-glasses"></i>더 많은 정보 확인하기</a>
+			</div>
+
+			<div class="cafe-collection">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="visual">
+								<img src="https://lh3.googleusercontent.com/p/AF1QipNwfsIYANpLxGRIgf0mF_Djb1GLH9YROM5TsTsI=s680-w680-h510" alt="아마토 마에다">
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="visual">
+								<img src="https://lh3.googleusercontent.com/p/AF1QipMP6q_W5ducPAMoIvTWFG94W8hEygaMk2LNg7zp=s680-w680-h510" alt="grenier 기타하마점">
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="visual">
+								<img src="https://lh3.googleusercontent.com/p/AF1QipOqRTAILF34EsKRirxd5cL9ttGIe8qaL_jAM8f_=s680-w680-h510" alt="아싯도라시누">
+							</div>
+						</div>
+		
+						<div class="swiper-slide">
+							<div class="visual">
+								<img src="https://lh3.googleusercontent.com/p/AF1QipP_RujJsXW7dpLzBh327XUkXrZE7O89wFHA5NKY=s680-w680-h510" alt="OSA COFFEE">
+							</div>
+						</div>
+
+						
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- // inner-wrap-->
+
+		<!-- inner-wrap-->
+		<section class="inner-wrap">
+			<h2 class="title">여긴 가면 안돼요..😵</h2>
+			
+			<div class="box-alert right">
+				<a href="./여행정보_여행동선.html" class="info btn-txt"><i class="ico-glasses"></i>더 많은 정보 확인하기</a>
+			</div>
+
+			<div class="map-area">
+				<div id="map"></div>
+			</div>
+		</section>
+		<!-- // inner-wrap-->
+
+	</div>
+	<!-- // container -->
+	
+	<!-- footer -->
+	<footer>
+	</footer>
+	<!-- // footer -->
+
+
+<script src="./resource/js/map.js"></script>
+</body>
+</html>
