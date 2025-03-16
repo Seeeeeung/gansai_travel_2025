@@ -514,17 +514,22 @@ $(function(){
 			const targetUl = $(this).children('ul')
 			const targetList = targetUl.children('li');
 
-			// 추천순
-			if ($('.layer-good').hasClass('active')) setDetailListSortUp(targetUl, targetList);
-			// 평점순
-			if ($('.layer-star').hasClass('active')) setDetailListSortStar(targetUl, targetList);
-			
-			$('.list-control .btn-layer.layer-default').on('click', function() {
-				$.each(targetList, function(i, li){
-					targetList.parent('ul').append(li);
-				});
-			});
+			if ($('.list-control')) {
+				console.log('??????')
+				// 추천순
+				if ($('.layer-good').hasClass('active')) setDetailListSortUp(targetUl, targetList);
+				// 평점순
+				if ($('.layer-star').hasClass('active')) setDetailListSortStar(targetUl, targetList);
+
+				$('.list-control .btn-layer.layer-default').on('click', function() {
+					$.each(targetList, function(i, li){
+						targetList.parent('ul').append(li);
+					});
+				})
+			}
 		})
+
+			
 
 
 			

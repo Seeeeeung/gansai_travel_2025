@@ -58,7 +58,7 @@ const gnb = [
 								<li>
 									<p class="depth-1">맛집 정보</p>
 									<ul class="depth-2">
-										<li><a href="">동선별 맛집</a></li>
+										<li><a href="">확정된 식당</a></li>
 										<li><a href="">지역별 맛집</a></li>
 										<li><a href="">카테고리별 맛집</a></li>
 									</ul>
@@ -245,7 +245,7 @@ const lnb = [
 				<button type="button" class="btn-toggle"><span>맛집 정보</span></button>
 				
 				<ul class="acc-cont">
-					<li><a href="" class="depth-3">동선별 맛집</a></li>
+					<li><a href="" class="depth-3">확정된 식당</a></li>
 					<li><a href="" class="depth-3">지역별 맛집</a></li>
 					<li><a href="" class="depth-3">카테고리별 맛집</a></li>
 				</ul>
