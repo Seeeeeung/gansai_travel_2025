@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2025 간사이 여행</title>
+
+<link rel="stylesheet" type="text/css" href="./resource/css/import.css">
+<link rel="icon" href="./resource/image/common/icon/ico-airplane.png">
+<!-- 비행기 아이콘 제작자: Good Ware - Flaticon -->
+<!-- 움직임 아이콘 제작자: Google - Flaticon -->
+
+<script src="./resource/js/jquery-3.7.1.js"></script>
+<script src="./resource/js/jquery.easing.1.4.1.js"></script>
+<script src="./resource/js/swiper-bundle.js"></script>
+<script src="./resource/js/ui_script.js" defer></script>
+<script src="./resource/js/ui_tree.js" defer></script>
+
+
+<!-- 지도 오픈소스 : https://leafletjs.com/ -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+
+</head>
+<body class="main">
+
+	<!-- header -->
+	<header>
+	</header>
+	<!-- // header -->
+	
+	<!-- notice visual -->
+	<div class="notice-visual">
+	</div>
+	<!-- // notice visual -->
+
+
+	<!-- container -->
+	<div class="container">
+
+		<!-- inner-wrap-->
+		<section class="inner-wrap">
+			<div class="wrap-bono">
+				<div class="bonobono">
+					<img src="./resource/image/common/bg/main_bono.jpg" alt="보노보노">
+					
+					<div class="talk">
+						<p class="txt">말이야</p>
+					</div>
+
+
+					
+					<p class="title">
+						예매 내역을 확인해보노,
+
+						<span class="money">현재 총 결제금액은 <em>675,253</em>원 이다보노.</span>
+					</p>
+				</div>
+
+				<div class="info-link-travel">
+					<a href="./여행정보_여행동선.html">
+						<i class="ico-travel-01"></i>
+						<p class="tit">여행 동선</p>
+						<p class="desc"><em>0</em>건</p>
+					</a>
+					<a href="./여행정보_항공편정보_예매정보.html">
+						<i class="ico-travel-02"></i>
+						<p class="tit">항공권 예매</p>
+						<p class="desc"><em>2</em>건</p>
+					</a>
+					<a href="./여행정보_숙소정보_예매정보.html">
+						<i class="ico-travel-03"></i>
+						<p class="tit">숙소 예매</p>
+						<p class="desc"><em>2</em>건</p>
+					</a>
+					<a href="./여행정보_예매정보.html">
+						<i class="ico-travel-04"></i>
+						<p class="tit">교통 &middot; 관광지 예매</p>
+						<p class="desc"><em>2</em>건</p></a>
+					<a href="./관광지_관광지정보_동선별관광지.html">
+						<i class="ico-travel-05"></i>
+						<p class="tit">확정 관광지</p>
+						<p class="desc"><em>1</em>건</p>
+					
+					</a>
+					<a href="./한끼정보_맛집정보_추천맛집.html">
+						<i class="ico-travel-06"></i>
+						<p class="tit">확정 식당</p>
+						<p class="desc"><em>0</em>건</p>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- // inner-wrap-->
+
+		<!-- inner-wrap-->
+		<div class="inner-wrap">
+			<section class="contents">
+				<h2 class="title">항공편 정보</h2>
+			
+					<div class="box-alert right">
+						<a href="./여행정보_항공편정보_안내사항.html" class="info btn-txt"><i class="ico-glasses"></i>주의사항 확인하기</a>
+					</div>
+				
+				<!-- accordion -->
+				<div class="accordion fly open">
+					<ul>
+						<li class="on">
+							<button type="button" class="btn-toggle"><span>일본 여행가는날 항공편 (195,400원)</span></button>
+							
+							<ul class="acc-cont ticket-info active">
+								<li>
+									<p class="tit">예약 항공사</p>
+									<p class="txt">이스타 항공 (EASTAR JEP)</p>
+								</li>
+								<li>
+									<p class="tit">온라인체크인</p>
+									<p class="txt">가능</p>
+								</li>
+								<li>
+									<p class="tit">예약자</p>
+									<p class="txt">짝꿍핑, 메리 클레어 엘리자베스 초이 2세, 난쟁이나라의 장신공주(2인)</p>
+								</li>
+								<li>
+									<p class="tit">예약메일 수신자</p>
+									<p class="txt">예약자 각각 수신</p>
+								</li>
+								<li>
+									<p class="tit">출발일</p>
+									<p class="txt">2025-03-22 토요일</p>
+								</li>
+								<li>
+									<p class="tit">출발 공항</p>
+									<a href="https://naver.me/FXKfaFww" target="_blank" title="새창으로 네이버지도 열기" class="btn-txt txt">서울 인천국제공항 제 1터미널</a>
+								</li>
+								<li>
+									<p class="tit">도착 공항</p>
+									<a href="https://maps.app.goo.gl/mBC9HqKeKGv8sYrz9" target="_blank" title="새창으로 구글맵 열기" class="btn-txt txt">오사카 간사이 국제공항 제 1터미널</a>
+								</li>
+								<li>
+									<p class="tit">출발시간</p>
+									<p class="txt">오전 09시 05분 (1시간 50분 소요)</p>
+								</li>
+								<li>
+									<p class="tit">도착시간</p>
+									<p class="txt">오전 10시 55분</p>
+								</li>
+								<li>
+									<p class="tit">좌석 (미지정)</p>
+									<p class="txt">-</p>
+								</li>
+								<li>
+									<p class="tit">결제금액</p>
+									<p class="txt">총 781,600원 / 인당 195,400원</p>
+								</li>
+								<li>
+									<p class="tit">취소수수료</p>
+									<p class="txt">출발 91일 전 없음 / 예매당일 ~ 61일전 30,000원 / 31일전 50,000원 / 7일전 70,000원 / 1시간전 90,000원</p>
+								</li>
+								<li>
+									<p class="tit">기내 반입 수화물</p>
+									<p class="txt">가로, 세로, 높이 합이 20+55+40 = 115cm 이하, 10kg 이하인 수화물 1개</p>
+								</li>
+								<li>
+									<p class="tit">위탁 수화물</p>
+									<p class="txt">15kg 이내</p>
+								</li>
+							</ul>
+						</li>
+						
+						<li class="on">
+							<button type="button" class="btn-toggle"><span>한국 돌아가는날 항공편 (143,209원)</span></button>
+							
+							<ul class="acc-cont ticket-info active">
+								<li>
+									<p class="tit">예약 항공사</p>
+									<p class="txt">피치항공 (peach)</p>
+								</li>
+								<li>
+									<p class="tit">온라인체크인</p>
+									<p class="txt">불가능</p>
+								</li>
+								<li>
+									<p class="tit">예약자</p>
+									<p class="txt">짝꿍핑</p>
+								</li>
+								<li>
+									<p class="tit">예약메일 수신자</p>
+									<p class="txt">메리 클레어 엘리자베스 초이 2세(2인), 난쟁이나라의 장신공주, 짝꿍핑</p>
+								</li>
+								<li>
+									<p class="tit">출발일</p>
+									<p class="txt">2025-03-25 화요일</p>
+								</li>
+								<li>
+									<p class="tit">출발 공항</p>
+									<a href="https://maps.app.goo.gl/2gU1mi7YDNZJgpCG7" target="_blank" title="새창으로 구글맵 열기 열기" class="btn-txt txt">오사카 간사이 국제공항 제 2터미널</a>
+								</li>
+								<li>
+									<p class="tit">도착 공항</p>
+									<a href="https://naver.me/FXKfaFww" target="_blank" title="새창으로 네이버지도 열기" class="btn-txt txt">서울 인천국제공항 제 1터미널</a>
+								</li>
+								<li>
+									<p class="tit">출발시간</p>
+									<p class="txt">오후 7시 55분 (2시간 소요)</p>
+								</li>
+								<li>
+									<p class="tit">도착시간</p>
+									<p class="txt">오후 9시 55분</p>
+								</li>
+								<li>
+									<p class="tit">좌석 (지정석)</p>
+									<p class="txt">2E, 2F, 3E, 3F</p>
+								</li>
+								<li>
+									<p class="tit">취소수수료</p>
+									<p class="txt">탑승일 30일 전 15,000원 / 탑승일 29일 전 30,000원 / 그 이후 41,000원</p>
+								</li>
+								<li>
+									<p class="tit">결제금액</p>
+									<p class="txt">총 572,838원 / 인당 143,209원</p>
+								</li>
+								<li>
+									<p class="tit">기내 반입 수화물</p>
+									<p class="txt">7kg 이내</p>
+								</li>
+								<li>
+									<p class="tit">위탁 수화물</p>
+									<p class="txt">20kg 이내</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- // accordion -->
+	
+			</section>
+
+			<section class="contents">
+				<h2 class="title">예매 정보</h2>
+
+				
+				<h3 class="title-3">숙소 정보</h3>
+			
+				
+				<div class="travel sleep info-travel">
+					<!-- 지도로 연결시켜버릴까 -->
+					<!-- 숙소 확정되면 노출 -->
+					<a href="https://maps.app.goo.gl/Vn4oDfcBovBzeck66" target="_blank" title="새창으로 열기" class="btn-link">
+						<p class="tit">첫째날, 둘째날 숙소 (2박)</p>
+						<p class="desc">숙박날짜 : 2025-03-22 (토) ~ 03-24 (월)</p>
+						<p class="name">웰리나 호텔 프리미어 나카노시마 웨스트</p>
+						<p class="desc">숙박비 : 총 525,261원</p>
+						<p class="desc">체크인 : 15시 / 체크아웃 : 10시</p>
+					</a>
+
+					<a href="https://maps.app.goo.gl/su3guzvQC2LtYcyd7" target="_blank" title="새창으로 열기" class="btn-link">
+						<p class="tit">셋째날 숙소 (1박)</p>
+						<p class="desc">숙박날짜 : 2025-03-24 (월) ~ 03-25(화)</p>
+						<p class="name">센투리온 호텔 & 스파 쿠라시키</p>
+						<p class="desc">숙박비 : 총 247,718원</p>
+						<p class="desc">체크인 : 15시 / 체크아웃 : 11시</p>
+					</a>
+				</div>
+	
+				<h3 class="title-3">교통패스 &middot; 관광지 티켓 정보</h3>
+			
+				<div class="travel sleep info-travel">
+					<!-- 패스 정보로 이동 -->
+					<a href="https://www.waug.com/ko/activities/110834" target="_blank" title="새창으로 열기" class="btn-link pass">
+						<p class="tit">JR 서일본 간사이 와이드 패스(5일권)</p>
+						<p class="desc">사용날짜 : 2025-03-22 (토) ~ 03-25 (화)</p>
+						<p class="name">오카야마 조이패스 무료 증정</p>
+						<p class="desc">- 예매전</p>
+						<p class="desc">- 결제금액 : 106,992원</p>
+					</a>
+					<a href="https://www.klook.com/ko/bookings/?spm=Activity.TopNavigation.Booking&clickId=f327e64aa2" target="_blank" title="새창으로 열기" class="btn-link">
+						<p class="tit">유니버셜 스튜디오 재팬 입장권</p>
+						<p class="desc">사용날짜 : 2025-03-23 (일) 오후 3시 입장</p>
+						<p class="name">1일 스튜디오 패스 + 슈퍼 닌텐도 월드</p>
+						<p class="desc">- 간사이 조이패스, Esim 3GB 포함</p>
+						<p class="desc">- 결제금액 : 143,400원</p>
+					</a>
+				</div>
+			</section>
+
+
+			<section class="contents">
+				<div class="btm-link">
+					<ul>
+						<li><a href="여행정보_여행꿀팁.html" class="btn-link">여행꿀팁</a></li>
+						<li><a href="한끼정보_예약내역.html" class="btn-link">식당 예약내역</a></li>
+						<li><a href="./한끼정보_한혐식당정보.html" class="btn-link">한혐식당 정보</a></li>
+						<li><a href="./카페디저트_여행지별카페.html" class="btn-link">카페 &middot; 디저트</a></li>
+						<li><a href="./와구주섬.html" class="btn-link">와구주섬</a></li>
+					</ul>
+				</div>
+			</section>
+
+
+		</div>
+		<!-- // inner-wrap-->
+		 
+
+
+
+	</div>
+	<!-- // container -->
+	
+	<!-- footer -->
+	<footer>
+	</footer>
+	<!-- // footer -->
+
+
+<script src="./resource/js/map.js"></script>
+</body>
+</html>

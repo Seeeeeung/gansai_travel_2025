@@ -673,7 +673,7 @@ a.title-3 + .travel .btn-link {background-image:none;}
 
 
 
-/* 
+
 .main .accordion.fly ul {display:flex; gap:20px;}
 .main .accordion.fly > ul > li {margin:0; width:100%;}
 
@@ -681,7 +681,7 @@ a.title-3 + .travel .btn-link {background-image:none;}
 	.main .accordion.fly ul {display:block;}
 	.main .accordion.fly > ul > li {margin-top:12px;}
 	.main .accordion.fly > ul > li:first-child {margin-top:0;}
-} */
+}
 
 .main .inner-wrap + .inner-wrap {margin:40px auto 80px;}
 .main .info-travel + .title-3 {margin-top:30px !important;}
@@ -703,15 +703,6 @@ a.title-3 + .travel .btn-link {background-image:none;}
 }
 
 
-.main .container section.contents:first-child {margin-top:80px;}
-
-@media (max-width:600px) {
-	.main .container section.contents:first-child {margin-top:40px;}
-}
-
-.main .list-movement li {max-width:none; width:100%;}
-.list-movement.no-border {border-bottom:none;}
-.list-movement + .list-movement {border-top:none;}
 
 
 
