@@ -510,6 +510,11 @@ a.title-3:hover:after {transform:rotate(90deg);}
 .main .info-link-travel a p {margin:0;}
 .main .info-link-travel a .desc em {font-weight:700; color:#2e6fe9}
 
+.main .info-link-product {display:flex; justify-content:center; align-items:center; gap:12px; margin-bottom:50px;}
+.main .info-link-product a {display:flex; justify-content:center; align-items:center; gap:12px; position:relative; padding:20px; color:#1d1d1d; font-size:15px; text-align:center; border-radius:12px; background-color:#d7e6ff; /* transition:.3s; */}
+.main .info-link-product a:hover {font-weight:700;}
+.main .info-link-product a p {margin:0;}
+
 @keyframes animationHoverWidth {
 	50% {width:calc(100% + 2px); height:10%;}
 	100% {width:calc(100% + 2px); height:calc(100% + 2px);}
@@ -538,7 +543,9 @@ a.title-3:hover:after {transform:rotate(90deg);}
 	
 }
 @media (max-width:710px) {
+	.main .info-link-product {flex-direction:column;}
 	.main .info-link-travel a {width:100%;}
+	.main .info-link-product a {width:100%;}
 }
 
 @media (max-width:400px) {
@@ -547,6 +554,8 @@ a.title-3:hover:after {transform:rotate(90deg);}
 
 	
 }
+
+.main .list-movement a {display:block;}
 
 
 .travel {display:flex; gap:24px; margin-top:24px;}

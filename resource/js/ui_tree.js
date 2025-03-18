@@ -434,7 +434,7 @@ const productList = [
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="visual">
-										<img src="https://i.namu.wiki/i/-bB818aF0cO5oq7YskLxupT8q113VPNIK4DPYkE56ipF-X6ReLD7fR83KzAGV3JVIcAUVagySSp5GuGhyZxVXoIeUOEHdN1p9mF-tS4OtN5Hf3QL5MvZH_fSpXcceU_qgnAoJ3tBu-AWkBgD9F1hug.webp" alt="白い恋人">
+										<img src="https://i.namu.wiki/i/ZKinmZtz2A4ylK2L0mMv34ZLEC63NaxQvpELOnlqQj8XzIDoZOaX7qUBxTx9K7PkCuNqQLIW5DOsDoWW1rMAxw.webp" alt="白い恋人">
 
 										<div class="big-img">
 											<button type="button" class="open-modal btn-zoom" aria-controls="layer_detail"><span class="sr-only">자세히보기</span></button>
@@ -3114,7 +3114,7 @@ const productList = [
 
 						<div class="txt-wrap">
 							<div class="name">
-								산요 삿포로 이치방 순두비찌개라멘
+								산요 삿포로 이치방 순두부찌개라멘
 								<div class="btn-wrap">
 									<button type="button" class="toggle-count"><span class="count">0</span></button>
 								</div>
