@@ -386,17 +386,11 @@ const notice = [
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
 			<div class="notice">
-				<p class="tit">얘두라</p>
-				<p class="txt">거의 다 왔다 좀만 더 힘내자 !</p>
+				<p class="tit">D-Day</p>
+				<p class="txt">두근두근 !</p>
 			</div>
 		</div>
 
-		<div class="swiper-slide">
-			<div class="notice">
-				<p class="tit">공지</p>
-				<p class="txt">오류사항이나 기타 의견은 관리자에게 문의해주세요.</p>
-			</div>
-		</div>
 
 
 
